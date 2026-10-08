@@ -1,0 +1,680 @@
+{
+  "projects": [
+    {
+      "nombre": "METAPHEX",
+      "ruta": "/proyectos/metaphex",
+      "anio": "2023",
+      "descripcion": "Un video reactivo que acompaña fragmentos de canciones de Aphex Twin, y una web interactiva para presentar el video y su proceso.",
+      "herramientas": "Touchdesigner · After Effects · Spline · Webflow",
+      "fuente": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
+      "imagenes": [
+        {
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "height": 699,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
+          "width": 1401
+        },
+        {
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "height": 474,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
+          "width": 1400
+        },
+        {
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "height": 203,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
+          "width": 1400
+        },
+        {
+          "alt": "",
+          "height": 1280,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/bb505e191707843.65d02e99061d1.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 2280,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/de3004191707843.65d02e9904a94.gif",
+          "width": 1280
+        },
+        {
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "height": 698,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
+          "width": 1400
+        }
+      ],
+      "title": "METAPHEX",
+      "discipline": "Video reactivo / Web interactiva",
+      "tools": [
+        "TouchDesigner",
+        "After Effects",
+        "Spline",
+        "Webflow"
+      ],
+      "preview": "https://framerusercontent.com/images/1OIbGojPQGzb4KNI5dcJoflApk.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "MARADONA ALIEN",
+      "ruta": "/proyectos/maradona-alien",
+      "anio": "2023",
+      "descripcion": "Proyecto editorial expandido de Tipografía 2, Longinotti, FADU/UBA. Una narrativa sobre Maradona como alien se desarrolla en una publicación impresa, una web creada con Readymag y una aplicación de realidad virtual para Oculus Quest 2 desarrollada en Unity.",
+      "herramientas": "Photoshop · Illustrator · Indesign · Readymag · Unity 3D",
+      "fuente": "https://www.behance.net/gallery/191469177/Maradona-alien-Editorial-web-y-app-VR-Longinotti-2",
+      "imagenes": [
+        {
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "height": 720,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/43bc76191469177.65ce8e51b136f.gif",
+          "width": 720
+        },
+        {
+          "alt": "",
+          "height": 1024,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4473ba191469177.65cc392713680.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 1024,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/314001191469177.65cc39271507f.gif",
+          "width": 1280
+        },
+        {
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "height": 397,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
+          "width": 1400
+        },
+        {
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "height": 788,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
+          "width": 1400
+        },
+        {
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "height": 640,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
+          "width": 1176
+        }
+      ],
+      "title": "Maradona Alien",
+      "discipline": "Editorial / Web / Realidad virtual",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign",
+        "Readymag",
+        "Unity 3D"
+      ],
+      "preview": "https://framerusercontent.com/images/Jd36b1f68gLaNsu9OpcosA6ovg.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "INSTALACIÓN DE REALIDAD VIRTUAL",
+      "ruta": "/proyectos/instalacion-vr",
+      "anio": "2023",
+      "descripcion": "Instalación de realidad virtual. Proyecto de Morfología, FADU/UBA, 2023.",
+      "herramientas": "Photoshop · Spline · Unity 3D",
+      "fuente": "https://youtu.be/_oieEi2r6M4",
+      "imagenes": [
+        {
+          "url": "https://framerusercontent.com/images/Qqm05WHXEXpOWc3k3T0vnwBzc.png?width=359&height=359",
+          "width": 359,
+          "height": 359
+        }
+      ],
+      "title": "Instalación de realidad virtual",
+      "discipline": "Realidad virtual",
+      "tools": [
+        "Photoshop",
+        "Spline",
+        "Unity 3D"
+      ],
+      "preview": "https://framerusercontent.com/images/Qqm05WHXEXpOWc3k3T0vnwBzc.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "ESQUEMÁTICA / MICROEVENTO",
+      "ruta": "/proyectos/esquematica-microevento",
+      "anio": "2023",
+      "descripcion": "Esquemática construida a partir del análisis de un microevento: encender una hornalla. Proyecto de Tipografía 2, Longinotti, FADU/UBA.",
+      "herramientas": "Photoshop · Illustrator · Spline",
+      "fuente": "https://www.behance.net/gallery/190909103/Esquematica-Microevento-Fuego-Tipografia-Longinotti-2",
+      "imagenes": [
+        {
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "height": 979,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d059a190909103.65c5326bae1f9.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "height": 1615,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/96f177190909103.65c283a71eaae.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e6751f190909103.65c283a71fc92.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/da6c22190909103.65c283a7a5211.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0064b6190909103.65c283a7a6da6.jpg",
+          "width": 1280
+        }
+      ],
+      "title": "Esquemática / microevento",
+      "discipline": "Esquemática / Tipografía",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Spline"
+      ],
+      "preview": "https://framerusercontent.com/images/rhmTPSfsZLa6o1y1ToPCVJpSwm8.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "EDITORIAL ESPACIAL",
+      "ruta": "/proyectos/editorial-espacial",
+      "anio": "2023",
+      "descripcion": "Proyecto de registros y traducciones basado en el exoplaneta Proxima Centauri B. Editorial experimental de Morfología 2, Longinotti, FADU/UBA.",
+      "herramientas": "Photoshop · Illustrator · Spline",
+      "fuente": "https://www.behance.net/gallery/190740099/Editorial-experimental-Morfologia-Longinotti-2",
+      "imagenes": [
+        {
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "height": 525,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/40e3d8190740099.65c01f055e159.gif",
+          "width": 1401
+        },
+        {
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "height": 525,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/683611190740099.65c02bb74b675.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "height": 305,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1270ca190740099.65c02d5fb387e.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "",
+          "height": 613,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a06f44190740099.65c11cf1bb96d.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
+          "width": 1280
+        },
+        {
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "height": 720,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
+          "width": 720
+        }
+      ],
+      "title": "Editorial espacial",
+      "discipline": "Editorial experimental",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Spline"
+      ],
+      "preview": "https://framerusercontent.com/images/EpG4tgCDQ67bBRjnYekCIl6wZXk.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "REGISTROS",
+      "ruta": "/proyectos/editorial-registros",
+      "anio": "2023",
+      "descripcion": "Editorial experimental desarrollado durante dos semanas para representar movimientos, sonidos y sensaciones al transitar la costanera de la Reserva Ecológica Ciudad Universitaria. Combina fotografías panorámicas con errores visuales, modelos 3D creados en Medium con realidad virtual e intervenciones con escáner.",
+      "herramientas": "Photoshop · Illustrator · Medium (Oculus Quest 2)",
+      "fuente": "https://www.behance.net/gallery/190030769/Editorial-Registros-Morfologia-Longinotti-2-2024",
+      "imagenes": [
+        {
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "height": 789,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6eb7a190030769.65bab83cdfc07.gif",
+          "width": 1403
+        },
+        {
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "height": 246,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
+          "width": 1397
+        },
+        {
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "height": 246,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
+          "width": 1397
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/216abb190030769.65bab83bc6167.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/2e92f6190030769.65bad3f14b0b7.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/9281b2190030769.65bad3f14bcd5.jpg",
+          "width": 1280
+        }
+      ],
+      "title": "Registros",
+      "discipline": "Editorial experimental / Realidad virtual",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Medium (Oculus Quest 2)"
+      ],
+      "preview": "https://framerusercontent.com/images/jufTnzI7PlT9j4H5VlUtgGaZUI.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "EDITORIAL TIPOGRÁFICO / 2023",
+      "ruta": "/proyectos/editorial-tipografico-2023",
+      "anio": "2023",
+      "descripcion": "Proyecto editorial introductorio de dos semanas para Tipografía 2, Longinotti, FADU/UBA.",
+      "herramientas": "Illustrator ·Indesign",
+      "fuente": "https://www.behance.net/gallery/189668095/Editorial-Tipografia-Longinotti-2-2023",
+      "imagenes": [
+        {
+          "alt": "",
+          "height": 428,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/c818d0189668095.65b1b5aa1898e.png",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 428,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/7404d7189668095.65b1b5aa1e9b2.png",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 428,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/2c0b21189668095.65b1b5aa1993f.png",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 863,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/91310f189668095.65b2c99804b5a.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "height": 944,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ab9912189668095.65b2c99b225f2.jpg",
+          "width": 1400
+        },
+        {
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "height": 809,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/47909c189668095.65b2c99b234ed.jpg",
+          "width": 1200
+        }
+      ],
+      "title": "Editorial tipográfico / 2023",
+      "discipline": "Editorial / Tipografía",
+      "tools": [
+        "Illustrator",
+        "InDesign"
+      ],
+      "preview": "https://framerusercontent.com/images/DjYvv3bIjL50taaJsKF6tqewcQ.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "MOTION GRAPHICS",
+      "ruta": "/proyectos/motion-graphics",
+      "anio": "2023",
+      "descripcion": "Video de intervención tipográfica. Proyecto de Tipografía 2, Longinotti, FADU/UBA, 2023.",
+      "herramientas": "Illustrator ·After Effects",
+      "fuente": "https://www.behance.net/gallery/189949607/Video-intervecion-Tipografia-Longinotti-2-2023",
+      "imagenes": [
+        {
+          "alt": "",
+          "height": 960,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/1601d3189949607.65cfd62b543f5.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 960,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/130405189949607.65cfd62b55fbc.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 960,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/25296b189949607.65cfd62b56b52.gif",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 960,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c23125189949607.65cfd62b551f8.gif",
+          "width": 1280
+        }
+      ],
+      "title": "Motion graphics",
+      "discipline": "Movimiento / Tipografía",
+      "tools": [
+        "Illustrator",
+        "After Effects"
+      ],
+      "preview": "https://framerusercontent.com/images/eOTq5HoUiPqEbA3BUfCqd0fIs.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "FILTROS INSTAGRAM",
+      "ruta": "/proyectos/filtros-instagram",
+      "anio": "2023",
+      "descripcion": "Filtros de Instagram. Trabajo presentado en el portfolio de 2023, realizado con Illustrator y Meta Spark Studio.",
+      "herramientas": "Illustrator ·Meta Spark Studio",
+      "fuente": "https://youtube.com/playlist?list=PLwr4VuFxH3a9lBVtp5qzS2M9Hpyn8Lfdq&si=q9q7vmK2hXkSO8Tg",
+      "imagenes": [
+        {
+          "url": "https://framerusercontent.com/images/hsxVWWEAPVQBCaALn1OdTG6QJU.png?width=300&height=300",
+          "width": 300,
+          "height": 300
+        }
+      ],
+      "title": "Filtros de Instagram",
+      "discipline": "Filtros / Realidad aumentada",
+      "tools": [
+        "Illustrator",
+        "Meta Spark Studio"
+      ],
+      "preview": "https://framerusercontent.com/images/hsxVWWEAPVQBCaALn1OdTG6QJU.png?width=300&height=300",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "SISTEMA GRÁFICO / DILLOM",
+      "ruta": "/proyectos/sistema-grafico",
+      "anio": "2022",
+      "descripcion": "Sistema gráfico de baja complejidad inspirado en una playlist de Spotify y en el artista Dillom. Combina elementos demoníacos, urbanos e infantiles. Trabajo práctico 5 de Diseño Gráfico 1, Gabriele, FADU/UBA.",
+      "herramientas": "Photoshop · Illustrator",
+      "fuente": "https://www.behance.net/gallery/190236999/Sistema-Baja-Complejidad-TP5-DG1-Catedra-Gabriele",
+      "imagenes": [
+        {
+          "alt": "",
+          "height": 822,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2b0179190236999.65b8029a65aaa.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 822,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2c8eca190236999.65b8029aca6a6.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 822,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/93de67190236999.65b8029b58fe3.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a3bc98190236999.65b8029d9714f.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 1920,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c79253190236999.65b803b2e40ef.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 1920,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/a23a60190236999.65b803b2e4b9a.jpg",
+          "width": 1280
+        }
+      ],
+      "title": "Sistema gráfico / Dillom",
+      "discipline": "Identidad / Sistema gráfico",
+      "tools": [
+        "Photoshop",
+        "Illustrator"
+      ],
+      "preview": "https://framerusercontent.com/images/XvPs753jB3lUHWKFszPcJvMIRY.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "AFICHE Y BROCHURE",
+      "ruta": "/proyectos/afiche-y-brochure",
+      "anio": "2022",
+      "descripcion": "Afiche, tapa, contratapa y doble editorial para el ensayo de la revista Anfibia “Alfabetismos aumentados para convivir con robots”. Trabajo práctico 4 de Diseño Gráfico 1, Gabriele, FADU/UBA.",
+      "herramientas": "Photoshop · Illustrator · Indeesign",
+      "fuente": "https://www.behance.net/gallery/154717681/Tipografia-como-imagen-TP4-DG1-Catedra-Gabriele",
+      "imagenes": [
+        {
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "height": 1067,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "height": 1943,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f54a9c154717681.634726f0aab29.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "height": 1991,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/aa6405154717681.634726f0a9851.jpg",
+          "width": 1400
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/82c821154717681.634726efecc7b.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/40ff49154717681.634726efedfab.jpg",
+          "width": 1280
+        },
+        {
+          "alt": "",
+          "height": 853,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/726abc154717681.634726efea77e.jpg",
+          "width": 1280
+        }
+      ],
+      "title": "Afiche y brochure",
+      "discipline": "Editorial / Tipografía",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "preview": "https://framerusercontent.com/images/AoTC2WBkOBl02z020sbSPIKF4o.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "HISTORIAS MÍNIMAS",
+      "ruta": "/proyectos/historias-instagram",
+      "anio": "2022",
+      "descripcion": "Historias de Instagram creadas a partir del concepto “Kabuki en el Monte Fuji”. Trabajo práctico 3 de Diseño Gráfico 1, Gabriele, FADU/UBA.",
+      "herramientas": "Photoshop",
+      "fuente": "https://www.behance.net/gallery/148175971/Historias-minimas-TP3-DG1-Catedra-Gabriele",
+      "imagenes": [
+        {
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "height": 646,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "height": 2491,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a87cf148175971.62d06f46a2048.jpg",
+          "width": 1401
+        },
+        {
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "height": 2489,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6b4fd2148175971.62d06f46a1a69.jpg",
+          "width": 1400
+        },
+        {
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "height": 2490,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/604066148175971.62d06f46a146a.jpg",
+          "width": 1400
+        },
+        {
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "height": 2490,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e4d737148175971.62d06f46a0d5c.jpg",
+          "width": 1400
+        }
+      ],
+      "title": "Historias mínimas",
+      "discipline": "Narrativa / Redes sociales",
+      "tools": [
+        "Photoshop"
+      ],
+      "preview": "https://framerusercontent.com/images/AvP7DJAvSHiyOXr4ENhPUheAso.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "ALGO ESTÁ MUTANDO",
+      "ruta": "/proyectos/algo-esta-mutando",
+      "anio": "2021",
+      "descripcion": "Animación e ilustración. Proyecto de FADU/UBA, 2021.",
+      "herramientas": "Photoshop",
+      "fuente": "https://www.behance.net/gallery/132456513/Algo-esta-mutando-Animacion-Ilustracion-Roldan",
+      "imagenes": [
+        {
+          "url": "https://framerusercontent.com/images/867teTfkWG6fiPORLv0y7Zlfn5Q.png?width=359&height=359",
+          "width": 359,
+          "height": 359
+        }
+      ],
+      "title": "Algo está mutando",
+      "discipline": "Animación / Ilustración",
+      "tools": [
+        "Photoshop"
+      ],
+      "preview": "https://framerusercontent.com/images/867teTfkWG6fiPORLv0y7Zlfn5Q.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    },
+    {
+      "nombre": "EDITORIAL TIPOGRÁFICO / 2021",
+      "ruta": "/proyectos/editorial-tipografico-2021",
+      "anio": "2021",
+      "descripcion": "Editorial tipográfico. Proyecto de Tipografía, FADU/UBA, 2021.",
+      "herramientas": "Photoshop · Illustrator · Indeesign",
+      "fuente": "https://www.behance.net/gallery/132455661/Editorial-Longinotti-1-2021",
+      "imagenes": [
+        {
+          "url": "https://framerusercontent.com/images/OLRP268NXFWrljjqpqlVBhn2C4.png?width=359&height=359",
+          "width": 359,
+          "height": 359
+        }
+      ],
+      "title": "Editorial tipográfico / 2021",
+      "discipline": "Editorial / Tipografía",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "InDesign"
+      ],
+      "preview": "https://framerusercontent.com/images/OLRP268NXFWrljjqpqlVBhn2C4.png?width=359&height=359",
+      "previewWidth": 359,
+      "previewHeight": 359
+    }
+  ],
+  "experience": [
+    {
+      "title": "Diseñador gráfico",
+      "context": "Freelance",
+      "date": "2022–actualidad"
+    },
+    {
+      "title": "Diseñador",
+      "context": "Eventmedia · Diseño gráfico, VR y filtros de Instagram",
+      "date": "2021–2024"
+    },
+    {
+      "title": "Asistente de fotografía",
+      "context": "Eventos",
+      "date": "2017–2023"
+    }
+  ],
+  "education": [
+    {
+      "title": "Diseño gráfico",
+      "context": "FADU / UBA",
+      "date": "2019–actualidad"
+    },
+    {
+      "title": "Curso de fotografía",
+      "context": "Ex CEAVAO",
+      "date": "2020–2021"
+    },
+    {
+      "title": "Curso de diseño gráfico",
+      "context": "Ex CEAVAO",
+      "date": "2018–2019"
+    },
+    {
+      "title": "Egreso secundaria",
+      "context": "Paula Albarracín de Sarmiento",
+      "date": "2016"
+    }
+  ]
+}
