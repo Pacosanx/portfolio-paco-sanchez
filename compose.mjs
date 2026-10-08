@@ -35,6 +35,20 @@ function projectRow(p,i){return `<a class="project-row" href="${p.ruta}/" data-p
 
 function cv(items){return `<ol class="cv-list">${items.map(x=>`<li><span class="cv-date mono">${esc(x.date)}</span><div><h4>${esc(x.title)}</h4><p>${esc(x.context)}</p></div></li>`).join('')}</ol>`}
 
+function caseContent(p,i,embedded=false){
+  const next=projects[i+1],titleTag=embedded?'h2':'h1',toolsTag=embedded?'h3':'h2',titleId=embedded?'viewer-title':'case-title';
+  return `<section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p><p class="mono">FADU / UBA</p><p class="case-discipline">${esc(p.discipline)}</p></div>
+  <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}><p class="case-description">${esc(p.descripcion)}</p></div>
+  <div class="case-tools"><${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><a class="text-link case-source" href="${esc(p.fuente)}" target="_blank" rel="noopener noreferrer">${p.fuente.includes('youtu')?'Ver en YouTube':'Ver en Behance'}</a></div></section>
+  <div class="case-gallery">${p.imagenes.map((image,j)=>`<figure class="case-figure" style="max-width:${Math.min(1120,image.width)}px;margin-inline:auto"><img src="${esc(image.url)}" width="${image.width}" height="${image.height}" alt="${esc(p.title)}, imagen ${j+1}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async"></figure>`).join('')}</div>
+  <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="/#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?next.ruta+'/':'/#proyectos'}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>`;
+}
+
+const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby="viewer-title">
+<div class="viewer-toolbar shell"><button class="text-link" type="button" data-close-project autofocus>Volver al índice</button><span class="mono muted" data-viewer-index></span></div>
+<div class="viewer-content case shell" data-viewer-content></div></dialog>
+${projects.map((p,i)=>`<template data-project-template data-project-route="${p.ruta}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
+
 const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><p class="eyebrow opening-label">Portfolio / 2021–2023</p>
 <div class="opening-copy"><h1 id="intro-title">Diseño digital.<br><span>Imagen en movimiento.<br>Interactividad.</span></h1><p>Exploraciones entre imagen, movimiento,<br class="desktop-break"> web y realidad virtual.</p></div>
@@ -43,23 +57,18 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <div class="work-index">${projects.map(projectRow).join('')}</div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"><img class="preview-image" alt="" decoding="async"></div><div class="preview-caption"><span data-preview-name></span><span class="mono" data-preview-year></span></div><p class="preview-discipline"></p></div></aside></section>
 <section id="en-paralelo" class="parallel" aria-labelledby="parallel-title"><h2 class="eyebrow" id="parallel-title">En paralelo</h2>
-<article class="datita"><p class="resource-kicker mono">Recursos compartidos</p><h3>Datita digital<br>de Paco.</h3><p>Una colección de herramientas digitales que uso para diseñar, experimentar y compartir con colegas y estudiantes.</p><p class="resource-note">Imagen, código, 3D, movimiento y tipografía.<br>Herramientas ajenas, curiosidad propia.</p><a class="text-link" href="https://datita-digital-de-paco.sanchezfrancis497029.chatgpt.site/" target="_blank" rel="noopener noreferrer">Explorar Datita</a></article>
+<article class="datita"><p class="resource-kicker mono">Recursos compartidos</p><h3>Datita digital<br>de Paco.</h3><p>Una colección de herramientas digitales que uso para diseñar, experimentar y compartir con colegas y estudiantes.</p><p class="resource-note">Imagen, código, 3D, movimiento y tipografía.<br>Herramientas ajenas, curiosidad propia.</p><a class="datita-preview" href="https://datita-digital-de-paco.sanchezfrancis497029.chatgpt.site/" target="_blank" rel="noopener noreferrer" aria-label="Explorar Datita digital de Paco"><img src="/assets/dddp-preview.jpg" width="1425" height="990" alt="Vista de la web Datita digital de Paco, con su buscador, categorías y herramientas" loading="lazy" decoding="async"></a><a class="text-link" href="https://datita-digital-de-paco.sanchezfrancis497029.chatgpt.site/" target="_blank" rel="noopener noreferrer">Explorar Datita</a></article>
 <article class="lab"><p class="resource-kicker mono">Pruebas gráficas y técnicas</p><h3>Laboratorio.</h3><p>Un espacio para reunir exploraciones fuera de los proyectos.</p><p class="lab-state mono">En preparación</p></article></section>
 <section id="trayectoria" class="trajectory" aria-labelledby="trajectory-title"><h2 class="eyebrow" id="trajectory-title">Trayectoria</h2>
 <div class="experience"><h3 class="cv-heading">Experiencia</h3>${cv(content.experience)}</div>
 <div class="education"><h3 class="cv-heading">Formación</h3>${cv(content.education)}</div></section>
-</main>${contact()}`;
+</main>${contact()}${viewer}`;
 fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Diseño digital, imagen, movimiento e interactividad.','/',home));
 
 for(const [i,p] of projects.entries()){
-  const next=projects[i+1];
   const body=`${header()}<main id="contenido" class="case shell">
   <div class="case-breadcrumb"><a class="text-link" href="/#proyectos">Todos los proyectos</a><span class="mono muted">${number(i)} / 14</span></div>
-  <section class="case-intro" aria-labelledby="case-title"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p><p class="mono">FADU / UBA</p><p class="case-discipline">${esc(p.discipline)}</p></div>
-  <div class="case-title-block"><h1 id="case-title">${esc(p.title)}</h1><p class="case-description">${esc(p.descripcion)}</p></div>
-  <div class="case-tools"><h2 class="eyebrow">Herramientas</h2><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><a class="text-link case-source" href="${esc(p.fuente)}" target="_blank" rel="noopener noreferrer">${p.fuente.includes('youtu')?'Ver en YouTube':'Ver en Behance'}</a></div></section>
-  <div class="case-gallery">${p.imagenes.map((image,j)=>`<figure class="case-figure" style="max-width:${Math.min(1120,image.width)}px;margin-inline:auto"><img src="${esc(image.url)}" width="${image.width}" height="${image.height}" alt="${esc(p.title)}, imagen ${j+1}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async"></figure>`).join('')}</div>
-  <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="/#proyectos">Volver al índice</a><a class="next-project" href="${next?next.ruta+'/':'/#proyectos'}"><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>
+  ${caseContent(p,i)}
   </main>${contact()}`;
   const routeDir=path.join('dist',p.ruta);fs.mkdirSync(routeDir,{recursive:true});
   fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — Paco Sanchez`,p.descripcion,p.ruta+'/',body));

@@ -5,6 +5,9 @@ const content=JSON.parse(fs.readFileSync('content.json','utf8'));
 const home=fs.readFileSync('dist/index.html','utf8');
 assert.equal(content.projects.length,14);
 assert.equal((home.match(/class="project-row"/g)||[]).length,14);
+assert.equal((home.match(/<template data-project-template/g)||[]).length,14);
+assert(home.includes('<dialog id="project-viewer"'));
+assert(home.includes('src="/assets/dddp-preview.jpg"'));
 const htmlFiles=['dist/index.html',...content.projects.map(p=>path.join('dist',p.ruta,'index.html'))];
 let links=0,images=0;
 for(const file of htmlFiles){
@@ -20,7 +23,8 @@ for(const file of htmlFiles){
     assert(fs.existsSync(target),`${file}: missing ${href}`);links++;
   }
   for(const match of html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)){
-    assert(match[1].startsWith('https://'),`${file}: invalid image source ${match[1].slice(0,100)}`);images++;
+    const src=match[1];
+    assert(src.startsWith('https://')||(src.startsWith('/')&&fs.existsSync(path.join('dist',src))),`${file}: invalid image source ${src.slice(0,100)}`);images++;
   }
 }
 for(const [i,p] of content.projects.entries()){
