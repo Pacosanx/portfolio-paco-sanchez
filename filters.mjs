@@ -1,14 +1,12 @@
 export const categories=[
-  {id:'editorial',label:'Editorial',match:/editorial|fanzine/i},
-  {id:'identidad',label:'Identidad y gráfica',match:/identidad|sistema|afiche|esquemática|lenguajes|narrativa/i},
-  {id:'movimiento',label:'Movimiento',match:/movimiento|video|cinética|motion|animación/i},
-  {id:'web',label:'Web',match:/web/i},
-  {id:'3d',label:'3D',match:/3d|modelado/i},
-  {id:'realidades',label:'VR y realidad aumentada',match:/realidad|filtros/i},
-  {id:'tipografia',label:'Tipografía',match:/tipografía/i}
+  {id:'web',label:'Web e interactividad',group:'Diseño digital',match:/web|interactividad/i},
+  {id:'realidades',label:'VR y realidad aumentada',group:'Diseño digital',match:/realidad|filtros/i},
+  {id:'movimiento',label:'Movimiento y 3D',group:'Diseño digital',match:/movimiento|video|cinética|motion|animación|3d|modelado/i},
+  {id:'editorial',label:'Editorial',group:'Gráfica y editorial',match:/editorial|fanzine/i},
+  {id:'grafica',label:'Gráfica e identidad',group:'Gráfica y editorial',match:/identidad|sistema|afiche|esquemática|lenguajes|narrativa|gráfica/i}
 ];
-export const projectCategories=p=>categories.filter(c=>c.match.test(p.discipline)).map(c=>c.id);
+export const projectCategories=p=>categories.filter(c=>c.match.test(p.discipline+' '+p.title)).map(c=>c.id);
 export function projectFilters(projects){
-  const choices=[{id:'todos',label:'Todos',count:projects.length},...categories.map(c=>({...c,count:projects.filter(p=>projectCategories(p).includes(c.id)).length})).filter(c=>c.count)];
-  return `<fieldset class="project-filters"><legend>Filtrar por disciplina</legend>${choices.map(c=>`<button type="button" data-project-filter="${c.id}" aria-pressed="${c.id==='todos'}" aria-controls="project-index"><span>${c.label}</span><span class="mono">${c.count}</span></button>`).join('')}</fieldset><p class="filter-result mono" data-filter-result role="status">${projects.length} proyectos</p>`;
+  const options=group=>categories.filter(c=>c.group===group).map(c=>`<option value="${c.id}">${c.label}</option>`).join('');
+  return `<div class="project-filters"><label for="project-filter">Explorar por área</label><select id="project-filter" aria-controls="project-index"><option value="todos">Todos los proyectos</option><optgroup label="Diseño digital">${options('Diseño digital')}</optgroup><optgroup label="Gráfica y editorial">${options('Gráfica y editorial')}</optgroup></select></div><p class="filter-result mono" data-filter-result role="status">${Math.min(15,projects.length)} de ${projects.length} proyectos</p>`;
 }

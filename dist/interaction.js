@@ -16,7 +16,7 @@
   };
   const fill=template=>{
     content.replaceChildren(template.content.cloneNode(true));
-    const filtered=document.querySelector('[data-project-filter][aria-pressed="true"]')?.dataset.projectFilter;
+    const filtered=document.querySelector('#project-filter')?.value;
     if(filtered&&filtered!=='todos'){
       const visible=[...document.querySelectorAll('.project-row')].filter(row=>!row.hidden);
       const position=visible.findIndex(row=>row.getAttribute('href')===template.dataset.projectRoute);
@@ -39,6 +39,7 @@
     if(wasOpen&&!changed){viewer.classList.add('is-visible');return}
     clearTimeout(changeTimer);
     activeRoute=template.dataset.projectRoute;
+    document.dispatchEvent(new CustomEvent('portfolio:reveal',{detail:{route:activeRoute}}));
     if(!wasOpen){
       history.scrollRestoration='manual';
       const state=history.state?.portfolioProject;
