@@ -1049,8 +1049,12 @@
       "ruta": "/proyectos/web-arquitectura",
       "anio": "2025",
       "descripcion": "Web sobre patrimonio arquitectónico. Actualmente en prototipado con HTML.",
-      "herramientas": "",
-      "tools": [],
+      "herramientas": [
+        "HTML"
+      ],
+      "tools": [
+        "HTML"
+      ],
       "discipline": "Web / Patrimonio arquitectónico",
       "fuente": "https://pacosanx.myportfolio.com/web-arquitectura",
       "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/875cf768-ac81-4818-a960-982a13b5429d_rwc_0x30x1358x1018x1358.png?h=fa6df4357c7711c24b8b0c0c19273519",

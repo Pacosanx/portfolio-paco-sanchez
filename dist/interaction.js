@@ -17,7 +17,8 @@
   const fill=template=>{
     content.replaceChildren(template.content.cloneNode(true));
     const filtered=document.querySelector('#project-filter')?.dataset.value;
-    if(filtered&&filtered!=='todos'){
+    const searching=document.querySelector('#project-program')?.value.trim();
+    if((filtered&&filtered!=='todos')||searching){
       const visible=[...document.querySelectorAll('.project-row')].filter(row=>!row.hidden);
       const position=visible.findIndex(row=>row.getAttribute('href')===template.dataset.projectRoute);
       if(position>=0){

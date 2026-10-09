@@ -23,7 +23,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><link rel="stylesheet" href="/project-filters.css"><script src="/project-filters.js" defer></script><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><link rel="stylesheet" href="/project-filters.css"><link rel="stylesheet" href="/editorial-grid.css"><script src="/project-filters.js" defer></script><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script>
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':'/';return `<header class="site-header shell">
@@ -36,7 +36,7 @@ function contact(){return `<footer id="contacto" class="contact shell" aria-labe
 <div class="contact-social"><a class="text-link" href="https://www.behance.net/pacosanx" target="_blank" rel="noopener noreferrer">Behance</a></div>
 <div class="colophon"><span>Francisco ‘Paco’ Sanchez</span><a href="#" class="text-link">Volver arriba</a></div></footer>`}
 
-function projectRow(p,i){return `<a class="project-row" href="${p.ruta}/" data-project="${i}" data-categories="${projectCategories(p).join(' ')}" ${i>=15?'data-overflow hidden':''}>
+function projectRow(p,i){return `<a class="project-row" href="${p.ruta}/" data-project="${i}" data-categories="${projectCategories(p).join(' ')}" data-programs="${esc(p.tools.join(' '))}" ${i>=15?'data-overflow hidden':''}>
 <span class="project-no">${number(i)}</span><div class="project-name"><h3>${esc(p.title)}</h3></div><span class="project-year">${esc(p.anio)}</span></a>`}
 
 function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context)}</td></tr>`).join('')}</tbody></table>`}
@@ -98,17 +98,17 @@ ${projects.map((p,i)=>`<template data-project-template data-project-route="${p.r
 
 const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><p class="eyebrow opening-label">Portfolio / ${period}</p>
-<div class="opening-copy"><h1 id="intro-title">Diseño digital.<br><span>Imagen en movimiento.<br>Interactividad.</span></h1><p>Exploraciones entre imagen, movimiento,<br class="desktop-break"> web y realidad virtual.</p></div>
+<div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1><p>Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p></div>
 </section>
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
-<div class="work-index" id="project-index">${projects.map(projectRow).join('')}<button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
+<div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No hay proyectos con esta combinación.<br>Probá otro programa o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>
 ${parallelSection()}
 <section id="trayectoria" class="trajectory" aria-labelledby="trajectory-title"><h2 class="eyebrow" id="trajectory-title">Trayectoria</h2>
 <div class="experience"><h3 class="cv-heading">Experiencia</h3>${cv([...teaching,...content.experience],'Experiencia')}</div>
 <div class="education"><h3 class="cv-heading">Formación</h3>${cv(content.education,'Formación')}</div></section>
 </main>${contact()}${viewer}`;
-fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Diseño digital, imagen, movimiento e interactividad.','/',home));
+fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home));
 
 for(const [i,p] of projects.entries()){
   const body=`${header()}<main id="contenido" class="case shell">
