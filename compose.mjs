@@ -99,7 +99,7 @@ ${projects.map((p,i)=>`<template data-project-template data-project-route="${p.r
 const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><p class="eyebrow opening-label">Portfolio / ${period}</p>
 <div class="opening-copy"><h1 id="intro-title">Diseño digital.<br><span>Imagen en movimiento.<br>Interactividad.</span></h1><p>Exploraciones entre imagen, movimiento,<br class="desktop-break"> web y realidad virtual.</p></div>
-<a class="opening-index text-link" href="#proyectos">Índice de proyectos <span class="mono">[${projectCount}]</span></a></section>
+</section>
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
 <div class="work-index" id="project-index">${projects.map(projectRow).join('')}<button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>

@@ -7,6 +7,7 @@ export const categories=[
 ];
 export const projectCategories=p=>categories.filter(c=>c.match.test(p.discipline+' '+p.title)).map(c=>c.id);
 export function projectFilters(projects){
-  const options=group=>categories.filter(c=>c.group===group).map(c=>`<option value="${c.id}">${c.label}</option>`).join('');
-  return `<div class="project-filters"><label for="project-filter">Explorar por área</label><select id="project-filter" aria-controls="project-index"><option value="todos">Todos los proyectos</option><optgroup label="Diseño digital">${options('Diseño digital')}</optgroup><optgroup label="Gráfica y editorial">${options('Gráfica y editorial')}</optgroup></select></div><p class="filter-result mono" data-filter-result role="status">${Math.min(15,projects.length)} de ${projects.length} proyectos</p>`;
+  const option=(id,label)=>`<button type="button" data-filter-value="${id}" data-filter-label="${label}" aria-pressed="${id==='todos'}" aria-controls="project-index">${label}</button>`;
+  const options=group=>categories.filter(c=>c.group===group).map(c=>option(c.id,c.label)).join('');
+  return `<div class="project-filters"><p id="filter-label">Explorar por área</p><details id="project-filter" class="filter-picker" data-value="todos"><summary aria-describedby="filter-label" aria-controls="project-filter-options"><span data-filter-label-current>Todos los proyectos</span><span class="filter-action">Elegir</span></summary><div id="project-filter-options" class="filter-options" role="group" aria-label="Área del proyecto">${option('todos','Todos los proyectos')}<div class="filter-group"><p class="mono">Diseño digital</p>${options('Diseño digital')}</div><div class="filter-group"><p class="mono">Gráfica y editorial</p>${options('Gráfica y editorial')}</div></div></details></div><p class="filter-result mono" data-filter-result role="status">${Math.min(15,projects.length)} de ${projects.length} proyectos</p>`;
 }

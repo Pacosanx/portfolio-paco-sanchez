@@ -16,7 +16,7 @@
   };
   const fill=template=>{
     content.replaceChildren(template.content.cloneNode(true));
-    const filtered=document.querySelector('#project-filter')?.value;
+    const filtered=document.querySelector('#project-filter')?.dataset.value;
     if(filtered&&filtered!=='todos'){
       const visible=[...document.querySelectorAll('.project-row')].filter(row=>!row.hidden);
       const position=visible.findIndex(row=>row.getAttribute('href')===template.dataset.projectRoute);
