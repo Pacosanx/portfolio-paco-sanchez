@@ -34,10 +34,10 @@
         float influence=(1.0-smoothstep(0.0,115.0,dist))*u_pointer.z;
         pos+=delta/max(dist,1.0)*influence*6.0;
         float upperFade=1.0-smoothstep(0.30,1.0,y);
-        float lowerFade=smoothstep(0.03,0.28,height);
+        float lowerFade=smoothstep(0.02,0.22,height);
         float breathing=0.96+0.04*sin(u_time*0.16);
-        v_alpha=mix(0.12,0.42,depth)*upperFade*lowerFade*breathing;
-        gl_PointSize=mix(1.0,1.65,depth)*u_dpr;
+        v_alpha=mix(0.22,0.70,depth)*upperFade*lowerFade*breathing;
+        gl_PointSize=mix(1.1,1.8,depth)*u_dpr;
         v_tone=0.0;
       }else{
         float sampleIndex=floor(a_seed.w*12.0);
