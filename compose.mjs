@@ -23,7 +23,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><link rel="stylesheet" href="/project-filters.css"><link rel="stylesheet" href="/editorial-grid.css"><script src="/project-filters.js" defer></script><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><link rel="stylesheet" href="/project-filters.css"><link rel="stylesheet" href="/editorial-grid.css">${route==='/'?'<link rel="stylesheet" href="/hero.css"><script src="/hero-shader.js" defer></script>':''}<script src="/project-filters.js" defer></script><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script>
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':'/';return `<header class="site-header shell">
@@ -96,9 +96,9 @@ const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby
 <div class="viewer-content case shell" data-viewer-content></div></dialog>
 ${projects.map((p,i)=>`<template data-project-template data-project-route="${p.ruta}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
 
-const home=`${header(true)}<main id="contenido" class="shell">
+const home=`${header(true)}<canvas id="hero-shader" class="hero-shader" aria-hidden="true"></canvas><main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><p class="eyebrow opening-label">Portfolio / ${period}</p>
-<div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1><p>Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p></div>
+<div class="hero-fallback" aria-hidden="true"></div><div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1></div><p class="opening-lead">Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p><a class="opening-cue mono" href="#proyectos">Deslizá para explorar</a>
 </section>
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
 <div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No hay proyectos con esta combinación.<br>Probá otro programa o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
