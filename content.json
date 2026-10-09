@@ -9,40 +9,172 @@
       "fuente": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
       "imagenes": [
         {
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "height": 699,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
-          "width": 1401
-        },
-        {
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "height": 474,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
-          "width": 1400
-        },
-        {
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "height": 203,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
-          "width": 1400
-        },
-        {
-          "alt": "",
-          "height": 1280,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/bb505e191707843.65d02e99061d1.gif",
-          "width": 1280
-        },
-        {
-          "alt": "",
-          "height": 2280,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp_webp/de3004191707843.65d02e9904a94.gif",
-          "width": 1280
-        },
-        {
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "width": 1400,
           "height": 698,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
+          "width": 1400,
+          "height": 474,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
+          "width": 1400,
+          "height": 203,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
+          "width": 1400,
+          "height": 408,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ad211191707843.65e0fc27c44f0.png",
+          "width": 1400,
+          "height": 624,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/860605191707843.65e0fc27c556f.png",
+          "width": 1400,
+          "height": 612,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/208529191707843.65e0fc27c37e7.png",
+          "width": 1400,
+          "height": 601,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1d1a76191707843.65d02e9909d59.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4f624191707843.65d02e990cf8c.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/934628191707843.65d02e99058a3.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/aacc4f191707843.65d02e9907623.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f24332191707843.65d02e9908ace.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/016e83191707843.65d02e99093f1.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/55d335191707843.65d02e9907fcf.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/db8393191707843.65d02e9906d18.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d7548191707843.65d02e990bcec.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
-          "width": 1400
+          "width": 1400,
+          "height": 698,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": ""
         }
       ],
       "title": "METAPHEX",
@@ -51,11 +183,262 @@
         "TouchDesigner",
         "After Effects",
         "Spline",
-        "Webflow"
+        "Webflow",
+        "Audition"
       ],
       "preview": "https://framerusercontent.com/images/1OIbGojPQGzb4KNI5dcJoflApk.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "El proyecto consistió en crear un video que acompañe algunos fragmentos de canciones de Aphex Twin. Luego creé una web para presentar el video y el proceso de este.\n\nProyecto expuesto por la cátedra",
+          "html": "\n    <p>El proyecto consistió en crear un video que acompañe&nbsp;algunos fragmentos de canciones de Aphex Twin. Luego creé una web para presentar el video y el proceso de este.</p><p><br></p><p><a href=\"https://www.instagram.com/p/C4Qtm9SOdD5/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\">Proyecto expuesto por la cátedra</a></p>\n  ",
+          "links": [
+            {
+              "href": "https://www.instagram.com/p/C4Qtm9SOdD5/?img_index=1",
+              "text": "Proyecto expuesto por la cátedra"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "text",
+          "text": "VIDEO\nyoutube.com",
+          "html": "\n    <p><br></p><p><br></p><p><br></p><p>VIDEO</p><p><a href=\"https://www.youtube.com/watch?v=gctzzon1tuM\" target=\"_blank\" rel=\"noopener noreferrer\">youtube.com</a></p><p><br></p>\n  ",
+          "links": [
+            {
+              "href": "https://www.youtube.com/watch?v=gctzzon1tuM",
+              "text": "youtube.com"
+            }
+          ],
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/gctzzon1tuM",
+          "title": "METAPHEX — video del proyecto",
+          "aspectRatio": 1.77809,
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "text",
+          "text": "WEB INTERACTIVA\nmetaphex.webflow.io (PC)",
+          "html": "\n    <p><br></p><p><br></p><p>WEB INTERACTIVA</p><p><a href=\"https://metaphex.webflow.io/\" target=\"_blank\" rel=\"noopener noreferrer\">metaphex.webflow.io</a>&nbsp;(PC)</p><p><br></p>\n  ",
+          "links": [
+            {
+              "href": "https://metaphex.webflow.io/",
+              "text": "metaphex.webflow.io"
+            }
+          ],
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/xO3VJeRHVFo",
+          "title": "METAPHEX — video del proyecto",
+          "aspectRatio": 2.11238,
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
+          "width": 1400,
+          "height": 698,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
+          "width": 1400,
+          "height": 474,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
+          "width": 1400,
+          "height": 203,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
+          "width": 1400,
+          "height": 408,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 10"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ad211191707843.65e0fc27c44f0.png",
+          "width": 1400,
+          "height": 624,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 12"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/860605191707843.65e0fc27c556f.png",
+          "width": 1400,
+          "height": 612,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 14"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/208529191707843.65e0fc27c37e7.png",
+          "width": 1400,
+          "height": 601,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 16"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1d1a76191707843.65d02e9909d59.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4f624191707843.65d02e990cf8c.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/934628191707843.65d02e99058a3.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/aacc4f191707843.65d02e9907623.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f24332191707843.65d02e9908ace.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/016e83191707843.65d02e99093f1.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/55d335191707843.65d02e9907fcf.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/db8393191707843.65d02e9906d18.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d7548191707843.65d02e990bcec.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 18"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
+          "width": 1400,
+          "height": 698,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 19"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 20,
+        "images": 24,
+        "embeds": 2,
+        "textBlocks": 3
+      }
     },
     {
       "nombre": "MARADONA ALIEN",
@@ -66,40 +449,235 @@
       "fuente": "https://www.behance.net/gallery/191469177/Maradona-alien-Editorial-web-y-app-VR-Longinotti-2",
       "imagenes": [
         {
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "height": 720,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/43bc76191469177.65ce8e51b136f.gif",
-          "width": 720
+          "width": 720,
+          "height": 720,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
         },
         {
-          "alt": "",
-          "height": 1024,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4473ba191469177.65cc392713680.gif",
-          "width": 1280
-        },
-        {
-          "alt": "",
+          "width": 1280,
           "height": 1024,
+          "alt": "",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/314001191469177.65cc39271507f.gif",
-          "width": 1280
+          "width": 1280,
+          "height": 1024,
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "height": 397,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
-          "width": 1400
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/41fd0e191469177.65cc3927144cf.gif",
+          "width": 1280,
+          "height": 1024,
+          "alt": "",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b813a7191469177.65cc392715c39.gif",
+          "width": 1280,
+          "height": 1024,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bd43cb191469177.65ceb28ed708d.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e20b80191469177.65ceb28ed65d6.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e4cf4191469177.65ceb2900031b.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b29bbf191469177.65ceb2900155e.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7f44fd191469177.65ceb29002747.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e96b55191469177.65ceb2911502d.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/4a9255191469177.65ceb291dc476.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1c18d8191469177.65ceb291dcfff.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
+          "width": 1400,
+          "height": 464,
           "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1e491c191469177.65ce917a275b9.gif",
+          "width": 1400,
           "height": 788,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
-          "width": 1400
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/afe9f2191469177.65ce890461bda.png",
+          "width": 1400,
+          "height": 787,
           "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "height": 640,
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/805898191469177.65ce917a282df.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d1a14c191469177.65ce890460634.png",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f91403191469177.65ce890462695.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1fe84191469177.65ce89046867c.gif",
+          "width": 1200,
+          "height": 200,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9de11a191469177.65ce917a2904a.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b5cc65191469177.65ce8904657ea.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b8708d191469177.65ce890461115.gif",
+          "width": 1400,
+          "height": 509,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de33a2191469177.65ceb294b3a97.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/12903c191469177.65ce89045e595.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
-          "width": 1176
+          "width": 1176,
+          "height": 640,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": ""
         }
       ],
       "title": "Maradona Alien",
@@ -113,7 +691,356 @@
       ],
       "preview": "https://framerusercontent.com/images/Jd36b1f68gLaNsu9OpcosA6ovg.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Proyecto editorial expandido. Trabajo práctico final de la cátedra Tipografía 2 Longinotti. Diseño Gráfico. FADU/UBA. 2023.\n\nEditorial impreso, página web y app de realidad virtual.",
+          "html": "\n    <p><br></p><p>Proyecto editorial expandido. Trabajo práctico final de la cátedra Tipografía 2 Longinotti. Diseño Gráfico. FADU/UBA. 2023.</p><p><br></p><p>Editorial impreso, página web y app de realidad virtual.<br><br></p><p><br></p>\n  ",
+          "links": [],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/43bc76191469177.65ce8e51b136f.gif",
+          "width": 720,
+          "height": 720,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "text",
+          "text": "App de realidad virtual para Oculus Quest 2 creada con Unity 3D.\nLos lentes de realidad virtual funcionan como un 'escáner alien' y rastrean distintos lugares  de la Tierra que para Maradona son importantes.",
+          "html": "\n    <p><br></p><p><br></p><p><br></p><p>App de realidad virtual para Oculus Quest 2 creada con Unity 3D.<br>Los lentes de realidad virtual funcionan como un 'escáner alien' y rastrean&nbsp;distintos lugares&nbsp; de la Tierra que para Maradona son importantes.</p><p><br></p>\n  ",
+          "links": [],
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/4473ba191469177.65cc392713680.gif",
+              "width": 1280,
+              "height": 1024,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/314001191469177.65cc39271507f.gif",
+              "width": 1280,
+              "height": 1024,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/41fd0e191469177.65cc3927144cf.gif",
+              "width": 1280,
+              "height": 1024,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b813a7191469177.65cc392715c39.gif",
+              "width": 1280,
+              "height": 1024,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "text",
+          "text": "Página web creada con Readymag. Link para ingresar.\nLa web conspiranóica 'Elijo Creer' es un registro actual de casos de aliens en la Tierra y, en particular, situaciones en las que quedó en evidencia el origen extraterrestre de Diego.",
+          "html": "\n    <p><br></p><p><br></p><p><br></p><p>Página web creada con Readymag. <a href=\"https://readymag.website/u3907816551/4478666/\" target=\"_blank\" rel=\"noopener noreferrer\">Link para ingresar.</a></p><p>La web conspiranóica 'Elijo Creer' es un registro actual de casos de aliens en la Tierra&nbsp;y, en particular, situaciones en las que quedó en evidencia el origen extraterrestre de Diego.</p>\n  ",
+          "links": [
+            {
+              "href": "https://readymag.website/u3907816551/4478666/",
+              "text": "Link para ingresar."
+            }
+          ],
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/4BSKm8UqJJb/embed?api_key=behance1&bgcolor=%23191919",
+          "title": "Maradona Alien — video del proyecto",
+          "aspectRatio": 1.78031,
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bd43cb191469177.65ceb28ed708d.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e20b80191469177.65ceb28ed65d6.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e4cf4191469177.65ceb2900031b.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b29bbf191469177.65ceb2900155e.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7f44fd191469177.65ceb29002747.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e96b55191469177.65ceb2911502d.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/4a9255191469177.65ceb291dc476.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1c18d8191469177.65ceb291dcfff.gif",
+              "width": 1280,
+              "height": 731,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 10"
+        },
+        {
+          "type": "text",
+          "text": "Editorial impreso A4.\nHace un repaso por la historia de la vida en Marte y se centra en los aliens más importantes que vivieron en la Tierra. Las últimas páginas hablan sobre el marciano que más impacto tuvo en la humanidad: Diego Armando Maradona.",
+          "html": "\n    <p><br></p><p><br></p><p>Editorial impreso A4.</p><p>Hace un repaso por&nbsp;la historia de la vida en Marte y se centra en los aliens más importantes que vivieron en la Tierra. Las últimas páginas hablan sobre&nbsp;el marciano que más impacto tuvo en la humanidad: Diego Armando Maradona.</p><p><br></p>\n  ",
+          "links": [],
+          "sourceModule": "Project Module 11"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
+          "width": 1400,
+          "height": 464,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 12"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1e491c191469177.65ce917a275b9.gif",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 13"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/afe9f2191469177.65ce890461bda.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 14"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 15"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 16"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/805898191469177.65ce917a282df.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 17"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d1a14c191469177.65ce890460634.png",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 18"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 19"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 20"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f91403191469177.65ce890462695.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 21"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1fe84191469177.65ce89046867c.gif",
+          "width": 1200,
+          "height": 200,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 22"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9de11a191469177.65ce917a2904a.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 23"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b5cc65191469177.65ce8904657ea.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 24"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 25"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 26"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b8708d191469177.65ce890461115.gif",
+          "width": 1400,
+          "height": 509,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 27"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de33a2191469177.65ceb294b3a97.gif",
+          "width": 1400,
+          "height": 397,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 28"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/12903c191469177.65ce89045e595.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 29"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
+          "width": 1400,
+          "height": 788,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 30"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
+          "width": 1176,
+          "height": 640,
+          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "caption": "",
+          "sourceModule": "Project Module 32"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/191469177/Maradona-alien-Editorial-web-y-app-VR-Longinotti-2",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 33,
+        "images": 33,
+        "embeds": 1,
+        "textBlocks": 4
+      }
     },
     {
       "nombre": "INSTALACIÓN DE REALIDAD VIRTUAL",
@@ -124,9 +1051,10 @@
       "fuente": "https://youtu.be/_oieEi2r6M4",
       "imagenes": [
         {
-          "url": "https://framerusercontent.com/images/Qqm05WHXEXpOWc3k3T0vnwBzc.png?width=359&height=359",
-          "width": 359,
-          "height": 359
+          "url": "https://i.ytimg.com/vi/_oieEi2r6M4/maxresdefault.jpg",
+          "width": 1280,
+          "height": 720,
+          "alt": "Inmson — instalación de realidad virtual, portada del video original"
         }
       ],
       "title": "Instalación de realidad virtual",
@@ -138,7 +1066,22 @@
       ],
       "preview": "https://framerusercontent.com/images/Qqm05WHXEXpOWc3k3T0vnwBzc.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/_oieEi2r6M4",
+          "title": "Inmson - Instalación de realidad virtual",
+          "aspectRatio": 1.77778,
+          "poster": "https://i.ytimg.com/vi/_oieEi2r6M4/maxresdefault.jpg"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://youtu.be/_oieEi2r6M4",
+        "fechaVerificacion": "2026-10-08",
+        "embeds": 1,
+        "images": 1
+      }
     },
     {
       "nombre": "ESQUEMÁTICA / MICROEVENTO",
@@ -149,40 +1092,67 @@
       "fuente": "https://www.behance.net/gallery/190909103/Esquematica-Microevento-Fuego-Tipografia-Longinotti-2",
       "imagenes": [
         {
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "height": 979,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d059a190909103.65c5326bae1f9.jpg",
-          "width": 1401
-        },
-        {
+          "width": 1400,
+          "height": 979,
           "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "height": 1615,
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
-          "width": 1401
+          "width": 1400,
+          "height": 1614,
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/96f177190909103.65c283a71eaae.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/96f177190909103.65c283a71eaae.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ce573190909103.65c283a721163.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e6751f190909103.65c283a71fc92.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e6751f190909103.65c283a71fc92.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/da6c22190909103.65c283a7a5211.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27be9d190909103.65c529fa1e318.jpg",
+          "width": 1400,
+          "height": 5423,
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0ddd59190909103.65c283a7a6011.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/0064b6190909103.65c283a7a6da6.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/da6c22190909103.65c283a7a5211.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0064b6190909103.65c283a7a6da6.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
         }
       ],
       "title": "Esquemática / microevento",
@@ -194,7 +1164,110 @@
       ],
       "preview": "https://framerusercontent.com/images/rhmTPSfsZLa6o1y1ToPCVJpSwm8.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Esquemática a partir de un análisis sobre un Microevento - Encender una hornalla\nTipografía Longinotti 2 - FADU - UBA - 2023\nProyecto expuesto por la cátedra",
+          "html": "\n    <p><br></p><p>Esquemática a partir de un análisis sobre un Microevento - Encender una hornalla</p><p>Tipografía Longinotti 2 - FADU - UBA - 2023</p><p><a href=\"https://www.instagram.com/p/C4dcApqOxkz/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\">Proyecto expuesto por la cátedra</a></p>\n  ",
+          "links": [
+            {
+              "href": "https://www.instagram.com/p/C4dcApqOxkz/?img_index=1",
+              "text": "Proyecto expuesto por la cátedra"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d059a190909103.65c5326bae1f9.jpg",
+          "width": 1400,
+          "height": 979,
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
+          "width": 1400,
+          "height": 1614,
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/96f177190909103.65c283a71eaae.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ce573190909103.65c283a721163.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e6751f190909103.65c283a71fc92.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27be9d190909103.65c529fa1e318.jpg",
+          "width": 1400,
+          "height": 5423,
+          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0ddd59190909103.65c283a7a6011.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/da6c22190909103.65c283a7a5211.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0064b6190909103.65c283a7a6da6.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 5"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/190909103/Esquematica-Microevento-Fuego-Tipografia-Longinotti-2",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 6,
+        "images": 9,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "EDITORIAL ESPACIAL",
@@ -205,40 +1278,207 @@
       "fuente": "https://www.behance.net/gallery/190740099/Editorial-experimental-Morfologia-Longinotti-2",
       "imagenes": [
         {
-          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
-          "height": 525,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/40e3d8190740099.65c01f055e159.gif",
-          "width": 1401
-        },
-        {
-          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "width": 1400,
           "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/683611190740099.65c02bb74b675.jpg",
-          "width": 1401
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
         },
         {
-          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
-          "height": 305,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1270ca190740099.65c02d5fb387e.jpg",
-          "width": 1401
-        },
-        {
-          "alt": "",
-          "height": 613,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a06f44190740099.65c11cf1bb96d.gif",
-          "width": 1280
-        },
-        {
-          "alt": "",
-          "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
-          "width": 1280
-        },
-        {
+          "width": 1400,
+          "height": 306,
           "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
-          "height": 720,
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e65744190740099.65c02bb750220.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c2c6da190740099.65c02bb74caaa.gif",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7cbcbd190740099.65c02bb74269f.jpg",
+          "width": 1400,
+          "height": 87,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/86488d190740099.65c01f055d2d2.gif",
+          "width": 1400,
+          "height": 560,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d67a0190740099.65c02bb746bad.jpg",
+          "width": 1400,
+          "height": 87,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8e42a190740099.65c0307752b92.jpg",
+          "width": 1400,
+          "height": 306,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/dbdc23190740099.65c02bb749992.gif",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9785b9190740099.65c02bb74eb45.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/052b85190740099.65c030775378a.jpg",
+          "width": 1400,
+          "height": 306,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/182e6a190740099.65c0307751c30.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/751434190740099.65c11cf1ba7d6.gif",
+          "width": 1280,
+          "height": 613,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a06f44190740099.65c11cf1bb96d.gif",
+          "width": 1280,
+          "height": 613,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/941852190740099.65c144ec97fbb.gif",
+          "width": 1280,
+          "height": 613,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b1accf190740099.65c118e0d8a5a.gif",
+          "width": 1400,
+          "height": 438,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/770b94190740099.65c1362a2b144.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/76f5ce190740099.65c1362a2c308.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ed96c3190740099.65c1362a2d383.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8f80b190740099.65c1362abf350.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/93eaa1190740099.65c1362ac01e3.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f6934190740099.65c1362ac0efe.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7cb529190740099.65c1362ac1cff.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/70f71d190740099.65c1362b74adb.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d10abb190740099.65c1362b76503.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0a53a8190740099.65c1362b759b4.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
-          "width": 720
+          "width": 720,
+          "height": 720,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": ""
         }
       ],
       "title": "Editorial espacial",
@@ -250,7 +1490,286 @@
       ],
       "preview": "https://framerusercontent.com/images/EpG4tgCDQ67bBRjnYekCIl6wZXk.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Editorial experimental - Morfología Longinotti 2 - FADU - 2023\n\nProyecto de registros y traducciones basado en el exoplaneta Proxima Centauri B.",
+          "html": "\n    <p>Editorial experimental&nbsp;-&nbsp;Morfología Longinotti 2 - FADU - 2023</p><p><br>Proyecto de registros y traducciones basado en el exoplaneta <a href=\"https://es.wikipedia.org/wiki/Proxima_Centauri_d\" target=\"_blank\" rel=\"noopener noreferrer\">Proxima Centauri B</a>.<br><br></p>\n  ",
+          "links": [
+            {
+              "href": "https://es.wikipedia.org/wiki/Proxima_Centauri_d",
+              "text": "Proxima Centauri B"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/40e3d8190740099.65c01f055e159.gif",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/683611190740099.65c02bb74b675.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1270ca190740099.65c02d5fb387e.jpg",
+          "width": 1400,
+          "height": 306,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e65744190740099.65c02bb750220.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c2c6da190740099.65c02bb74caaa.gif",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7cbcbd190740099.65c02bb74269f.jpg",
+          "width": 1400,
+          "height": 87,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/86488d190740099.65c01f055d2d2.gif",
+          "width": 1400,
+          "height": 560,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d67a0190740099.65c02bb746bad.jpg",
+          "width": 1400,
+          "height": 87,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8e42a190740099.65c0307752b92.jpg",
+          "width": 1400,
+          "height": 306,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/dbdc23190740099.65c02bb749992.gif",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 10"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9785b9190740099.65c02bb74eb45.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 11"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/052b85190740099.65c030775378a.jpg",
+          "width": 1400,
+          "height": 306,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 12"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/182e6a190740099.65c0307751c30.jpg",
+          "width": 1400,
+          "height": 525,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 13"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/751434190740099.65c11cf1ba7d6.gif",
+              "width": 1280,
+              "height": 613,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a06f44190740099.65c11cf1bb96d.gif",
+              "width": 1280,
+              "height": 613,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/941852190740099.65c144ec97fbb.gif",
+              "width": 1280,
+              "height": 613,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 14"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b1accf190740099.65c118e0d8a5a.gif",
+          "width": 1400,
+          "height": 438,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 15"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/770b94190740099.65c1362a2b144.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/76f5ce190740099.65c1362a2c308.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ed96c3190740099.65c1362a2d383.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 16"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8f80b190740099.65c1362abf350.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/93eaa1190740099.65c1362ac01e3.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f6934190740099.65c1362ac0efe.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7cb529190740099.65c1362ac1cff.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 17"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/70f71d190740099.65c1362b74adb.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d10abb190740099.65c1362b76503.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0a53a8190740099.65c1362b759b4.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 18"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
+          "width": 720,
+          "height": 720,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 19"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/190740099/Editorial-experimental-Morfologia-Longinotti-2",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 20,
+        "images": 29,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "REGISTROS",
@@ -261,40 +1780,312 @@
       "fuente": "https://www.behance.net/gallery/190030769/Editorial-Registros-Morfologia-Longinotti-2-2024",
       "imagenes": [
         {
-          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
-          "height": 789,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6eb7a190030769.65bab83cdfc07.gif",
-          "width": 1403
+          "width": 1400,
+          "height": 788,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
         },
         {
-          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
-          "height": 246,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
-          "width": 1397
-        },
-        {
+          "width": 1400,
+          "height": 247,
           "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
-          "height": 246,
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
-          "width": 1397
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
         },
         {
-          "alt": "",
-          "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/216abb190030769.65bab83bc6167.jpg",
-          "width": 1280
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/50df76190030769.65baac573895e.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
         },
         {
-          "alt": "",
-          "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/2e92f6190030769.65bad3f14b0b7.jpg",
-          "width": 1280
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/980cb3190030769.65baac57379d6.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e67c1d190030769.65baac57396e0.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cc18a8190030769.65baac5736a09.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d2257190030769.65baac5733d78.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2eb824190030769.65baac5735db2.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c9b506190030769.65baac5732ee6.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7ef352190030769.65bae86ee2671.gif",
+          "width": 1280,
+          "height": 1280,
           "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/02893d190030769.65bae86ee1cf0.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea9d9d190030769.65bae86ee2edf.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a252cd190030769.65bab83a26f5b.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/9281b2190030769.65bad3f14bcd5.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/726823190030769.65bad3ecc8c56.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/be980f190030769.65bab83a2891f.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d2405f190030769.65bab83ad190e.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f89173190030769.65bab83ad05df.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fb5858190030769.65bab83b4ec9c.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ccbcc4190030769.65bab83b4f8b9.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0f0fcb190030769.65bad3ed2ebbc.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/92306a190030769.65bad6b02a1f0.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/216abb190030769.65bab83bc6167.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e46a9190030769.65bab83bc55c6.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a79533190030769.65bad3eda1cc5.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/af6eaa190030769.65bab83c3c475.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f19c0190030769.65bab83c3e964.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c79d50190030769.65bab83c3d868.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9accfa190030769.65bad3ee46a3e.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b1a2dc190030769.65bab8b8548ed.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f8d311190030769.65bad3eeabbf6.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cae49c190030769.65bab8b85340e.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/89730b190030769.65bab8b8bdd99.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d8020190030769.65bad6b189473.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c8927e190030769.65bad6b4699da.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d9cda1190030769.65bad3ef463cc.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4e4949190030769.65bad3ef47001.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a620fc190030769.65bad3f01518a.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/028679190030769.65bad6b4dd7a5.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c82db6190030769.65bad3f08f3aa.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ca5cbd190030769.65bad3f09017f.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/55ce0f190030769.65bad3f090ec8.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2e92f6190030769.65bad3f14b0b7.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9281b2190030769.65bad3f14bcd5.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
         }
       ],
       "title": "Registros",
@@ -306,7 +2097,429 @@
       ],
       "preview": "https://framerusercontent.com/images/jufTnzI7PlT9j4H5VlUtgGaZUI.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Editorial experimental de dos semanas - Morfología Longinotti 2 - FADU - 2023\n\nEn este proyecto de dos semanas se buscó representar de manera gráfica movimientos, sonidos y sensaciones que se perciben al transitar un espacio en particular: la costanera de la Reserva Ecológica Ciudad Universitaria.\n\nLas fotografías fueron sacadas con la opción panorámica del celular forzando errores visuales al mover de manera particular el dispositivo.\n\nLos modelos 3d fueron creados con cascos de realidad virtual en la app Medium imitando formas y texturas vistas en el espacio. Algunas de estas imágenes 3d fueron intervenidas con un escáner para imitar el glitch de las fotografías.",
+          "html": "\n    <p>Editorial experimental de dos semanas -&nbsp;Morfología Longinotti 2 - FADU - 2023</p><p><br>En este proyecto de dos semanas se buscó representar de manera gráfica movimientos, sonidos y sensaciones que se perciben al transitar un espacio en particular: la costanera de la&nbsp;<a href=\"https://www.google.com/maps/place/Reserva+Ecol%25C3%25B3gica+Ciudad+Universitaria-Costanera+Norte/@-34.5374311,-58.4438949,421m/data=!3m1!1e3!4m14!1m7!3m6!1s0x95bcc7df6bb24629:0x3539d6bdcd7df9b5!2sReserva+Ecol%25C3%25B3gica+Ciudad+Universitaria-Costanera+Norte!8m2!3d-34.538547!4d-58.443664!16s%252Fg%252F11x7vrjgl!3m5!1s0x95bcc7df6bb24629:0x3539d6bdcd7df9b5!8m2!3d-34.538547!4d-58.443664!16s%252Fg%252F11x7vrjgl?entry=ttu\" target=\"_blank\" rel=\"noopener noreferrer\">Reserva Ecológica Ciudad Universitaria</a>.</p><p><br>Las fotografías fueron sacadas con la opción panorámica del celular forzando errores visuales al mover de manera particular el dispositivo.</p><p><br>Los modelos 3d fueron&nbsp;creados con cascos de realidad virtual en la app Medium imitando formas y texturas vistas en el espacio. Algunas de estas imágenes 3d fueron intervenidas con un escáner para imitar el glitch de las fotografías.</p>\n  ",
+          "links": [
+            {
+              "href": "https://www.google.com/maps/place/Reserva+Ecol%25C3%25B3gica+Ciudad+Universitaria-Costanera+Norte/@-34.5374311,-58.4438949,421m/data=!3m1!1e3!4m14!1m7!3m6!1s0x95bcc7df6bb24629:0x3539d6bdcd7df9b5!2sReserva+Ecol%25C3%25B3gica+Ciudad+Universitaria-Costanera+Norte!8m2!3d-34.538547!4d-58.443664!16s%252Fg%252F11x7vrjgl!3m5!1s0x95bcc7df6bb24629:0x3539d6bdcd7df9b5!8m2!3d-34.538547!4d-58.443664!16s%252Fg%252F11x7vrjgl?entry=ttu",
+              "text": "Reserva Ecológica Ciudad Universitaria"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6eb7a190030769.65bab83cdfc07.gif",
+          "width": 1400,
+          "height": 788,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/50df76190030769.65baac573895e.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/980cb3190030769.65baac57379d6.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e67c1d190030769.65baac57396e0.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cc18a8190030769.65baac5736a09.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d2257190030769.65baac5733d78.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2eb824190030769.65baac5735db2.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c9b506190030769.65baac5732ee6.png",
+          "width": 1400,
+          "height": 247,
+          "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
+          "caption": "",
+          "sourceModule": "Project Module 10"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7ef352190030769.65bae86ee2671.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/02893d190030769.65bae86ee1cf0.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea9d9d190030769.65bae86ee2edf.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 12"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a252cd190030769.65bab83a26f5b.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/726823190030769.65bad3ecc8c56.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/be980f190030769.65bab83a2891f.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 14"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d2405f190030769.65bab83ad190e.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f89173190030769.65bab83ad05df.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 15"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fb5858190030769.65bab83b4ec9c.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ccbcc4190030769.65bab83b4f8b9.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0f0fcb190030769.65bad3ed2ebbc.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 16"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/92306a190030769.65bad6b02a1f0.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/216abb190030769.65bab83bc6167.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e46a9190030769.65bab83bc55c6.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a79533190030769.65bad3eda1cc5.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 17"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/af6eaa190030769.65bab83c3c475.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f19c0190030769.65bab83c3e964.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c79d50190030769.65bab83c3d868.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9accfa190030769.65bad3ee46a3e.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 18"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b1a2dc190030769.65bab8b8548ed.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f8d311190030769.65bad3eeabbf6.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cae49c190030769.65bab8b85340e.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 19"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/89730b190030769.65bab8b8bdd99.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d8020190030769.65bad6b189473.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 20"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c8927e190030769.65bad6b4699da.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d9cda1190030769.65bad3ef463cc.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4e4949190030769.65bad3ef47001.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 21"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a620fc190030769.65bad3f01518a.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/028679190030769.65bad6b4dd7a5.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 22"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c82db6190030769.65bad3f08f3aa.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ca5cbd190030769.65bad3f09017f.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/55ce0f190030769.65bad3f090ec8.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 23"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2e92f6190030769.65bad3f14b0b7.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9281b2190030769.65bad3f14bcd5.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 24"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/190030769/Editorial-Registros-Morfologia-Longinotti-2-2024",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 26,
+        "images": 44,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "EDITORIAL TIPOGRÁFICO / 2023",
@@ -317,40 +2530,172 @@
       "fuente": "https://www.behance.net/gallery/189668095/Editorial-Tipografia-Longinotti-2-2023",
       "imagenes": [
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c818d0189668095.65b1b5aa1898e.png",
+          "width": 1280,
           "height": 428,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/c818d0189668095.65b1b5aa1898e.png",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7404d7189668095.65b1b5aa1e9b2.png",
+          "width": 1280,
           "height": 428,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/7404d7189668095.65b1b5aa1e9b2.png",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c0b21189668095.65b1b5aa1993f.png",
+          "width": 1280,
           "height": 428,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/2c0b21189668095.65b1b5aa1993f.png",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ac307a189668095.65b1b5aa1cfb2.png",
+          "width": 1280,
+          "height": 428,
           "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1fe279189668095.65b1b5aa1bd0c.png",
+          "width": 1280,
+          "height": 428,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/dbbf9f189668095.65b1b5aa167c3.png",
+          "width": 1280,
+          "height": 428,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b7709c189668095.65b1b5aa1ab18.png",
+          "width": 1280,
+          "height": 428,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/36efea189668095.65b1b5aa17960.png",
+          "width": 1280,
+          "height": 428,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe8e99189668095.65b2c9973894e.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ef3f39189668095.65b2c997396be.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/66234b189668095.65b2c99805713.jpg",
+          "width": 1280,
           "height": 863,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/91310f189668095.65b2c99804b5a.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "fadu editorial longinotti libro tipografia book",
-          "height": 944,
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3837b3189668095.65b2c9980665d.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/91310f189668095.65b2c99804b5a.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/750e50189668095.65b2c99883096.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/492033189668095.65b2c99882328.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce34fb189668095.65b2c999066bc.png",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc339d189668095.65b2c9999e6f1.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/10f942189668095.65b2c99a18f19.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/97213f189668095.65b2c99a19d83.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1cb1ea189668095.65b2c99a8b054.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/30a8db189668095.65b2c99a8a196.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/47ef9a189668095.65b2c99a88e13.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ab9912189668095.65b2c99b225f2.jpg",
-          "width": 1400
+          "width": 1400,
+          "height": 944,
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "caption": ""
         },
         {
-          "alt": "fadu editorial longinotti libro tipografia book",
-          "height": 809,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/47909c189668095.65b2c99b234ed.jpg",
-          "width": 1200
+          "width": 1200,
+          "height": 809,
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "caption": ""
         }
       ],
       "title": "Editorial tipográfico / 2023",
@@ -361,7 +2706,236 @@
       ],
       "preview": "https://framerusercontent.com/images/DjYvv3bIjL50taaJsKF6tqewcQ.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Proyecto editorial introductorio de dos semanas de la cátedra Tipografía 2 Longinotti. Diseño Gráfico. FADU/UBA. 2023.",
+          "html": "\n    <p>Proyecto editorial introductorio de dos semanas de la cátedra Tipografía 2 Longinotti. Diseño Gráfico. FADU/UBA. 2023.</p>\n  ",
+          "links": [],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c818d0189668095.65b1b5aa1898e.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7404d7189668095.65b1b5aa1e9b2.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c0b21189668095.65b1b5aa1993f.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ac307a189668095.65b1b5aa1cfb2.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1fe279189668095.65b1b5aa1bd0c.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/dbbf9f189668095.65b1b5aa167c3.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b7709c189668095.65b1b5aa1ab18.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/36efea189668095.65b1b5aa17960.png",
+              "width": 1280,
+              "height": 428,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe8e99189668095.65b2c9973894e.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ef3f39189668095.65b2c997396be.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/66234b189668095.65b2c99805713.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3837b3189668095.65b2c9980665d.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/91310f189668095.65b2c99804b5a.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/750e50189668095.65b2c99883096.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/492033189668095.65b2c99882328.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce34fb189668095.65b2c999066bc.png",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc339d189668095.65b2c9999e6f1.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 6"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/10f942189668095.65b2c99a18f19.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/97213f189668095.65b2c99a19d83.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1cb1ea189668095.65b2c99a8b054.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/30a8db189668095.65b2c99a8a196.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/47ef9a189668095.65b2c99a88e13.jpg",
+              "width": 1280,
+              "height": 863,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ab9912189668095.65b2c99b225f2.jpg",
+          "width": 1400,
+          "height": 944,
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "caption": "",
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/47909c189668095.65b2c99b234ed.jpg",
+          "width": 1200,
+          "height": 809,
+          "alt": "fadu editorial longinotti libro tipografia book",
+          "caption": "",
+          "sourceModule": "Project Module 10"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/189668095/Editorial-Tipografia-Longinotti-2-2023",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 11,
+        "images": 24,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "MOTION GRAPHICS",
@@ -372,28 +2946,32 @@
       "fuente": "https://www.behance.net/gallery/189949607/Video-intervecion-Tipografia-Longinotti-2-2023",
       "imagenes": [
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1601d3189949607.65cfd62b543f5.gif",
+          "width": 1280,
           "height": 960,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/1601d3189949607.65cfd62b543f5.gif",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/130405189949607.65cfd62b55fbc.gif",
+          "width": 1280,
           "height": 960,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/130405189949607.65cfd62b55fbc.gif",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/25296b189949607.65cfd62b56b52.gif",
+          "width": 1280,
           "height": 960,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/25296b189949607.65cfd62b56b52.gif",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/c23125189949607.65cfd62b551f8.gif",
+          "width": 1280,
           "height": 960,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c23125189949607.65cfd62b551f8.gif",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         }
       ],
       "title": "Motion graphics",
@@ -404,7 +2982,65 @@
       ],
       "preview": "https://framerusercontent.com/images/eOTq5HoUiPqEbA3BUfCqd0fIs.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Video interveción - Tipografía Longinotti 2 - 2023",
+          "html": "\n    <p>Video interveción - Tipografía Longinotti 2 - 2023</p>\n  ",
+          "links": [],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/R9YCWuNQQwz/embed?api_key=behance1&bgcolor=%23191919",
+          "title": "Motion graphics — video del proyecto",
+          "aspectRatio": 1.78031,
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1601d3189949607.65cfd62b543f5.gif",
+              "width": 1280,
+              "height": 960,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/130405189949607.65cfd62b55fbc.gif",
+              "width": 1280,
+              "height": 960,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/25296b189949607.65cfd62b56b52.gif",
+              "width": 1280,
+              "height": 960,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/c23125189949607.65cfd62b551f8.gif",
+              "width": 1280,
+              "height": 960,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 2"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/189949607/Video-intervecion-Tipografia-Longinotti-2-2023",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 3,
+        "images": 4,
+        "embeds": 1,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "FILTROS INSTAGRAM",
@@ -415,9 +3051,52 @@
       "fuente": "https://youtube.com/playlist?list=PLwr4VuFxH3a9lBVtp5qzS2M9Hpyn8Lfdq&si=q9q7vmK2hXkSO8Tg",
       "imagenes": [
         {
-          "url": "https://framerusercontent.com/images/hsxVWWEAPVQBCaALn1OdTG6QJU.png?width=300&height=300",
-          "width": 300,
-          "height": 300
+          "url": "https://i.ytimg.com/vi/r0xyek9isUU/oar2.jpg?sqp=-oaymwEbCJUDEOAESFqQAgHyq4qpAwoIARUAAIhCyAEB&rs=AOn4CLCpOrJ2C4c191zaFzwjOYw_GzFdiA&usqp=CCk",
+          "width": 405,
+          "height": 608,
+          "alt": "Filtro Instagram - Coca Cola"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/Cwy_yDbxPoA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBx8OGUKiBiIMTG_FJfCpH9RFaQ4w&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Mobil"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/pKPYyGp2alo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA12Sdsk2srEUy2qavqkSSZeRZQxQ&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Samsung 1"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/9UQdbv_JUkI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCVvkSCNIJNoDBM_f7rirFL-gMEXQ&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Samsung 2"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/uS3G65fcuVk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8ttqLtu2PlVNf_pnp6tUPdfv2Qg&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Natura & Co"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/1owvhUvCNfs/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBKFLIuRPWtqPyE3boPAxrnCpk7nQ&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Zona Prop"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/wOvxQYjDazA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvXS_6KcjLS3Q8yMwaQ0qB5vZesA&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Hyperfuente holograma"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/_XH8rAyeaAI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCPfr7ASTfPOvjeLq0mNyDuSN9e5A&usqp=CCk",
+          "width": 405,
+          "height": 720,
+          "alt": "Filtro Instagram - Fiesta Nacional de la Cebada Cervecera (Puan)"
         }
       ],
       "title": "Filtros de Instagram",
@@ -428,7 +3107,85 @@
       ],
       "preview": "https://framerusercontent.com/images/hsxVWWEAPVQBCaALn1OdTG6QJU.png?width=300&height=300",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Filtros de Instagram creados en Meta Spark Studio.",
+          "html": "<p>Filtros de Instagram creados en Meta Spark Studio.</p>",
+          "links": []
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/r0xyek9isUU",
+          "title": "Filtro Instagram - Coca Cola",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/r0xyek9isUU",
+          "poster": "https://i.ytimg.com/vi/r0xyek9isUU/oar2.jpg?sqp=-oaymwEbCJUDEOAESFqQAgHyq4qpAwoIARUAAIhCyAEB&rs=AOn4CLCpOrJ2C4c191zaFzwjOYw_GzFdiA&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/Cwy_yDbxPoA",
+          "title": "Filtro Instagram - Mobil",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/Cwy_yDbxPoA",
+          "poster": "https://i.ytimg.com/vi/Cwy_yDbxPoA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBx8OGUKiBiIMTG_FJfCpH9RFaQ4w&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/pKPYyGp2alo",
+          "title": "Filtro Instagram - Samsung 1",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/pKPYyGp2alo",
+          "poster": "https://i.ytimg.com/vi/pKPYyGp2alo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA12Sdsk2srEUy2qavqkSSZeRZQxQ&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/9UQdbv_JUkI",
+          "title": "Filtro Instagram - Samsung 2",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/9UQdbv_JUkI",
+          "poster": "https://i.ytimg.com/vi/9UQdbv_JUkI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCVvkSCNIJNoDBM_f7rirFL-gMEXQ&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/uS3G65fcuVk",
+          "title": "Filtro Instagram - Natura & Co",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/uS3G65fcuVk",
+          "poster": "https://i.ytimg.com/vi/uS3G65fcuVk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8ttqLtu2PlVNf_pnp6tUPdfv2Qg&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/1owvhUvCNfs",
+          "title": "Filtro Instagram - Zona Prop",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/1owvhUvCNfs",
+          "poster": "https://i.ytimg.com/vi/1owvhUvCNfs/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBKFLIuRPWtqPyE3boPAxrnCpk7nQ&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/wOvxQYjDazA",
+          "title": "Filtro Instagram - Hyperfuente holograma",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/wOvxQYjDazA",
+          "poster": "https://i.ytimg.com/vi/wOvxQYjDazA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvXS_6KcjLS3Q8yMwaQ0qB5vZesA&usqp=CCk"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/_XH8rAyeaAI",
+          "title": "Filtro Instagram - Fiesta Nacional de la Cebada Cervecera (Puan)",
+          "aspectRatio": 0.5625,
+          "link": "https://www.youtube.com/shorts/_XH8rAyeaAI",
+          "poster": "https://i.ytimg.com/vi/_XH8rAyeaAI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCPfr7ASTfPOvjeLq0mNyDuSN9e5A&usqp=CCk"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://youtube.com/playlist?list=PLwr4VuFxH3a9lBVtp5qzS2M9Hpyn8Lfdq&si=q9q7vmK2hXkSO8Tg",
+        "fechaVerificacion": "2026-10-08",
+        "embeds": 8,
+        "images": 8
+      }
     },
     {
       "nombre": "SISTEMA GRÁFICO / DILLOM",
@@ -439,40 +3196,228 @@
       "fuente": "https://www.behance.net/gallery/190236999/Sistema-Baja-Complejidad-TP5-DG1-Catedra-Gabriele",
       "imagenes": [
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2b0179190236999.65b8029a65aaa.jpg",
+          "width": 1280,
           "height": 822,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2b0179190236999.65b8029a65aaa.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c8eca190236999.65b8029aca6a6.jpg",
+          "width": 1280,
           "height": 822,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2c8eca190236999.65b8029aca6a6.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/93de67190236999.65b8029b58fe3.jpg",
+          "width": 1280,
           "height": 822,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/93de67190236999.65b8029b58fe3.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9d2d2b190236999.65b8029bb385d.jpg",
+          "width": 1280,
+          "height": 822,
           "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e1bee190236999.65b8029c3235c.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d3f7b7190236999.65b8029c97df9.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/47bdb4190236999.65b8029d16b2c.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/ec1242190236999.65b8029d9ad73.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/aa46e7190236999.65b8029d9b775.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/37c0bf190236999.65b8029d97e05.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c7c8f9190236999.65b8029d9a229.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e99199190236999.65b8029d942e0.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/63e2ea190236999.65b8029d993cf.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c2d20c190236999.65b8029d989d1.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e55aa8190236999.65b8029d94e7f.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/33f50b190236999.65b8029d9c557.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/a3bc98190236999.65b8029d9714f.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a3bc98190236999.65b8029d9714f.jpg",
+          "width": 1280,
+          "height": 853,
           "alt": "",
-          "height": 1920,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c79253190236999.65b803b2e40ef.jpg",
-          "width": 1280
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/864547190236999.65b8029d95b96.jpg",
+          "width": 1280,
           "height": 1920,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/a23a60190236999.65b803b2e4b9a.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/bbd4a4190236999.65b8029d9669a.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/dc27a4190236999.65b8029fcdac1.jpg",
+          "width": 1400,
+          "height": 900,
+          "alt": "visual identity Graphic Designer visual identity dillom fadu Gariele trash",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b87dc8190236999.65b8029e77c16.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe4d7c190236999.65b8029edeb7a.jpg",
+          "width": 1280,
+          "height": 1504,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/712335190236999.65b803b237af3.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e6af31190236999.65b803b239462.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/b3bc9f190236999.65b803b235ef5.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fabc9e190236999.65b803b2350be.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/4b38be190236999.65b803b2388ca.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/acb24c190236999.65b803b236d98.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2d5360190236999.65b8029f62b10.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/1ce66f190236999.65b803b2e58bc.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c79253190236999.65b803b2e40ef.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/a23a60190236999.65b803b2e4b9a.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": ""
         }
       ],
       "title": "Sistema gráfico / Dillom",
@@ -483,7 +3428,293 @@
       ],
       "preview": "https://framerusercontent.com/images/XvPs753jB3lUHWKFszPcJvMIRY.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Trabajo práctico N°5 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.\n\nEste proyecto se enfocó en la creación de un sistema gráfico de baja complejidad inspirado por una playlist de Spotify. Al elegir a Dillom como artista, me propuse fusionar elementos demoníacos, urbanos e infantiles para lograr una estética particular.\n\nProyecto expuesto por la cátedra",
+          "html": "\n    <p><br></p><p>Trabajo práctico N°5 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.<br><br>Este proyecto se enfocó en la creación de un sistema gráfico de baja complejidad inspirado por una playlist de Spotify. Al elegir a Dillom como artista, me propuse fusionar elementos demoníacos, urbanos e infantiles para lograr una estética particular.</p><p><br></p><p><a href=\"https://catedragabriele.com.ar/portfolio/nivel1/sistemas-simples-2022/\" target=\"_blank\" rel=\"noopener noreferrer\">Proyecto expuesto por la cátedra</a></p>\n  ",
+          "links": [
+            {
+              "href": "https://catedragabriele.com.ar/portfolio/nivel1/sistemas-simples-2022/",
+              "text": "Proyecto expuesto por la cátedra"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2b0179190236999.65b8029a65aaa.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c8eca190236999.65b8029aca6a6.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/93de67190236999.65b8029b58fe3.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9d2d2b190236999.65b8029bb385d.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e1bee190236999.65b8029c3235c.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d3f7b7190236999.65b8029c97df9.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/47bdb4190236999.65b8029d16b2c.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/ec1242190236999.65b8029d9ad73.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/aa46e7190236999.65b8029d9b775.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/37c0bf190236999.65b8029d97e05.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c7c8f9190236999.65b8029d9a229.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e99199190236999.65b8029d942e0.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/63e2ea190236999.65b8029d993cf.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c2d20c190236999.65b8029d989d1.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e55aa8190236999.65b8029d94e7f.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/33f50b190236999.65b8029d9c557.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a3bc98190236999.65b8029d9714f.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/864547190236999.65b8029d95b96.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/bbd4a4190236999.65b8029d9669a.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/dc27a4190236999.65b8029fcdac1.jpg",
+          "width": 1400,
+          "height": 900,
+          "alt": "visual identity Graphic Designer visual identity dillom fadu Gariele trash",
+          "caption": "",
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b87dc8190236999.65b8029e77c16.jpg",
+          "width": 1280,
+          "height": 822,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 10"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe4d7c190236999.65b8029edeb7a.jpg",
+          "width": 1280,
+          "height": 1504,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 11"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/712335190236999.65b803b237af3.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/e6af31190236999.65b803b239462.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/b3bc9f190236999.65b803b235ef5.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fabc9e190236999.65b803b2350be.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/4b38be190236999.65b803b2388ca.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/acb24c190236999.65b803b236d98.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 12"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2d5360190236999.65b8029f62b10.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 13"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/1ce66f190236999.65b803b2e58bc.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c79253190236999.65b803b2e40ef.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/a23a60190236999.65b803b2e4b9a.jpg",
+              "width": 1280,
+              "height": 1920,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 14"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/190236999/Sistema-Baja-Complejidad-TP5-DG1-Catedra-Gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 15,
+        "images": 32,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "AFICHE Y BROCHURE",
@@ -494,40 +3725,74 @@
       "fuente": "https://www.behance.net/gallery/154717681/Tipografia-como-imagen-TP4-DG1-Catedra-Gabriele",
       "imagenes": [
         {
-          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "height": 1067,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
-          "width": 1401
+          "width": 1400,
+          "height": 1066,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": ""
         },
         {
-          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "height": 1943,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f54a9c154717681.634726f0aab29.jpg",
-          "width": 1401
-        },
-        {
+          "width": 1400,
+          "height": 1942,
           "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "height": 1991,
+          "caption": ""
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/aa6405154717681.634726f0a9851.jpg",
-          "width": 1400
+          "width": 1400,
+          "height": 1991,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": ""
         },
         {
-          "alt": "",
-          "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/82c821154717681.634726efecc7b.jpg",
-          "width": 1280
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e0f1b4154717681.634726f0acb6f.jpg",
+          "width": 1400,
+          "height": 985,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": ""
         },
         {
-          "alt": "",
-          "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/40ff49154717681.634726efedfab.jpg",
-          "width": 1280
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ecf85154717681.634726f0abae2.jpg",
+          "width": 1400,
+          "height": 1991,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": ""
         },
         {
-          "alt": "",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/82c821154717681.634726efecc7b.jpg",
+          "width": 1280,
           "height": 853,
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840_webp/726abc154717681.634726efea77e.jpg",
-          "width": 1280
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ab312154717681.634726efeb8b4.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ee0226154717681.634726efe933c.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/40ff49154717681.634726efedfab.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/726abc154717681.634726efea77e.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "",
+          "caption": ""
         }
       ],
       "title": "Afiche y brochure",
@@ -539,7 +3804,115 @@
       ],
       "preview": "https://framerusercontent.com/images/AoTC2WBkOBl02z020sbSPIKF4o.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
+      "previewHeight": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Trabajo práctico N°4 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.\nAfiche, tapa, contratapa y doble editorial para un ensayo de la revista Anfibia.\n\nEnsayo original:\nALFABETISMOS AUMENTADOS PARA CONVIVIR CON ROBOTS",
+          "html": "\n    <p>Trabajo práctico N°4 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.</p><p>Afiche, tapa, contratapa y doble editorial para&nbsp;un&nbsp;ensayo de la revista Anfibia.</p><p><br></p><p>Ensayo original:</p><p><a href=\"https://www.revistaanfibia.com/alfabetismos-aumentados-para-convivir-con-robots/\" target=\"_blank\" rel=\"noopener noreferrer\">ALFABETISMOS AUMENTADOS PARA CONVIVIR CON ROBOTS</a></p>\n  ",
+          "links": [
+            {
+              "href": "https://www.revistaanfibia.com/alfabetismos-aumentados-para-convivir-con-robots/",
+              "text": "ALFABETISMOS AUMENTADOS PARA CONVIVIR CON ROBOTS"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
+          "width": 1400,
+          "height": 1066,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f54a9c154717681.634726f0aab29.jpg",
+          "width": 1400,
+          "height": 1942,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/aa6405154717681.634726f0a9851.jpg",
+          "width": 1400,
+          "height": 1991,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e0f1b4154717681.634726f0acb6f.jpg",
+          "width": 1400,
+          "height": 985,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ecf85154717681.634726f0abae2.jpg",
+          "width": 1400,
+          "height": 1991,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/82c821154717681.634726efecc7b.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ab312154717681.634726efeb8b4.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ee0226154717681.634726efe933c.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/40ff49154717681.634726efedfab.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/726abc154717681.634726efea77e.jpg",
+              "width": 1280,
+              "height": 853,
+              "alt": "",
+              "caption": ""
+            }
+          ],
+          "sourceModule": "Project Module 6"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/154717681/Tipografia-como-imagen-TP4-DG1-Catedra-Gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 7,
+        "images": 10,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     },
     {
       "nombre": "HISTORIAS MÍNIMAS",
@@ -550,34 +3923,39 @@
       "fuente": "https://www.behance.net/gallery/148175971/Historias-minimas-TP3-DG1-Catedra-Gabriele",
       "imagenes": [
         {
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "height": 646,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
-          "width": 1401
+          "width": 1400,
+          "height": 646,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": ""
         },
         {
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "height": 2491,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a87cf148175971.62d06f46a2048.jpg",
-          "width": 1401
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": ""
         },
         {
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "height": 2489,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6b4fd2148175971.62d06f46a1a69.jpg",
-          "width": 1400
+          "width": 1400,
+          "height": 2489,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": ""
         },
         {
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "height": 2490,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/604066148175971.62d06f46a146a.jpg",
-          "width": 1400
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": ""
         },
         {
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "height": 2490,
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e4d737148175971.62d06f46a0d5c.jpg",
-          "width": 1400
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": ""
         }
       ],
       "title": "Historias mínimas",
@@ -587,55 +3965,78 @@
       ],
       "preview": "https://framerusercontent.com/images/AvP7DJAvSHiyOXr4ENhPUheAso.png?width=359&height=359",
       "previewWidth": 359,
-      "previewHeight": 359
-    },
-    {
-      "nombre": "ALGO ESTÁ MUTANDO",
-      "ruta": "/proyectos/algo-esta-mutando",
-      "anio": "2021",
-      "descripcion": "Animación e ilustración. Proyecto de FADU/UBA, 2021.",
-      "herramientas": "Photoshop",
-      "fuente": "https://www.behance.net/gallery/132456513/Algo-esta-mutando-Animacion-Ilustracion-Roldan",
-      "imagenes": [
+      "previewHeight": 359,
+      "blocks": [
         {
-          "url": "https://framerusercontent.com/images/867teTfkWG6fiPORLv0y7Zlfn5Q.png?width=359&height=359",
-          "width": 359,
-          "height": 359
+          "type": "text",
+          "text": "Trabajo práctico N°3 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.\nHistorias de Instagram creadas a partir del concepto \"Kabuki en el Monte Fuji\"\nProyecto expuesto por la cátedra en Instagram y en la web.",
+          "html": "\n    <p>Trabajo práctico N°3 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.</p><p>Historias de Instagram creadas a partir del&nbsp;concepto \"Kabuki en el Monte Fuji\"</p><p>Proyecto expuesto por la cátedra en&nbsp;<a href=\"https://www.instagram.com/p/CpRDq3CuHLY/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a>&nbsp;y en la <a href=\"https://catedragabriele.com.ar/portfolio/nivel1/universos-cortos-2018-2-copy-2-copy/\" target=\"_blank\" rel=\"noopener noreferrer\">web</a>.</p>\n  ",
+          "links": [
+            {
+              "href": "https://www.instagram.com/p/CpRDq3CuHLY/?img_index=1",
+              "text": "Instagram"
+            },
+            {
+              "href": "https://catedragabriele.com.ar/portfolio/nivel1/universos-cortos-2018-2-copy-2-copy/",
+              "text": "web"
+            }
+          ],
+          "sourceModule": "Project Module 0"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
+          "width": 1400,
+          "height": 646,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": "",
+          "sourceModule": "Project Module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a87cf148175971.62d06f46a2048.jpg",
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": "",
+          "sourceModule": "Project Module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6b4fd2148175971.62d06f46a1a69.jpg",
+          "width": 1400,
+          "height": 2489,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": "",
+          "sourceModule": "Project Module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/604066148175971.62d06f46a146a.jpg",
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": "",
+          "sourceModule": "Project Module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e4d737148175971.62d06f46a0d5c.jpg",
+          "width": 1400,
+          "height": 2490,
+          "alt": "art collage Gabriele Historias Minimas japan kabuki",
+          "caption": "",
+          "sourceModule": "Project Module 5"
         }
       ],
-      "title": "Algo está mutando",
-      "discipline": "Animación / Ilustración",
-      "tools": [
-        "Photoshop"
-      ],
-      "preview": "https://framerusercontent.com/images/867teTfkWG6fiPORLv0y7Zlfn5Q.png?width=359&height=359",
-      "previewWidth": 359,
-      "previewHeight": 359
-    },
-    {
-      "nombre": "EDITORIAL TIPOGRÁFICO / 2021",
-      "ruta": "/proyectos/editorial-tipografico-2021",
-      "anio": "2021",
-      "descripcion": "Editorial tipográfico. Proyecto de Tipografía, FADU/UBA, 2021.",
-      "herramientas": "Photoshop · Illustrator · Indeesign",
-      "fuente": "https://www.behance.net/gallery/132455661/Editorial-Longinotti-1-2021",
-      "imagenes": [
-        {
-          "url": "https://framerusercontent.com/images/OLRP268NXFWrljjqpqlVBhn2C4.png?width=359&height=359",
-          "width": 359,
-          "height": 359
-        }
-      ],
-      "title": "Editorial tipográfico / 2021",
-      "discipline": "Editorial / Tipografía",
-      "tools": [
-        "Photoshop",
-        "Illustrator",
-        "InDesign"
-      ],
-      "preview": "https://framerusercontent.com/images/OLRP268NXFWrljjqpqlVBhn2C4.png?width=359&height=359",
-      "previewWidth": 359,
-      "previewHeight": 359
+      "contenidoFuente": {
+        "url": "https://www.behance.net/gallery/148175971/Historias-minimas-TP3-DG1-Catedra-Gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 6,
+        "images": 5,
+        "embeds": 0,
+        "textBlocks": 1
+      }
     }
   ],
   "experience": [
