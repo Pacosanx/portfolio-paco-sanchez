@@ -24,21 +24,20 @@
       float depth=a_seed.z;
       if(u_mode<0.5){
         float x=a_seed.x;
-        float edge=pow(abs(x*2.0-1.0),1.8);
-        float surface=0.17+0.46*edge;
-        surface+=0.017*sin(x*13.0+u_time*0.22)+0.009*sin(x*29.0-u_time*0.15);
-        float y=fract(a_seed.y-u_time*0.009*(0.45+depth));
-        float wave=sin(x*18.0+y*11.0+u_time*0.24);
-        x+=0.003*wave*(0.3+depth);
-        float height=y*surface+0.008*wave*y;
-        pos=vec2(x*u_resolution.x,u_hero.x+u_hero.y*(1.0-height)+48.0-u_scroll);
+        float edge=(x*2.0-1.0)*(x*2.0-1.0);
+        float surface=0.22+0.40*edge;
+        float y=a_seed.y;
+        float height=y*surface;
+        pos=vec2(x*u_resolution.x,u_hero.x+u_hero.y*(1.0-height)-u_scroll);
         vec2 delta=pos-u_pointer.xy;
         float dist=length(delta);
         float influence=(1.0-smoothstep(0.0,115.0,dist))*u_pointer.z;
-        pos+=delta/max(dist,1.0)*influence*17.0;
-        pos.y-=influence*5.0;
-        v_alpha=mix(0.38,0.95,depth)*(0.75+edge*0.25)*(1.0-smoothstep(0.85,1.0,y));
-        gl_PointSize=mix(1.05,1.85,depth)*u_dpr;
+        pos+=delta/max(dist,1.0)*influence*6.0;
+        float upperFade=1.0-smoothstep(0.30,1.0,y);
+        float lowerFade=smoothstep(0.03,0.28,height);
+        float breathing=0.96+0.04*sin(u_time*0.16);
+        v_alpha=mix(0.12,0.42,depth)*upperFade*lowerFade*breathing;
+        gl_PointSize=mix(1.0,1.65,depth)*u_dpr;
         v_tone=0.0;
       }else{
         float sampleIndex=floor(a_seed.w*12.0);
@@ -49,8 +48,8 @@
         float radius=sqrt(a_seed.y)*(6.0+age*32.0);
         vec2 drift=vec2((depth-0.5)*18.0,8.0)*age;
         pos=trail.xy+vec2(cos(angle),sin(angle))*radius+drift;
-        v_alpha=trail.w*(1.0-smoothstep(0.0,1.0,age))*mix(0.4,1.0,depth);
-        gl_PointSize=mix(1.4,2.8,depth)*u_dpr;
+        v_alpha=trail.w*(1.0-smoothstep(0.0,1.0,age))*mix(0.15,0.45,depth);
+        gl_PointSize=mix(1.0,2.0,depth)*u_dpr;
         v_tone=1.0;
       }
       gl_Position=vec4(pos.x/u_resolution.x*2.0-1.0,1.0-pos.y/u_resolution.y*2.0,0.0,1.0);
