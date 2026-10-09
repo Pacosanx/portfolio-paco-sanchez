@@ -28,13 +28,13 @@
         float surface=0.22+0.40*edge;
         float y=a_seed.y;
         float height=y*surface;
-        pos=vec2(x*u_resolution.x,u_hero.x+u_hero.y*(1.0-height)-u_scroll);
+        pos=vec2(x*u_resolution.x,u_hero.x+(u_hero.y+96.0)*(1.0-height)-u_scroll);
         vec2 delta=pos-u_pointer.xy;
         float dist=length(delta);
         float influence=(1.0-smoothstep(0.0,115.0,dist))*u_pointer.z;
         pos+=delta/max(dist,1.0)*influence*6.0;
         float upperFade=1.0-smoothstep(0.30,1.0,y);
-        float lowerFade=smoothstep(0.02,0.22,height);
+        float lowerFade=smoothstep(0.0,0.28,height);
         float breathing=0.96+0.04*sin(u_time*0.16);
         v_alpha=mix(0.22,0.70,depth)*upperFade*lowerFade*breathing;
         gl_PointSize=mix(1.1,1.8,depth)*u_dpr;
@@ -136,7 +136,7 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0}else wake()});
   reduced.addEventListener('change',()=>{pointer.time=-10000;wake()});
   fine.addEventListener('change',()=>{pointer.time=-10000;wake()});
-  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;wake()}).observe(hero);
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;wake()},{rootMargin:'120px 0px'}).observe(hero);
   new ResizeObserver(resize).observe(hero);
   canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();broken=true;cancelAnimationFrame(frame);frame=0;hero.dataset.shader='fallback';canvas.hidden=true});
   hero.dataset.shader='webgl';canvas.dataset.pointer='idle';resize();
