@@ -16,6 +16,7 @@
     image.width = asset.width;
     image.height = asset.height;
     image.decoding = 'async';
+    if(asset.srcset){image.srcset=asset.srcset;image.sizes='320px'}
     image.className = 'preview-image';
     const entry = { image, asset, failed: false };
     entry.promise = new Promise((resolve, reject) => {
@@ -79,6 +80,7 @@
     const focused = focusedIndex();
     focused < 0 ? hide() : show(focused);
   });
+  document.addEventListener('portfolio:filter', hide);
   desktop.addEventListener('change', () => {
     hide();
     if (desktop.matches && focusedIndex() >= 0) show(focusedIndex());

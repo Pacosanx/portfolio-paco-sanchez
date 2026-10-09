@@ -1,0 +1,14 @@
+.project-filters{margin:60px 0 0;padding:0;border:0;min-width:0}
+.project-filters legend{font-size:.875rem;color:var(--muted);margin-bottom:22px;line-height:1.6}
+.project-filters button{display:flex;justify-content:space-between;align-items:baseline;gap:16px;width:100%;background:none;border:0;padding:10px 0;font:inherit;font-size:.875rem;line-height:1.6;text-align:left;color:var(--muted);cursor:pointer}
+.project-filters button span:first-child{max-width:160px}
+.project-filters button .mono{font-size:.75rem;color:var(--muted)}
+.project-filters button:hover,.project-filters button[aria-pressed=true]{color:var(--text)}
+.project-filters button[aria-pressed=true] span:first-child{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.project-filters button:focus-visible{outline:1px solid var(--text);outline-offset:4px}
+.work-heading .filter-result{margin-top:32px;font-size:.75rem}
+.project-row[hidden]{display:none}
+.work-section{min-height:calc(100dvh - 140px);overflow-anchor:none}
+.project-name .project-status{font-size:.875rem;color:var(--secondary);margin-top:10px}
+.case-reference .project-status{font-size:.875rem;line-height:1.6;margin-top:28px;color:var(--text)}
+@media(max-width:600px){.work-heading{display:block}.work-heading h2{display:inline-block}.work-heading>.mono{float:right}.project-filters{margin-top:36px;display:flex;flex-wrap:wrap;gap:6px 24px}.project-filters legend{margin-bottom:14px}.project-filters button{width:auto;gap:10px;padding:8px 0}.project-filters button span:first-child{max-width:none}.work-heading .filter-result{display:block;margin-top:24px}}

@@ -1,11 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { parallelSection } from './parallel.mjs';
+import { projectFilters, projectCategories } from './filters.mjs';
 
 const content=JSON.parse(fs.readFileSync(new URL('./content.json',import.meta.url),'utf8'));
 const projects=content.projects.filter(p=>!['/proyectos/algo-esta-mutando','/proyectos/editorial-tipografico-2021'].includes(p.ruta));
 const projectCount=projects.length;
-const period=[Math.min(...projects.map(p=>Number(p.anio))),Math.max(...projects.map(p=>Number(p.anio)))].join('–');
+const years=projects.map(p=>Number(p.anio)).filter(Number.isFinite);
+const period=[Math.min(...years),Math.max(...years)].join('–');
 const teaching=JSON.parse(fs.readFileSync(new URL('./teaching.json',import.meta.url),'utf8'));
 const selections=JSON.parse(fs.readFileSync(new URL('./preview-selection.json',import.meta.url),'utf8'));
 const origin='https://paco-sanchez-portfolio.noisy-koala-9107.chatgpt.site';
@@ -21,7 +23,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script>
+<link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/parallel.css"><link rel="stylesheet" href="/trajectory.css"><link rel="stylesheet" href="/project-previews.css"><link rel="stylesheet" href="/case-content.css"><link rel="stylesheet" href="/project-filters.css"><script src="/interaction.js" defer></script><script src="/project-previews.js" defer></script><script src="/project-filters.js" defer></script>
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':'/';return `<header class="site-header shell">
@@ -34,13 +36,13 @@ function contact(){return `<footer id="contacto" class="contact shell" aria-labe
 <div class="contact-social"><a class="text-link" href="https://www.behance.net/pacosanx" target="_blank" rel="noopener noreferrer">Behance</a></div>
 <div class="colophon"><span>Francisco ‘Paco’ Sanchez</span><a href="#" class="text-link">Volver arriba</a></div></footer>`}
 
-function projectRow(p,i){return `<a class="project-row" href="${p.ruta}/" data-project="${i}">
-<span class="project-no">${number(i)}</span><div class="project-name"><h3>${esc(p.title)}</h3><p>${esc(p.discipline)}</p></div><span class="project-year">${esc(p.anio)}</span>
+function projectRow(p,i){return `<a class="project-row" href="${p.ruta}/" data-project="${i}" data-categories="${projectCategories(p).join(' ')}">
+<span class="project-no">${number(i)}</span><div class="project-name"><h3>${esc(p.title)}</h3><p>${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div><span class="project-year">${esc(p.anio)}</span>
 <img class="touch-preview" src="${esc(p.preview)}" width="${p.previewWidth}" height="${p.previewHeight}" alt="Vista de ${esc(p.title)}" loading="lazy" decoding="async"></a>`}
 
 function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context)}</td></tr>`).join('')}</tbody></table>`}
 
-function caseImage(image,p,j){return `<figure class="case-figure" style="max-width:${Math.min(1120,image.width||1120)}px;margin-inline:auto"><img src="${esc(image.url)}" ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(image.alt||`${p.title}, imagen ${j+1}`)}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async">${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
+function caseImage(image,p,j){return `<figure class="case-figure" style="max-width:${Math.min(1120,image.width||1120)}px;margin-inline:auto"><img src="${esc(image.url)}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), (max-width:1300px) 80vw, 1120px"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(image.alt||`${p.title}, imagen ${j+1}`)}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async">${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
 function caseText(block){
   const text=String(block.text||'').trim().replace(/\n{3,}/g,'\n\n');
   let linked=esc(text);
@@ -54,6 +56,16 @@ function caseText(block){
   const heading=text.split('\n')[0];
   const isHeading=heading.length<80&&/[A-ZÁÉÍÓÚÑ]/.test(heading)&&heading===heading.toUpperCase();
   return `<div class="case-text">${isHeading?`<h3>${lines.shift()}</h3>`:''}${lines.length?`<p>${lines.join('<br>')}</p>`:''}${extra.length?`<p class="case-text-links">${extra.join('<br>')}</p>`:''}</div>`;
+}
+function caseDescription(p){
+  let text=esc(p.descripcion).replaceAll('\n','<br>');
+  for(const link of p.links||[]){
+    if(!/^https?:\/\//.test(link.href))continue;
+    const label=esc(link.text||link.href),anchor=`<a class="text-link" href="${esc(link.href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    const match=text.includes(esc(link.href))?esc(link.href):label;
+    text=text.includes(match)?text.replace(match,anchor):text+'<br>'+anchor;
+  }
+  return text;
 }
 function caseGallery(p){
   let imageIndex=0;
@@ -73,9 +85,9 @@ function caseGallery(p){
 
 function caseContent(p,i,embedded=false){
   const next=projects[i+1],titleTag=embedded?'h2':'h1',toolsTag=embedded?'h3':'h2',titleId=embedded?'viewer-title':'case-title';
-  return `<section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p><p class="mono">FADU / UBA</p><p class="case-discipline">${esc(p.discipline)}</p></div>
-  <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}><p class="case-description">${esc(p.descripcion)}</p></div>
-  <div class="case-tools"><${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul><a class="text-link case-source" href="${esc(p.fuente)}" target="_blank" rel="noopener noreferrer">${p.fuente.includes('youtu')?'Ver en YouTube':'Ver en Behance'}</a></div></section>
+  return `<section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p>${(p.context??'FADU / UBA')?`<p class="mono">${esc(p.context??'FADU / UBA')}</p>`:''}<p class="case-discipline">${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div>
+  <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}>${p.descripcion?`<p class="case-description">${caseDescription(p)}</p>`:''}</div>
+  <div class="case-tools">${p.tools.length?`<${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}<a class="text-link case-source" href="${esc(p.fuente)}" target="_blank" rel="noopener noreferrer">${p.fuente.includes('youtu')?'Ver en YouTube':p.fuente.includes('myportfolio.com')?'Ver en Adobe Portfolio':'Ver en Behance'}</a></div></section>
   <div class="case-gallery">${caseGallery(p)}</div>
   <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="/#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?next.ruta+'/':'/#proyectos'}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>`;
 }
@@ -89,8 +101,8 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><p class="eyebrow opening-label">Portfolio / ${period}</p>
 <div class="opening-copy"><h1 id="intro-title">Diseño digital.<br><span>Imagen en movimiento.<br>Interactividad.</span></h1><p>Exploraciones entre imagen, movimiento,<br class="desktop-break"> web y realidad virtual.</p></div>
 <a class="opening-index text-link" href="#proyectos">Índice de proyectos <span class="mono">[${projectCount}]</span></a></section>
-<section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span><p>FADU / UBA<br>${period}</p></div>
-<div class="work-index">${projects.map(projectRow).join('')}</div>
+<section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
+<div class="work-index" id="project-index">${projects.map(projectRow).join('')}</div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>
 ${parallelSection()}
 <section id="trayectoria" class="trajectory" aria-labelledby="trajectory-title"><h2 class="eyebrow" id="trajectory-title">Trayectoria</h2>

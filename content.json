@@ -1,6 +1,898 @@
 {
   "projects": [
     {
+      "nombre": "FESTIVAL - SISTEMA GRÁFICO - V1",
+      "title": "Festival / sistema gráfico V1",
+      "sourceTitle": "Festival - Sistema gráfico - v1",
+      "ruta": "/proyectos/festival-sistema-grafico-v1",
+      "anio": "2026",
+      "descripcion": "",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Sistema gráfico",
+      "fuente": "https://pacosanx.myportfolio.com/festival-sistema-grafico-v1",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ceeaa2b0-5f99-48e5-a262-cbecbe4cd644_rwc_0x0x1081x810x1081.png?h=aed8d2b836c9a85dbbc32dc1caafe68e",
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3",
+          "width": 1920,
+          "height": 824,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_600.png?h=b9aaf57ec94bd57879f79ba4435a1c47 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1200.png?h=8391346bb6ab0e39f43cf8681e4f1c9f 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/RcbmWmRyMDq/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Festival - Sistema gráfico - v1 — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
+          "width": 991,
+          "height": 896,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
+          "width": 991,
+          "height": 569,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
+          "width": 994,
+          "height": 1420,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
+          "width": 992,
+          "height": 523,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
+          "width": 993,
+          "height": 569,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 7"
+        }
+      ],
+      "imagenes": [
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3",
+          "width": 1920,
+          "height": 824,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_600.png?h=b9aaf57ec94bd57879f79ba4435a1c47 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1200.png?h=8391346bb6ab0e39f43cf8681e4f1c9f 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
+          "width": 991,
+          "height": 896,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
+          "width": 991,
+          "height": 569,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
+          "width": 994,
+          "height": 1420,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
+          "width": 992,
+          "height": 523,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
+          "width": 993,
+          "height": 569,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
+          "dimensionOrigin": "public-image-header"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/festival-sistema-grafico-v1",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 7,
+        "images": 6,
+        "embeds": 1,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "",
+      "previewWidth": 1081,
+      "previewHeight": 810
+    },
+    {
+      "nombre": "PIRAÑA - MODELADO 3D",
+      "title": "Piraña",
+      "sourceTitle": "PIRAÑA - modelado 3D",
+      "ruta": "/proyectos/pirana-modelado-3d",
+      "anio": "2026",
+      "descripcion": "Modelado, texturizado metálico y animación de rotación basado en una ilustración previa.",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Modelado / Animación 3D",
+      "fuente": "https://pacosanx.myportfolio.com/pirana-modelado-3d",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c2ebc56-e66f-4de4-88d7-c07b264aa79b_rwc_0x101x719x540x719.png?h=2ea05896664394e071b2f52b3c6ca07a",
+      "imagenes": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Modelado, texturizado metálico y animación de rotación basado en una ilustración previa.",
+          "html": "<p>Modelado, texturizado metálico y animación de rotación basado en una ilustración previa.</p>",
+          "links": [],
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/ReDckk_2JUt/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Piraña — modelado 3D",
+          "aspectRatio": 1,
+          "sourceModule": "Adobe module 2"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/pirana-modelado-3d",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 2,
+        "images": 0,
+        "embeds": 1,
+        "textBlocks": 1
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "",
+      "previewWidth": 719,
+      "previewHeight": 540
+    },
+    {
+      "nombre": "WEB PATRIMONIO ARQUITECTÓNICO",
+      "title": "FACHADA",
+      "sourceTitle": "Web patrimonio arquitectónico",
+      "ruta": "/proyectos/web-arquitectura",
+      "anio": "2025",
+      "descripcion": "Web sobre patrimonio arquitectónico. Actualmente en prototipado con HTML.",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Web / Patrimonio arquitectónico",
+      "fuente": "https://pacosanx.myportfolio.com/web-arquitectura",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/875cf768-ac81-4818-a960-982a13b5429d_rwc_0x30x1358x1018x1358.png?h=fa6df4357c7711c24b8b0c0c19273519",
+      "blocks": [
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/7NrNXdsUtPd/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Web patrimonio arquitectónico — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/MM_JCtss9tt/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Web patrimonio arquitectónico — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 2"
+        }
+      ],
+      "imagenes": [],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/web-arquitectura",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 2,
+        "images": 0,
+        "embeds": 2,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "",
+      "status": "Prototipo HTML en desarrollo",
+      "previewWidth": 1358,
+      "previewHeight": 1018
+    },
+    {
+      "nombre": "CUANDO ACECHA LA MALDAD - AFICHE CINE",
+      "title": "Cuando acecha la maldad",
+      "sourceTitle": "CUANDO ACECHA LA MALDAD - Afiche Cine",
+      "ruta": "/proyectos/cuando-acecha-la-maldad-afiche-cine",
+      "anio": "2024",
+      "descripcion": "CUANDO ACECHA LA MALDAD - Afiche Cine\nDiseño gráfico Gabriele 2 - FADU UBA 2024\n\nAfiche seleccionado por la cátedra:\nhttps://catedragabriele.com.ar/portfolio/nivel2/afiches-de-cine-2024/",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Afiche / Cine",
+      "fuente": "https://pacosanx.myportfolio.com/cuando-acecha-la-maldad-afiche-cine",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/49db89d6-e509-4ce0-b01a-3881925f3b99_car_4x3.jpg?h=fa1c736102268579a6b170add630f524",
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1920.png?h=b155f078252eae650dce1c8cbc9ecec8",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_600.png?h=30df1b2978c7c96f44b1cc31e9cf26f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1200.png?h=91146f97098690ae82d1954339599765 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1920.png?h=b155f078252eae650dce1c8cbc9ecec8 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/YG40sETp7UA?si=d8i-1s1WJEjcNCmI",
+          "title": "CUANDO ACECHA LA MALDAD - Afiche Cine — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1920.png?h=869181b3178665a4e860341087716f20",
+          "width": 1920,
+          "height": 1204,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_600.png?h=4fc8a35bd404c023e6c0a9d8579ee8fa 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1200.png?h=a3ad1a31e90be6e1cb07f32d765471bf 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1920.png?h=869181b3178665a4e860341087716f20 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1920.png?h=8a410b251685b0541ba9f2a2f1f733a2",
+          "width": 1920,
+          "height": 1352,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_600.png?h=d0defd46f76db4cca258142647cb770c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1200.png?h=058550d9087932d98836119a5cb284de 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1920.png?h=8a410b251685b0541ba9f2a2f1f733a2 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_3840.jpg?h=5a47188d45cfc478440f5dd4794e0958",
+          "width": 3840,
+          "height": 5486,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_600.jpg?h=53bab666806199666bf1dd1da9ea1d59 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_1200.jpg?h=d875defcb96b69b293067c33dabf3e4c 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_1920.jpg?h=9b7dbfa77c19c827512e0e06679afef6 1920w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_3840.jpg?h=5a47188d45cfc478440f5dd4794e0958 3840w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_3840.png?h=18d1086975a4d8f5186d109a64cdac8d",
+          "width": 3840,
+          "height": 1539,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_600.png?h=19df521ea6f46f37c700053cd958844e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_1200.png?h=f8734905f8134b34f00e86d51c6810ed 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_1920.png?h=c44660cd8feeb0364b4750c0db141efa 1920w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_3840.png?h=18d1086975a4d8f5186d109a64cdac8d 3840w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1920.png?h=992ebbd7994b73319593a6edcf5767be",
+          "width": 1920,
+          "height": 84,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_600.png?h=762a3691496842bac569c51ddd8d9379 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1200.png?h=d23a66da94ddf346092530428e1a55dc 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1920.png?h=992ebbd7994b73319593a6edcf5767be 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1920.png?h=130901288e79172ed220e76360dff11f",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_600.png?h=3bea65a8b10d0c7bd228051cbf7e345a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1200.png?h=250aa2dcc56c83d239238ceadccc5938 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1920.png?h=130901288e79172ed220e76360dff11f 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 8"
+        }
+      ],
+      "imagenes": [
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1920.png?h=b155f078252eae650dce1c8cbc9ecec8",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_600.png?h=30df1b2978c7c96f44b1cc31e9cf26f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1200.png?h=91146f97098690ae82d1954339599765 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aa0881b4-4e60-4efb-a023-530f2cfe6822_rw_1920.png?h=b155f078252eae650dce1c8cbc9ecec8 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1920.png?h=869181b3178665a4e860341087716f20",
+          "width": 1920,
+          "height": 1204,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_600.png?h=4fc8a35bd404c023e6c0a9d8579ee8fa 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1200.png?h=a3ad1a31e90be6e1cb07f32d765471bf 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/84c1305b-89f3-4526-8b51-faf06d1d5a15_rw_1920.png?h=869181b3178665a4e860341087716f20 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1920.png?h=8a410b251685b0541ba9f2a2f1f733a2",
+          "width": 1920,
+          "height": 1352,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_600.png?h=d0defd46f76db4cca258142647cb770c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1200.png?h=058550d9087932d98836119a5cb284de 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/45077862-e5d9-4249-887e-4a5fcaac54e3_rw_1920.png?h=8a410b251685b0541ba9f2a2f1f733a2 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_3840.jpg?h=5a47188d45cfc478440f5dd4794e0958",
+          "width": 3840,
+          "height": 5486,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_600.jpg?h=53bab666806199666bf1dd1da9ea1d59 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_1200.jpg?h=d875defcb96b69b293067c33dabf3e4c 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_1920.jpg?h=9b7dbfa77c19c827512e0e06679afef6 1920w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1b593bef-c81e-4655-8ee5-e909eeae9a93_rw_3840.jpg?h=5a47188d45cfc478440f5dd4794e0958 3840w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_3840.png?h=18d1086975a4d8f5186d109a64cdac8d",
+          "width": 3840,
+          "height": 1539,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_600.png?h=19df521ea6f46f37c700053cd958844e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_1200.png?h=f8734905f8134b34f00e86d51c6810ed 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_1920.png?h=c44660cd8feeb0364b4750c0db141efa 1920w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/f3ad3078-9057-4a36-891b-607df238d2bd_rw_3840.png?h=18d1086975a4d8f5186d109a64cdac8d 3840w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1920.png?h=992ebbd7994b73319593a6edcf5767be",
+          "width": 1920,
+          "height": 84,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_600.png?h=762a3691496842bac569c51ddd8d9379 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1200.png?h=d23a66da94ddf346092530428e1a55dc 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7168033f-36a4-4f58-9419-86fa4dde2c2c_rw_1920.png?h=992ebbd7994b73319593a6edcf5767be 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1920.png?h=130901288e79172ed220e76360dff11f",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_600.png?h=3bea65a8b10d0c7bd228051cbf7e345a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1200.png?h=250aa2dcc56c83d239238ceadccc5938 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/7b9f559b-39ff-4065-91a3-e8491d7668b5_rw_1920.png?h=130901288e79172ed220e76360dff11f 1920w,",
+          "dimensionOrigin": "public-image-header"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/cuando-acecha-la-maldad-afiche-cine",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 8,
+        "images": 7,
+        "embeds": 1,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "links": [
+        {
+          "href": "https://catedragabriele.com.ar/portfolio/nivel2/afiches-de-cine-2024/",
+          "text": "Afiche seleccionado por la cátedra"
+        }
+      ],
+      "context": "Diseño Gráfico 2 · Gabriele · FADU / UBA",
+      "previewWidth": 3556,
+      "previewHeight": 2667
+    },
+    {
+      "nombre": "FANZINE DG2 GABRIELE",
+      "title": "Fanzine",
+      "sourceTitle": "Fanzine DG2 Gabriele",
+      "ruta": "/proyectos/fanzine-dg2-gabriele",
+      "anio": "2024",
+      "descripcion": "",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Editorial / Fanzine",
+      "fuente": "https://pacosanx.myportfolio.com/fanzine-dg2-gabriele",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/880852f3-e34e-4719-af77-ccc88c6be6a3_rwc_726x713x573x429x573.jpg?h=0f5a971099b76c161a0c68003a837ba1",
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_600.gif?h=18e1ea00bbfafde07b9bf69313400f6e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1200.gif?h=cd83e8ead6cb6e5cee66789293486430 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_600.jpg?h=8ab1b73adae39166ad23414f328d725c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1200.jpg?h=cc71b2dd5a914d1d6115442efd94fccb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_600.jpg?h=d7d331db41a5d98ae1e89f2fbdbd8caf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1200.jpg?h=e28f7dd4e53b3c1d88f9c1289f16b80e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_600.jpg?h=3f7136e5f21aafd7d995731107a95244 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1200.jpg?h=18fdfeacadd913fb725ed37ac11e6c55 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_600.jpg?h=d15f7c2266709eeaef7ed53ba1e93dbc 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1200.jpg?h=8d0a2ca7a9e6e228ad22ed0ca09d98fe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_600.jpg?h=f4f4ace85640bdd5d1af91f5146b76b8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1200.jpg?h=ded24837dd28f522879da238a74d0893 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_600.jpg?h=496a030810058e423be80f1e2f9db45c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1200.jpg?h=9d2fc4cee903ca3ad072bd65a9323daa 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_600.jpg?h=122956e585fc124af4b54e6429471896 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1200.jpg?h=bb271b686a029dc89e6ffdb2b3efcb17 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 9"
+        }
+      ],
+      "imagenes": [
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_600.gif?h=18e1ea00bbfafde07b9bf69313400f6e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1200.gif?h=cd83e8ead6cb6e5cee66789293486430 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_600.jpg?h=8ab1b73adae39166ad23414f328d725c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1200.jpg?h=cc71b2dd5a914d1d6115442efd94fccb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_600.jpg?h=d7d331db41a5d98ae1e89f2fbdbd8caf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1200.jpg?h=e28f7dd4e53b3c1d88f9c1289f16b80e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_600.jpg?h=3f7136e5f21aafd7d995731107a95244 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1200.jpg?h=18fdfeacadd913fb725ed37ac11e6c55 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_600.jpg?h=d15f7c2266709eeaef7ed53ba1e93dbc 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1200.jpg?h=8d0a2ca7a9e6e228ad22ed0ca09d98fe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_600.jpg?h=f4f4ace85640bdd5d1af91f5146b76b8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1200.jpg?h=ded24837dd28f522879da238a74d0893 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_600.jpg?h=496a030810058e423be80f1e2f9db45c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1200.jpg?h=9d2fc4cee903ca3ad072bd65a9323daa 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_600.jpg?h=122956e585fc124af4b54e6429471896 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1200.jpg?h=bb271b686a029dc89e6ffdb2b3efcb17 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
+          "dimensionOrigin": "public-image-header"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/fanzine-dg2-gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 9,
+        "images": 9,
+        "embeds": 0,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "Diseño Gráfico 2 · Gabriele",
+      "previewWidth": 573,
+      "previewHeight": 429
+    },
+    {
+      "nombre": "FESTIVAL - SISTEMA GRÁFICO - V2",
+      "title": "Festival / sistema gráfico V2",
+      "sourceTitle": "Festival - Sistema gráfico - v2",
+      "ruta": "/proyectos/festival-sistema-grafico",
+      "anio": "2024",
+      "descripcion": "",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Sistema gráfico",
+      "fuente": "https://pacosanx.myportfolio.com/festival-sistema-grafico",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/73e691a3-9820-4a4a-8124-49030720b4ff_rwc_320x87x1282x962x1282.png?h=29e9ee30ec04c6e7342d07fb23873bcd",
+      "blocks": [
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1920.png?h=e8cff47d84b3dcfe481b4418ddeea77b",
+          "width": 1920,
+          "height": 162,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_600.png?h=854538d3e73340ede0fe13afe444fef7 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1200.png?h=1105f61011d4b59633b74926e40913c1 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1920.png?h=e8cff47d84b3dcfe481b4418ddeea77b 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc",
+          "width": 1080,
+          "height": 500,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_600.gif?h=c5792b54abeb130fa5fb971e49b742d1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc 1080w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1920.png?h=53f59fce6fe4fc9f3527e665583fa56d",
+          "width": 1920,
+          "height": 478,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_600.png?h=e88a23d5ee38137554d513cba51c9f01 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1200.png?h=a18aa8917ef8a1ef1a56bce131d64ab5 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1920.png?h=53f59fce6fe4fc9f3527e665583fa56d 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1920.png?h=95d7650a28a21058de09c63bd575d7ce",
+          "width": 1920,
+          "height": 823,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_600.png?h=9e17dc4c28c46d71e229d0046a2159ab 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1200.png?h=2090b42e4739b15127ecfa2da6fca6c7 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1920.png?h=95d7650a28a21058de09c63bd575d7ce 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b",
+          "width": 1920,
+          "height": 1283,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_600.png?h=69e2fc60503988df3fdf16efdb88b6c0 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1200.png?h=21e0415f5cb633c27fef3b81a96aad30 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7",
+          "width": 1920,
+          "height": 1341,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_600.png?h=7e23290c289f1884795a591b56766273 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1200.png?h=b14a8372346fb3f1be3da11fe9927794 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
+        },
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/9wwV7ZHRsxQ/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Festival - Sistema gráfico - v2 — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81",
+          "width": 1920,
+          "height": 2735,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_600.png?h=eb9b4bdb36737fadda96ab2a1cbf2fad 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1200.png?h=1ed834ec62274b6e9e080f148958c54e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 8"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8",
+          "width": 1920,
+          "height": 1131,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_600.png?h=d07e8e0ca851429d8b06decd5f653e68 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1200.png?h=1bed97cbac71474e31ebc0aafad5e62a 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1",
+          "width": 1920,
+          "height": 1018,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_600.png?h=8e908cbec4b8ad824fc5e873bb45999e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1200.png?h=a978c6a36363f7c4817d711a4c30f1d9 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 10"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247",
+          "width": 1920,
+          "height": 1200,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_600.png?h=9a8866ef619b6ecb0fb5a885624edb9a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1200.png?h=f96df62c2c70c6e02aa3fce0eefe3d78 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 11"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1920.png?h=a7c182a7ad3dac7adbd5272fab170155",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_600.png?h=2a3edcc6062b1ad725fdde15f71d12d8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1200.png?h=1cdda94811336dc59b51a03a5ae405ca 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1920.png?h=a7c182a7ad3dac7adbd5272fab170155 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 12"
+        }
+      ],
+      "imagenes": [
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1920.png?h=e8cff47d84b3dcfe481b4418ddeea77b",
+          "width": 1920,
+          "height": 162,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_600.png?h=854538d3e73340ede0fe13afe444fef7 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1200.png?h=1105f61011d4b59633b74926e40913c1 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a3fc9d6b-d0e8-46a6-9611-3ca1a95e1ddc_rw_1920.png?h=e8cff47d84b3dcfe481b4418ddeea77b 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc",
+          "width": 1080,
+          "height": 500,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_600.gif?h=c5792b54abeb130fa5fb971e49b742d1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc 1080w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1920.png?h=53f59fce6fe4fc9f3527e665583fa56d",
+          "width": 1920,
+          "height": 478,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_600.png?h=e88a23d5ee38137554d513cba51c9f01 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1200.png?h=a18aa8917ef8a1ef1a56bce131d64ab5 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/749dc865-cc50-499d-91cd-29ee56d252d5_rw_1920.png?h=53f59fce6fe4fc9f3527e665583fa56d 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1920.png?h=95d7650a28a21058de09c63bd575d7ce",
+          "width": 1920,
+          "height": 823,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_600.png?h=9e17dc4c28c46d71e229d0046a2159ab 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1200.png?h=2090b42e4739b15127ecfa2da6fca6c7 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e181cbf4-9c9e-40dc-9f08-5b5183084829_rw_1920.png?h=95d7650a28a21058de09c63bd575d7ce 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b",
+          "width": 1920,
+          "height": 1283,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_600.png?h=69e2fc60503988df3fdf16efdb88b6c0 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1200.png?h=21e0415f5cb633c27fef3b81a96aad30 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7",
+          "width": 1920,
+          "height": 1341,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_600.png?h=7e23290c289f1884795a591b56766273 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1200.png?h=b14a8372346fb3f1be3da11fe9927794 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81",
+          "width": 1920,
+          "height": 2735,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_600.png?h=eb9b4bdb36737fadda96ab2a1cbf2fad 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1200.png?h=1ed834ec62274b6e9e080f148958c54e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8",
+          "width": 1920,
+          "height": 1131,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_600.png?h=d07e8e0ca851429d8b06decd5f653e68 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1200.png?h=1bed97cbac71474e31ebc0aafad5e62a 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1",
+          "width": 1920,
+          "height": 1018,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_600.png?h=8e908cbec4b8ad824fc5e873bb45999e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1200.png?h=a978c6a36363f7c4817d711a4c30f1d9 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247",
+          "width": 1920,
+          "height": 1200,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_600.png?h=9a8866ef619b6ecb0fb5a885624edb9a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1200.png?h=f96df62c2c70c6e02aa3fce0eefe3d78 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1920.png?h=a7c182a7ad3dac7adbd5272fab170155",
+          "width": 1920,
+          "height": 161,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_600.png?h=2a3edcc6062b1ad725fdde15f71d12d8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1200.png?h=1cdda94811336dc59b51a03a5ae405ca 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/009b0f02-6474-4207-b8a2-9a6038c0adf0_rw_1920.png?h=a7c182a7ad3dac7adbd5272fab170155 1920w,",
+          "dimensionOrigin": "public-image-header"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/festival-sistema-grafico",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 12,
+        "images": 11,
+        "embeds": 1,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "",
+      "previewWidth": 1282,
+      "previewHeight": 962
+    },
+    {
+      "nombre": "VIDEO CINÉTICA DG2 GABRIELE",
+      "title": "Cinética",
+      "sourceTitle": "Video cinética DG2 Gabriele",
+      "ruta": "/proyectos/video-cinetica-dg2-gabriele",
+      "anio": "2024",
+      "descripcion": "",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Movimiento / Cinética",
+      "fuente": "https://pacosanx.myportfolio.com/video-cinetica-dg2-gabriele",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35c727e0-8558-48da-bae0-a6de4af64169_rwc_229x0x1439x1080x1439.png?h=51bd1798c9ec1e705a45bb92c000832b",
+      "blocks": [
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/8Gf6bY3LwCy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Video cinética DG2 Gabriele — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 1"
+        }
+      ],
+      "imagenes": [],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/video-cinetica-dg2-gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 1,
+        "images": 0,
+        "embeds": 1,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "Diseño Gráfico 2 · Gabriele",
+      "previewWidth": 1439,
+      "previewHeight": 1080
+    },
+    {
+      "nombre": "DEMO YOUTUBE - DARKSIDESPORTS",
+      "title": "DarkSideSports",
+      "sourceTitle": "Demo youtube - DarkSideSports",
+      "ruta": "/proyectos/demo-youtube-darksidesports",
+      "anio": "2024",
+      "descripcion": "",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Movimiento / Demo",
+      "fuente": "https://pacosanx.myportfolio.com/demo-youtube-darksidesports",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/c5105c8c-ab35-4561-8021-358c511925c9_rwc_242x0x1439x1080x1439.png?h=06dfbb6d468772d46bf8a0f87cb26562",
+      "blocks": [
+        {
+          "type": "embed",
+          "url": "https://www-ccv.adobe.io/v1/player/ccv/CdXZS3aAw7g/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+          "title": "Demo youtube - DarkSideSports — video",
+          "aspectRatio": 1.77778,
+          "sourceModule": "Adobe module 1"
+        }
+      ],
+      "imagenes": [],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/demo-youtube-darksidesports",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 1,
+        "images": 0,
+        "embeds": 1,
+        "textBlocks": 0
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "",
+      "previewWidth": 1439,
+      "previewHeight": 1080
+    },
+    {
       "nombre": "METAPHEX",
       "ruta": "/proyectos/metaphex",
       "anio": "2023",
@@ -3186,6 +4078,168 @@
         "embeds": 8,
         "images": 8
       }
+    },
+    {
+      "nombre": "LENGUAJES VISUALES - TP2 DG1 - CÁTEDRA GABRIELE",
+      "title": "Lenguajes visuales",
+      "sourceTitle": "Lenguajes Visuales - TP2 DG1 - Cátedra Gabriele",
+      "ruta": "/proyectos/lenguajes-visuales-tp2-dg1-catedra-gabriele",
+      "anio": "2022",
+      "descripcion": "Lenguajes Visuales - Trabajo práctico N°2 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.",
+      "herramientas": "",
+      "tools": [],
+      "discipline": "Gráfica / Lenguajes visuales",
+      "fuente": "https://pacosanx.myportfolio.com/lenguajes-visuales-tp2-dg1-catedra-gabriele",
+      "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d525a7df-2052-4a5f-b89d-0661a9a761e5_car_4x3.jpg?h=494c130513ad3082ce88d1914e9d7356",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Trabajo práctico N°2 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.Seis piezas que representan acordeones en seis lenguajes visuales distintos a los que se llegó a partir de la paleta cromática, la composición y diversas técnicas analógicas: collage, peeling, transfer, sello, grabado y esténcil.",
+          "html": "\n  <p><p>Trabajo práctico N°2 de Diseño Gráfico 1, Cátedra Gabriele, FADU/UBA. 2022.</p><p>Seis piezas que representan acordeones en seis lenguajes visuales distintos a los que se llegó a partir de la paleta cromática, la composición y diversas técnicas analógicas: collage, peeling, transfer, sello, grabado y esténcil.</p></p>\n",
+          "links": [],
+          "sourceModule": "Adobe module 1"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1920.jpg?h=1d962757971c62494ee2d77e423ebaf2",
+          "width": 1920,
+          "height": 2688,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_600.jpg?h=3c0fc61001e1a74e310aae49b8913fbf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1200.jpg?h=53f40c5e15e1387c84a1c30110e71ad8 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1920.jpg?h=1d962757971c62494ee2d77e423ebaf2 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 2"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1920.jpg?h=1ddf93f7e9daa1305a5f6ef4b7f20fa6",
+          "width": 1535,
+          "height": 2362,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_600.jpg?h=1cf88e4c6fb21ef30b37b89eadba1783 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1200.jpg?h=22cb223e840406fb96c8e7a6999753c5 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1920.jpg?h=1ddf93f7e9daa1305a5f6ef4b7f20fa6 1535w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 3"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1920.jpg?h=d378f36356f3588ab94fb494f36304e1",
+          "width": 1535,
+          "height": 1891,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_600.jpg?h=533cfe194b6fe996dfe18d95bdb02880 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1200.jpg?h=3e082823d0bb87a2a2e0ff1392f89fdb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1920.jpg?h=d378f36356f3588ab94fb494f36304e1 1535w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1920.jpg?h=1fcc627164f73ac5cd1c04a1a971e3b7",
+          "width": 1920,
+          "height": 1422,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_600.jpg?h=75c0f858aac1e5f52d87b56405e59bb7 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1200.jpg?h=97f574ca88edaa3e6505ba371bc8b171 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1920.jpg?h=1fcc627164f73ac5cd1c04a1a971e3b7 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 5"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1920.jpg?h=62f1ac808e45d344dbd9040b3374878a",
+          "width": 1920,
+          "height": 1138,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_600.jpg?h=91b7ed0cf7bfb79dc999ae3e4b2d6fff 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1200.jpg?h=4854c81d21c5ab9a505f7f6590ca4c83 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1920.jpg?h=62f1ac808e45d344dbd9040b3374878a 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1920.jpg?h=5f8672bae569dbe9f6daf7b9ca84cf61",
+          "width": 1920,
+          "height": 1920,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_600.jpg?h=759ff00cdd0ed3381d67a184ba81c020 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1200.jpg?h=2191ef5ed54487b80960b4bdd7c3665e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1920.jpg?h=5f8672bae569dbe9f6daf7b9ca84cf61 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1920.jpg?h=17a52b767f33bf8433d9ef87e684db6f",
+          "width": 1920,
+          "height": 1920,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_600.jpg?h=a48108ce1ce039a6bb157f65dc9b0bfb 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1200.jpg?h=cf5ef58b205297409f11cd74928ecafe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1920.jpg?h=17a52b767f33bf8433d9ef87e684db6f 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 8"
+        }
+      ],
+      "imagenes": [
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1920.jpg?h=1d962757971c62494ee2d77e423ebaf2",
+          "width": 1920,
+          "height": 2688,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_600.jpg?h=3c0fc61001e1a74e310aae49b8913fbf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1200.jpg?h=53f40c5e15e1387c84a1c30110e71ad8 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1920.jpg?h=1d962757971c62494ee2d77e423ebaf2 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1920.jpg?h=1ddf93f7e9daa1305a5f6ef4b7f20fa6",
+          "width": 1535,
+          "height": 2362,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_600.jpg?h=1cf88e4c6fb21ef30b37b89eadba1783 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1200.jpg?h=22cb223e840406fb96c8e7a6999753c5 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/dd5056fb-0d43-4a68-af12-50b33bb812af_rw_1920.jpg?h=1ddf93f7e9daa1305a5f6ef4b7f20fa6 1535w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1920.jpg?h=d378f36356f3588ab94fb494f36304e1",
+          "width": 1535,
+          "height": 1891,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_600.jpg?h=533cfe194b6fe996dfe18d95bdb02880 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1200.jpg?h=3e082823d0bb87a2a2e0ff1392f89fdb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ca6c35fc-a9fc-411e-bfcc-8e77824846de_rw_1920.jpg?h=d378f36356f3588ab94fb494f36304e1 1535w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1920.jpg?h=1fcc627164f73ac5cd1c04a1a971e3b7",
+          "width": 1920,
+          "height": 1422,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_600.jpg?h=75c0f858aac1e5f52d87b56405e59bb7 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1200.jpg?h=97f574ca88edaa3e6505ba371bc8b171 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/21dcd45c-de34-4a2f-b853-6841c0dd7019_rw_1920.jpg?h=1fcc627164f73ac5cd1c04a1a971e3b7 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1920.jpg?h=62f1ac808e45d344dbd9040b3374878a",
+          "width": 1920,
+          "height": 1138,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_600.jpg?h=91b7ed0cf7bfb79dc999ae3e4b2d6fff 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1200.jpg?h=4854c81d21c5ab9a505f7f6590ca4c83 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/448555a4-c08f-436a-850e-b6b722c8df59_rw_1920.jpg?h=62f1ac808e45d344dbd9040b3374878a 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1920.jpg?h=5f8672bae569dbe9f6daf7b9ca84cf61",
+          "width": 1920,
+          "height": 1920,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_600.jpg?h=759ff00cdd0ed3381d67a184ba81c020 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1200.jpg?h=2191ef5ed54487b80960b4bdd7c3665e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/1e0afeed-d0d1-45e6-86fa-3dcf19073999_rw_1920.jpg?h=5f8672bae569dbe9f6daf7b9ca84cf61 1920w,",
+          "dimensionOrigin": "public-image-header"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1920.jpg?h=17a52b767f33bf8433d9ef87e684db6f",
+          "width": 1920,
+          "height": 1920,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_600.jpg?h=a48108ce1ce039a6bb157f65dc9b0bfb 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1200.jpg?h=cf5ef58b205297409f11cd74928ecafe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/525910ed-cb24-4917-9b50-6fa0811643a3_rw_1920.jpg?h=17a52b767f33bf8433d9ef87e684db6f 1920w,",
+          "dimensionOrigin": "public-image-header"
+        }
+      ],
+      "contenidoFuente": {
+        "url": "https://pacosanx.myportfolio.com/lenguajes-visuales-tp2-dg1-catedra-gabriele",
+        "fechaVerificacion": "2026-10-08",
+        "moduleCount": 8,
+        "images": 7,
+        "embeds": 0,
+        "textBlocks": 1
+      },
+      "disciplineOrigin": "descriptor derivado del título público",
+      "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA",
+      "previewWidth": 1535,
+      "previewHeight": 1151
     },
     {
       "nombre": "SISTEMA GRÁFICO / DILLOM",
