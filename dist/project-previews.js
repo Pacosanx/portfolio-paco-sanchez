@@ -85,7 +85,8 @@
     hide();
     if (desktop.matches && focusedIndex() >= 0) show(focusedIndex());
   });
-  fetch('/preview-data.json')
+  const basePath = document.documentElement.dataset.basePath || '';
+  fetch(`${basePath}/preview-data.json`)
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
     .then(data => { records = data; if (selected >= 0) show(selected); })
     .catch(hide);
