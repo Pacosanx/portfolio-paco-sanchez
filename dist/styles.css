@@ -19,3 +19,5 @@ html{scrollbar-gutter:stable}.viewer-open{overflow:hidden}.project-viewer{positi
 @media(max-width:1000px){.datita{grid-column:4/11}.project-viewer{width:calc(100% - 48px)}.project-viewer .case-intro{padding-top:64px}}
 @media(max-width:600px){.project-viewer{width:100%;border-left:0}.viewer-toolbar{padding-block:22px;gap:16px}.viewer-toolbar .mono{font-size:.6875rem}.project-viewer .case-intro{padding-top:48px}.case-title-block h2{font-size:32px}.parallel article>a.datita-preview{margin-top:40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+.development-project-frame{display:block;width:100%;height:calc(100dvh - 78px);min-height:560px;border:0;background:var(--bg)}@media(max-width:600px){.development-project-frame{height:calc(100dvh - 66px);min-height:520px}}
