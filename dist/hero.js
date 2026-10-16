@@ -9,12 +9,14 @@
     premultipliedAlpha: false, powerPreference: 'low-power'
   });
   if (!gl) return;
+  const derivatives = gl.getExtension('OES_standard_derivatives');
 
   const vertex = `
     attribute vec2 position;
     void main() { gl_Position = vec4(position, 0.0, 1.0); }
   `;
   const fragment = `
+    ${derivatives ? '#extension GL_OES_standard_derivatives : enable' : ''}
     #ifdef GL_FRAGMENT_PRECISION_HIGH
     precision highp float;
     #else
@@ -43,14 +45,15 @@
       vec2 ray = (viewUV - 0.5) * 2.0;
       float travel = 1.0 - pow(1.0 - scrollProgress, 1.6);
       float bandY = mix(0.16, 1.16, travel);
-      float width = 0.11 - 0.055 * sin(travel * 3.14159265);
+      float width = 0.11 + 0.025 * sin(travel * 3.14159265);
+      float curvature = mix(0.42, 1.0, smoothstep(0.0, 0.36, travel));
       vec2 surface = vec2(0.5 + (viewUV.x - 0.5) / (1.0 + 0.30 * ray.y * ray.y),
-                          0.5 + (viewUV.y - 0.5) / (1.0 + ray.x * ray.x + 0.20 * ray.y * ray.y));
+                          0.5 + (viewUV.y - 0.5) / (1.0 + curvature * ray.x * ray.x + 0.20 * ray.y * ray.y));
       vec2 cursorUV = vec2(pointer.x, 1.0 - ((1.0 - pointer.y) * viewGeometry.y + viewGeometry.x) / viewGeometry.z);
       vec2 delta = (viewUV - cursorUV) * vec2(resolution.x / pixelRatio / viewGeometry.z, 1.0);
       float touch = exp(-dot(delta, delta) * 18.0) * pointer.z;
+      surface += (viewUV - cursorUV) * touch * 0.15;
       float d = surface.y - bandY;
-      d += (viewUV.y - cursorUV.y) * touch * 0.15;
       d += sin(viewUV.x * 5.0 + time * 0.18) * 0.003;
 
       // One continuous cobalt / cyan / green gradient, refracted by the same lens.
@@ -67,7 +70,19 @@
       vec3 light = tint * (0.45 + core * 0.55);
       float alpha = clamp(halo * 1.7, 0.0, 0.98);
 
-      // Fine ordered dither replaces the large cross grid; its size stays one CSS pixel.
+      // Small crosses travel with the plane and share its refraction, revealing the lens.
+      vec2 grid = vec2(surface.x * resolution.x / pixelRatio, (surface.y - bandY) * viewGeometry.z) / 10.0;
+      vec2 cell = floor(grid);
+      vec2 local = abs((fract(grid) - 0.5) * 10.0);
+      vec2 aa = ${derivatives ? 'max(vec2(0.18), fwidth(grid) * 7.0)' : 'vec2(0.6)'};
+      vec2 arm = 1.0 - smoothstep(vec2(1.55) - aa, vec2(1.55) + aa, local);
+      vec2 stroke = 1.0 - smoothstep(max(vec2(0.0), vec2(0.32) - aa), vec2(0.32) + aa, local);
+      float cross = max(arm.x * stroke.y, arm.y * stroke.x);
+      float textureStrength = (0.65 + 0.35 * sin(cell.x * 0.17 + cell.y * 0.11)) * profile(d, width * 1.15);
+      vec3 ink = mix(vec3(0.30, 0.55, 1.0), vec3(0.24, 0.86, 0.65), smoothstep(0.5, 0.9, surface.x));
+      light = 1.0 - (1.0 - light) * (1.0 - ink * cross * textureStrength * 0.28);
+
+      // One-pixel ordered dither keeps the underlying gradient fine.
       vec2 pixels = floor(gl_FragCoord.xy / pixelRatio);
       float threshold = (4.0 * bayer2(pixels) + bayer2(pixels / 2.0) + 0.5) / 16.0 - 0.5;
       light = floor(light * 64.0 + threshold + 0.5) / 64.0;
@@ -129,7 +144,7 @@
   filterSvg.setAttribute('height', '0');
   filterSvg.style.position = 'absolute';
   opening.prepend(filterSvg);
-  const textLenses = [...opening.querySelectorAll('.opening-copy, .opening-lead')].map((element, index) => {
+  const textLenses = [...opening.querySelectorAll('.opening-label, .opening-copy, .opening-lead, .opening-cue')].map((element, index) => {
     const filter = document.createElementNS(svgNS, 'filter');
     filter.id = `opening-scroll-lens-${index}`;
     filter.setAttribute('filterUnits', 'userSpaceOnUse');
@@ -138,17 +153,21 @@
     const map = document.createElementNS(svgNS, 'feImage');
     map.setAttribute('result', 'refraction');
     map.setAttribute('preserveAspectRatio', 'none');
+    const smoothMap = document.createElementNS(svgNS, 'feGaussianBlur');
+    smoothMap.setAttribute('in', 'refraction');
+    smoothMap.setAttribute('stdDeviation', '1.5');
+    smoothMap.setAttribute('result', 'smooth-refraction');
     const displacement = document.createElementNS(svgNS, 'feDisplacementMap');
     displacement.setAttribute('in', 'SourceGraphic');
-    displacement.setAttribute('in2', 'refraction');
-    displacement.setAttribute('scale', '14');
+    displacement.setAttribute('in2', 'smooth-refraction');
+    displacement.setAttribute('scale', '64');
     displacement.setAttribute('xChannelSelector', 'R');
     displacement.setAttribute('yChannelSelector', 'G');
-    filter.append(map, displacement);
+    filter.append(map, smoothMap, displacement);
     filterSvg.append(filter);
     const bitmap = document.createElement('canvas');
-    bitmap.width = 64;
-    bitmap.height = 32;
+    bitmap.width = 128;
+    bitmap.height = 64;
     return { element, filter, map, bitmap, context: bitmap.getContext('2d') };
   });
   let lastLensProgress = -1;
@@ -163,32 +182,34 @@
     lastLensSize = size;
     const travel = 1 - Math.pow(1 - scrollProgress, 1.6);
     const bandY = 0.16 + travel;
-    const width = 0.11 - 0.055 * Math.sin(travel * Math.PI);
+    const width = 0.11 + 0.025 * Math.sin(travel * Math.PI);
+    const bend = Math.min(1, travel / 0.36);
+    const curvature = 0.42 + 0.58 * bend * bend * (3 - 2 * bend);
     for (const lens of textLenses) {
       const bounds = lens.element.getBoundingClientRect();
       if (!lens.context || reduced.matches || scrollProgress < 0.015 || bounds.bottom < 0 || bounds.top > innerHeight) {
         lens.element.style.removeProperty('filter');
         continue;
       }
-      const pad = 16;
+      const pad = 32;
       const w = bounds.width + pad * 2;
       const h = bounds.height + pad * 2;
-      const image = lens.context.createImageData(64, 32);
+      const image = lens.context.createImageData(128, 64);
       let strongest = 0;
-      for (let y = 0; y < 32; y++) {
-        for (let x = 0; x < 64; x++) {
-          const screenX = bounds.left - pad + (x + 0.5) / 64 * w;
-          const screenY = bounds.top - pad + (y + 0.5) / 32 * h;
+      for (let y = 0; y < 64; y++) {
+        for (let x = 0; x < 128; x++) {
+          const screenX = bounds.left - pad + (x + 0.5) / 128 * w;
+          const screenY = bounds.top - pad + (y + 0.5) / 64 * h;
           const rx = ((screenX - fieldBounds.left) / fieldBounds.width - 0.5) * 2;
           const vy = 1 - screenY / innerHeight;
           const ry = (vy - 0.5) * 2;
-          const surfaceY = 0.5 + (vy - 0.5) / (1 + rx * rx + 0.20 * ry * ry);
+          const surfaceY = 0.5 + (vy - 0.5) / (1 + curvature * rx * rx + 0.20 * ry * ry);
           const d = (surfaceY - bandY) / width;
           const influence = Math.exp(-d * d * 1.35);
           strongest = Math.max(strongest, influence);
-          const offset = (y * 64 + x) * 4;
-          image.data[offset] = 128 + rx * influence * 1.7 / 14 * 255;
-          image.data[offset + 1] = 128 - d * influence * 5.2 / 14 * 255;
+          const offset = (y * 128 + x) * 4;
+          image.data[offset] = 128 + rx * influence * 20 / 64 * 255;
+          image.data[offset + 1] = 128 - d * influence * 42 / 64 * 255;
           image.data[offset + 2] = 128;
           image.data[offset + 3] = 255;
         }
