@@ -44,7 +44,7 @@ const splineExplorations = [
 const mediaExplorations = [
   { number: '13', tool: 'Blender', title: 'Blender — 0001-0096', url: '/assets/spline/blender-0001-0096.gif', preview: '/assets/spline/blender-0001-0096.gif', width: 360, height: 203 },
   { number: '14', tool: 'TouchDesigner', title: 'TouchDesigner — TDMovieOut', url: '/assets/spline/touchdesigner-movieout-011111.gif', preview: '/assets/spline/touchdesigner-movieout-011111.gif', width: 360, height: 203 },
-  { number: '15', tool: 'TouchDesigner', title: 'TouchDesigner — DILLM (Irreversible)', url: '/assets/spline/touchdesigner-dillom-irreversible.gif', preview: '/assets/spline/touchdesigner-dillom-irreversible.gif', width: 360, height: 203 }
+  { number: '15', tool: 'TouchDesigner', title: 'TouchDesigner — DILLOM (Irreversible)', url: '/assets/spline/touchdesigner-dillom-irreversible.gif', preview: '/assets/spline/touchdesigner-dillom-irreversible.gif', width: 360, height: 203 }
 ];
 const explorations = [...splineExplorations, ...mediaExplorations];
 const renderExploration = (item, sitePath) => {
