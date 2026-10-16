@@ -70,16 +70,18 @@
 
   const position = () => {
     if (selected < 0 || !desktop.matches) return false;
-    const anchor = rows[selected].querySelector('h3').getBoundingClientRect();
-    if (anchor.bottom < 0 || anchor.top > innerHeight || rows[selected].hidden) return false;
+    const section = column.closest('.work-section')?.getBoundingClientRect();
+    if (!section || section.bottom <= 0 || section.top >= innerHeight || rows[selected].hidden) return false;
     const box = column.getBoundingClientRect();
     const padding = parseFloat(getComputedStyle(column).paddingLeft) || 0;
     const width = Math.max(0, box.width - padding);
     if (!width) return false;
-    const height = Math.min(width * 1.18, innerHeight - 40);
+    const height = Math.min(width * 1.18, innerHeight - 40, section.height);
+    const centeredTop = (innerHeight - height) / 2;
+    const sectionTop = Math.min(section.bottom - height, Math.max(section.top, centeredTop));
     stage.style.left = `${box.left + padding}px`;
     stage.style.width = `${width}px`;
-    stage.style.top = `${Math.max(20, Math.min(anchor.top + anchor.height / 2 - height / 2, innerHeight - height - 20))}px`;
+    stage.style.top = `${sectionTop}px`;
     wrap.style.height = `${height}px`;
     [...wrap.children].forEach((card, i) => {
       const ratio = Number(card.dataset.ratio) || 1;
