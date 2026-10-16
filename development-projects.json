@@ -5,7 +5,7 @@
     "context": "Investigación · Web · Instalación virtual 3D",
     "status": "Etapa 3 en desarrollo",
     "discipline": "Ecosistema digital interactivo",
-    "collaboration": "Ignacio Araoz",
+    "collaboration": "Nacho Araoz · diseñador de imagen y sonido",
     "summary": "De la investigación y el manifiesto a una experiencia web y una futura instalación virtual 3D.",
     "description": "Pericarion es un proyecto colaborativo que se despliega en tres etapas: investigar y proponer un ecosistema autónomo; llevar esa propuesta a una experiencia web; y adaptarla a una instalación virtual 3D, actualmente en desarrollo.",
     "stagesIntro": "La investigación y el manifiesto definen la posición del proyecto; la web traduce esa propuesta a un territorio navegable; la tercera etapa lleva el ecosistema a una instalación virtual 3D. Esa adaptación es el trabajo que sigue en curso.",
@@ -59,18 +59,7 @@
         }
       }
     ],
-    "images": [
-      {
-        "url": "/assets/development/pericarion/web-cerca.jpg",
-        "alt": "Pericarion: vista cercana del ecosistema digital con conexiones y controles experimentales",
-        "caption": "Vista cercana · relaciones locales y paneles de lectura"
-      },
-      {
-        "url": "/assets/development/pericarion/web-referencia.jpg",
-        "alt": "Pericarion: vista amplia del territorio digital con formas dispersas y conexiones",
-        "caption": "Vista amplia · distribución del territorio"
-      }
-    ]
+    "images": []
   },
   {
     "slug": "espora",
