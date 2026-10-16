@@ -17,7 +17,7 @@ const splineExplorations = [
 ].map((id, index) => ({
   number: String(index + 1).padStart(2, '0'),
   url: `https://app.spline.design/file/${id}`,
-  preview: animatedSplineIds.has(id) ? `/assets/spline/${id}.gif` : `https://filespreview.spline.design/${id}.jpg`
+  preview: animatedSplineIds.has(id) ? `/assets/spline/${id}.gif?v=20261016-loop2` : `https://filespreview.spline.design/${id}.jpg`
 }));
 
 export function parallelSection(sitePath = route => route) {
