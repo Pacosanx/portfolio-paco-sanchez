@@ -8,3 +8,6 @@
 @media(max-width:760px){.development-stage-nav{grid-template-columns:1fr;gap:14px;margin-top:24px}.development-stage-nav a{padding-top:10px;gap:8px}.development-stages{margin-top:52px}.development-stage{display:block;padding:42px 0 52px}.development-stage .development-copy{margin:0}.development-statement{margin-top:28px;padding:22px 20px;font-size:21px}.development-embed,.development-image-gallery{margin-top:28px}.development-image-gallery{display:block}.development-image-gallery .development-figure+.development-figure{margin-top:26px}.development-embed iframe{aspect-ratio:9/16;max-height:70vh}}
 
 .panel-mode .site-header,.panel-mode .contact,.panel-mode .development-back,.panel-mode .development-pagination{display:none!important}.panel-mode .development-case{padding-top:0;padding-bottom:48px}
+
+.development-tools{text-align:right}.development-tools ul{list-style:none;padding-left:0}
+@media(max-width:760px){.development-tools ul{justify-content:flex-end}}
