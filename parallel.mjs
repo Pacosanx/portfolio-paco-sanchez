@@ -36,7 +36,7 @@ const splineExplorations = [
   return {
     number: String(index + 1).padStart(2, '0'),
     url: `https://app.spline.design/file/${id}`,
-    preview: animatedSplineIds.has(id) ? `/assets/spline/${id}-${splinePreviewVersions[id] || 'loop4'}.gif` : `https://filespreview.spline.design/${id}.jpg`,
+    preview: id === 'a24cd409-128c-4fae-9247-e804da95457c' ? '/assets/spline/a24cd409-128c-4fae-9247-e804da95457c-centered.jpg' : animatedSplineIds.has(id) ? `/assets/spline/${id}-${splinePreviewVersions[id] || 'loop4'}.gif` : `https://filespreview.spline.design/${id}.jpg`,
     width,
     height
   };
