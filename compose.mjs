@@ -32,12 +32,12 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body${theme?` class="case-page" style="${caseTheme({theme})}"`:''}><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
 <a class="identity" href="${sitePath('/')}" aria-label="Paco Sanchez, inicio">Francisco ‘Paco’ Sanchez<span>Diseñador</span></a>
-<nav aria-label="Principal"><a href="${prefix}#proyectos">Proyectos</a><a href="${prefix}#en-paralelo">En paralelo</a><a href="${prefix}#trayectoria">Trayectoria</a><a href="${prefix}#contacto">Contacto</a></nav>
+<nav aria-label="Principal"><a href="${prefix}#proyectos">Proyectos</a><a href="${prefix}#en-desarrollo">En desarrollo</a><a href="${prefix}#en-paralelo">En paralelo</a><a href="${prefix}#trayectoria">Trayectoria</a><a href="${prefix}#contacto">Contacto</a></nav>
 <a class="header-email" href="mailto:fasanchez1998@gmail.com">Email</a></header>`}
 
 function contact(){return `<footer id="contacto" class="contact shell" aria-labelledby="contact-title">
@@ -135,6 +135,13 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
 <div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No hay proyectos con esta combinación.<br>Probá otro programa o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>
+<section class="development-section shell" id="en-desarrollo" aria-labelledby="development-title">
+  <div class="development-heading"><p class="eyebrow">En proceso</p><h2 id="development-title">Proyectos<br>en desarrollo.</h2><p>Estoy trabajando en estos dos proyectos y voy a ir sumando acá avances, pruebas y decisiones del proceso.</p></div>
+  <div class="development-projects">
+    <article class="development-project"><div class="development-meta"><span class="mono">01</span><span class="mono">En desarrollo</span></div><h3>Pericarion</h3><p>Un proceso abierto que sigue tomando forma.</p></article>
+    <article class="development-project"><div class="development-meta"><span class="mono">02</span><span class="mono">En desarrollo</span></div><h3>Espora</h3><p>Un proceso abierto que sigue tomando forma.</p></article>
+  </div>
+</section>
 ${parallelSection(sitePath)}
 <section id="trayectoria" class="trajectory" aria-labelledby="trajectory-title"><h2 class="eyebrow" id="trajectory-title">Trayectoria</h2>
 <div class="experience"><h3 class="cv-heading">Experiencia</h3>${cv([...teaching,...content.experience],'Experiencia')}</div>
