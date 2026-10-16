@@ -17,8 +17,11 @@ const splineExplorations = [
 ].map((id, index) => ({
   number: String(index + 1).padStart(2, '0'),
   url: `https://app.spline.design/file/${id}`,
-  preview: animatedSplineIds.has(id) ? `/assets/spline/${id}-loop2.gif` : `https://filespreview.spline.design/${id}.jpg`
+  preview: animatedSplineIds.has(id) ? `/assets/spline/${id}-loop3.gif` : `https://filespreview.spline.design/${id}.jpg`,
+  width: animatedSplineIds.has(id) ? 360 : 1304,
+  height: animatedSplineIds.has(id) ? 187 : 624
 }));
+const renderExploration = item => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="${item.width}" height="${item.height}" alt="Vista previa de la exploración ${item.number}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`;
 
 export function parallelSection(sitePath = route => route) {
   return `<section id="en-paralelo" class="parallel" aria-labelledby="parallel-title">
@@ -31,7 +34,12 @@ export function parallelSection(sitePath = route => route) {
   </article>
   <article class="lab" aria-labelledby="lab-title">
     <div class="lab-heading"><p class="resource-kicker mono">Pruebas gráficas y técnicas</p><h3 id="lab-title">Exploraciones.</h3><p class="lab-description">Estudios de forma, espacio e interacción realizados en Spline.</p></div>
-    <div class="lab-gallery" aria-label="Galería horizontal de exploraciones 3D en Spline">${splineExplorations.map(item => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="1304" height="624" alt="Vista previa de la exploración ${item.number}" loading="lazy" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`).join('')}</div>
+    <div class="lab-gallery" role="region" tabindex="0" aria-label="Galería horizontal infinita de exploraciones 3D en Spline">
+      <div class="lab-track">
+        <div class="lab-set">${splineExplorations.map(renderExploration).join('')}</div>
+        <div class="lab-set" aria-hidden="true" inert>${splineExplorations.map(renderExploration).join('')}</div>
+      </div>
+    </div>
   </article>
 </section>`;
 }
