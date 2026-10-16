@@ -92,7 +92,7 @@
       float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
       float crest = 0.62 + sides * 0.23 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
       crest += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      float floor = 0.035 + sides * 0.18 + sin(uv.x * 6.0 - t * 0.25) * 0.014;
+      float floor = 0.20 - sides * 0.18 + sin(uv.x * 6.0 - t * 0.25) * 0.014;
       veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(floor, floor + 0.11, uv.y);
       gl_FragColor = vec4(light, veil * 0.98);
     }
