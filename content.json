@@ -4671,9 +4671,13 @@
           "missingEquivalentToV2Module": 2
         },
         {
-          "type": "statement",
-          "label": "MUTAR / Vanguardia tecnológica en el arte",
-          "text": "La conexión entre lo vivo y lo virtual.",
+          "type": "image",
+          "url": "/assets/presentation/festival-v1-lemas.jpg",
+          "width": 960,
+          "height": 412,
+          "alt": "Lemas de MUTAR V1: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte», sobre el panel verde ácido original.",
+          "size": "full",
+          "sourceModule": "Adobe module 1",
           "surface": "#C2F700"
         },
         {
@@ -4891,42 +4895,24 @@
           ]
         },
         {
-          "type": "statement",
-          "label": "Vanguardia tecnológica en el arte",
-          "text": "La conexión entre lo vivo y lo virtual.",
+          "type": "image",
+          "url": "/assets/presentation/festival-v2-lemas.jpg",
+          "width": 1400,
+          "height": 349,
+          "alt": "Lemas originales de MUTAR V2: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte».",
+          "size": "full",
           "sourceModule": "Canvas Module 3",
           "surface": "#C2F700"
         },
         {
-          "type": "text",
-          "heading": "Partido gráfico",
-          "text": "El sistema retoma el diseño modular de las interfaces de programas como TouchDesigner y Ableton. Sus formas 3D nacen de parámetros aleatorios y varían entre figuras orgánicas complejas, orgánicas simples y geométricas.\n\nEsa transformación da nombre a MUTAR: las formas cambian a lo largo de las piezas, como una obra reactiva que responde a un estímulo humano. Las fotografías muestran únicamente a los artistas, para vincular al creador con el resultado digital de su trabajo.",
-          "sourceModule": "Canvas Module 4"
-        },
-        {
-          "type": "text",
-          "heading": "Partido conceptual",
-          "text": "El resultado artístico de conectar lo vivo —el humano que planea y experimenta— con lo virtual: técnicas y programas digitales de vanguardia.",
-          "sourceModule": "Canvas Module 4"
-        },
-        {
           "type": "image",
-          "url": "/assets/presentation/festival-v2/identidad.svg",
-          "width": 700,
+          "url": "/assets/presentation/festival-v2-partidos.jpg",
+          "width": 1400,
           "height": 600,
-          "alt": "MUTAR: Helvetica Neue en pesos 85 Heavy, 75 Bold y 55 Roman; Roboto Regular para lectura; paleta verde #C2F700, negro y gris #E3E3E3; variaciones del símbolo 3D y de la marca.",
-          "size": "detail",
+          "alt": "Lámina original del partido gráfico y conceptual de MUTAR V2, con los textos explicativos y el sistema de identidad.",
+          "size": "full",
           "sourceModule": "Canvas Module 4",
-          "sourceCrop": {
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6b5f2211192733.671fd089405ad.png",
-            "viewBox": [
-              700,
-              0,
-              700,
-              600
-            ],
-            "preservesNativePixels": true
-          }
+          "surface": "#E3E3E3"
         },
         {
           "type": "gallery",

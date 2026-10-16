@@ -21,40 +21,22 @@
   ],
   "/proyectos/maradona-alien": [
     {
-      "src": "/assets/previews/maradona-alien-v2-01.webp",
+      "src": "/assets/previews/maradona-alien-web.webp",
       "width": 600,
-      "height": 337,
-      "role": "whole",
-      "crop": {
-        "x": 0.21,
-        "y": 0.13056379821958458,
-        "width": 0.58,
-        "height": 0.7359050445103857
-      }
+      "height": 343,
+      "role": "whole"
     },
     {
-      "src": "/assets/previews/maradona-alien-v2-02.webp",
+      "src": "/assets/previews/maradona-alien-vr.webp",
       "width": 600,
-      "height": 219,
-      "role": "detail",
-      "crop": {
-        "x": 0.18,
-        "y": 0.05,
-        "width": 0.65,
-        "height": 0.9
-      }
+      "height": 480,
+      "role": "detail"
     },
     {
-      "src": "/assets/previews/maradona-alien-v3-03.webp",
+      "src": "/assets/previews/maradona-alien-editorial.webp",
       "width": 600,
       "height": 218,
-      "role": "detail",
-      "crop": {
-        "x": 0.33,
-        "y": 0.045871559633027525,
-        "width": 0.25333333333333335,
-        "height": 0.6972477064220184
-      }
+      "role": "detail"
     }
   ],
   "/proyectos/instalacion-vr": [
