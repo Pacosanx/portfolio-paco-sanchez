@@ -1203,7 +1203,13 @@
         "secondary": "#A7A7A7",
         "muted": "#858585",
         "line": "#2A2A2A"
-      }
+      },
+      "links": [
+        {
+          "href": "https://app.spline.design/file/46ab8d65-a885-4576-9414-ade562b50e7f",
+          "text": "Ver demo VR de Maradona en Spline"
+        }
+      ]
     },
     {
       "nombre": "FACHADA",
@@ -2922,6 +2928,10 @@
         {
           "href": "https://es.wikipedia.org/wiki/Proxima_Centauri_b",
           "text": "Proxima Centauri B"
+        },
+        {
+          "href": "https://app.spline.design/file/c6285295-64a1-4866-b66e-cc78a2765174",
+          "text": "Explorar el espacio en Spline"
         }
       ],
       "theme": {
