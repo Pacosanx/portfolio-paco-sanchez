@@ -46,9 +46,10 @@ for(const [i,p] of content.projects.entries()){
   assert.equal((html.match(/class="case-figure"/g)||[]).length,galleryImages.length,p.title);
   for(const image of galleryImages)assert(html.includes(image.url.replaceAll('&','&amp;')),p.title);
   for(const block of blocks){
-    assert(['image','gallery','text','embed','video','interactive'].includes(block.type),p.title);
+    assert(['image','gallery','text','embed','video','interactive','statement'].includes(block.type),p.title);
     if(block.type==='embed')assert(html.includes(block.url.replaceAll('&','&amp;')),p.title);
     if(block.type==='interactive')assert(html.includes('<inmson-drawing>')&&html.includes('inmson-drawing.js'),p.title);
+    if(block.type==='statement'){assert(html.includes(block.text.replaceAll('&','&amp;')),p.title);if(block.label)assert(html.includes(block.label.replaceAll('&','&amp;')),p.title);}
     if(block.type==='video')assert(html.includes(block.url.replaceAll('&','&amp;'))&&fs.existsSync(path.join('dist',block.url)),p.title);
     for(const link of block.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
   }
