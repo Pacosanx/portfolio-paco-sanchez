@@ -29,7 +29,7 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <html lang="es" data-base-path="${basePath}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
-<title>${esc(title)}</title><link rel="canonical" href="${origin}${sitePath(route)}">
+<title>${esc(title)}</title><script>if(new URLSearchParams(location.search).has('panel'))document.documentElement.classList.add('panel-mode')</script><link rel="canonical" href="${origin}${sitePath(route)}">
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
@@ -166,7 +166,7 @@ for(const p of developmentProjects){
   const projectBody=p.stageSequence?`${overview}<div class="development-stages">${sections}</div>`:`<div class="development-sections">${sections}</div>${galleryFor(p.images)}`;
   const body=`${header()}<main id="contenido" class="development-case shell">
   <a class="text-link development-back" href="${sitePath('/')}#en-desarrollo">← Volver a proyectos en desarrollo</a>
-  <section class="development-hero"><div class="development-project-meta"><span class="mono">${esc(p.context)}</span><span class="mono">${esc(p.status)}</span></div><div class="development-title"><p class="eyebrow">${esc(p.discipline)}</p>${p.collaboration?`<p class="development-collaboration">En colaboración con ${esc(p.collaboration)}</p>`:''}<h1>${esc(p.title)}</h1><p class="development-lead">${esc(p.description)}</p></div><div class="development-tools"><p class="eyebrow">Herramientas y medios</p><ul>${p.tools.map(tool=>`<li>${esc(tool)}</li>`).join('')}</ul></div></section>
+  <section class="development-hero"><div class="development-project-meta"><span class="mono">${esc(p.context)}</span><span class="mono">${esc(p.status)}</span></div><div class="development-title"><p class="eyebrow">${esc(p.discipline)}</p>${p.collaboration?`<p class="development-collaboration">En dupla con ${esc(p.collaboration)}</p>`:''}<h1>${esc(p.title)}</h1><p class="development-lead">${esc(p.description)}</p></div><div class="development-tools"><p class="eyebrow">Herramientas y medios</p><ul>${p.tools.map(tool=>`<li>${esc(tool)}</li>`).join('')}</ul></div></section>
   ${projectBody}
   <nav class="development-pagination" aria-label="Otros proyectos en desarrollo">${developmentProjects.filter(other=>other.slug!==p.slug).map(other=>`<a href="${sitePath('/en-desarrollo/'+other.slug)}/"><span class="eyebrow">También en desarrollo</span><span>${esc(other.title)}</span></a>`).join('')}</nav>
   </main>${contact()}`;
