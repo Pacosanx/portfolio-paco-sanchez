@@ -54,20 +54,13 @@
       vec2 p = surface + (uv - pointer.xy) * influence * 0.22;
       p += parallax * vec2(0.09, 0.055);
 
-      // Three small green lights sit behind three independently moving blue layers.
-      float green = pool(p, vec2(0.67 + 0.025 * sin(t), 0.28), vec2(0.12, 0.27));
-      float greenLeft = pool(p, vec2(0.24 + 0.025 * sin(t * 0.8 + 1.2), 0.30), vec2(0.12, 0.25));
-      float greenRight = pool(p, vec2(0.86 + 0.02 * cos(t * 0.75), 0.32), vec2(0.12, 0.25));
-      vec3 light = vec3(0.0, 1.0, 0.0) * (green * 0.54 + greenLeft * 0.54 + greenRight * 0.54);
-      float deep = pool(p, vec2(0.43, 0.04), vec2(0.93, 0.85));
-      float cobalt = pool(p, vec2(0.24 + 0.09 * sin(t), 0.16 + 0.055 * cos(t)), vec2(0.50, 0.49));
-      float azure = pool(p, vec2(0.79 + 0.055 * cos(t * 0.8), -0.02 + 0.04 * sin(t)), vec2(0.43, 0.56));
-      float ribbon = pool(p, vec2(0.49 + 0.08 * sin(t * 0.7), -0.11), vec2(0.41, 0.57));
-      light = screen(light, vec3(0.005, 0.035, 0.32) * deep);
-      light = screen(light, vec3(0.018, 0.17, 0.95) * cobalt * 0.87);
-      light = screen(light, vec3(0.012, 0.32, 1.0) * azure * 0.69);
-      light = screen(light, vec3(0.035, 0.25, 1.0) * ribbon * 0.63);
-      light = screen(light, vec3(0.035, 0.18, 0.50) * influence * 0.34);
+      // Layered white light forms the broad, horizontal ribbon from the sketch.
+      float core = pool(p, vec2(0.50 + 0.025 * sin(t * 0.7), 0.49), vec2(0.72, 0.25));
+      float leftGlow = pool(p, vec2(0.10, 0.48), vec2(0.38, 0.31));
+      float rightGlow = pool(p, vec2(0.90, 0.50), vec2(0.38, 0.31));
+      float haze = pool(p, vec2(0.50, 0.48), vec2(0.92, 0.43));
+      float light = min(1.0, haze * 0.18 + leftGlow * 0.55 + rightGlow * 0.55 + core * 0.42 + influence * 0.16);
+      light = 1.0 - exp(-light * 2.2);
 
       // The bitmap crosses share the lens projection of the light field.
       vec2 pixels = surface * resolution / pixelRatio;
@@ -86,17 +79,16 @@
       float vertical = (1.0 - smoothstep(max(0.0, stroke.x - aa.x), stroke.x + aa.x, abs(local.x))) * (1.0 - smoothstep(arm - aa.y, arm + aa.y, abs(local.y)));
       float cross = max(horizontal, vertical);
       float inkStrength = density * (0.19 + 0.45 * wave);
-      vec3 ink = mix(vec3(0.12, 0.39, 1.0), vec3(0.12, 0.76, 0.24), green * 0.60);
-      light = screen(light, ink * cross * inkStrength);
+      light = min(1.0, light + cross * inkStrength * 0.76);
       float veil = 1.0;
-      float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
-      float contour = sides * 0.16 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
-      contour += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      float crest = 0.56 + contour;
-      float floor = 0.14 - contour;
-      float edgeFade = 0.11;
+      float sides = pow(abs(uv.x - 0.5) * 2.0, 1.7);
+      float contour = sides * 0.075 + sin(uv.x * 7.0 + t * 0.35) * 0.018;
+      contour += sin(uv.x * 13.0 - t * 0.30) * 0.010;
+      float crest = 0.79 + contour;
+      float floor = 0.20 - contour;
+      float edgeFade = 0.13;
       veil *= (1.0 - smoothstep(crest - edgeFade, crest + edgeFade, uv.y)) * smoothstep(floor - edgeFade, floor + edgeFade, uv.y);
-      gl_FragColor = vec4(light, veil * 0.98);
+      gl_FragColor = vec4(vec3(light), veil * 0.98);
     }
   `;
 
