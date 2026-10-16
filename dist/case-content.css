@@ -99,7 +99,7 @@
 .case-statement.has-surface>p{max-width:48ch}
 /* Festival artwork has full-color backgrounds; consecutive visual panels touch edge to edge. */
 .case-gallery[data-case="festival-sistema-grafico"]>:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder)+:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder),
-.case-gallery[data-case="festival-sistema-grafico-v1"]>:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder)+:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder){margin-top:calc(-1 * var(--case-space))}
+.case-gallery[data-case="festival-sistema-grafico-v1"]>:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder)+:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder){margin-top:calc(0px - var(--case-space))}
 @container(max-width:650px){
  .case-gallery[data-case="festival-sistema-grafico"]>:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder)+:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder),
  .case-gallery[data-case="festival-sistema-grafico-v1"]>:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder)+:is(.case-media-run,.case-image-group,.case-figure,.case-placeholder){margin-top:-48px}
