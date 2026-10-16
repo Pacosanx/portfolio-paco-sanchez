@@ -9,13 +9,19 @@
     premultipliedAlpha: false, powerPreference: 'low-power'
   });
   if (!gl) return;
+  const derivatives = gl.getExtension('OES_standard_derivatives');
 
   const vertex = `
     attribute vec2 position;
     void main() { gl_Position = vec4(position, 0.0, 1.0); }
   `;
   const fragment = `
+    ${derivatives ? '#extension GL_OES_standard_derivatives : enable' : ''}
+    #ifdef GL_FRAGMENT_PRECISION_HIGH
+    precision highp float;
+    #else
     precision mediump float;
+    #endif
     uniform vec2 resolution;
     uniform float pixelRatio;
     uniform float time;
@@ -69,10 +75,15 @@
       float wave = 0.5 + 0.5 * sin(cell.x * 0.19 + cell.y * 0.23 + 1.8 * sin(cell.x * 0.065 + t));
       float density = (0.28 + 0.72 * wave) * (1.0 - smoothstep(0.12, 0.77, surface.y));
       density = min(1.0, density + influence * 0.40);
-      float bitSize = 1.0 + step(0.58, density);
-      vec2 bit = abs(floor(local / bitSize + 0.5));
-      float cross = (1.0 - step(1.5, max(bit.x, bit.y))) * (1.0 - step(0.5, min(bit.x, bit.y)));
-      float inkStrength = density * (0.13 + 0.37 * wave);
+      // Two antialiased strokes, kept thin even where the lens stretches them.
+      vec2 footprint = ${derivatives ? 'vec2(length(vec2(dFdx(pixels.x), dFdy(pixels.x))), length(vec2(dFdx(pixels.y), dFdy(pixels.y))))' : 'vec2(1.0 / pixelRatio)'};
+      vec2 stroke = max(vec2(0.05), footprint * pixelRatio * 0.45);
+      vec2 aa = max(vec2(0.035), footprint * 0.50);
+      float arm = 2.6 + density * 0.65;
+      float horizontal = (1.0 - smoothstep(arm - aa.x, arm + aa.x, abs(local.x))) * (1.0 - smoothstep(max(0.0, stroke.y - aa.y), stroke.y + aa.y, abs(local.y)));
+      float vertical = (1.0 - smoothstep(max(0.0, stroke.x - aa.x), stroke.x + aa.x, abs(local.x))) * (1.0 - smoothstep(arm - aa.y, arm + aa.y, abs(local.y)));
+      float cross = max(horizontal, vertical);
+      float inkStrength = density * (0.19 + 0.45 * wave);
       vec3 ink = mix(vec3(0.12, 0.39, 1.0), vec3(0.12, 0.76, 0.24), green * 0.60);
       light = screen(light, ink * cross * inkStrength);
       float veil = 1.0 - smoothstep(0.08, 0.78, surface.y);
@@ -80,6 +91,7 @@
       float crest = 0.62 + sides * 0.23 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
       crest += sin(uv.x * 13.0 - t * 0.30) * 0.02;
       veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(0.0, 0.16, uv.y);
+      veil *= 1.0 - smoothstep(0.76, 1.0, uv.y);
       gl_FragColor = vec4(light, veil * 0.98);
     }
   `;
