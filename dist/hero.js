@@ -88,12 +88,14 @@
       float inkStrength = density * (0.19 + 0.45 * wave);
       vec3 ink = mix(vec3(0.12, 0.39, 1.0), vec3(0.12, 0.76, 0.24), green * 0.60);
       light = screen(light, ink * cross * inkStrength);
-      float veil = 1.0 - smoothstep(0.08, 0.78, surface.y);
+      float veil = 1.0;
       float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
-      float crest = 0.62 + sides * 0.23 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
-      crest += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      float floor = 0.20 - sides * 0.18 + sin(uv.x * 6.0 - t * 0.25) * 0.014;
-      veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(floor, floor + 0.11, uv.y);
+      float contour = sides * 0.16 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
+      contour += sin(uv.x * 13.0 - t * 0.30) * 0.02;
+      float crest = 0.56 + contour;
+      float floor = 0.14 - contour;
+      float edgeFade = 0.11;
+      veil *= (1.0 - smoothstep(crest - edgeFade, crest + edgeFade, uv.y)) * smoothstep(floor - edgeFade, floor + edgeFade, uv.y);
       gl_FragColor = vec4(light, veil * 0.98);
     }
   `;
