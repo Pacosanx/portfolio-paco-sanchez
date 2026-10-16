@@ -26,6 +26,7 @@
     uniform float pixelRatio;
     uniform float time;
     uniform vec3 pointer;
+    uniform float scrollProgress;
 
     float pool(vec2 p, vec2 center, vec2 size) {
       vec2 d = (p - center) / size;
@@ -41,18 +42,23 @@
       vec2 distanceToPointer = (uv - pointer.xy) * vec2(resolution.x / resolution.y, 1.0);
       float influence = exp(-dot(distanceToPointer, distanceToPointer) * 3.5) * pointer.z;
       vec2 parallax = (pointer.xy - vec2(0.5, 0.35)) * pointer.z;
+      float scroll = scrollProgress;
 
       // Inverse barrel projection: the grid opens out and rises at the edges.
-      vec2 lensCenter = vec2(0.5 + parallax.x * 0.055, -0.12);
+      vec2 lensCenter = vec2(0.5 + parallax.x * 0.055, -0.12 + scroll * 0.16);
       vec2 lensScale = vec2(1.75, 1.0);
       vec2 lensRay = (uv - lensCenter) * lensScale;
-      float barrel = 1.0 + dot(lensRay, lensRay) * 0.48;
+      float barrel = 1.0 + dot(lensRay, lensRay) * (1.10 + scroll * 1.55);
       vec2 surface = lensCenter + lensRay / barrel / lensScale;
-      float swell = sin(surface.x * 8.0 + t * 0.7) * 0.035;
-      swell += sin(surface.x * 17.0 - t * 0.45) * 0.014;
+      float swell = sin(surface.x * 8.0 + t * 0.7) * (0.07 + scroll * 0.075);
+      swell += sin(surface.x * 17.0 - t * 0.45) * (0.03 + scroll * 0.045);
       surface.y += swell * smoothstep(0.02, 0.65, uv.y);
-      vec2 p = surface + (uv - pointer.xy) * influence * 0.22;
+      // The cursor behaves like a soft convex lens, magnifying the same field beneath it.
+      vec2 p = surface + (uv - pointer.xy) * influence * 0.50;
       p += parallax * vec2(0.09, 0.055);
+      // The colored ribbon and its texture travel upward inside the hero as the page advances.
+      float scrollShift = scroll * 0.75;
+      p.y -= scrollShift;
 
       // Three small green lights sit behind three independently moving blue layers.
       float green = pool(p, vec2(0.67 + 0.025 * sin(t), 0.28), vec2(0.12, 0.27));
@@ -71,7 +77,7 @@
 
       // The bitmap crosses share the lens projection of the light field.
       vec2 pixels = surface * resolution / pixelRatio;
-      vec2 grid = pixels / 14.0;
+      vec2 grid = pixels / 10.5;
       vec2 cell = floor(grid);
       vec2 local = (fract(grid) - 0.5) * 14.0;
       float wave = 0.5 + 0.5 * sin(cell.x * 0.19 + cell.y * 0.23 + 1.8 * sin(cell.x * 0.065 + t));
@@ -79,23 +85,24 @@
       density = min(1.0, density + influence * 0.40);
       // Two antialiased strokes, kept thin even where the lens stretches them.
       vec2 footprint = ${derivatives ? 'vec2(length(vec2(dFdx(pixels.x), dFdy(pixels.x))), length(vec2(dFdx(pixels.y), dFdy(pixels.y))))' : 'vec2(1.0 / pixelRatio)'};
-      vec2 stroke = max(vec2(0.05), footprint * pixelRatio * 0.45);
-      vec2 aa = max(vec2(0.035), footprint * 0.50);
-      float arm = 2.6 + density * 0.65;
+      vec2 stroke = max(vec2(0.035), footprint * pixelRatio * 0.28);
+      vec2 aa = max(vec2(0.03), footprint * 0.42);
+      float arm = 1.55 + density * 0.32;
       float horizontal = (1.0 - smoothstep(arm - aa.x, arm + aa.x, abs(local.x))) * (1.0 - smoothstep(max(0.0, stroke.y - aa.y), stroke.y + aa.y, abs(local.y)));
       float vertical = (1.0 - smoothstep(max(0.0, stroke.x - aa.x), stroke.x + aa.x, abs(local.x))) * (1.0 - smoothstep(arm - aa.y, arm + aa.y, abs(local.y)));
       float cross = max(horizontal, vertical);
-      float inkStrength = density * (0.19 + 0.45 * wave);
+      float inkStrength = density * (0.15 + 0.36 * wave);
       vec3 ink = mix(vec3(0.12, 0.39, 1.0), vec3(0.12, 0.76, 0.24), green * 0.60);
       light = screen(light, ink * cross * inkStrength);
       float veil = 1.0;
       float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
       float contour = sides * 0.16 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
       contour += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      float crest = 0.56 + contour;
+      float crest = 0.42 + scroll * 0.12 + contour;
       float floor = 0.14 - contour;
       float edgeFade = 0.11;
-      veil *= (1.0 - smoothstep(crest - edgeFade, crest + edgeFade, uv.y)) * smoothstep(floor - edgeFade, floor + edgeFade, uv.y);
+      float shapeY = uv.y - scrollShift;
+      veil *= (1.0 - smoothstep(crest - edgeFade, crest + edgeFade, shapeY)) * smoothstep(floor - edgeFade, floor + edgeFade, shapeY);
       gl_FragColor = vec4(light, veil * 0.98);
     }
   `;
@@ -136,7 +143,7 @@
   const position = gl.getAttribLocation(program, 'position');
   gl.enableVertexAttribArray(position);
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
-  const uniforms = Object.fromEntries(['resolution', 'pixelRatio', 'time', 'pointer'].map(key => [key, gl.getUniformLocation(program, key)]));
+  const uniforms = Object.fromEntries(['resolution', 'pixelRatio', 'time', 'pointer', 'scrollProgress'].map(key => [key, gl.getUniformLocation(program, key)]));
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let inView = true;
   let frame = 0;
@@ -145,12 +152,57 @@
   let lost = false;
   const targetPointer = { x: 0.5, y: 0.35, active: 0 };
   const pointer = { ...targetPointer };
+  let targetScroll = 0;
+  let scrollProgress = 0;
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const filterSvg = document.createElementNS(svgNS, 'svg');
+  filterSvg.setAttribute('aria-hidden', 'true');
+  filterSvg.setAttribute('width', '0');
+  filterSvg.setAttribute('height', '0');
+  filterSvg.style.position = 'absolute';
+  const lensFilter = document.createElementNS(svgNS, 'filter');
+  lensFilter.setAttribute('id', 'opening-scroll-lens');
+  lensFilter.setAttribute('x', '-8%');
+  lensFilter.setAttribute('y', '-18%');
+  lensFilter.setAttribute('width', '116%');
+  lensFilter.setAttribute('height', '136%');
+  const lensNoise = document.createElementNS(svgNS, 'feTurbulence');
+  lensNoise.setAttribute('type', 'fractalNoise');
+  lensNoise.setAttribute('baseFrequency', '0.003 0.022');
+  lensNoise.setAttribute('numOctaves', '1');
+  lensNoise.setAttribute('seed', '7');
+  lensNoise.setAttribute('result', 'lensNoise');
+  const lensDisplacement = document.createElementNS(svgNS, 'feDisplacementMap');
+  lensDisplacement.setAttribute('in', 'SourceGraphic');
+  lensDisplacement.setAttribute('in2', 'lensNoise');
+  lensDisplacement.setAttribute('scale', '0');
+  lensDisplacement.setAttribute('xChannelSelector', 'R');
+  lensDisplacement.setAttribute('yChannelSelector', 'G');
+  lensFilter.append(lensNoise, lensDisplacement);
+  filterSvg.append(lensFilter);
+  opening.prepend(filterSvg);
+  const refractedContent = opening.querySelectorAll('.opening-label, .opening-copy, .opening-lead, .opening-cue');
+  refractedContent.forEach(element => { element.style.filter = 'url(#opening-scroll-lens)'; });
 
   function draw() {
     if (lost) return;
     gl.uniform1f(uniforms.time, reduced.matches ? 0 : elapsed);
     gl.uniform3f(uniforms.pointer, pointer.x, pointer.y, reduced.matches ? 0 : pointer.active);
+    gl.uniform1f(uniforms.scrollProgress, scrollProgress);
+    const lensOnset = Math.max(0, Math.min(1, (scrollProgress - 0.02) / 0.36));
+    const lensStrength = lensOnset * lensOnset * (3 - 2 * lensOnset);
+    lensDisplacement.setAttribute('scale', (lensStrength * 16).toFixed(2));
     gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  function updateScroll() {
+    const bounds = opening.getBoundingClientRect();
+    targetScroll = Math.max(0, Math.min(1, -bounds.top / Math.max(1, bounds.height * 0.60)));
+    if (reduced.matches) {
+      scrollProgress = targetScroll;
+      draw();
+    } else if (inView && !frame) {
+      sync();
+    }
   }
   function resize() {
     const { width, height } = field.getBoundingClientRect();
@@ -170,6 +222,7 @@
       elapsed += dt;
       const follow = 1 - Math.exp(-dt * 9);
       for (const key of ['x', 'y', 'active']) pointer[key] += (targetPointer[key] - pointer[key]) * follow;
+      scrollProgress += (targetScroll - scrollProgress) * (1 - Math.exp(-dt * 6));
       last = now;
       draw();
     }
@@ -188,6 +241,8 @@
   new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; sync(); }).observe(opening);
   document.addEventListener('visibilitychange', sync);
   reduced.addEventListener('change', sync);
+  window.addEventListener('scroll', updateScroll, { passive: true });
+  updateScroll();
   opening.addEventListener('pointermove', event => {
     if (event.pointerType === 'touch' || reduced.matches) return;
     const bounds = field.getBoundingClientRect();
@@ -204,3 +259,4 @@
   });
   sync();
 })();
+
