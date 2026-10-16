@@ -1172,6 +1172,296 @@
       }
     },
     {
+      "nombre": "EXPERIENCIA VR / MEDIOS GROISMAN 2",
+      "title": "Experiencia VR / Medios Groisman 2",
+      "ruta": "/proyectos/vr-medios-groisman-2",
+      "anio": "2024",
+      "descripcion": "Exploración espacial y narrativa sonora en realidad virtual. El desplazamiento por un bosque conecta objetos infantiles, interiores y figuras; la cercanía a cada zona activa las voces y los sonidos del recorrido.",
+      "herramientas": "Unity",
+      "tools": [
+        "Unity"
+      ],
+      "discipline": "Realidad virtual · Diseño de interacción",
+      "context": "Medios 2 · Groisman · FADU / UBA",
+      "fuente": "/assets/vr-medios2/recorrido-completo.mp4",
+      "fuenteLabel": "Ver recorrido completo",
+      "imagenes": [
+        {
+          "url": "/assets/vr-medios2/01-bosque.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Bosque y tren de juguete en la experiencia de realidad virtual",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/02-tren.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Detalle del tren de juguete en el bosque",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/03-habitacion.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Habitación infantil integrada al bosque",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/04-objeto-papel.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Figura de papel en el recorrido virtual",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/05-ruinas.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Ruinas y vegetación del entorno virtual",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/06-caballito.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Caballito de juguete entre las raíces",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/07-hospital.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Interior de hospital en la experiencia virtual",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/08-camilla.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Detalle de la camilla de hospital",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/09-memoria.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Mesa y objetos del espacio funerario",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/10-maniquies.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Grupo de maniquíes en el tramo final",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/11-ataud.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Ataúd al final del recorrido",
+          "caption": ""
+        },
+        {
+          "url": "/assets/vr-medios2/12-aparicion.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Aparición de la figura de papel sobre el ataúd",
+          "caption": ""
+        }
+      ],
+      "preview": "/assets/vr-medios2/01-bosque.webp",
+      "previewWidth": 1920,
+      "previewHeight": 1080,
+      "galleryLayout": "grid",
+      "blocks": [
+        {
+          "type": "video",
+          "url": "/assets/vr-medios2/recorrido-completo.mp4",
+          "poster": "/assets/vr-medios2/01-bosque.webp",
+          "title": "Recorrido de la experiencia VR de Medios Groisman 2",
+          "caption": "Recorrido completo · 1 min 56 s · con sonido. Registro de 2026 desde la escena original de Unity, con cámara de escritorio y sin casco."
+        },
+        {
+          "type": "text",
+          "text": "INFANCIA EN EL BOSQUE\nUn tren, una habitación y una figura de papel aparecen entre árboles y raíces. Los objetos y las voces marcan distintos puntos de exploración."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/01-bosque.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Bosque y tren de juguete en la experiencia de realidad virtual",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/02-tren.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Detalle del tren de juguete en el bosque",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/03-habitacion.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Habitación infantil integrada al bosque",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/04-objeto-papel.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Figura de papel en el recorrido virtual",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/05-detalle-tren.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara alrededor del tren"
+            },
+            {
+              "url": "/assets/vr-medios2/06-detalle-habitacion.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara dentro de la habitación infantil"
+            },
+            {
+              "url": "/assets/vr-medios2/07-detalle-monstruo.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Detalle de la figura de papel en movimiento"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "OBJETOS, INTERIORES Y SONIDO\nEl recorrido continúa entre ruinas, un caballito y una habitación de hospital. Las activaciones de proximidad acompañan el cambio de escena con voces y sonidos."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/05-ruinas.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Ruinas y vegetación del entorno virtual",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/06-caballito.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Caballito de juguete entre las raíces",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/07-hospital.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Interior de hospital en la experiencia virtual",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/08-camilla.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Detalle de la camilla de hospital",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/09-memoria.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Mesa y objetos del espacio funerario",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/08-detalle-caballito.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara alrededor del caballito"
+            },
+            {
+              "url": "/assets/vr-medios2/09-detalle-hospital.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Detalle de la camilla de hospital en movimiento"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "EL TRAMO FINAL\nUn grupo de figuras conduce hacia el último sector del recorrido. Al acercarse al ataúd, se activa la aparición final."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/10-maniquies.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Grupo de maniquíes en el tramo final",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/11-ataud.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Ataúd al final del recorrido",
+              "caption": ""
+            },
+            {
+              "url": "/assets/vr-medios2/12-aparicion.webp",
+              "width": 1920,
+              "height": 1080,
+              "alt": "Aparición de la figura de papel sobre el ataúd",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Recorrido de cámara junto a los maniquíes"
+            },
+            {
+              "url": "/assets/vr-medios2/11-detalle-ataud.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Ataúd y figura de papel en la escena final"
+            }
+          ]
+        }
+      ],
+      "contenidoFuente": {
+        "fechaRegistro": "2026-10-15",
+        "anioProyecto": "2024",
+        "images": 12,
+        "gifs": 7,
+        "videos": 1,
+        "origen": "Capturas nuevas de la escena original de Unity; cámara y desplazamiento automatizados en una copia del proyecto."
+      }
+    },
+    {
       "nombre": "ESQUEMÁTICA / MICROEVENTO",
       "ruta": "/proyectos/esquematica-microevento",
       "anio": "2023",
@@ -5178,3 +5468,4 @@
     }
   ]
 }
+

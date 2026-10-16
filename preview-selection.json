@@ -280,5 +280,23 @@
       "coverException": true,
       "source": "Adobe Portfolio original"
     }
+  ],
+  "/proyectos/vr-medios-groisman-2": [
+    {
+      "src": "/assets/vr-medios2/02-tren.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/assets/vr-medios2/07-hospital.webp",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "src": "/assets/vr-medios2/10-maniquies.webp",
+      "width": 1920,
+      "height": 1080
+    }
   ]
 }
+

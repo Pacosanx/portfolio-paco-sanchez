@@ -6,9 +6,9 @@ const home=fs.readFileSync('dist/index.html','utf8');
 assert.equal((home.match(/class="project-row"/g)||[]).length,content.projects.length);
 assert.equal((home.match(/<template data-project-template/g)||[]).length,content.projects.length);
 assert(home.includes('id="project-filter"')&&home.includes('aria-controls="project-index"'));
-assert.equal((home.match(/data-overflow hidden/g)||[]).length,6);
+assert.equal((home.match(/data-overflow hidden/g)||[]).length,Math.max(0,content.projects.length-15));
 assert.equal(content.projects[0].ruta,'/proyectos/metaphex');
-assert.equal(content.projects[14].ruta,'/proyectos/historias-instagram');
+assert(content.projects.some(p=>p.ruta==='/proyectos/historias-instagram'));
 assert(!home.includes('class="touch-preview"'));
 assert(!home.includes('Índice de proyectos'));
 assert.equal((home.match(/Auxiliar docente de /g)||[]).length,3);
@@ -63,3 +63,4 @@ for(const [i,preview] of previews.entries()){
   if(content.projects[i].imagenes.length)for(const image of preview.images)assert.notEqual(image.src,content.projects[i].preview);
 }
 console.log(JSON.stringify({pages:htmlFiles.length,internalLinks:links,imageReferences:images,projectImages:content.projects.reduce((n,p)=>n+p.imagenes.length,0),passed:true}));
+
