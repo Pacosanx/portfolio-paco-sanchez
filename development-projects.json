@@ -2,36 +2,48 @@
   {
     "slug": "pericarion",
     "title": "Pericarion",
-    "context": "2026 · Investigación y prototipo",
-    "status": "En desarrollo",
+    "context": "Investigación · Web · Instalación virtual 3D",
+    "status": "Etapa 3 en desarrollo",
     "discipline": "Ecosistema digital interactivo",
-    "summary": "Un mundo digital autónomo para observar, recorrer y afectar sin controlarlo.",
-    "description": "Pericarion explora un ecosistema digital que continúa activo en ausencia de quien lo visita. La experiencia propone recorrer un territorio vivo, acercarse a sus relaciones y observar cómo una presencia puede alterar procesos que siguen su propio curso.",
+    "collaboration": "Ignacio Araoz",
+    "summary": "De la investigación y el manifiesto a una experiencia web y una futura instalación virtual 3D.",
+    "description": "Pericarion es un proyecto colaborativo que se despliega en tres etapas: investigar y proponer un ecosistema autónomo; llevar esa propuesta a una experiencia web; y adaptarla a una instalación virtual 3D, actualmente en desarrollo.",
     "tools": [
+      "Investigación y escritura",
       "Diseño de interacción",
-      "Prototipado web",
-      "Sistemas visuales"
+      "Experiencia web",
+      "Entorno 3D"
     ],
+    "galleryLabel": "Registro visual · adaptación a web",
     "sections": [
       {
-        "label": "01 / La propuesta",
-        "title": "Un ecosistema con reglas propias",
-        "text": "Dispersión, arraigo, crecimiento, intercambio y degradación forman parte de un ciclo. La persona explora y puede producir perturbaciones; sus efectos dependen del estado del mundo y no de una respuesta fija."
-      },
-      {
-        "label": "02 / Avances actuales",
-        "title": "Territorio y escalas de lectura",
-        "text": "Las capturas muestran estudios del territorio desde dos distancias y una interfaz experimental para recorrerlo. La vista amplia deja ver patrones distribuidos; al acercarse aparecen unidades, conexiones y señales de actividad."
-      },
-      {
-        "label": "03 / En desarrollo",
-        "title": "Qué sigue en exploración",
-        "text": "El prototipo continúa probando cómo hacer legibles los cambios sin convertir la experiencia en una secuencia de objetivos.",
+        "label": "ETAPA 01 / INVESTIGACIÓN Y PROPUESTA",
+        "title": "Un manifiesto para formar parte del sistema",
+        "text": "La investigación pregunta cómo se desarma la frontera entre biología y tecnología cuando ambas se entienden como formas de organización material. El manifiesto propone un ecosistema que existe antes de la llegada humana y continúa en su ausencia; la persona ingresa como una fuerza más, capaz de producir perturbaciones pero no de controlar el mundo.",
         "items": [
-          "Ajustar el ritmo de los ciclos y sus rastros.",
-          "Probar cómo el movimiento y la permanencia perturban el entorno.",
-          "Definir una identidad visual y sonora para sus procesos."
+          "El sistema funciona sin intervención humana y conserva sus propios ciclos.",
+          "La presencia modifica relaciones; no da órdenes ni recibe respuestas fijas.",
+          "Los efectos pueden propagarse y aparecer más tarde en otras partes del ecosistema."
         ]
+      },
+      {
+        "label": "ETAPA 02 / ADAPTACIÓN A EXPERIENCIA WEB",
+        "title": "Recorrer un territorio activo",
+        "text": "La propuesta se traduce a una experiencia navegable desde el navegador. La persona entra a un ecosistema ya en marcha, lo recorre y observa sus relaciones bajo la pregunta: ¿bajo qué condiciones podemos considerar a la tecnología como biología y a la biología como tecnología?",
+        "link": {
+          "href": "https://pericarion.p-exp-estudiantes.chatgpt.site/",
+          "label": "Explorar la experiencia web"
+        }
+      },
+      {
+        "label": "ETAPA 03 / ADAPTACIÓN A INSTALACIÓN VIRTUAL 3D",
+        "title": "Llevar el ecosistema a una escala corporal",
+        "text": "La propuesta pasa a un espacio virtual tridimensional que se recorre con el cuerpo y el movimiento. Esta es la etapa que está en proceso. La demo actual permite explorar un primer ambiente 3D en primera persona desde el navegador; requiere WebGL 2 y teclado.",
+        "link": {
+          "href": "/assets/development/pericarion/vr-demo.html",
+          "label": "Probar demo de exploración 3D",
+          "newTab": true
+        }
       }
     ],
     "images": [
