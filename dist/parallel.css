@@ -20,6 +20,6 @@
 .parallel .lab-entry-caption{display:grid;grid-template-columns:34px minmax(0,1fr) 18px;align-items:center;gap:12px;padding:14px 16px}
 .parallel .lab-entry-number{font-size:.7rem;color:var(--muted)}
 .parallel .lab-entry-title{font-size:.9375rem;line-height:1.5}
-.parallel .lab-entry-action{font-size:1rem;color:var(--muted);text-align:right}
+.parallel .lab-entry-action{font-size:.8125rem;color:var(--muted);text-align:right}
 @media(max-width:1000px){.parallel{padding-bottom:120px}.parallel .datita,.parallel .lab{grid-column:4/13}.parallel .datita{display:block}.parallel .datita-context{max-width:500px;margin-top:36px}.parallel article>a.datita-preview{margin-top:48px}.parallel .lab{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);column-gap:36px;margin-top:120px}}
 @media(max-width:600px){.parallel{padding-bottom:88px}.parallel .datita,.parallel .lab{max-width:none;margin-left:0}.parallel .datita-context{margin-top:28px}.parallel .datita-context>p{font-size:1rem}.parallel article>a.datita-preview{margin-top:40px}.parallel .lab{display:block;margin-top:100px}.parallel .lab-heading{max-width:300px}.parallel .lab-gallery{margin-top:36px}.parallel .lab-entry{flex-basis:86%}.parallel .lab-entry-caption{padding:12px}}
