@@ -11,7 +11,7 @@
 .parallel .lab{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;width:100vw;margin:152px 0 0 calc(50% - 50vw);padding-inline:var(--gutter);max-width:none}
 .parallel .lab-heading{grid-column:4/13;max-width:300px}
 .parallel .lab-description{font-size:1rem;line-height:1.75;color:var(--secondary);margin-top:28px}
-.parallel .lab-gallery{grid-column:1/-1;width:100vw;margin:40px calc(-1 * var(--gutter)) 0;min-width:0;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;touch-action:pan-x;cursor:grab;user-select:none;-webkit-user-select:none}
+.parallel .lab-gallery{grid-column:1/-1;width:100vw;margin:40px calc(-1 * var(--gutter)) 0;min-width:0;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .parallel .lab-gallery::-webkit-scrollbar{display:none}
 .parallel .lab-gallery.is-dragging{cursor:grabbing}
 .parallel .lab-track{display:flex;width:max-content;min-width:100%;transform:translateZ(0)}

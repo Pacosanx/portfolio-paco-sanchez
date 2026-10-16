@@ -34,11 +34,9 @@
       if (event.pointerType === 'mouse' && event.button !== 0) return;
       pointerDown = true;
       didDrag = false;
-      if (event.pointerType === 'mouse' || event.pointerType === 'pen') {
-        dragPointerId = event.pointerId;
-        dragStartX = event.clientX;
-        dragStartScroll = gallery.scrollLeft;
-      }
+      dragPointerId = event.pointerId;
+      dragStartX = event.clientX;
+      dragStartScroll = gallery.scrollLeft;
     });
 
     window.addEventListener('pointermove', event => {
@@ -53,17 +51,19 @@
 
       let nextScroll = dragStartScroll - delta;
       if (nextScroll < 0) {
-        dragStartScroll += setWidth;
-        nextScroll += setWidth;
+        const loops = Math.ceil(-nextScroll / setWidth);
+        dragStartScroll += loops * setWidth;
+        nextScroll += loops * setWidth;
       } else if (nextScroll >= setWidth) {
-        dragStartScroll -= setWidth;
-        nextScroll -= setWidth;
+        const loops = Math.floor(nextScroll / setWidth);
+        dragStartScroll -= loops * setWidth;
+        nextScroll -= loops * setWidth;
       }
       gallery.scrollLeft = nextScroll;
     }, { passive: false });
 
     const finishPointer = event => {
-      if (event.pointerId !== dragPointerId && dragPointerId !== null) return;
+      if (event.pointerId !== dragPointerId) return;
       pointerDown = false;
       dragPointerId = null;
       gallery.classList.remove('is-dragging');
