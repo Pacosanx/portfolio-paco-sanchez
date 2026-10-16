@@ -1093,28 +1093,69 @@
       "nombre": "INSTALACIÓN DE REALIDAD VIRTUAL",
       "ruta": "/proyectos/instalacion-vr",
       "anio": "2023",
-      "descripcion": "Instalación de realidad virtual. Proyecto de Morfología, FADU/UBA, 2023.",
-      "herramientas": "Photoshop · Spline · Unity 3D",
+      "descripcion": "Una experiencia de realidad virtual para dibujar en el espacio y escuchar el movimiento. El trazo queda suspendido, se cruza con otros y cambia de tono con la altura. Proyecto individual de Morfología 2, Cátedra Longinotti, FADU/UBA, 2023.",
+      "herramientas": "Unity 3D · Diseño interactivo web · Web Audio",
       "fuente": "https://youtu.be/_oieEi2r6M4",
       "imagenes": [
         {
-          "url": "https://i.ytimg.com/vi/_oieEi2r6M4/maxresdefault.jpg",
-          "width": 1280,
-          "height": 720,
-          "alt": "Inmson — instalación de realidad virtual, portada del video original"
+          "url": "/assets/inmson-recorrido.jpg",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Dibujo de trazos azules translúcidos superpuestos en la zona segura de INMSON"
         }
       ],
-      "title": "Instalación de realidad virtual",
+      "title": "INMSON — Forma, sonido y movimiento",
       "discipline": "Realidad virtual",
       "tools": [
-        "Photoshop",
-        "Spline",
-        "Unity 3D"
+        "Unity 3D",
+        "Diseño interactivo web",
+        "Web Audio"
       ],
       "preview": "https://framerusercontent.com/images/Qqm05WHXEXpOWc3k3T0vnwBzc.png?width=359&height=359",
       "previewWidth": 359,
       "previewHeight": 359,
       "blocks": [
+        {
+          "type": "text",
+          "text": "01 / LA IDEA\nDibujar más allá de la superficie.\nINMSON propone explorar la relación entre movimiento, forma y sonido. En realidad virtual, el gesto deja un trazo suspendido que se cruza con otros y construye volumen. La altura del dibujo modifica el tono: abajo, grave; arriba, agudo."
+        },
+        {
+          "type": "image",
+          "url": "/assets/inmson-recorrido.jpg",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Trazos azules irregulares y superpuestos dentro del rectángulo de movimiento de INMSON",
+          "caption": "Un dibujo que ocupa el espacio y puede atravesarse."
+        },
+        {
+          "type": "interactive",
+          "title": "Dibujá el sonido.",
+          "description": "Mantené presionado y mové el mouse, o usá el dedo. Subí hacia el agudo. Bajá hacia el grave.",
+          "caption": "Adaptación interactiva en 2D. El sonido se sintetiza a partir de la altura del trazo."
+        },
+        {
+          "type": "text",
+          "text": "03 / RECORRER EL DIBUJO\nEntrar en las capas.\nLas líneas se acercan, se superponen y dejan ver lo que hay detrás. Al caminar entre ellas, cambia la forma de percibir el dibujo. El rectángulo del piso delimita la zona segura: este recorrido avanza por su largo y se mantiene dentro de sus límites."
+        },
+        {
+          "type": "video",
+          "url": "/assets/inmson-recorrido-vr.mp4",
+          "poster": "/assets/inmson-recorrido.jpg",
+          "title": "Recorrido en primera persona a través del dibujo de INMSON",
+          "caption": "Demostración de 14 segundos realizada en Unity con una cámara automatizada. Recorrido a lo largo del rectángulo, sin casco ni sonido."
+        },
+        {
+          "type": "text",
+          "text": "04 / DEL GESTO AL SISTEMA\nUna acción, distintas respuestas.\nMovimiento: el recorrido del lápiz se convierte en una forma que permanece en el espacio.\nAltura: la posición vertical del gesto modifica el sonido.\nAcumulación: los trazos translúcidos construyen capas que se pueden recorrer.\nProyecto individual de Morfología 2, Cátedra Longinotti, FADU/UBA, 2023."
+        },
+        {
+          "type": "image",
+          "url": "/assets/inmson-afiche-original.jpg",
+          "width": 1920,
+          "height": 1700,
+          "alt": "Afiche original de la entrega académica de INMSON",
+          "caption": "Afiche de presentación original del proyecto."
+        },
         {
           "type": "embed",
           "url": "https://www.youtube.com/embed/_oieEi2r6M4",

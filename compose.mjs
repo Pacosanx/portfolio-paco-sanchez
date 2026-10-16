@@ -12,6 +12,7 @@ const teaching=JSON.parse(fs.readFileSync(new URL('./teaching.json',import.meta.
 const selections=JSON.parse(fs.readFileSync(new URL('./preview-selection.json',import.meta.url),'utf8'));
 const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
+const assetPath=url=>url.startsWith('/')&&!url.startsWith('//')?sitePath(url):url;
 const origin=(process.env.SITE_ORIGIN||'https://paco-sanchez-portfolio.noisy-koala-9107.chatgpt.site').replace(/\/+$/,'');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
@@ -25,7 +26,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${sitePath('/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${sitePath('/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${sitePath('/assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
@@ -43,7 +44,7 @@ function projectRow(p,i){return `<a class="project-row" href="${sitePath(p.ruta)
 
 function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context)}</td></tr>`).join('')}</tbody></table>`}
 
-function caseImage(image,p,j){return `<figure class="case-figure" style="max-width:${Math.min(1120,image.width||1120)}px;margin-inline:auto"><img src="${esc(image.url)}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), (max-width:1300px) 80vw, 1120px"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(image.alt||`${p.title}, imagen ${j+1}`)}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async">${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
+function caseImage(image,p,j){return `<figure class="case-figure" style="max-width:${Math.min(1120,image.width||1120)}px;margin-inline:auto"><img src="${esc(assetPath(image.url))}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), (max-width:1300px) 80vw, 1120px"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(image.alt||`${p.title}, imagen ${j+1}`)}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async">${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
 function caseText(block){
   const text=String(block.text||'').trim().replace(/\n{3,}/g,'\n\n');
   let linked=esc(text);
@@ -77,9 +78,10 @@ function caseGallery(p){
     if(block.type==='text')return caseText(block);
     if(block.type==='embed'){
       const ratio=Number(block.aspectRatio)>0?Number(block.aspectRatio):16/9;
-      return `<figure class="case-embed${ratio<1?' is-portrait':''}" style="--media-ratio:${ratio}"><div class="case-player"><iframe src="${esc(block.url)}" title="${esc(block.title||p.title)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${block.link?`<figcaption><a class="text-link" href="${esc(block.link)}" target="_blank" rel="noopener noreferrer">${esc(block.title||'Ver video en YouTube')}</a></figcaption>`:''}</figure>`;
+      return `<figure class="case-embed${ratio<1?' is-portrait':''}" style="--media-ratio:${ratio}"><div class="case-player"><iframe src="${esc(assetPath(block.url))}" title="${esc(block.title||p.title)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${block.link?`<figcaption><a class="text-link" href="${esc(block.link)}" target="_blank" rel="noopener noreferrer">${esc(block.title||'Ver video en YouTube')}</a></figcaption>`:''}</figure>`;
     }
-    if(block.type==='video')return `<figure class="case-video"><video src="${esc(block.url)}" ${block.poster?`poster="${esc(block.poster)}"`:''} controls playsinline preload="metadata" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
+    if(block.type==='video')return `<figure class="case-video"><video src="${esc(assetPath(block.url))}" ${block.poster?`poster="${esc(assetPath(block.poster))}"`:''} controls playsinline preload="metadata" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
+    if(block.type==='interactive')return `<section class="inmson-case-interaction" aria-labelledby="inmson-interaction-title"><p class="eyebrow">02 / Probalo acá</p><h2 id="inmson-interaction-title">${esc(block.title)}</h2><p class="interaction-description">${esc(block.description)}</p><inmson-drawing></inmson-drawing>${block.caption?`<p class="interaction-caption">${esc(block.caption)}</p>`:''}</section>`;
     return '';
   }).join('');
 }
@@ -121,6 +123,10 @@ for(const [i,p] of projects.entries()){
   fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — Paco Sanchez`,p.descripcion,p.ruta+'/',body));
 }
 
-const previewData=projects.map(p=>({route:p.ruta,images:selections[p.ruta]||[]}));
+const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(image=>({...image,src:assetPath(image.src)}))}));
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
+fs.mkdirSync('dist/assets',{recursive:true});
+for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg']){
+  fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
+}
 console.log(JSON.stringify({pages:projects.length+1,projects:projects.length,galleryImages:projects.reduce((n,p)=>n+p.imagenes.length,0)}));
