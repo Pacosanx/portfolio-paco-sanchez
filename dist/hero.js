@@ -6,7 +6,7 @@
   const opening = field.closest('.opening');
   const gl = canvas.getContext('webgl', {
     alpha: true, antialias: false, depth: false, stencil: false,
-    premultipliedAlpha: false, powerPreference: 'low-power'
+    premultipliedAlpha: true, powerPreference: 'low-power'
   });
   if (!gl) return;
   const derivatives = gl.getExtension('OES_standard_derivatives');
@@ -86,7 +86,8 @@
       vec2 pixels = floor(gl_FragCoord.xy / pixelRatio);
       float threshold = (4.0 * bayer2(pixels) + bayer2(pixels / 2.0) + 0.5) / 16.0 - 0.5;
       light = floor(light * 64.0 + threshold + 0.5) / 64.0;
-      gl_FragColor = vec4(max(vec3(0.0), light), alpha);
+      // Chrome's compositor expects premultiplied colors for a transparent WebGL canvas.
+      gl_FragColor = vec4(max(vec3(0.0), light) * alpha, alpha);
     }
   `;
 
