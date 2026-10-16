@@ -1,21 +1,21 @@
 {
   "/proyectos/metaphex": [
     {
+      "src": "/assets/previews/metaphex-v3-01.webp",
+      "width": 720,
+      "height": 493,
+      "role": "whole"
+    },
+    {
       "src": "/assets/previews/metaphex-v2-01.webp",
       "width": 600,
       "height": 299,
-      "role": "whole"
+      "role": "detail"
     },
     {
       "src": "/assets/previews/metaphex-v2-02.webp",
       "width": 128,
       "height": 128,
-      "role": "detail"
-    },
-    {
-      "src": "/assets/previews/metaphex-v2-03.webp",
-      "width": 128,
-      "height": 228,
       "role": "detail"
     }
   ],
@@ -38,22 +38,22 @@
       "height": 219,
       "role": "detail",
       "crop": {
-        "x": 0.0,
-        "y": 0.0502283105022831,
-        "width": 1.0,
-        "height": 0.8995433789954338
+        "x": 0.18,
+        "y": 0.05,
+        "width": 0.65,
+        "height": 0.9
       }
     },
     {
-      "src": "/assets/previews/maradona-alien-v2-03.webp",
+      "src": "/assets/previews/maradona-alien-v3-03.webp",
       "width": 600,
       "height": 218,
       "role": "detail",
       "crop": {
-        "x": 0.36666666666666664,
-        "y": 0.09174311926605505,
-        "width": 0.15,
-        "height": 0.6880733944954128
+        "x": 0.33,
+        "y": 0.045871559633027525,
+        "width": 0.25333333333333335,
+        "height": 0.6972477064220184
       }
     }
   ],
@@ -91,9 +91,9 @@
   ],
   "/proyectos/esquematica-microevento": [
     {
-      "src": "/assets/previews/esquematica-microevento-v2-01.webp",
-      "width": 258,
-      "height": 1000,
+      "src": "/assets/previews/esquematica-microevento-v3-01.webp",
+      "width": 600,
+      "height": 692,
       "role": "whole"
     },
     {
@@ -182,16 +182,15 @@
   ],
   "/proyectos/editorial-tipografico-2023": [
     {
-      "src": "/assets/previews/editorial-tipografico-2023-v2-01.webp",
+      "src": "/assets/previews/editorial-tipografico-2023-v3-01.webp",
       "width": 600,
-      "height": 400,
+      "height": 201,
       "role": "whole",
-      "clipPath": "polygon(41.0000% 11.0000%,69.1667% 22.5000%,58.3333% 81.7500%,29.0000% 72.0000%)",
       "crop": {
-        "x": 0.29,
-        "y": 0.11,
-        "width": 0.4033333333333333,
-        "height": 0.71
+        "x": 0.075,
+        "y": 0.07960199004975124,
+        "width": 0.3983333333333333,
+        "height": 0.8407960199004975
       }
     },
     {
@@ -238,13 +237,25 @@
       "src": "/assets/previews/filtros-instagram-v2-02.webp",
       "width": 405,
       "height": 720,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 0.8
+      }
     },
     {
       "src": "/assets/previews/filtros-instagram-v2-03.webp",
       "width": 405,
       "height": 720,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 0.7
+      }
     }
   ],
   "/proyectos/sistema-grafico": [
@@ -265,13 +276,25 @@
       "src": "/assets/previews/sistema-grafico-v2-02.webp",
       "width": 533,
       "height": 800,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.04,
+        "y": 0.22,
+        "width": 0.92,
+        "height": 0.58
+      }
     },
     {
       "src": "/assets/previews/sistema-grafico-v2-03.webp",
       "width": 533,
       "height": 800,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.01,
+        "y": 0.18,
+        "width": 0.98,
+        "height": 0.58
+      }
     }
   ],
   "/proyectos/afiche-y-brochure": [
@@ -317,13 +340,25 @@
       "src": "/assets/previews/historias-instagram-v2-02.webp",
       "width": 450,
       "height": 800,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.1,
+        "y": 0.25,
+        "width": 0.85,
+        "height": 0.55
+      }
     },
     {
       "src": "/assets/previews/historias-instagram-v2-03.webp",
       "width": 450,
       "height": 800,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.06,
+        "y": 0.1,
+        "width": 0.92,
+        "height": 0.7
+      }
     }
   ],
   "/proyectos/web-arquitectura": [
@@ -346,9 +381,9 @@
       }
     },
     {
-      "src": "/assets/previews/web-arquitectura-v2-03.webp",
-      "width": 462,
-      "height": 1000,
+      "src": "/assets/previews/web-arquitectura-v3-03.webp",
+      "width": 720,
+      "height": 405,
       "role": "detail"
     }
   ],

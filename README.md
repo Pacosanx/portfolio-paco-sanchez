@@ -48,3 +48,7 @@ Los bloques `gallery` admiten `columns` de 1 a 4. Las vistas principales se mues
 `theme` permite adaptar el fondo y los colores de lectura de una ficha completa, incluido el visor. Esquemática combina una vista `overview` de la pieza entera con una vista `bleed` que llega a los bordes; sus variantes `srcset` conservan la legibilidad sin cargar siempre el original completo. La secuencia editorial de Maradona Alien usa `layout: "original-sequence"` para respetar el orden y las composiciones del proyecto original.
 
 Cada vista previa reúne tres imágenes: una pieza completa (`role: "whole"`) y dos vistas complementarias. `crop` y `clipPath` excluyen los fondos exteriores sin modificar la obra original. La composición acompaña la altura del título activo y se mantiene dentro de la ventana.
+
+Las composiciones del índice alternan posiciones y escalas según el proyecto. Los recortes de presentación de Fachada e INMSON usan viewports SVG sobre los originales; el mapa de Fachada reúne veinte pantallas numeradas. Vaivén conserva su pase de ocho páginas con los originales sobre transparencia, sin el tramado del GIF anterior, y respeta la preferencia de movimiento reducido.
+
+Los bloques `placeholder` reservan piezas pendientes con un rectángulo rojo grande y un título accesible. No cuentan como imágenes ni simulan una interacción disponible.

@@ -182,6 +182,7 @@
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
           "width": 1400,
           "height": 698,
@@ -487,6 +488,7 @@
       "fuente": "https://www.behance.net/gallery/191469177/Maradona-alien-Editorial-web-y-app-VR-Longinotti-2",
       "imagenes": [
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/43bc76191469177.65ce8e51b136f.gif",
           "width": 720,
           "height": 720,
@@ -532,42 +534,38 @@
           "width": 1280,
           "height": 731,
           "alt": "",
-          "caption": "",
-          "surface": "#000000"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e20b80191469177.65ceb28ed65d6.gif",
           "width": 1280,
           "height": 731,
           "alt": "",
-          "caption": "",
-          "surface": "#000000"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e4cf4191469177.65ceb2900031b.gif",
           "width": 1280,
           "height": 731,
           "alt": "",
-          "caption": "",
-          "surface": "#000000"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b29bbf191469177.65ceb2900155e.gif",
           "width": 1280,
           "height": 731,
           "alt": "",
-          "caption": "",
-          "surface": "#000000"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7f44fd191469177.65ceb29002747.gif",
           "width": 1280,
           "height": 731,
           "alt": "",
-          "caption": "",
-          "surface": "#000000"
+          "caption": ""
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e96b55191469177.65ceb2911502d.gif",
           "width": 1280,
           "height": 731,
@@ -892,61 +890,52 @@
         },
         {
           "type": "gallery",
+          "columns": 3,
+          "layout": "web-demos",
           "images": [
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bd43cb191469177.65ceb28ed708d.gif",
               "width": 1280,
               "height": 731,
               "alt": "",
-              "caption": "",
-              "surface": "#000000"
+              "caption": ""
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e20b80191469177.65ceb28ed65d6.gif",
               "width": 1280,
               "height": 731,
               "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            }
-          ],
-          "sourceModule": "Project Module 7",
-          "columns": 2,
-          "gap": 12,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "images": [
+              "caption": ""
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e4cf4191469177.65ceb2900031b.gif",
               "width": 1280,
               "height": 731,
               "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "gallery",
+          "columns": 2,
+          "layout": "web-demos",
+          "images": [
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b29bbf191469177.65ceb2900155e.gif",
               "width": 1280,
               "height": 731,
               "alt": "",
-              "caption": "",
-              "surface": "#000000"
+              "caption": ""
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7f44fd191469177.65ceb29002747.gif",
               "width": 1280,
               "height": 731,
               "alt": "",
-              "caption": "",
-              "surface": "#000000"
+              "caption": ""
             }
-          ],
-          "sourceModule": "Project Module 8",
-          "columns": 2,
-          "gap": 12,
-          "surface": "#000000"
+          ]
         },
         {
           "type": "image",
@@ -1237,13 +1226,30 @@
       "previewHeight": 1080,
       "blocks": [
         {
+          "type": "video",
+          "url": "/assets/fachada/20-recorrido-desktop.mp4",
+          "poster": "/assets/fachada/red.webp",
+          "width": 1280,
+          "height": 720,
+          "aspectRatio": 1.77778,
+          "title": "FACHADA — recorrido completo del prototipo web",
+          "caption": "Recorrido completo: de la red de fachadas al archivo, los detalles y las colecciones."
+        },
+        {
+          "type": "image",
+          "url": "/assets/fachada/orden-pantallas.svg",
+          "width": 1920,
+          "height": 1240,
+          "alt": "Orden de las veinte pantallas de FACHADA: archivo, historia, elementos, colecciones, app y realidad aumentada.",
+          "caption": "Las pantallas se leen de izquierda a derecha y de arriba abajo. Ampliá la imagen para ver el recorrido completo."
+        },
+        {
           "type": "image",
           "url": "/assets/fachada/red.webp",
           "width": 1920,
           "height": 1080,
           "alt": "Red de fachadas de Buenos Aires conectadas por época, arquitecto y proximidad.",
-          "caption": "Una red para descubrir relaciones entre edificios.",
-          "surface": "#111822"
+          "caption": "Una red para descubrir relaciones entre edificios."
         },
         {
           "type": "text",
@@ -1311,8 +1317,7 @@
               "alt": "Detalle de un plano de manzana de Hidalgo, con datos y descripción.",
               "caption": "Consultar el plano y sus datos."
             }
-          ],
-          "surface": "#f0f0e9"
+          ]
         },
         {
           "type": "video",
@@ -1332,8 +1337,7 @@
           "width": 1920,
           "height": 1080,
           "alt": "Línea de tiempo de estilos arquitectónicos, desde el eclecticismo popular al modernismo.",
-          "caption": "El edificio dentro de una historia más amplia.",
-          "surface": "#111822"
+          "caption": "El edificio dentro de una historia más amplia."
         },
         {
           "type": "gallery",
@@ -1347,10 +1351,10 @@
               "caption": "Del período al estilo."
             },
             {
-              "url": "/assets/fachada/arquitecto.webp",
-              "width": 1920,
-              "height": 1122,
-              "alt": "Ficha de un arquitecto, relacionada con las obras y los estilos del archivo.",
+              "url": "/assets/fachada/arquitecto-sin-marco.svg",
+              "width": 1824,
+              "height": 1026,
+              "alt": "Ficha de Alejandro Bustillo, sin el marco exterior de la captura.",
               "caption": "Del estilo a sus autores."
             }
           ]
@@ -1386,8 +1390,7 @@
               "alt": "Detalle de los carteles informativos sobre yelmo, volutas y escudo.",
               "caption": "Abrir la información de cada parte."
             }
-          ],
-          "surface": "#f0f0e9"
+          ]
         },
         {
           "type": "video",
@@ -1422,8 +1425,7 @@
               "alt": "Colección de fachadas Neo-Tudor y ornamentos conectados entre sí.",
               "caption": "Relacionar las piezas elegidas."
             }
-          ],
-          "surface": "#f0f0e9"
+          ]
         },
         {
           "type": "image",
@@ -1503,12 +1505,20 @@
       ],
       "imagenes": [
         {
+          "type": "image",
+          "url": "/assets/fachada/orden-pantallas.svg",
+          "width": 1920,
+          "height": 1240,
+          "alt": "Orden de las veinte pantallas de FACHADA: archivo, historia, elementos, colecciones, app y realidad aumentada.",
+          "caption": "Las pantallas se leen de izquierda a derecha y de arriba abajo. Ampliá la imagen para ver el recorrido completo."
+        },
+        {
+          "type": "image",
           "url": "/assets/fachada/red.webp",
           "width": 1920,
           "height": 1080,
           "alt": "Red de fachadas de Buenos Aires conectadas por época, arquitecto y proximidad.",
-          "caption": "Una red para descubrir relaciones entre edificios.",
-          "surface": "#111822"
+          "caption": "Una red para descubrir relaciones entre edificios."
         },
         {
           "url": "/assets/fachada/seleccion.webp",
@@ -1525,6 +1535,7 @@
           "caption": "Abrir su ficha patrimonial."
         },
         {
+          "type": "image",
           "url": "/assets/fachada/galeria.webp",
           "width": 1920,
           "height": 1081,
@@ -1546,12 +1557,12 @@
           "caption": "Consultar el plano y sus datos."
         },
         {
+          "type": "image",
           "url": "/assets/fachada/cronologia.webp",
           "width": 1920,
           "height": 1080,
           "alt": "Línea de tiempo de estilos arquitectónicos, desde el eclecticismo popular al modernismo.",
-          "caption": "El edificio dentro de una historia más amplia.",
-          "surface": "#111822"
+          "caption": "El edificio dentro de una historia más amplia."
         },
         {
           "url": "/assets/fachada/estilo.webp",
@@ -1561,13 +1572,14 @@
           "caption": "Del período al estilo."
         },
         {
-          "url": "/assets/fachada/arquitecto.webp",
-          "width": 1920,
-          "height": 1122,
-          "alt": "Ficha de un arquitecto, relacionada con las obras y los estilos del archivo.",
+          "url": "/assets/fachada/arquitecto-sin-marco.svg",
+          "width": 1824,
+          "height": 1026,
+          "alt": "Ficha de Alejandro Bustillo, sin el marco exterior de la captura.",
           "caption": "Del estilo a sus autores."
         },
         {
+          "type": "image",
           "url": "/assets/fachada/despiece.webp",
           "width": 1920,
           "height": 1080,
@@ -1603,6 +1615,7 @@
           "caption": "Relacionar las piezas elegidas."
         },
         {
+          "type": "image",
           "url": "/assets/fachada/mapa-ruta.webp",
           "width": 1920,
           "height": 1080,
@@ -1654,6 +1667,7 @@
       "fuente": "https://youtu.be/_oieEi2r6M4",
       "imagenes": [
         {
+          "type": "image",
           "url": "/assets/inmson-recorrido.jpg",
           "width": 1920,
           "height": 1080,
@@ -1661,11 +1675,13 @@
           "caption": "Un dibujo que ocupa el espacio y puede atravesarse."
         },
         {
-          "url": "/assets/inmson-afiche-original.jpg",
-          "width": 1920,
-          "height": 1700,
-          "alt": "Afiche original de la entrega académica de INMSON",
-          "caption": "Afiche de presentación original del proyecto."
+          "type": "image",
+          "url": "/assets/presentation/inmson-afiche.svg",
+          "width": 861,
+          "height": 1291,
+          "alt": "Afiche de INMSON: gesto, sonido y experiencia inmersiva, sin la placa exterior de presentación.",
+          "caption": "Afiche de presentación original del proyecto.",
+          "size": "detail"
         }
       ],
       "title": "INMSON — Forma, sonido y movimiento",
@@ -1679,6 +1695,13 @@
       "previewWidth": 359,
       "previewHeight": 359,
       "blocks": [
+        {
+          "type": "video",
+          "url": "/assets/inmson-recorrido-vr.mp4",
+          "poster": "/assets/inmson-recorrido.jpg",
+          "title": "Recorrido en primera persona a través del dibujo de INMSON",
+          "caption": "Demostración de 14 segundos realizada en Unity con una cámara automatizada. Recorrido a lo largo del rectángulo, sin casco ni sonido."
+        },
         {
           "type": "text",
           "text": "Del gesto al volumen.\nEl dibujo se construye con líneas translúcidas que permanecen en el espacio. La posición vertical del gesto modifica el sonido: abajo, grave; arriba, agudo.",
@@ -1704,24 +1727,18 @@
           "heading": "03 / Recorrer el dibujo"
         },
         {
-          "type": "video",
-          "url": "/assets/inmson-recorrido-vr.mp4",
-          "poster": "/assets/inmson-recorrido.jpg",
-          "title": "Recorrido en primera persona a través del dibujo de INMSON",
-          "caption": "Demostración de 14 segundos realizada en Unity con una cámara automatizada. Recorrido a lo largo del rectángulo, sin casco ni sonido."
-        },
-        {
           "type": "text",
           "text": "Tres relaciones organizan la experiencia.\nMovimiento: convierte el recorrido del lápiz en una forma persistente.\nAltura: modifica el tono del sonido.\nAcumulación: construye capas que se pueden recorrer.\n\nProyecto individual.",
           "heading": "04 / Del gesto al sistema"
         },
         {
           "type": "image",
-          "url": "/assets/inmson-afiche-original.jpg",
-          "width": 1920,
-          "height": 1700,
-          "alt": "Afiche original de la entrega académica de INMSON",
-          "caption": "Afiche de presentación original del proyecto."
+          "url": "/assets/presentation/inmson-afiche.svg",
+          "width": 861,
+          "height": 1291,
+          "alt": "Afiche de INMSON: gesto, sonido y experiencia inmersiva, sin la placa exterior de presentación.",
+          "caption": "Afiche de presentación original del proyecto.",
+          "size": "detail"
         },
         {
           "type": "embed",
@@ -1737,7 +1754,14 @@
         "embeds": 1,
         "images": 1
       },
-      "context": "Morfología 2 · Longinotti · FADU / UBA"
+      "context": "Morfología 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "EXPERIENCIA VR / MEDIOS GROISMAN 2",
@@ -2095,6 +2119,7 @@
       "fuente": "https://www.behance.net/gallery/190909103/Esquematica-Microevento-Fuego-Tipografia-Longinotti-2",
       "imagenes": [
         {
+          "type": "image",
           "url": "/assets/presentation/esquematica-entera-480.webp",
           "width": 480,
           "height": 1859,
@@ -2102,12 +2127,23 @@
           "size": "overview"
         },
         {
+          "type": "image",
           "url": "/assets/presentation/esquematica-entera.webp",
           "width": 2215,
           "height": 8580,
           "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
           "size": "bleed",
           "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
+          "width": 1400,
+          "height": 1614,
+          "alt": "Síntesis de las relaciones, escalas y variables analizadas en la esquemática del fuego.",
+          "caption": "",
+          "sourceModule": "Project Module 2",
+          "size": "detail"
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/96f177190909103.65c283a71eaae.jpg",
@@ -2174,7 +2210,13 @@
         {
           "type": "text",
           "heading": "Una acción, múltiples relaciones",
-          "text": "La pieza completa reúne escalas, secuencias y conexiones en torno al encendido de una hornalla. El formato vertical permite seguir esas relaciones de arriba hacia abajo."
+          "text": "La pieza completa reúne escalas, secuencias y conexiones en torno al encendido de una hornalla. El formato vertical permite seguir esas relaciones de arriba hacia abajo.",
+          "links": [
+            {
+              "href": "https://www.instagram.com/p/C4dcApqOxkz/?img_index=1",
+              "text": "Proyecto expuesto por la cátedra"
+            }
+          ]
         },
         {
           "type": "image",
@@ -2184,6 +2226,16 @@
           "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
           "size": "bleed",
           "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
+          "width": 1400,
+          "height": 1614,
+          "alt": "Síntesis de las relaciones, escalas y variables analizadas en la esquemática del fuego.",
+          "caption": "",
+          "sourceModule": "Project Module 2",
+          "size": "detail"
         },
         {
           "type": "gallery",
@@ -2404,6 +2456,7 @@
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b1accf190740099.65c118e0d8a5a.gif",
           "width": 1400,
           "height": 438,
@@ -2501,6 +2554,7 @@
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
           "width": 720,
           "height": 720,
@@ -2992,6 +3046,7 @@
           "caption": ""
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce34fb189668095.65b2c999066bc.png",
           "width": 1280,
           "height": 863,
@@ -3000,6 +3055,7 @@
           "sourceModule": "Project Module 5"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc339d189668095.65b2c9999e6f1.jpg",
           "width": 1280,
           "height": 863,
@@ -3315,7 +3371,7 @@
       },
       "context": "Tipografía 2 · Longinotti · FADU / UBA",
       "theme": {
-        "bg": "#000000",
+        "bg": "#080808",
         "text": "#ECECEC",
         "secondary": "#A7A7A7",
         "muted": "#858585",
@@ -4229,17 +4285,16 @@
           "type": "gallery",
           "columns": 1,
           "seamless": true,
-          "surface": "#776a5b",
+          "surface": "#74685C",
           "images": [
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e",
+              "url": "/assets/presentation/vaiven-reading.svg",
               "width": 1920,
               "height": 1376,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_600.gif?h=18e1ea00bbfafde07b9bf69313400f6e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1200.gif?h=cd83e8ead6cb6e5cee66789293486430 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e 1920w,",
+              "alt": "Pase de tapa, dobles páginas y contratapa de Vaivén, sin fondo exterior.",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 1",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             },
             {
               "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1",
@@ -4249,7 +4304,7 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_600.jpg?h=8ab1b73adae39166ad23414f328d725c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1200.jpg?h=cc71b2dd5a914d1d6115442efd94fccb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 2",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             }
           ]
         },
@@ -4265,7 +4320,7 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_600.jpg?h=d7d331db41a5d98ae1e89f2fbdbd8caf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1200.jpg?h=e28f7dd4e53b3c1d88f9c1289f16b80e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 3",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             },
             {
               "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a",
@@ -4275,11 +4330,11 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_600.jpg?h=3f7136e5f21aafd7d995731107a95244 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1200.jpg?h=18fdfeacadd913fb725ed37ac11e6c55 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 4",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             }
           ],
           "seamless": true,
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "type": "gallery",
@@ -4293,7 +4348,7 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_600.jpg?h=d15f7c2266709eeaef7ed53ba1e93dbc 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1200.jpg?h=8d0a2ca7a9e6e228ad22ed0ca09d98fe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 5",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             },
             {
               "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227",
@@ -4303,11 +4358,11 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_600.jpg?h=f4f4ace85640bdd5d1af91f5146b76b8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1200.jpg?h=ded24837dd28f522879da238a74d0893 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 6",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             }
           ],
           "seamless": true,
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "type": "gallery",
@@ -4321,7 +4376,7 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_600.jpg?h=496a030810058e423be80f1e2f9db45c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1200.jpg?h=9d2fc4cee903ca3ad072bd65a9323daa 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 7",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             },
             {
               "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600",
@@ -4331,11 +4386,11 @@
               "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_600.jpg?h=122956e585fc124af4b54e6429471896 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1200.jpg?h=bb271b686a029dc89e6ffdb2b3efcb17 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600 1920w,",
               "dimensionOrigin": "public-image-header",
               "sourceModule": "Adobe module 8",
-              "surface": "#776a5b"
+              "surface": "#74685C"
             }
           ],
           "seamless": true,
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "type": "image",
@@ -4346,19 +4401,18 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 9",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         }
       ],
       "imagenes": [
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e",
+          "url": "/assets/presentation/vaiven-reading.svg",
           "width": 1920,
           "height": 1376,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_600.gif?h=18e1ea00bbfafde07b9bf69313400f6e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1200.gif?h=cd83e8ead6cb6e5cee66789293486430 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e 1920w,",
+          "alt": "Pase de tapa, dobles páginas y contratapa de Vaivén, sin fondo exterior.",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 1",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1",
@@ -4368,7 +4422,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_600.jpg?h=8ab1b73adae39166ad23414f328d725c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1200.jpg?h=cc71b2dd5a914d1d6115442efd94fccb 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/5d3a8f94-03ef-469e-ae38-1ec13b0c37d3_rw_1920.jpg?h=9b964923dc88997652f2138160a8e6e1 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 2",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec",
@@ -4378,7 +4432,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_600.jpg?h=d7d331db41a5d98ae1e89f2fbdbd8caf 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1200.jpg?h=e28f7dd4e53b3c1d88f9c1289f16b80e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4c492c1d-e19f-42cc-8319-7de9e9c802d8_rw_1920.jpg?h=96769884bfc332a2f8a6fc51d43f09ec 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 3",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a",
@@ -4388,7 +4442,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_600.jpg?h=3f7136e5f21aafd7d995731107a95244 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1200.jpg?h=18fdfeacadd913fb725ed37ac11e6c55 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/789a50a6-885f-4cf2-9f2d-47b6e62fa137_rw_1920.jpg?h=7bc177bfa8252bc1021d23dd55a3201a 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 4",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005",
@@ -4398,7 +4452,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_600.jpg?h=d15f7c2266709eeaef7ed53ba1e93dbc 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1200.jpg?h=8d0a2ca7a9e6e228ad22ed0ca09d98fe 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/4cec7bd3-5332-4f7b-8fa6-93087fd4bfc6_rw_1920.jpg?h=d9e51eaa05b26461dc8bf3c40f079005 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 5",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227",
@@ -4408,7 +4462,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_600.jpg?h=f4f4ace85640bdd5d1af91f5146b76b8 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1200.jpg?h=ded24837dd28f522879da238a74d0893 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/53da99cb-4cb0-49b8-bc43-87c2bde392f1_rw_1920.jpg?h=71f32e1153ca950abd95dd7ed3e30227 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 6",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484",
@@ -4418,7 +4472,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_600.jpg?h=496a030810058e423be80f1e2f9db45c 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1200.jpg?h=9d2fc4cee903ca3ad072bd65a9323daa 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/daa554df-298c-40f1-9775-ae80ec5010e7_rw_1920.jpg?h=dafb5246c0f0afeaa5d4e04bda80c484 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 7",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600",
@@ -4428,9 +4482,10 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_600.jpg?h=122956e585fc124af4b54e6429471896 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1200.jpg?h=bb271b686a029dc89e6ffdb2b3efcb17 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/fa157514-4830-4768-8428-57c33401e2af_rw_1920.jpg?h=c73f6b36cd69f291bf21d4846135a600 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 8",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         },
         {
+          "type": "image",
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1",
           "width": 1920,
           "height": 1376,
@@ -4438,7 +4493,7 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 9",
-          "surface": "#776a5b"
+          "surface": "#74685C"
         }
       ],
       "contenidoFuente": {
@@ -4454,7 +4509,7 @@
       "previewWidth": 573,
       "previewHeight": 429,
       "theme": {
-        "bg": "#776A5B",
+        "bg": "#74685C",
         "text": "#FFF9F1",
         "secondary": "#FFF9F1",
         "muted": "#FFF9F1",
@@ -4604,135 +4659,174 @@
       "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ceeaa2b0-5f99-48e5-a262-cbecbe4cd644_rwc_0x0x1081x810x1081.png?h=aed8d2b836c9a85dbbc32dc1caafe68e",
       "blocks": [
         {
-          "type": "image",
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3",
-          "width": 1920,
-          "height": 824,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_600.png?h=b9aaf57ec94bd57879f79ba4435a1c47 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1200.png?h=8391346bb6ab0e39f43cf8681e4f1c9f 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 1"
+          "type": "placeholder",
+          "title": "Apertura 3D",
+          "aspectRatio": 1.7766497461928934,
+          "missingEquivalentToV2Module": 1
         },
         {
-          "type": "embed",
-          "url": "https://www-ccv.adobe.io/v1/player/ccv/RcbmWmRyMDq/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
-          "title": "Festival - Sistema gráfico - v1 — video",
-          "aspectRatio": 1.77778,
-          "sourceModule": "Adobe module 2"
+          "type": "placeholder",
+          "title": "Marca en movimiento",
+          "aspectRatio": 1.7766497461928934,
+          "missingEquivalentToV2Module": 2
         },
         {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
-              "width": 991,
-              "height": 896,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 3"
-            },
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
-              "width": 991,
-              "height": 569,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 4"
-            }
-          ]
+          "type": "statement",
+          "label": "MUTAR / Vanguardia tecnológica en el arte",
+          "text": "La conexión entre lo vivo y lo virtual.",
+          "surface": "#C2F700"
         },
         {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
-              "width": 994,
-              "height": 1420,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 5"
-            },
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
-              "width": 993,
-              "height": 569,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 7"
-            }
-          ]
+          "type": "text",
+          "heading": "Primera versión del sistema",
+          "text": "Verde ácido, negro y formas tridimensionales de apariencia metálica conviven con la marca y la información del festival. La identidad se aplica a redes, impresos, vía pública, acceso y objetos."
         },
         {
           "type": "image",
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-          "width": 992,
-          "height": 523,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 6"
-        }
-      ],
-      "imagenes": [
-        {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3",
+          "url": "/assets/presentation/festival-v1/identidad.svg",
           "width": 1920,
-          "height": 824,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_600.png?h=b9aaf57ec94bd57879f79ba4435a1c47 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1200.png?h=8391346bb6ab0e39f43cf8681e4f1c9f 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e20b92b6-a972-4b18-9911-ec4e2daf9aae_rw_1920.png?h=2a55419d2b5cd795d3872b12c751eee3 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 1"
+          "height": 412,
+          "alt": "Variantes originales de MUTAR V1, familias Helvetica Neue y Roboto, y paleta verde y negro."
+        },
+        {
+          "type": "placeholder",
+          "title": "Grilla de afiches",
+          "aspectRatio": 1.7766497461928934,
+          "missingEquivalentToV2Module": 5
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
           "width": 991,
           "height": 896,
-          "alt": "",
+          "alt": "Publicaciones, stories y vistas de Instagram del festival MUTAR V1.",
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
           "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 3"
+          "sourceModule": "Adobe module 3",
+          "type": "image"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
+          "type": "video",
+          "url": "/assets/presentation/festival-v1/video-piezas.mp4",
+          "poster": "/assets/presentation/festival-v1/video-poster.jpg",
+          "title": "MUTAR V1 — identidad audiovisual y actividades",
+          "width": 576,
+          "height": 1024,
+          "aspectRatio": 0.5625,
+          "layout": "portrait",
+          "caption": "Pieza audiovisual vertical · 25 segundos. Formas 3D, marca, concepto y actividades."
+        },
+        {
+          "type": "gallery",
+          "columns": 1,
+          "seamless": true,
+          "layout": "original-sequence",
+          "images": [
+            {
+              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
+              "width": 994,
+              "height": 1420,
+              "alt": "Afiche plegado y brochure de MUTAR V1: frente, reverso, tapa e interior.",
+              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
+              "dimensionOrigin": "public-image-header",
+              "sourceModule": "Adobe module 5",
+              "type": "image"
+            },
+            {
+              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
+              "width": 991,
+              "height": 569,
+              "alt": "Aplicación del sistema MUTAR V1 en una valla de vía pública.",
+              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
+              "dimensionOrigin": "public-image-header",
+              "sourceModule": "Adobe module 4",
+              "type": "image"
+            },
+            {
+              "type": "image",
+              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
+              "width": 992,
+              "height": 523,
+              "alt": "Pórtico de ingreso a Tecnópolis con la identidad MUTAR V1.",
+              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
+              "dimensionOrigin": "public-image-header",
+              "sourceModule": "Adobe module 6"
+            },
+            {
+              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
+              "width": 993,
+              "height": 569,
+              "alt": "Pulsera, remeras, tote y prendedores de MUTAR V1.",
+              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
+              "dimensionOrigin": "public-image-header",
+              "sourceModule": "Adobe module 7",
+              "type": "image"
+            }
+          ]
+        },
+        {
+          "type": "placeholder",
+          "title": "Cierre 3D",
+          "aspectRatio": 1.7766497461928934,
+          "missingEquivalentToV2Module": 12
+        }
+      ],
+      "imagenes": [
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/identidad.svg",
+          "width": 1920,
+          "height": 412,
+          "alt": "Variantes originales de MUTAR V1, familias Helvetica Neue y Roboto, y paleta verde y negro."
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
           "width": 991,
-          "height": 569,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
+          "height": 896,
+          "alt": "Publicaciones, stories y vistas de Instagram del festival MUTAR V1.",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
           "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 4"
+          "sourceModule": "Adobe module 3",
+          "type": "image"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
           "width": 994,
           "height": 1420,
-          "alt": "",
+          "alt": "Afiche plegado y brochure de MUTAR V1: frente, reverso, tapa e interior.",
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
           "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 5"
+          "sourceModule": "Adobe module 5",
+          "type": "image"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
+          "width": 991,
+          "height": 569,
+          "alt": "Aplicación del sistema MUTAR V1 en una valla de vía pública.",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 4",
+          "type": "image"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
+          "width": 992,
+          "height": 523,
+          "alt": "Pórtico de ingreso a Tecnópolis con la identidad MUTAR V1.",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
         },
         {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
           "width": 993,
           "height": 569,
-          "alt": "",
+          "alt": "Pulsera, remeras, tote y prendedores de MUTAR V1.",
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
           "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 7"
-        },
-        {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-          "width": 992,
-          "height": 523,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 6"
+          "sourceModule": "Adobe module 7",
+          "type": "image"
         }
       ],
       "contenidoFuente": {
@@ -4746,7 +4840,14 @@
       "disciplineOrigin": "descriptor derivado del título público",
       "context": "",
       "previewWidth": 1081,
-      "previewHeight": 810
+      "previewHeight": 810,
+      "theme": {
+        "bg": "#000000",
+        "text": "#F4F4EF",
+        "secondary": "#CBCBC5",
+        "muted": "#AAAAA4",
+        "line": "#454545"
+      }
     },
     {
       "nombre": "FESTIVAL - SISTEMA GRÁFICO - V2",
@@ -4762,201 +4863,295 @@
       "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/73e691a3-9820-4a4a-8124-49030720b4ff_rwc_320x87x1282x962x1282.png?h=29e9ee30ec04c6e7342d07fb23873bcd",
       "blocks": [
         {
-          "type": "image",
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc",
-          "width": 1080,
-          "height": 500,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_600.gif?h=c5792b54abeb130fa5fb971e49b742d1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc 1080w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 2"
+          "type": "gallery",
+          "columns": 1,
+          "seamless": true,
+          "layout": "original-sequence",
+          "images": [
+            {
+              "type": "image",
+              "url": "/assets/presentation/festival-v2/apertura.webp",
+              "width": 1400,
+              "height": 788,
+              "alt": "Apertura animada: formas metálicas en 3D mutan y se transforman sobre fondo negro.",
+              "sourceModule": "Canvas Module 1",
+              "size": "full",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "/assets/presentation/festival-v2/marca.webp",
+              "width": 1080,
+              "height": 500,
+              "alt": "Marca MUTAR animada, con variaciones del símbolo tridimensional.",
+              "sourceModule": "Canvas Module 2",
+              "size": "full",
+              "surface": "#000000"
+            }
+          ]
         },
         {
-          "sourceModule": "Adobe module 3",
           "type": "statement",
+          "label": "Vanguardia tecnológica en el arte",
           "text": "La conexión entre lo vivo y lo virtual.",
-          "label": "MUTAR / Vanguardia tecnológica en el arte"
+          "sourceModule": "Canvas Module 3",
+          "surface": "#C2F700"
         },
         {
-          "sourceModule": "Adobe module 4",
           "type": "text",
-          "text": "El sistema retoma las interfaces modulares de programas como TouchDesigner y Ableton. La grilla organiza las piezas, mientras las formas orgánicas 3D varían en cada aplicación.\n\nEl verde ácido aporta un carácter vivo y destaca la información. Líneas, imágenes y tipos conviven en composiciones que trasladan la lógica del arte reactivo a afiches, redes, impresos y señalización.",
-          "heading": "Del software a la identidad"
+          "heading": "Partido gráfico",
+          "text": "El sistema retoma el diseño modular de las interfaces de programas como TouchDesigner y Ableton. Sus formas 3D nacen de parámetros aleatorios y varían entre figuras orgánicas complejas, orgánicas simples y geométricas.\n\nEsa transformación da nombre a MUTAR: las formas cambian a lo largo de las piezas, como una obra reactiva que responde a un estímulo humano. Las fotografías muestran únicamente a los artistas, para vincular al creador con el resultado digital de su trabajo.",
+          "sourceModule": "Canvas Module 4"
+        },
+        {
+          "type": "text",
+          "heading": "Partido conceptual",
+          "text": "El resultado artístico de conectar lo vivo —el humano que planea y experimenta— con lo virtual: técnicas y programas digitales de vanguardia.",
+          "sourceModule": "Canvas Module 4"
         },
         {
           "type": "image",
-          "url": "/assets/presentation/mutar-v2-identidad.webp",
-          "width": 960,
-          "height": 823,
-          "alt": "MUTAR: familias tipográficas, paleta verde, negro y gris, símbolo 3D y variantes de la marca.",
-          "caption": "Fundamentos del sistema: tipografía, color y marca.",
-          "size": "detail"
+          "url": "/assets/presentation/festival-v2/identidad.svg",
+          "width": 700,
+          "height": 600,
+          "alt": "MUTAR: Helvetica Neue en pesos 85 Heavy, 75 Bold y 55 Roman; Roboto Regular para lectura; paleta verde #C2F700, negro y gris #E3E3E3; variaciones del símbolo 3D y de la marca.",
+          "size": "detail",
+          "sourceModule": "Canvas Module 4",
+          "sourceCrop": {
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6b5f2211192733.671fd089405ad.png",
+            "viewBox": [
+              700,
+              0,
+              700,
+              600
+            ],
+            "preservesNativePixels": true
+          }
         },
         {
           "type": "gallery",
-          "columns": 2,
+          "columns": 1,
+          "seamless": true,
+          "layout": "original-sequence",
           "images": [
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b",
-              "width": 1920,
-              "height": 1283,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_600.png?h=69e2fc60503988df3fdf16efdb88b6c0 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1200.png?h=21e0415f5cb633c27fef3b81a96aad30 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 5"
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/27481b211192733.671f2e59c2073.png",
+              "width": 1400,
+              "height": 935,
+              "alt": "Sistema modular de afiches MUTAR: lemas, información, retratos de artistas y formas 3D.",
+              "sourceModule": "Canvas Module 5",
+              "size": "full",
+              "surface": "#E3E3E3"
             },
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7",
-              "width": 1920,
-              "height": 1341,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_600.png?h=7e23290c289f1884795a591b56766273 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1200.png?h=b14a8372346fb3f1be3da11fe9927794 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 6"
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9ffa63211192733.671ecb973f7f2.jpg",
+              "width": 1400,
+              "height": 978,
+              "alt": "Aplicaciones verticales y stories de MUTAR, mostradas en una pantalla de teléfono.",
+              "sourceModule": "Canvas Module 6",
+              "size": "full",
+              "surface": "#000000"
             }
           ]
         },
         {
           "type": "embed",
-          "url": "https://www-ccv.adobe.io/v1/player/ccv/9wwV7ZHRsxQ/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
-          "title": "Festival - Sistema gráfico - v2 — video",
-          "aspectRatio": 1.77778,
-          "sourceModule": "Adobe module 7"
+          "url": "https://www.youtube.com/embed/5ie0fe_C9NE",
+          "title": "MUTAR — pieza audiovisual para el festival",
+          "aspectRatio": 1.7777777777777777,
+          "sourceModule": "Canvas Module 7"
         },
         {
           "type": "gallery",
-          "columns": 2,
+          "columns": 1,
+          "seamless": true,
+          "layout": "original-sequence",
           "images": [
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81",
-              "width": 1920,
-              "height": 2735,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_600.png?h=eb9b4bdb36737fadda96ab2a1cbf2fad 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1200.png?h=1ed834ec62274b6e9e080f148958c54e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 8"
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/5a2df6211192733.671f2e59c49c2.png",
+              "width": 1400,
+              "height": 1995,
+              "alt": "Piezas impresas MUTAR: afiche y brochure desplegado.",
+              "sourceModule": "Canvas Module 8",
+              "size": "full",
+              "surface": "#FFFFFF"
             },
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8",
-              "width": 1920,
-              "height": 1131,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_600.png?h=d07e8e0ca851429d8b06decd5f653e68 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1200.png?h=1bed97cbac71474e31ebc0aafad5e62a 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 9"
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1",
-              "width": 1920,
-              "height": 1018,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_600.png?h=8e908cbec4b8ad824fc5e873bb45999e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1200.png?h=a978c6a36363f7c4817d711a4c30f1d9 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 10"
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cb3247211192733.671f2e59c3518.png",
+              "width": 1400,
+              "height": 825,
+              "alt": "Aplicación del sistema MUTAR en una cartelera de vía pública.",
+              "sourceModule": "Canvas Module 9",
+              "size": "full",
+              "surface": "#C2F700"
             },
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247",
-              "width": 1920,
-              "height": 1200,
-              "alt": "",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_600.png?h=9a8866ef619b6ecb0fb5a885624edb9a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1200.png?h=f96df62c2c70c6e02aa3fce0eefe3d78 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247 1920w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 11"
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/63a518211192733.671f2e59c3f82.png",
+              "width": 1400,
+              "height": 742,
+              "alt": "Pórtico de entrada del festival MUTAR de noche.",
+              "sourceModule": "Canvas Module 10",
+              "size": "full"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ad2204211192733.671f2e59c2af9.png",
+              "width": 1400,
+              "height": 875,
+              "alt": "Merchandising de MUTAR: remeras, bolsa, pulsera y pins.",
+              "sourceModule": "Canvas Module 11",
+              "size": "full",
+              "surface": "#C2F700"
+            },
+            {
+              "type": "image",
+              "url": "/assets/presentation/festival-v2/cierre.webp",
+              "width": 1400,
+              "height": 788,
+              "alt": "Cierre animado: una forma metálica 3D cambia entre figuras orgánicas y geométricas.",
+              "sourceModule": "Canvas Module 12",
+              "size": "full",
+              "surface": "#000000"
             }
           ]
         }
       ],
       "imagenes": [
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc",
+          "type": "image",
+          "url": "/assets/presentation/festival-v2/apertura.webp",
+          "width": 1400,
+          "height": 788,
+          "alt": "Apertura animada: formas metálicas en 3D mutan y se transforman sobre fondo negro.",
+          "sourceModule": "Canvas Module 1",
+          "size": "full",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v2/marca.webp",
           "width": 1080,
           "height": 500,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_600.gif?h=c5792b54abeb130fa5fb971e49b742d1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/3bb132ec-73d0-420c-8875-a29e6e561ae5_rw_1200.gif?h=3940432fd60502ded611ab177784bfcc 1080w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 2"
+          "alt": "Marca MUTAR animada, con variaciones del símbolo tridimensional.",
+          "sourceModule": "Canvas Module 2",
+          "size": "full",
+          "surface": "#000000"
         },
         {
-          "url": "/assets/presentation/mutar-v2-identidad.webp",
-          "width": 960,
-          "height": 823,
-          "alt": "MUTAR: familias tipográficas, paleta verde, negro y gris, símbolo 3D y variantes de la marca.",
-          "caption": "Fundamentos del sistema: tipografía, color y marca.",
-          "size": "detail"
+          "type": "image",
+          "url": "/assets/presentation/festival-v2/identidad.svg",
+          "width": 700,
+          "height": 600,
+          "alt": "MUTAR: Helvetica Neue en pesos 85 Heavy, 75 Bold y 55 Roman; Roboto Regular para lectura; paleta verde #C2F700, negro y gris #E3E3E3; variaciones del símbolo 3D y de la marca.",
+          "size": "detail",
+          "sourceModule": "Canvas Module 4",
+          "sourceCrop": {
+            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6b5f2211192733.671fd089405ad.png",
+            "viewBox": [
+              700,
+              0,
+              700,
+              600
+            ],
+            "preservesNativePixels": true
+          }
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b",
-          "width": 1920,
-          "height": 1283,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_600.png?h=69e2fc60503988df3fdf16efdb88b6c0 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1200.png?h=21e0415f5cb633c27fef3b81a96aad30 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a63974f5-fd19-4df5-9038-aed656a92c8f_rw_1920.png?h=32514d481499636dbbb8823bcab6990b 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 5"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/27481b211192733.671f2e59c2073.png",
+          "width": 1400,
+          "height": 935,
+          "alt": "Sistema modular de afiches MUTAR: lemas, información, retratos de artistas y formas 3D.",
+          "sourceModule": "Canvas Module 5",
+          "size": "full",
+          "surface": "#E3E3E3"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7",
-          "width": 1920,
-          "height": 1341,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_600.png?h=7e23290c289f1884795a591b56766273 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1200.png?h=b14a8372346fb3f1be3da11fe9927794 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/2a963b51-85dd-4561-859f-73a1dc0b0eb5_rw_1920.png?h=5843dbb77eefd5853e9bcbd101d7b3a7 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 6"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9ffa63211192733.671ecb973f7f2.jpg",
+          "width": 1400,
+          "height": 978,
+          "alt": "Aplicaciones verticales y stories de MUTAR, mostradas en una pantalla de teléfono.",
+          "sourceModule": "Canvas Module 6",
+          "size": "full",
+          "surface": "#000000"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81",
-          "width": 1920,
-          "height": 2735,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_600.png?h=eb9b4bdb36737fadda96ab2a1cbf2fad 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1200.png?h=1ed834ec62274b6e9e080f148958c54e 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/550a2f70-6d25-4291-a4d2-8fdbe1e73c5e_rw_1920.png?h=58b7d4734a1bb10b60cf5f8d84c1cd81 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 8"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/5a2df6211192733.671f2e59c49c2.png",
+          "width": 1400,
+          "height": 1995,
+          "alt": "Piezas impresas MUTAR: afiche y brochure desplegado.",
+          "sourceModule": "Canvas Module 8",
+          "size": "full",
+          "surface": "#FFFFFF"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8",
-          "width": 1920,
-          "height": 1131,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_600.png?h=d07e8e0ca851429d8b06decd5f653e68 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1200.png?h=1bed97cbac71474e31ebc0aafad5e62a 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/209299cd-b572-4ae2-91bc-1af6b7db33f5_rw_1920.png?h=0d77568a0706221e369c81e8585cfcf8 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 9"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cb3247211192733.671f2e59c3518.png",
+          "width": 1400,
+          "height": 825,
+          "alt": "Aplicación del sistema MUTAR en una cartelera de vía pública.",
+          "sourceModule": "Canvas Module 9",
+          "size": "full",
+          "surface": "#C2F700"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1",
-          "width": 1920,
-          "height": 1018,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_600.png?h=8e908cbec4b8ad824fc5e873bb45999e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1200.png?h=a978c6a36363f7c4817d711a4c30f1d9 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/01f1c321-faa5-4e4b-a069-d198ed6fe614_rw_1920.png?h=b59f76336b4a5f85f7e99e2ad89431b1 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 10"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/63a518211192733.671f2e59c3f82.png",
+          "width": 1400,
+          "height": 742,
+          "alt": "Pórtico de entrada del festival MUTAR de noche.",
+          "sourceModule": "Canvas Module 10",
+          "size": "full"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247",
-          "width": 1920,
-          "height": 1200,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_600.png?h=9a8866ef619b6ecb0fb5a885624edb9a 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1200.png?h=f96df62c2c70c6e02aa3fce0eefe3d78 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/0ed7cccf-b497-4159-9eed-1d915d04572e_rw_1920.png?h=07a86d20a4fccb8c8cb8672ea18b9247 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 11"
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ad2204211192733.671f2e59c2af9.png",
+          "width": 1400,
+          "height": 875,
+          "alt": "Merchandising de MUTAR: remeras, bolsa, pulsera y pins.",
+          "sourceModule": "Canvas Module 11",
+          "size": "full",
+          "surface": "#C2F700"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v2/cierre.webp",
+          "width": 1400,
+          "height": 788,
+          "alt": "Cierre animado: una forma metálica 3D cambia entre figuras orgánicas y geométricas.",
+          "sourceModule": "Canvas Module 12",
+          "size": "full",
+          "surface": "#000000"
         }
       ],
       "contenidoFuente": {
-        "url": "https://pacosanx.myportfolio.com/festival-sistema-grafico",
-        "fechaVerificacion": "2026-10-08",
-        "moduleCount": 12,
-        "images": 11,
+        "url": "https://www.behance.net/portfolio/editor?project_id=211192733",
+        "fechaVerificacion": "2026-10-16",
+        "moduleCount": 14,
+        "images": 13,
         "embeds": 1,
-        "textBlocks": 0
+        "textBlocks": 0,
+        "order": "Canvas Modules 1–12; explanatory text in HTML; header and footer metadata already in the project introduction",
+        "footer": "FADU / UBA · 2024"
       },
       "disciplineOrigin": "descriptor derivado del título público",
       "context": "FADU / UBA",
       "previewWidth": 1282,
-      "previewHeight": 962
+      "previewHeight": 962,
+      "theme": {
+        "bg": "#000000",
+        "text": "#F4F4EF",
+        "secondary": "#CBCBC5",
+        "muted": "#AAAAA4",
+        "line": "#454545"
+      }
     },
     {
       "nombre": "MOTION GRAPHICS",
@@ -5119,6 +5314,7 @@
       "fuente": "https://www.behance.net/gallery/148175971/Historias-minimas-TP3-DG1-Catedra-Gabriele",
       "imagenes": [
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
           "width": 1400,
           "height": 646,
@@ -5502,6 +5698,7 @@
       ],
       "imagenes": [
         {
+          "type": "image",
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/9667699c-8a68-48a5-a04e-430eb7b8a604_rw_1920.jpg?h=1d962757971c62494ee2d77e423ebaf2",
           "width": 1920,
           "height": 2688,
@@ -5587,6 +5784,7 @@
       "fuente": "https://www.behance.net/gallery/190236999/Sistema-Baja-Complejidad-TP5-DG1-Catedra-Gabriele",
       "imagenes": [
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2b0179190236999.65b8029a65aaa.jpg",
           "width": 1280,
           "height": 822,
@@ -5764,6 +5962,7 @@
           "surface": "#050609"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe4d7c190236999.65b8029edeb7a.jpg",
           "width": 1280,
           "height": 1504,
@@ -5821,6 +6020,7 @@
           "surface": "#050609"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2d5360190236999.65b8029f62b10.jpg",
           "width": 1280,
           "height": 1920,
@@ -6232,6 +6432,7 @@
       "fuente": "https://www.behance.net/gallery/154717681/Tipografia-como-imagen-TP4-DG1-Catedra-Gabriele",
       "imagenes": [
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
           "width": 1400,
           "height": 1066,
@@ -6264,6 +6465,7 @@
           "sourceModule": "Project Module 5"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e0f1b4154717681.634726f0acb6f.jpg",
           "width": 1400,
           "height": 985,

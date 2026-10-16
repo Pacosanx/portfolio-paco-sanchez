@@ -8,6 +8,20 @@
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
   let records = [], selected = -1, request = 0, keyboardFocus = false, frame;
+  const arrangements = {
+    metaphex: 'right', 'maradona-alien': 'left', 'instalacion-vr': 'fan',
+    'esquematica-microevento': 'poster', 'editorial-espacial': 'right',
+    'editorial-registros': 'fan', 'editorial-tipografico-2023': 'left',
+    'motion-graphics': 'right', 'filtros-instagram': 'poster',
+    'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
+    'historias-instagram': 'poster', 'web-arquitectura': 'right',
+    'cuando-acecha-la-maldad-afiche-cine': 'left', 'fanzine-dg2-gabriele': 'poster',
+    'festival-sistema-grafico-v1': 'fan', 'festival-sistema-grafico': 'poster',
+    'video-cinetica-dg2-gabriele': 'left',
+    'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'fan',
+    'demo-youtube-darksidesports': 'right', 'pirana-modelado-3d': 'fan',
+    'vr-medios-groisman-2': 'left'
+  };
 
   const load = asset => {
     if (cache.has(asset.src)) return { ...cache.get(asset.src), asset };
@@ -69,8 +83,11 @@
     wrap.style.height = `${height}px`;
     [...wrap.children].forEach((card, i) => {
       const ratio = Number(card.dataset.ratio) || 1;
-      const maxWidth = width * (i === 0 ? (ratio > 1.3 ? .88 : .72) : i === 1 ? .62 : .59);
-      const maxHeight = height * (i === 0 ? .78 : i === 1 ? .52 : .48);
+      const whole = card.dataset.role === 'whole';
+      const layout = wrap.dataset.layout;
+      const mainWidth = layout === 'fan' ? .88 : layout === 'poster' ? .76 : .91;
+      const maxWidth = width * (whole ? mainWidth : i === 1 ? .65 : .61);
+      const maxHeight = height * (whole ? (ratio < 1 ? .82 : .68) : i === 1 ? .49 : .45);
       const cardWidth = Math.min(maxWidth, maxHeight * ratio);
       card.style.width = `${cardWidth}px`;
       card.style.height = `${cardWidth / ratio}px`;
@@ -88,6 +105,11 @@
     selected = i;
     if (!desktop.matches || !records.length) return;
     const token = ++request;
+    const slug = records[i]?.route?.split('/').filter(Boolean).pop();
+    wrap.dataset.layout = arrangements[slug] || 'fan';
+    // A small, stable tilt change keeps related projects from sharing one stack.
+    const seed = [...(slug || '')].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+    wrap.style.setProperty('--preview-tilt', `${(seed % 5) - 2}deg`);
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
     stage.classList.remove('is-visible');
     position();

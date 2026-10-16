@@ -91,3 +91,10 @@
 .case-figure.is-bleed img{width:100%;height:auto;max-height:none}
 .case-figure.is-bleed figcaption{padding-inline:var(--gutter)}
 .case-image-group.original-sequence{grid-template-columns:1fr;gap:0}
+.case-placeholder-panel{width:100%;min-width:0;max-width:100%;aspect-ratio:var(--placeholder-ratio,1.77778);min-height:240px;display:flex;align-items:flex-end;padding:clamp(24px,4vw,64px);background:#df2222;color:#fff}
+.case-placeholder-panel p{display:grid;gap:16px;font-size:clamp(22px,2.4vw,36px);line-height:1.2;letter-spacing:-.025em}
+.case-placeholder-panel .eyebrow{font-size:.6875rem;letter-spacing:.04em;color:#fff}
+.case-placeholder figcaption{font-size:.75rem;line-height:1.75;color:var(--secondary);margin-top:14px;max-width:72ch}
+.case-gallery>.case-statement.has-surface{grid-column:1/-1;max-width:none;padding:clamp(32px,5vw,80px);background:var(--surface);color:var(--surface-ink)}
+.case-statement.has-surface>p{max-width:48ch}
+.case-statement.has-surface .case-statement-label{color:inherit}
