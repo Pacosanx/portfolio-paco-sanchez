@@ -54,9 +54,11 @@
       vec2 p = surface + (uv - pointer.xy) * influence * 0.22;
       p += parallax * vec2(0.09, 0.055);
 
-      // A small green light sits behind three independently moving blue layers.
+      // Three small green lights sit behind three independently moving blue layers.
       float green = pool(p, vec2(0.67 + 0.025 * sin(t), 0.28), vec2(0.12, 0.27));
-      vec3 light = vec3(0.0, 1.0, 0.0) * green * 0.54;
+      float greenLeft = pool(p, vec2(0.25 + 0.025 * sin(t * 0.8 + 1.2), 0.34), vec2(0.10, 0.22));
+      float greenRight = pool(p, vec2(0.82 + 0.02 * cos(t * 0.75), 0.49), vec2(0.10, 0.22));
+      vec3 light = vec3(0.0, 1.0, 0.0) * (green * 0.54 + greenLeft * 0.42 + greenRight * 0.42);
       float deep = pool(p, vec2(0.43, 0.04), vec2(0.93, 0.85));
       float cobalt = pool(p, vec2(0.24 + 0.09 * sin(t), 0.16 + 0.055 * cos(t)), vec2(0.50, 0.49));
       float azure = pool(p, vec2(0.79 + 0.055 * cos(t * 0.8), -0.02 + 0.04 * sin(t)), vec2(0.43, 0.56));
@@ -90,8 +92,8 @@
       float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
       float crest = 0.62 + sides * 0.23 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
       crest += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(0.0, 0.16, uv.y);
-      veil *= 1.0 - smoothstep(0.76, 1.0, uv.y);
+      float floor = 0.035 + sides * 0.18 + sin(uv.x * 6.0 - t * 0.25) * 0.014;
+      veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(floor, floor + 0.11, uv.y);
       gl_FragColor = vec4(light, veil * 0.98);
     }
   `;
