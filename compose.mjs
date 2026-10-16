@@ -1,7 +1,7 @@
 import fs from 'node:fs';
+import path from 'node:path';
 import { createHash } from 'node:crypto';
 const heroRevision=createHash('sha256').update(fs.readFileSync(new URL('./dist/hero.css',import.meta.url))).update(fs.readFileSync(new URL('./dist/hero.js',import.meta.url))).digest('hex').slice(0,12);
-import path from 'node:path';
 import { parallelSection } from './parallel.mjs';
 import { projectFilters, projectCategories } from './filters.mjs';
 
@@ -14,6 +14,7 @@ const teaching=JSON.parse(fs.readFileSync(new URL('./teaching.json',import.meta.
 const selections=JSON.parse(fs.readFileSync(new URL('./preview-selection.json',import.meta.url),'utf8'));
 const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
+const versionedAsset=(route,source)=>sitePath(route)+'?v='+createHash('sha256').update(fs.readFileSync(source)).digest('hex').slice(0,10);
 const assetPath=url=>url.startsWith('/')&&!url.startsWith('//')?sitePath(url):url;
 const origin=(process.env.SITE_ORIGIN||'https://paco-sanchez-portfolio.noisy-koala-9107.chatgpt.site').replace(/\/+$/,'');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -28,7 +29,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${sitePath('/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${sitePath('/assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
@@ -83,7 +84,7 @@ function caseGallery(p){
       return `<figure class="case-embed${ratio<1?' is-portrait':''}" style="--media-ratio:${ratio}"><div class="case-player"><iframe src="${esc(assetPath(block.url))}" title="${esc(block.title||p.title)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${block.link?`<figcaption><a class="text-link" href="${esc(block.link)}" target="_blank" rel="noopener noreferrer">${esc(block.title||'Ver video en YouTube')}</a></figcaption>`:''}</figure>`;
     }
     if(block.type==='video')return `<figure class="case-video"><video src="${esc(assetPath(block.url))}" ${block.poster?`poster="${esc(assetPath(block.poster))}"`:''} controls playsinline preload="metadata" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
-    if(block.type==='interactive')return `<section class="inmson-case-interaction" aria-labelledby="inmson-interaction-title"><p class="eyebrow">02 / Probalo acá</p><h2 id="inmson-interaction-title">${esc(block.title)}</h2><p class="interaction-description">${esc(block.description)}</p><inmson-drawing></inmson-drawing>${block.caption?`<p class="interaction-caption">${esc(block.caption)}</p>`:''}</section>`;
+    if(block.type==='interactive')return `<section class="inmson-case-interaction" aria-labelledby="inmson-interaction-title"><div class="case-text inmson-interaction-intro"><h3 id="inmson-interaction-title">02 / PROBALO ACÁ</h3><p>${esc(block.title)}<br>${esc(block.description)}</p></div><inmson-drawing></inmson-drawing>${block.caption?`<p class="interaction-caption">${esc(block.caption)}</p>`:''}</section>`;
     return '';
   }).join('');
 }
