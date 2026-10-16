@@ -16,20 +16,6 @@
           "caption": ""
         },
         {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
-          "width": 1400,
-          "height": 474,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "caption": ""
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
-          "width": 1400,
-          "height": 203,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "caption": ""
-        },
-        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
           "width": 1400,
           "height": 408,
@@ -250,21 +236,14 @@
           "sourceModule": "Project Module 5"
         },
         {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
-          "width": 1400,
-          "height": 474,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "caption": "",
+          "type": "statement",
+          "label": "Paco Sanchez · Morfología Longinotti II · 2023",
+          "text": "Explorando el diálogo entre distintos sonidos de Aphex Twin y una posible representación visual de los mismos.",
           "sourceModule": "Project Module 6"
         },
         {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
-          "width": 1400,
-          "height": 203,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "caption": "",
+          "type": "statement",
+          "text": "Creado con After Effects y TouchDesigner",
           "sourceModule": "Project Module 8"
         },
         {
@@ -5468,4 +5447,3 @@
     }
   ]
 }
-

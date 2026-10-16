@@ -4,3 +4,5 @@
 .case-gallery .case-embed{background:none}
 .inmson-case-interaction{width:100%;margin:88px auto;padding:0}.inmson-case-interaction .inmson-interaction-intro{margin:0 auto 36px}.inmson-case-interaction inmson-drawing{display:block}.inmson-case-interaction .interaction-caption{font-size:.875rem;line-height:1.7;color:var(--muted);margin-top:24px}
 @media(max-width:600px){.inmson-case-interaction{margin-block:52px}.inmson-case-interaction .inmson-interaction-intro{margin-bottom:28px}}
+.case-statement{max-width:1120px;margin:80px auto;color:var(--text)}.case-statement p{max-width:900px;margin-inline:auto;font-size:clamp(28px,4vw,46px);line-height:1.12;letter-spacing:-.04em;font-weight:400}.case-statement .case-statement-label{font-family:var(--mono);font-size:.75rem;line-height:1.6;letter-spacing:0;color:var(--muted);margin-bottom:20px}
+@media(max-width:600px){.case-statement{margin-block:52px}.case-statement p{font-size:clamp(25px,7vw,32px);line-height:1.16}}

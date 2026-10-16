@@ -78,6 +78,7 @@ function caseGallery(p){
   return blocks.map(block=>{
     if(block.type==='image')return caseImage(block,p,imageIndex++);
     if(block.type==='gallery')return `<div class="case-image-group">${block.images.map(image=>caseImage(image,p,imageIndex++)).join('')}</div>`;
+    if(block.type==='statement')return `<div class="case-statement">${block.label?`<p class="case-statement-label">${esc(block.label)}</p>`:''}<p>${esc(block.text)}</p></div>`;
     if(block.type==='text')return caseText(block);
     if(block.type==='embed'){
       const ratio=Number(block.aspectRatio)>0?Number(block.aspectRatio):16/9;
