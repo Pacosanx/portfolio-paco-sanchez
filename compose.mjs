@@ -1,4 +1,6 @@
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+const heroRevision=createHash('sha256').update(fs.readFileSync(new URL('./dist/hero.css',import.meta.url))).update(fs.readFileSync(new URL('./dist/hero.js',import.meta.url))).digest('hex').slice(0,12);
 import path from 'node:path';
 import { parallelSection } from './parallel.mjs';
 import { projectFilters, projectCategories } from './filters.mjs';
@@ -26,7 +28,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${sitePath('/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${sitePath('/assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${sitePath('/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${sitePath('/assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
@@ -101,7 +103,7 @@ const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby
 ${projects.map((p,i)=>`<template data-project-template data-project-route="${sitePath(p.ruta)}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
 
 const home=`${header(true)}<main id="contenido" class="shell">
-<section class="opening" aria-labelledby="intro-title"><div class="opening-atmosphere" aria-hidden="true"><canvas class="opening-shader"></canvas></div><script src="${sitePath('/hero.js')}" defer></script><p class="eyebrow opening-label">Portfolio / ${period}</p>
+<section class="opening" aria-labelledby="intro-title"><div class="opening-atmosphere" aria-hidden="true"><canvas class="opening-shader"></canvas></div><script src="${sitePath('/hero.js')}?v=${heroRevision}" defer></script><p class="eyebrow opening-label">Portfolio / ${period}</p>
 <div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1></div><p class="opening-lead">Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p><a class="opening-cue mono" href="#proyectos">Deslizá para explorar</a>
 </section>
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>

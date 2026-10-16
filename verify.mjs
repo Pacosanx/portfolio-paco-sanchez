@@ -28,7 +28,7 @@ for(const file of htmlFiles){
   assert(!/[↗↘↙↖→←↑↓]/u.test(html),'Arrow glyph in '+file);
   assert(!html.includes('Spline 2'),'Removed 3D scene');
   for(const match of html.matchAll(/href="([^"#]+)(?:#[^"]*)?"/g)){
-    const href=match[1];
+    const href=match[1].split('?')[0];
     if(!href.startsWith('/')||href.startsWith('//'))continue;
     let target=path.join('dist',href);
     if(!path.extname(target))target=path.join(target,'index.html');
