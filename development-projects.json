@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "pericarion",
+    "title": "Pericarion",
+    "context": "2026 · Investigación y prototipo",
+    "status": "En desarrollo",
+    "discipline": "Ecosistema digital interactivo",
+    "summary": "Un mundo digital autónomo para observar, recorrer y afectar sin controlarlo.",
+    "description": "Pericarion explora un ecosistema digital que continúa activo en ausencia de quien lo visita. La experiencia propone recorrer un territorio vivo, acercarse a sus relaciones y observar cómo una presencia puede alterar procesos que siguen su propio curso.",
+    "tools": [
+      "Diseño de interacción",
+      "Prototipado web",
+      "Sistemas visuales"
+    ],
+    "sections": [
+      {
+        "label": "01 / La propuesta",
+        "title": "Un ecosistema con reglas propias",
+        "text": "Dispersión, arraigo, crecimiento, intercambio y degradación forman parte de un ciclo. La persona explora y puede producir perturbaciones; sus efectos dependen del estado del mundo y no de una respuesta fija."
+      },
+      {
+        "label": "02 / Avances actuales",
+        "title": "Territorio y escalas de lectura",
+        "text": "Las capturas muestran estudios del territorio desde dos distancias y una interfaz experimental para recorrerlo. La vista amplia deja ver patrones distribuidos; al acercarse aparecen unidades, conexiones y señales de actividad."
+      },
+      {
+        "label": "03 / En desarrollo",
+        "title": "Qué sigue en exploración",
+        "text": "El prototipo continúa probando cómo hacer legibles los cambios sin convertir la experiencia en una secuencia de objetivos.",
+        "items": [
+          "Ajustar el ritmo de los ciclos y sus rastros.",
+          "Probar cómo el movimiento y la permanencia perturban el entorno.",
+          "Definir una identidad visual y sonora para sus procesos."
+        ]
+      }
+    ],
+    "images": [
+      {
+        "url": "/assets/development/pericarion/web-cerca.jpg",
+        "alt": "Pericarion: vista cercana del ecosistema digital con conexiones y controles experimentales",
+        "caption": "Vista cercana · relaciones locales y paneles de lectura"
+      },
+      {
+        "url": "/assets/development/pericarion/web-referencia.jpg",
+        "alt": "Pericarion: vista amplia del territorio digital con formas dispersas y conexiones",
+        "caption": "Vista amplia · distribución del territorio"
+      }
+    ]
+  },
+  {
+    "slug": "espora",
+    "title": "Espora",
+    "context": "2024—2026 · Cultivo experimental PO-W-2024",
+    "status": "En desarrollo",
+    "discipline": "Herramienta de documentación y análisis micológico",
+    "summary": "Un entorno para registrar el cultivo, seguir su evolución y observar sus formas en 3D.",
+    "description": "Espora organiza el proceso de un cultivo experimental de hongos. Conecta datos y observaciones en el tiempo con visualizaciones que permiten estudiar el desarrollo, la morfología y distintas capas de una seta.",
+    "tools": [
+      "Blender",
+      "Figma",
+      "Modelado y captura 3D",
+      "Desarrollo web"
+    ],
+    "sections": [
+      {
+        "label": "01 / El sistema",
+        "title": "Del cultivo a la observación",
+        "text": "El proyecto reúne un mapa de nodos para representar etapas y operaciones del cultivo, una línea de tiempo para seguir su evolución y visores para examinar muestras. La intención es que el recorrido desde la placa hasta la seta pueda leerse y compararse."
+      },
+      {
+        "label": "02 / Avances actuales",
+        "title": "Visor y estudio de Pleurotus",
+        "text": "El visor ya permite explorar una muestra de Pleurotus ostreatus en 3D, desplazarse por el registro temporal y consultar capas de análisis morfológico. En paralelo, se está refinando la captura y representación de la seta."
+      },
+      {
+        "label": "03 / En desarrollo",
+        "title": "Unir y ampliar la lectura",
+        "text": "El trabajo sigue integrando los visualizadores con el mapa y la línea de tiempo compartidos, además de ajustar controles, marcadores y ayudas para que la información experimental sea más clara."
+      }
+    ],
+    "images": [
+      {
+        "url": "/assets/development/espora/visor.png",
+        "alt": "Espora: visor 3D de una muestra de seta con línea de tiempo y panel de análisis morfológico",
+        "caption": "Visor de muestra · análisis morfológico y registro temporal"
+      },
+      {
+        "url": "/assets/development/espora/pleurotus.png",
+        "alt": "Modelo 3D de Pleurotus ostreatus desarrollado para el proyecto Espora",
+        "caption": "Pleurotus ostreatus · estudio 3D"
+      }
+    ]
+  }
+]

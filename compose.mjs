@@ -11,6 +11,7 @@ const projectCount=projects.length;
 const years=projects.map(p=>Number(p.anio)).filter(Number.isFinite);
 const period=[Math.min(...years),Math.max(...years)].join('–');
 const teaching=JSON.parse(fs.readFileSync(new URL('./teaching.json',import.meta.url),'utf8'));
+const developmentProjects=JSON.parse(fs.readFileSync(new URL('./development-projects.json',import.meta.url),'utf8'));
 const selections=JSON.parse(fs.readFileSync(new URL('./preview-selection.json',import.meta.url),'utf8'));
 const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
@@ -32,7 +33,7 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}${route.startsWith('/en-desarrollo/')?`<link rel="stylesheet" href="${versionedAsset('/development-pages.css','dist/development-pages.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body${theme?` class="case-page" style="${caseTheme({theme})}"`:''}><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
@@ -138,8 +139,7 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="development-section shell" id="en-desarrollo" aria-labelledby="development-title">
   <div class="development-heading"><p class="eyebrow">En proceso</p><h2 id="development-title">Proyectos<br>en desarrollo.</h2><p>Estoy trabajando en estos dos proyectos y voy a ir sumando acá avances, pruebas y decisiones del proceso.</p></div>
   <div class="development-projects">
-    <article class="development-project"><div class="development-meta"><span class="mono">01</span><span class="mono">En desarrollo</span></div><h3>Pericarion</h3><p>Un proceso abierto que sigue tomando forma.</p></article>
-    <article class="development-project"><div class="development-meta"><span class="mono">02</span><span class="mono">En desarrollo</span></div><h3>Espora</h3><p>Un proceso abierto que sigue tomando forma.</p></article>
+    ${developmentProjects.map((p,i)=>`<a class="development-project" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="development-meta"><span class="mono">${number(i)}</span><span class="mono">${esc(p.status)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><span class="development-cta">Ver el proyecto <span aria-hidden="true">↗</span></span></a>`).join('')}
   </div>
 </section>
 ${parallelSection(sitePath)}
@@ -158,12 +158,27 @@ for(const [i,p] of projects.entries()){
   fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — Paco Sanchez`,p.descripcion,p.ruta+'/',body,p.theme));
 }
 
+for(const p of developmentProjects){
+  const route='/en-desarrollo/'+p.slug;
+  const gallery=p.images.map((image,i)=>`<figure class="development-figure"><a href="${sitePath(image.url)}" target="_blank" rel="noopener noreferrer" aria-label="Ampliar: ${esc(image.alt)}"><img src="${sitePath(image.url)}" alt="${esc(image.alt)}" ${i?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a><figcaption>${esc(image.caption)}</figcaption></figure>`).join('');
+  const sections=p.sections.map(section=>`<section class="development-copy"><p class="eyebrow">${esc(section.label)}</p><h2>${esc(section.title)}</h2><p>${esc(section.text)}</p>${section.items?.length?`<ul>${section.items.map(item=>`<li>${esc(item)}</li>`).join('')}</ul>`:''}</section>`).join('');
+  const body=`${header()}<main id="contenido" class="development-case shell">
+  <a class="text-link development-back" href="${sitePath('/')}#en-desarrollo">← Volver a proyectos en desarrollo</a>
+  <section class="development-hero"><div class="development-project-meta"><span class="mono">${esc(p.context)}</span><span class="mono">${esc(p.status)}</span></div><div class="development-title"><p class="eyebrow">${esc(p.discipline)}</p><h1>${esc(p.title)}</h1><p class="development-lead">${esc(p.description)}</p></div><div class="development-tools"><p class="eyebrow">Herramientas y medios</p><ul>${p.tools.map(tool=>`<li>${esc(tool)}</li>`).join('')}</ul></div></section>
+  <div class="development-gallery">${gallery}</div><div class="development-sections">${sections}</div>
+  <nav class="development-pagination" aria-label="Otros proyectos en desarrollo">${developmentProjects.filter(other=>other.slug!==p.slug).map(other=>`<a href="${sitePath('/en-desarrollo/'+other.slug)}/"><span class="eyebrow">También en desarrollo</span><span>${esc(other.title)} ↗</span></a>`).join('')}</nav>
+  </main>${contact()}`;
+  const routeDir=path.join('dist','en-desarrollo',p.slug);fs.mkdirSync(routeDir,{recursive:true});
+  fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — En desarrollo | Paco Sanchez`,p.summary,route+'/',body));
+}
+
 const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(image=>({...image,src:assetPath(image.src)}))}));
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});
 for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg']){
   fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
 }
+if(fs.existsSync('assets/development'))fs.cpSync('assets/development',path.join('dist/assets/development'),{recursive:true});
 for(const directory of ['fachada','previews','presentation']){
   const source=path.join('assets',directory);
   if(fs.existsSync(source))fs.cpSync(source,path.join('dist/assets',directory),{recursive:true});
