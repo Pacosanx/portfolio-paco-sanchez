@@ -45,7 +45,7 @@
       vec2 ray = (viewUV - 0.5) * 2.0;
       float travel = 1.0 - pow(1.0 - scrollProgress, 1.6);
       float bandY = mix(0.16, 1.16, travel);
-      float width = 0.11 + 0.025 * sin(travel * 3.14159265);
+      float width = 0.12 + 0.08 * sin(travel * 3.14159265);
       float curvature = mix(0.42, 1.0, smoothstep(0.0, 0.36, travel));
       vec2 surface = vec2(0.5 + (viewUV.x - 0.5) / (1.0 + 0.30 * ray.y * ray.y),
                           0.5 + (viewUV.y - 0.5) / (1.0 + curvature * ray.x * ray.x + 0.20 * ray.y * ray.y));
@@ -167,7 +167,7 @@
     displacement.setAttribute('result', 'refracted-text');
     const softText = document.createElementNS(svgNS, 'feGaussianBlur');
     softText.setAttribute('in', 'refracted-text');
-    softText.setAttribute('stdDeviation', '0.28');
+    softText.setAttribute('stdDeviation', '0.55');
     softText.setAttribute('result', 'soft-text');
     const red = document.createElementNS(svgNS, 'feColorMatrix');
     red.setAttribute('in', 'soft-text');
@@ -220,7 +220,7 @@
     lastLensSize = size;
     const travel = 1 - Math.pow(1 - scrollProgress, 1.6);
     const bandY = 0.16 + travel;
-    const width = 0.11 + 0.025 * Math.sin(travel * Math.PI);
+    const width = 0.12 + 0.08 * Math.sin(travel * Math.PI);
     const bend = Math.min(1, travel / 0.36);
     const curvature = 0.42 + 0.58 * bend * bend * (3 - 2 * bend);
     for (const lens of textLenses) {
@@ -280,7 +280,7 @@
   }
   function updateScroll() {
     const bounds = opening.getBoundingClientRect();
-    targetScroll = Math.max(0, Math.min(1, scrollY / Math.max(1, Math.min(bounds.height * 0.55, innerHeight * 0.50))));
+    targetScroll = Math.max(0, Math.min(1, scrollY / Math.max(1, Math.min(bounds.height * 1.05, innerHeight * 1.05))));
     if (reduced.matches) {
       scrollProgress = targetScroll;
       draw();
