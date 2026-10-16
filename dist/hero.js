@@ -68,7 +68,8 @@
       vec3 core = vec3(profile(d + split, width), profile(d, width), profile(d - split, width));
       float halo = profile(d, width + 0.045);
       vec3 light = tint * (0.45 + core * 0.55);
-      float alpha = clamp(halo * 1.7, 0.0, 0.98);
+      float edgeFade = smoothstep(0.0, 0.16, uv.y);
+      float alpha = clamp(halo * 1.7, 0.0, 0.98) * edgeFade;
 
       // Small crosses travel with the plane and share its refraction, revealing the lens.
       vec2 grid = vec2(surface.x * resolution.x / pixelRatio, (surface.y - bandY) * viewGeometry.z) / 10.0;
@@ -206,7 +207,7 @@
     const bitmap = document.createElement('canvas');
     bitmap.width = 128;
     bitmap.height = 64;
-    return { element, filter, map, bitmap, context: bitmap.getContext('2d') };
+    return { element, filter, map, bitmap, context: bitmap.getContext('2d'), redOffset, blueOffset };
   });
   let lastLensProgress = -1;
   let lastLensScroll = -1;
@@ -223,12 +224,21 @@
     const width = 0.12 + 0.08 * Math.sin(travel * Math.PI);
     const bend = Math.min(1, travel / 0.36);
     const curvature = 0.42 + 0.58 * bend * bend * (3 - 2 * bend);
+    const smooth = (from, to, value) => {
+      const t = Math.max(0, Math.min(1, (value - from) / (to - from)));
+      return t * t * (3 - 2 * t);
+    };
     for (const lens of textLenses) {
       const bounds = lens.element.getBoundingClientRect();
       if (!lens.context || reduced.matches || scrollProgress < 0.015 || bounds.bottom < 0 || bounds.top > innerHeight) {
         lens.element.style.removeProperty('filter');
         continue;
       }
+      const distortionFade = smooth(0.015, 0.22, scrollProgress);
+      const departure = smooth(0.12, 0.48, scrollProgress) * (1 - smooth(12, 180, bounds.top));
+      const channelShift = 0.25 + departure * 1.2;
+      lens.redOffset.setAttribute('dx', `${channelShift}`);
+      lens.blueOffset.setAttribute('dx', `${-channelShift}`);
       const pad = 32;
       const w = bounds.width + pad * 2;
       const h = bounds.height + pad * 2;
@@ -246,8 +256,8 @@
           const influence = Math.exp(-d * d * 1.35);
           strongest = Math.max(strongest, influence);
           const offset = (y * 128 + x) * 4;
-          image.data[offset] = 128 + rx * influence * 20 / 64 * 255;
-          image.data[offset + 1] = 128 - d * influence * 42 / 64 * 255;
+          image.data[offset] = 128 + rx * influence * 20 / 64 * 255 * distortionFade;
+          image.data[offset + 1] = 128 - d * influence * 42 / 64 * 255 * distortionFade;
           image.data[offset + 2] = 128;
           image.data[offset + 3] = 255;
         }
