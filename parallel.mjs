@@ -1,8 +1,8 @@
 const datitaUrl = 'https://datita-digital-de-paco.sanchezfrancis497029.chatgpt.site/';
 const animatedSplineIds = new Set(['277ff95f-aa50-4fee-b238-9f14700d61b4', 'f2f3679d-1061-4ba8-b3cb-2e522cebad25', '42aa6b5a-d1cc-4641-981a-c06e331e688a', '7f12c271-74f7-4edb-ae97-8b707b80e30d', 'b1e3b2dd-450d-4227-95cc-a65cde664cba', '27394b5f-0f8b-42c0-bfb3-672198ee0fee', 'fe584f03-f2ec-49e1-9cfa-ed4e697ce654', 'c64c99f1-269f-4e6f-9f96-5e744b38f604', 'd3705c2c-6885-4ee1-9dd6-52e10fcfdfcc', 'da95f481-47b1-4efb-949f-bf5ab74ff6d2', '717e0ceb-4e8e-4ab3-84c2-0e928f4d3943']);
 const splinePreviewVersions = {
-  'da95f481-47b1-4efb-949f-bf5ab74ff6d2': 'loop5',
-  '717e0ceb-4e8e-4ab3-84c2-0e928f4d3943': 'loop5'
+  'da95f481-47b1-4efb-949f-bf5ab74ff6d2': 'loop6',
+  '717e0ceb-4e8e-4ab3-84c2-0e928f4d3943': 'loop6'
 };
 const splinePreviewSizes = {
   '277ff95f-aa50-4fee-b238-9f14700d61b4': [149, 152],
