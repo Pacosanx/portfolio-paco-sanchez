@@ -98,8 +98,8 @@
       float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
       float contour = sides * 0.16 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
       contour += sin(uv.x * 13.0 - t * 0.30) * 0.02;
-      float crest = 0.42 + scroll * 0.12 + contour;
-      float floor = 0.14 - contour;
+      float crest = 0.36 + scroll * 0.12 + contour;
+      float floor = 0.02 - contour;
       float edgeFade = 0.11;
       float shapeY = uv.y - scrollShift;
       veil *= (1.0 - smoothstep(crest - edgeFade, crest + edgeFade, shapeY)) * smoothstep(floor - edgeFade, floor + edgeFade, shapeY);
@@ -168,7 +168,7 @@
   lensFilter.setAttribute('height', '136%');
   const lensNoise = document.createElementNS(svgNS, 'feTurbulence');
   lensNoise.setAttribute('type', 'fractalNoise');
-  lensNoise.setAttribute('baseFrequency', '0.003 0.022');
+  lensNoise.setAttribute('baseFrequency', '0.0015 0.005');
   lensNoise.setAttribute('numOctaves', '1');
   lensNoise.setAttribute('seed', '7');
   lensNoise.setAttribute('result', 'lensNoise');
@@ -181,8 +181,8 @@
   lensFilter.append(lensNoise, lensDisplacement);
   filterSvg.append(lensFilter);
   opening.prepend(filterSvg);
-  const refractedContent = opening.querySelectorAll('.opening-label, .opening-copy, .opening-lead, .opening-cue');
-  refractedContent.forEach(element => { element.style.filter = 'url(#opening-scroll-lens)'; });
+  // Keep small interface text crisp; only refract the headline and supporting copy.
+  const refractedContent = opening.querySelectorAll('.opening-copy, .opening-lead');
 
   function draw() {
     if (lost) return;
@@ -191,7 +191,11 @@
     gl.uniform1f(uniforms.scrollProgress, scrollProgress);
     const lensOnset = Math.max(0, Math.min(1, (scrollProgress - 0.02) / 0.36));
     const lensStrength = lensOnset * lensOnset * (3 - 2 * lensOnset);
-    lensDisplacement.setAttribute('scale', (lensStrength * 16).toFixed(2));
+    lensDisplacement.setAttribute('scale', (lensStrength * 8).toFixed(2));
+    refractedContent.forEach(element => {
+      if (lensStrength > 0.015) element.style.filter = 'url(#opening-scroll-lens)';
+      else element.style.removeProperty('filter');
+    });
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   }
   function updateScroll() {
@@ -259,4 +263,3 @@
   });
   sync();
 })();
-
