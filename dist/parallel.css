@@ -16,7 +16,7 @@
 .parallel .lab-entry:hover,.parallel .lab-entry:focus-visible{color:var(--text)}
 .parallel .lab-entry:hover{border-color:var(--muted)}
 .parallel .lab-entry:focus-visible{outline:2px solid var(--text);outline-offset:4px}
-.parallel .lab-entry img{display:block;width:100%;aspect-ratio:1304/624;object-fit:cover;background:#161616}
+.parallel .lab-entry img{display:block;width:100%;height:auto;aspect-ratio:1304/624;object-fit:cover;background:#161616}
 .parallel .lab-entry-caption{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 16px}
 .parallel .lab-entry-number{font-size:.7rem;color:var(--muted)}
 .parallel .lab-entry-title{font-size:.9375rem;line-height:1.5}
