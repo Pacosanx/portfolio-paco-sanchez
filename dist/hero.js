@@ -35,7 +35,17 @@
       vec2 distanceToPointer = (uv - pointer.xy) * vec2(resolution.x / resolution.y, 1.0);
       float influence = exp(-dot(distanceToPointer, distanceToPointer) * 3.5) * pointer.z;
       vec2 parallax = (pointer.xy - vec2(0.5, 0.35)) * pointer.z;
-      vec2 p = uv + (uv - pointer.xy) * influence * 0.22;
+
+      // Inverse barrel projection: the grid opens out and rises at the edges.
+      vec2 lensCenter = vec2(0.5 + parallax.x * 0.055, -0.12);
+      vec2 lensScale = vec2(1.75, 1.0);
+      vec2 lensRay = (uv - lensCenter) * lensScale;
+      float barrel = 1.0 + dot(lensRay, lensRay) * 0.48;
+      vec2 surface = lensCenter + lensRay / barrel / lensScale;
+      float swell = sin(surface.x * 8.0 + t * 0.7) * 0.035;
+      swell += sin(surface.x * 17.0 - t * 0.45) * 0.014;
+      surface.y += swell * smoothstep(0.02, 0.65, uv.y);
+      vec2 p = surface + (uv - pointer.xy) * influence * 0.22;
       p += parallax * vec2(0.09, 0.055);
 
       // A small green light sits behind three independently moving blue layers.
@@ -51,13 +61,13 @@
       light = screen(light, vec3(0.035, 0.25, 1.0) * ribbon * 0.63);
       light = screen(light, vec3(0.035, 0.18, 0.50) * influence * 0.34);
 
-      // Five square pixels form each +, on a fixed bitmap grid.
-      vec2 pixels = gl_FragCoord.xy / pixelRatio;
+      // The bitmap crosses share the lens projection of the light field.
+      vec2 pixels = surface * resolution / pixelRatio;
       vec2 grid = pixels / 14.0;
       vec2 cell = floor(grid);
       vec2 local = (fract(grid) - 0.5) * 14.0;
       float wave = 0.5 + 0.5 * sin(cell.x * 0.19 + cell.y * 0.23 + 1.8 * sin(cell.x * 0.065 + t));
-      float density = (0.28 + 0.72 * wave) * (1.0 - smoothstep(0.12, 0.77, uv.y));
+      float density = (0.28 + 0.72 * wave) * (1.0 - smoothstep(0.12, 0.77, surface.y));
       density = min(1.0, density + influence * 0.40);
       float bitSize = 1.0 + step(0.58, density);
       vec2 bit = abs(floor(local / bitSize + 0.5));
@@ -65,7 +75,12 @@
       float inkStrength = density * (0.13 + 0.37 * wave);
       vec3 ink = mix(vec3(0.12, 0.39, 1.0), vec3(0.12, 0.76, 0.24), green * 0.60);
       light = screen(light, ink * cross * inkStrength);
-      gl_FragColor = vec4(light, (1.0 - smoothstep(0.12, 1.0, uv.y)) * 0.98);
+      float veil = 1.0 - smoothstep(0.08, 0.78, surface.y);
+      float sides = pow(abs(uv.x - 0.5) * 2.0, 1.6);
+      float crest = 0.62 + sides * 0.23 + sin(uv.x * 7.0 + t * 0.35) * 0.035;
+      crest += sin(uv.x * 13.0 - t * 0.30) * 0.02;
+      veil *= (1.0 - smoothstep(crest - 0.32, min(1.0, crest + 0.12), uv.y)) * smoothstep(0.0, 0.16, uv.y);
+      gl_FragColor = vec4(light, veil * 0.98);
     }
   `;
 
