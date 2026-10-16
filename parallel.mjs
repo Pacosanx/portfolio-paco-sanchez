@@ -15,7 +15,8 @@ const splineExplorations = [
   'eb41011f-65e3-44af-b5bb-1d8028343af2'
 ].map((id, index) => ({
   number: String(index + 1).padStart(2, '0'),
-  url: `https://app.spline.design/file/${id}`
+  url: `https://app.spline.design/file/${id}`,
+  preview: `https://filespreview.spline.design/${id}.jpg`
 }));
 
 export function parallelSection(sitePath = route => route) {
@@ -29,7 +30,7 @@ export function parallelSection(sitePath = route => route) {
   </article>
   <article class="lab" aria-labelledby="lab-title">
     <div class="lab-heading"><p class="resource-kicker mono">Pruebas gráficas y técnicas</p><h3 id="lab-title">Exploraciones.</h3><p class="lab-description">Estudios de forma, espacio e interacción realizados en Spline.</p></div>
-    <div class="lab-gallery" aria-label="Exploraciones 3D en Spline">${splineExplorations.map(item => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Spline</span><span class="lab-entry-action" aria-hidden="true">↗</span></a>`).join('')}</div>
+    <div class="lab-gallery" aria-label="Galería horizontal de exploraciones 3D en Spline">${splineExplorations.map(item => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview}" width="1304" height="624" alt="Vista previa de la exploración ${item.number}" loading="lazy" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action" aria-hidden="true">↗</span></span></a>`).join('')}</div>
   </article>
 </section>`;
 }
