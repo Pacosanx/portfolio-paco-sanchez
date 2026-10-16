@@ -23,7 +23,7 @@
       const position=visible.findIndex(row=>row.getAttribute('href')===template.dataset.projectRoute);
       if(position>=0){
         const next=visible[position+1],link=content.querySelector('.next-project');
-        link.href=next?next.getAttribute('href'):'/#proyectos';
+        link.href=next?next.getAttribute('href'):(document.documentElement.dataset.basePath||'')+'/#proyectos';
         link.querySelector('.eyebrow').textContent=next?'Siguiente proyecto':'Fin de la selección';
         link.querySelector('span:last-child').textContent=next?next.querySelector('h3').textContent:'Volver a proyectos';
         if(next)link.removeAttribute('data-close-project');else link.setAttribute('data-close-project','');

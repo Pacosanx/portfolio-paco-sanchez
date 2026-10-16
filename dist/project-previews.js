@@ -5,9 +5,9 @@
   if (!index || !stage || !wrap) return;
 
   const rows = [...index.querySelectorAll('.project-row')];
-  const desktop = window.matchMedia('(min-width:1001px) and (hover:hover)');
+  const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
-  let records = [], selected = -1, request = 0;
+  let records = [], selected = -1, request = 0, keyboardFocus = false;
 
   const load = asset => {
     if (cache.has(asset.src)) return cache.get(asset.src);
@@ -16,7 +16,6 @@
     image.width = asset.width;
     image.height = asset.height;
     image.decoding = 'async';
-    if(asset.srcset){image.srcset=asset.srcset;image.sizes='320px'}
     image.className = 'preview-image';
     const entry = { image, asset, failed: false };
     entry.promise = new Promise((resolve, reject) => {
@@ -57,9 +56,9 @@
     const current = () => token === request && selected === i && desktop.matches;
     const render = () => {
       if (!current()) return;
-      const usable = entries.filter(entry => !entry.failed);
-      wrap.style.setProperty('--preview-ratio-sum', usable.reduce((sum, entry) => sum + entry.asset.height / entry.asset.width, 0));
-      wrap.style.setProperty('--preview-gaps', `${Math.max(0, usable.length - 1) * 22}px`);
+      const usable = entries.filter(entry => !entry.failed && entry.image.classList.contains('is-loaded'));
+      wrap.dataset.count = usable.length;
+      wrap.dataset.shape = usable.every(entry => entry.asset.height / entry.asset.width > 1.2) ? 'portrait' : 'landscape';
       wrap.replaceChildren(...usable.map(entry => entry.image));
       stage.classList.toggle('is-visible', usable.some(entry => entry.image.classList.contains('is-loaded')));
     };
@@ -71,10 +70,17 @@
   };
 
   const focusedIndex = () => rows.findIndex(row => row.contains(document.activeElement));
+  document.addEventListener('keydown', () => { keyboardFocus = true; }, true);
+  index.addEventListener('pointermove', event => {
+    keyboardFocus = false;
+    const row = event.target.closest('.project-row');
+    const i = rows.indexOf(row);
+    if (i >= 0 && selected !== i) show(i);
+  });
   rows.forEach((row, i) => {
-    row.addEventListener('pointerenter', () => show(i));
-    row.addEventListener('focus', () => show(i));
-    row.addEventListener('blur', () => { if (focusedIndex() < 0) hide(); });
+    row.addEventListener('pointerenter', () => { if (!keyboardFocus || focusedIndex() < 0) show(i); });
+    row.addEventListener('focusin', () => show(i));
+    row.addEventListener('focusout', () => queueMicrotask(() => { if (focusedIndex() < 0) hide(); }));
   });
   index.addEventListener('pointerleave', () => {
     const focused = focusedIndex();
@@ -88,6 +94,10 @@
   const basePath = document.documentElement.dataset.basePath || '';
   fetch(`${basePath}/preview-data.json`)
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
-    .then(data => { records = data; if (selected >= 0) show(selected); })
+    .then(data => {
+      // Resolve by route so filtering or reordered rows never reveal another project.
+      records = rows.map(row => data.find(record => new URL(row.href || row.querySelector('a')?.href || '/', location.href).pathname.replace(/\/$/, '') === `${basePath}${record.route}`.replace(/\/$/, '')));
+      if (selected >= 0) show(selected);
+    })
     .catch(hide);
 })();

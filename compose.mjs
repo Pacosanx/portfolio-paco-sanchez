@@ -16,9 +16,10 @@ const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
 const versionedAsset=(route,source)=>sitePath(route)+'?v='+createHash('sha256').update(fs.readFileSync(source)).digest('hex').slice(0,10);
 const assetPath=url=>url.startsWith('/')&&!url.startsWith('//')?sitePath(url):url;
-const origin=(process.env.SITE_ORIGIN||'https://paco-sanchez-portfolio.noisy-koala-9107.chatgpt.site').replace(/\/+$/,'');
+const origin=(process.env.SITE_ORIGIN||'https://pacosanx.github.io').replace(/\/+$/,'');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
+const lightSurface=color=>/^#[0-9a-f]{6}$/i.test(color||'')&&[1,3,5].reduce((sum,i,j)=>sum+parseInt(color.slice(i,i+2),16)*[.2126,.7152,.0722][j],0)>155;
 const favicon="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 24V8h8a6 6 0 0 1 0 12h-4v4zm4-8h4a2 2 0 0 0 0-4h-4z' fill='%23ececec'/%3E%3C/svg%3E";
 
 function document(title,description,route,body){return `<!doctype html>
@@ -29,7 +30,7 @@ function document(title,description,route,body){return `<!doctype html>
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${sitePath('/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${sitePath('/interaction.js')}" defer></script><script src="${sitePath('/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
 </head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
@@ -47,8 +48,12 @@ function projectRow(p,i){return `<a class="project-row" href="${sitePath(p.ruta)
 
 function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context)}</td></tr>`).join('')}</tbody></table>`}
 
-function caseImage(image,p,j){return `<figure class="case-figure" style="max-width:${Math.min(1120,image.width||1120)}px;margin-inline:auto"><img src="${esc(assetPath(image.url))}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), (max-width:1300px) 80vw, 1120px"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(image.alt||`${p.title}, imagen ${j+1}`)}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async">${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
-function caseText(block){
+function imageDescription(image,p,j){
+  const alt=String(image.alt||'').trim();
+  return alt&&!/\b(fadu|webflow|identity|Historias Minimas)\b/i.test(alt)?alt:image.caption||p.title+', vista '+(j+1);
+}
+function caseImage(image,p,j){return `<figure class="case-figure${image.size==='detail'?' is-detail':''}"${image.surface?` style="--surface:${esc(image.surface)};background:var(--surface)"`:''}><a class="case-zoom" href="${esc(assetPath(image.url))}" target="_blank" rel="noopener noreferrer" aria-label="${esc('Ampliar: '+imageDescription(image,p,j))}"><img src="${esc(assetPath(image.url))}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), 90vw"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(imageDescription(image,p,j))}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
+function caseText(block,embedded=false){
   const text=String(block.text||'').trim().replace(/\n{3,}/g,'\n\n');
   let linked=esc(text);
   const extra=[];
@@ -58,9 +63,11 @@ function caseText(block){
     if(linked.includes(label))linked=linked.replace(label,anchor);else extra.push(anchor);
   }
   const lines=linked.split('\n');
-  const heading=text.split('\n')[0];
-  const isHeading=heading.length<80&&/[A-ZÁÉÍÓÚÑ]/.test(heading)&&heading===heading.toUpperCase();
-  return `<div class="case-text">${isHeading?`<h3>${lines.shift()}</h3>`:''}${lines.length?`<p>${lines.join('<br>')}</p>`:''}${extra.length?`<p class="case-text-links">${extra.join('<br>')}</p>`:''}</div>`;
+  const first=text.split('\n')[0];
+  const isHeading=!block.heading&&first.length<80&&/[A-ZÁÉÍÓÚÑ]/.test(first)&&first===first.toUpperCase();
+  const heading=block.heading?esc(block.heading):isHeading?lines.shift():'';
+  const tag=embedded?'h3':'h2';
+  return `<section class="case-text">${block.label?`<p class="eyebrow">${esc(block.label)}</p>`:''}${heading?`<${tag}>${heading}</${tag}>`:''}${lines.join('').trim()?lines.join('\n').split(/\n\s*\n/).map(par=>`<p>${par.replaceAll('\n','<br>')}</p>`).join(''):''}${extra.length?`<p class="case-text-links">${extra.join('<br>')}</p>`:''}</section>`;
 }
 function caseDescription(p){
   let text=esc(p.descripcion).replaceAll('\n','<br>');
@@ -72,22 +79,36 @@ function caseDescription(p){
   }
   return text;
 }
-function caseGallery(p){
+function caseGallery(p,embedded=false){
   let imageIndex=0;
   const blocks=p.blocks?.length?p.blocks:p.imagenes.map(image=>({type:'image',...image}));
-  return blocks.map(block=>{
+  const render=block=>{
     if(block.type==='image')return caseImage(block,p,imageIndex++);
-    if(block.type==='gallery')return `<div class="case-image-group">${block.images.map(image=>caseImage(image,p,imageIndex++)).join('')}</div>`;
+    if(block.type==='gallery')return `<div class="case-image-group${block.seamless?' is-seamless':''}${block.surface?' has-surface':''}${lightSurface(block.surface)?' is-light':''}" style="--columns:${Math.max(1,Math.min(4,block.columns||2))}${block.surface?`;--surface:${esc(block.surface)}`:''}">${block.images.map(image=>caseImage(image,p,imageIndex++)).join('')}</div>`;
     if(block.type==='statement')return `<div class="case-statement">${block.label?`<p class="case-statement-label">${esc(block.label)}</p>`:''}<p>${esc(block.text)}</p></div>`;
-    if(block.type==='text')return caseText(block);
+    if(block.type==='text')return caseText(block,embedded);
     if(block.type==='embed'){
       const ratio=Number(block.aspectRatio)>0?Number(block.aspectRatio):16/9;
       return `<figure class="case-embed${ratio<1?' is-portrait':''}" style="--media-ratio:${ratio}"><div class="case-player"><iframe src="${esc(assetPath(block.url))}" title="${esc(block.title||p.title)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${block.link?`<figcaption><a class="text-link" href="${esc(block.link)}" target="_blank" rel="noopener noreferrer">${esc(block.title||'Ver video en YouTube')}</a></figcaption>`:''}</figure>`;
     }
-    if(block.type==='video')return `<figure class="case-video"><video src="${esc(assetPath(block.url))}" ${block.poster?`poster="${esc(assetPath(block.poster))}"`:''} controls playsinline preload="metadata" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
+    if(block.type==='video')return `<figure class="case-video${block.layout==='portrait'||block.aspectRatio<1?' is-portrait':''}"><video src="${esc(assetPath(block.url))}" ${block.poster?`poster="${esc(assetPath(block.poster))}"`:''} controls playsinline preload="none" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
     if(block.type==='interactive')return `<section class="inmson-case-interaction" aria-labelledby="inmson-interaction-title"><div class="case-text inmson-interaction-intro"><h3 id="inmson-interaction-title">02 / PROBALO ACÁ</h3><p>${esc(block.title)}<br>${esc(block.description)}</p></div><inmson-drawing></inmson-drawing>${block.caption?`<p class="interaction-caption">${esc(block.caption)}</p>`:''}</section>`;
     return '';
-  }).join('');
+  };
+  let output='';
+  for(let i=0;i<blocks.length;i++){
+    const block=blocks[i];
+    if(block.type==='embed'&&block.aspectRatio<1){
+      const group=[block];
+      while(blocks[i+1]?.type==='embed'&&blocks[i+1].aspectRatio<1)group.push(blocks[++i]);
+      output+=`<div class="case-embed-strip" style="--columns:${Math.min(4,group.length)}">${group.map(render).join('')}</div>`;
+    }else if(['image','gallery'].includes(block.type)&&block.surface){
+      const group=[block];
+      while(['image','gallery'].includes(blocks[i+1]?.type)&&blocks[i+1].surface===block.surface)group.push(blocks[++i]);
+      output+=`<div class="case-media-run${lightSurface(block.surface)?' is-light':''}" style="--surface:${esc(block.surface)}">${group.map(render).join('')}</div>`;
+    }else output+=render(block);
+  }
+  return output;
 }
 
 function caseContent(p,i,embedded=false){
@@ -95,7 +116,7 @@ function caseContent(p,i,embedded=false){
   return `<section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p>${(p.context??'FADU / UBA')?`<p class="mono">${esc(p.context??'FADU / UBA')}</p>`:''}<p class="case-discipline">${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div>
   <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}>${p.descripcion?`<p class="case-description">${caseDescription(p)}</p>`:''}</div>
   <div class="case-tools">${p.tools.length?`<${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}<a class="text-link case-source" href="${esc(assetPath(p.fuente))}" target="_blank" rel="noopener noreferrer">${esc(p.fuenteLabel||(p.fuente.includes('youtu')?'Ver en YouTube':p.fuente.includes('myportfolio.com')?'Ver en Adobe Portfolio':'Ver en Behance'))}</a></div></section>
-  <div class="case-gallery${p.galleryLayout==='grid'?' case-gallery-grid':''}">${caseGallery(p)}</div>
+  <div class="case-gallery" data-case="${esc(p.ruta.split('/').at(-1))}">${caseGallery(p,embedded)}</div>
   <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="${sitePath('/')}#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?sitePath(next.ruta)+'/':sitePath('/#proyectos')}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>`;
 }
 
@@ -132,6 +153,10 @@ fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});
 for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg']){
   fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
+}
+for(const directory of ['fachada','previews','presentation']){
+  const source=path.join('assets',directory);
+  if(fs.existsSync(source))fs.cpSync(source,path.join('dist/assets',directory),{recursive:true});
 }
 console.log(JSON.stringify({pages:projects.length+1,projects:projects.length,galleryImages:projects.reduce((n,p)=>n+p.imagenes.length,0)}));
 
