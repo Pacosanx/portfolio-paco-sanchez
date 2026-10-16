@@ -83,3 +83,11 @@
 .case-media-run>.case-figure,.case-media-run>.case-image-group{margin:0;min-width:0}
 .case-media-run figcaption,.case-image-group.has-surface figcaption{padding:12px 16px;margin-top:0}
 .case-media-run.is-light figcaption,.case-image-group.is-light figcaption{color:#494943}
+.case-presentation{color:var(--text);background:var(--bg)}
+.case-figure.is-overview .case-zoom{display:flex;align-items:center;justify-content:center;height:min(78svh,760px);width:100%}
+.case-figure.is-overview img{width:auto;height:100%;max-width:76%;object-fit:contain}
+.case-figure.is-overview figcaption{text-align:center;margin:20px auto 0}
+.case-figure.is-bleed{width:calc(100% + 2 * var(--gutter));margin-inline:calc(-1 * var(--gutter))}
+.case-figure.is-bleed img{width:100%;height:auto;max-height:none}
+.case-figure.is-bleed figcaption{padding-inline:var(--gutter)}
+.case-image-group.original-sequence{grid-template-columns:1fr;gap:0}

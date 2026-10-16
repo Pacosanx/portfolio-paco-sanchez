@@ -15,6 +15,7 @@
     try{return bySlug.get(decodeURIComponent(location.hash.slice(10)))}catch{return null}
   };
   const fill=template=>{
+    viewer.style.cssText=template.dataset.projectTheme||'';
     content.replaceChildren(template.content.cloneNode(true));
     const filtered=document.querySelector('#project-filter')?.dataset.value;
     const searching=document.querySelector('#project-program')?.value.trim();
@@ -68,6 +69,7 @@
     document.title=baseTitle;
     closeTimer=setTimeout(()=>{
       viewer.close();
+      viewer.removeAttribute('style');
       document.documentElement.classList.remove('viewer-open');
       content.replaceChildren();content.classList.remove('is-changing');activeRoute='';
       returnFocus?.focus({preventScroll:true});

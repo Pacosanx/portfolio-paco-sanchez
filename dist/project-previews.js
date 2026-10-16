@@ -2,39 +2,80 @@
   const index = document.querySelector('.work-index');
   const stage = document.querySelector('.preview-stage');
   const wrap = stage?.querySelector('.preview-image-wrap');
-  if (!index || !stage || !wrap) return;
-
+  const column = document.querySelector('.preview-column');
+  if (!index || !stage || !wrap || !column) return;
   const rows = [...index.querySelectorAll('.project-row')];
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
-  let records = [], selected = -1, request = 0, keyboardFocus = false;
+  let records = [], selected = -1, request = 0, keyboardFocus = false, frame;
 
   const load = asset => {
-    if (cache.has(asset.src)) return cache.get(asset.src);
+    if (cache.has(asset.src)) return { ...cache.get(asset.src), asset };
     const image = new Image();
     image.alt = '';
-    image.width = asset.width;
-    image.height = asset.height;
     image.decoding = 'async';
-    image.className = 'preview-image';
-    const entry = { image, asset, failed: false };
+    const entry = { image };
     entry.promise = new Promise((resolve, reject) => {
       image.onload = async () => {
-        try { await image.decode(); } catch { /* The loaded first frame is usable. */ }
-        if (image.naturalWidth) {
-          image.classList.add('is-loaded');
-          resolve(entry);
-        } else { entry.failed = true; reject(new Error('Empty preview')); }
+        try { await image.decode(); } catch { /* Loaded source remains usable. */ }
+        image.naturalWidth ? resolve(entry) : reject(new Error('Empty preview'));
       };
-      image.onerror = () => {
-        entry.failed = true;
-        reject(new Error('Preview unavailable'));
-      };
+      image.onerror = () => reject(new Error('Preview unavailable'));
     });
-    // Cache both the element and its pending decode to avoid repeat requests.
     cache.set(asset.src, entry);
     image.src = asset.src;
-    return entry;
+    return { ...entry, asset };
+  };
+
+  const createCard = entry => {
+    const { asset } = entry;
+    const raw = asset.crop || { x: 0, y: 0, width: 1, height: 1 };
+    const crop = {
+      x: Math.max(0, Math.min(.99, Number(raw.x) || 0)),
+      y: Math.max(0, Math.min(.99, Number(raw.y) || 0)),
+      width: Math.max(.01, Math.min(1, Number(raw.width) || 1)),
+      height: Math.max(.01, Math.min(1, Number(raw.height) || 1))
+    };
+    const card = document.createElement('div');
+    card.className = 'preview-card';
+    card.dataset.role = asset.role || 'detail';
+    card.dataset.ratio = asset.width * crop.width / (asset.height * crop.height);
+    const cropFrame = document.createElement('div');
+    cropFrame.className = 'preview-crop';
+    const image = entry.image.cloneNode(true);
+    image.className = 'preview-image';
+    image.style.width = `${100 / crop.width}%`;
+    image.style.height = `${100 / crop.height}%`;
+    image.style.left = `${-100 * crop.x / crop.width}%`;
+    image.style.top = `${-100 * crop.y / crop.height}%`;
+    if (/^(polygon|inset)\([\d\s.,%+-]+\)$/.test(asset.clipPath || '')) image.style.clipPath = asset.clipPath;
+    cropFrame.append(image);
+    card.append(cropFrame);
+    return { card, image };
+  };
+
+  const position = () => {
+    if (selected < 0 || !desktop.matches) return false;
+    const anchor = rows[selected].querySelector('h3').getBoundingClientRect();
+    if (anchor.bottom < 0 || anchor.top > innerHeight || rows[selected].hidden) return false;
+    const box = column.getBoundingClientRect();
+    const padding = parseFloat(getComputedStyle(column).paddingLeft) || 0;
+    const width = Math.max(0, box.width - padding);
+    if (!width) return false;
+    const height = Math.min(width * 1.18, innerHeight - 40);
+    stage.style.left = `${box.left + padding}px`;
+    stage.style.width = `${width}px`;
+    stage.style.top = `${Math.max(20, Math.min(anchor.top + anchor.height / 2 - height / 2, innerHeight - height - 20))}px`;
+    wrap.style.height = `${height}px`;
+    [...wrap.children].forEach((card, i) => {
+      const ratio = Number(card.dataset.ratio) || 1;
+      const maxWidth = width * (i === 0 ? (ratio > 1.3 ? .88 : .72) : i === 1 ? .62 : .59);
+      const maxHeight = height * (i === 0 ? .78 : i === 1 ? .52 : .48);
+      const cardWidth = Math.min(maxWidth, maxHeight * ratio);
+      card.style.width = `${cardWidth}px`;
+      card.style.height = `${cardWidth / ratio}px`;
+    });
+    return true;
   };
 
   const hide = () => {
@@ -43,38 +84,34 @@
     stage.classList.remove('is-visible');
     rows.forEach(row => row.classList.remove('is-active'));
   };
-
   const show = async i => {
     selected = i;
     if (!desktop.matches || !records.length) return;
     const token = ++request;
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
     stage.classList.remove('is-visible');
-    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0);
-    if (!assets.length) { wrap.replaceChildren(); return; }
-    const entries = assets.slice(0, 3).map(load);
+    position();
+    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 3);
+    if (assets.length < 3) { wrap.replaceChildren(); return; }
     const current = () => token === request && selected === i && desktop.matches;
-    const render = () => {
+    try {
+      const entries = assets.map(load);
+      await Promise.all(entries.map(entry => entry.promise));
       if (!current()) return;
-      const usable = entries.filter(entry => !entry.failed && entry.image.classList.contains('is-loaded'));
-      wrap.dataset.count = usable.length;
-      wrap.dataset.shape = usable.every(entry => entry.asset.height / entry.asset.width > 1.2) ? 'portrait' : 'landscape';
-      wrap.replaceChildren(...usable.map(entry => entry.image));
-      stage.classList.toggle('is-visible', usable.some(entry => entry.image.classList.contains('is-loaded')));
-    };
-    // Reveal the first decoded image while the remaining pieces load quietly.
-    try { await Promise.any(entries.map(entry => entry.promise)); } catch { return; }
-    render();
-    await Promise.allSettled(entries.map(entry => entry.promise));
-    render();
+      const cards = entries.map(createCard);
+      await Promise.all(cards.map(({ image }) => image.decode()));
+      if (!current()) return;
+      wrap.replaceChildren(...cards.map(({ card }) => card));
+      wrap.dataset.projectIndex = i;
+      stage.classList.toggle('is-visible', position());
+    } catch { if (current()) wrap.replaceChildren(); }
   };
 
   const focusedIndex = () => rows.findIndex(row => row.contains(document.activeElement));
   document.addEventListener('keydown', () => { keyboardFocus = true; }, true);
   index.addEventListener('pointermove', event => {
     keyboardFocus = false;
-    const row = event.target.closest('.project-row');
-    const i = rows.indexOf(row);
+    const i = rows.indexOf(event.target.closest('.project-row'));
     if (i >= 0 && selected !== i) show(i);
   });
   rows.forEach((row, i) => {
@@ -82,22 +119,23 @@
     row.addEventListener('focusin', () => show(i));
     row.addEventListener('focusout', () => queueMicrotask(() => { if (focusedIndex() < 0) hide(); }));
   });
-  index.addEventListener('pointerleave', () => {
-    const focused = focusedIndex();
-    focused < 0 ? hide() : show(focused);
-  });
+  index.addEventListener('pointerleave', () => { const i = focusedIndex(); i < 0 ? hide() : show(i); });
+  const reposition = () => {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(() => {
+      stage.classList.toggle('is-visible', Number(wrap.dataset.projectIndex) === selected && wrap.childElementCount === 3 && position());
+    });
+  };
+  window.addEventListener('scroll', reposition, { passive: true });
+  window.addEventListener('resize', reposition);
   document.addEventListener('portfolio:filter', hide);
-  desktop.addEventListener('change', () => {
-    hide();
-    if (desktop.matches && focusedIndex() >= 0) show(focusedIndex());
-  });
+  document.addEventListener('portfolio:reveal', hide);
+  desktop.addEventListener('change', () => { hide(); if (desktop.matches && focusedIndex() >= 0) show(focusedIndex()); });
   const basePath = document.documentElement.dataset.basePath || '';
   fetch(`${basePath}/preview-data.json`)
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
     .then(data => {
-      // Resolve by route so filtering or reordered rows never reveal another project.
-      records = rows.map(row => data.find(record => new URL(row.href || row.querySelector('a')?.href || '/', location.href).pathname.replace(/\/$/, '') === `${basePath}${record.route}`.replace(/\/$/, '')));
+      records = rows.map(row => data.find(record => new URL(row.href, location.href).pathname.replace(/\/$/, '') === `${basePath}${record.route}`.replace(/\/$/, '')));
       if (selected >= 0) show(selected);
-    })
-    .catch(hide);
+    }).catch(hide);
 })();

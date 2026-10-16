@@ -41,12 +41,18 @@ for(const file of htmlFiles){
     const src=match[1];
     assert(src.startsWith('https://')||(src.startsWith('/')&&fs.existsSync(localPath(src))),`${file}: invalid image source ${src.slice(0,100)}`);images++;
   }
+  for(const match of html.matchAll(/<img\b[^>]*\bsrcset="([^"]+)"/g)){
+    for(const candidate of match[1].split(',')){
+      const src=candidate.trim().split(/\s+/)[0];
+      if(src.startsWith('/'))assert(fs.existsSync(localPath(src)),`${file}: missing responsive image ${src}`);
+    }
+  }
 }
 for(const [i,p] of content.projects.entries()){
   const html=fs.readFileSync(htmlFiles[i+1],'utf8');
   const blocks=p.blocks||p.imagenes.map(image=>({type:'image',...image}));
   const galleryImages=blocks.flatMap(b=>b.type==='image'?[b]:b.type==='gallery'?b.images:[]);
-  assert.equal((html.match(/class="case-figure(?: is-detail)?"/g)||[]).length,galleryImages.length,p.title);
+  assert.equal((html.match(/class="case-figure(?: is-(?:detail|overview|bleed))?"/g)||[]).length,galleryImages.length,p.title);
   for(const image of galleryImages)assert(html.includes(assetUrl(image.url).replaceAll('&','&amp;')),p.title);
   for(const block of blocks){
     assert(['image','gallery','text','embed','video','interactive','statement'].includes(block.type),p.title);
@@ -58,16 +64,23 @@ for(const [i,p] of content.projects.entries()){
     for(const link of block.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
   }
   assert(html.includes(assetUrl(p.fuente).replaceAll('&','&amp;')),p.title);
+  if(p.theme)assert(html.includes(`--bg:${p.theme.bg}`),`${p.title}: missing project canvas color`);
   for(const link of p.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
   assert(html.includes(i<content.projects.length-1?content.projects[i+1].ruta+'/':'/#proyectos'),p.title);
 }
 const previews=JSON.parse(fs.readFileSync('dist/preview-data.json','utf8'));
 assert.equal(previews.length,content.projects.length);
 for(const [i,preview] of previews.entries()){
-  assert(preview.images.length>0,content.projects[i].title);
+  assert(preview.images.length>=3,`${content.projects[i].title}: at least three previews required`);
+  assert.equal(preview.images[0].role,'whole',`${content.projects[i].title}: the first preview must show the complete piece`);
   for(const image of preview.images){
     assert(image.width>0&&image.height>0,content.projects[i].title);
     if(image.src.startsWith('/'))assert(fs.existsSync(localPath(image.src)),image.src);
+    if(image.crop){
+      const c=image.crop;
+      assert(c.x>=0&&c.y>=0&&c.width>0&&c.height>0&&c.x+c.width<=1.001&&c.y+c.height<=1.001,`${image.src}: invalid crop`);
+    }
+    if(image.clipPath)assert(/^(polygon|inset)\([\d\s.,%+-]+\)$/.test(image.clipPath),`${image.src}: invalid image clipping path`);
   }
   if(content.projects[i].imagenes.length)for(const image of preview.images)assert.notEqual(image.src,content.projects[i].preview);
 }

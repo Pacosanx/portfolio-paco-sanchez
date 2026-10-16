@@ -9,15 +9,6 @@
       "fuente": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
       "imagenes": [
         {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
-          "width": 1400,
-          "height": 698,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-          "caption": "",
-          "sourceModule": "Project Module 19",
-          "surface": "#000000"
-        },
-        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
           "width": 1400,
           "height": 698,
@@ -188,6 +179,15 @@
           "height": 2280,
           "alt": "",
           "caption": "",
+          "surface": "#000000"
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
+          "width": 1400,
+          "height": 698,
+          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "caption": "",
+          "sourceModule": "Project Module 19",
           "surface": "#000000"
         }
       ],
@@ -469,7 +469,14 @@
         "embeds": 2,
         "textBlocks": 3
       },
-      "context": "Morfología 2 · Longinotti · FADU / UBA"
+      "context": "Morfología 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#001A30",
+        "text": "#ECECEC",
+        "secondary": "#C8D1D9",
+        "muted": "#A5B3C0",
+        "line": "#344350"
+      }
     },
     {
       "nombre": "MARADONA ALIEN",
@@ -486,90 +493,6 @@
           "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
           "caption": "",
           "sourceModule": "Project Module 1",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e96b55191469177.65ceb2911502d.gif",
-          "width": 1280,
-          "height": 731,
-          "alt": "",
-          "caption": "",
-          "sourceModule": "Project Module 9",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
-          "width": 1400,
-          "height": 464,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 12",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
-          "width": 1400,
-          "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 15",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
-          "width": 1400,
-          "height": 787,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 16",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
-          "width": 1400,
-          "height": 510,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 19",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
-          "width": 1400,
-          "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 20",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
-          "width": 1400,
-          "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 25",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
-          "width": 1400,
-          "height": 787,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 26",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
-          "width": 1176,
-          "height": 640,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 32",
           "surface": "#000000"
         },
         {
@@ -645,6 +568,15 @@
           "surface": "#000000"
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e96b55191469177.65ceb2911502d.gif",
+          "width": 1280,
+          "height": 731,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 9",
+          "surface": "#000000"
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/4a9255191469177.65ceb291dc476.gif",
           "width": 1280,
           "height": 731,
@@ -661,112 +593,204 @@
           "surface": "#000000"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
+          "width": 1400,
+          "height": 464,
+          "alt": "Vista de conjunto de la publicación: tapa y dobles páginas dispuestas sobre fondo azul.",
+          "caption": "",
+          "sourceModule": "Project Module 12",
+          "size": "full"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1e491c191469177.65ce917a275b9.gif",
           "width": 1400,
           "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Tapa animada de la publicación sobre fondo azul.",
           "caption": "",
           "sourceModule": "Project Module 13",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/afe9f2191469177.65ce890461bda.png",
           "width": 1400,
           "height": 787,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Tapa de la publicación sobre fondo negro.",
           "caption": "",
           "sourceModule": "Project Module 14",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
+          "width": 1400,
+          "height": 397,
+          "alt": "Apertura: ¿de qué planeta viniste?",
+          "caption": "",
+          "sourceModule": "Project Module 15",
+          "size": "full"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "Doble página con información sobre los orígenes de la vida, sobre fondo rojo.",
+          "caption": "",
+          "sourceModule": "Project Module 16",
+          "size": "full"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/805898191469177.65ce917a282df.gif",
           "width": 1400,
           "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Doble página animada: imágenes y textos sobre la vida extraterrestre.",
           "caption": "",
           "sourceModule": "Project Module 17",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d1a14c191469177.65ce890460634.png",
           "width": 1400,
           "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Doble página tipográfica: la distancia entre Marte y la Tierra.",
           "caption": "",
           "sourceModule": "Project Module 18",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
+          "width": 1400,
+          "height": 510,
+          "alt": "Detalle fotográfico de la tipografía de la publicación.",
+          "caption": "",
+          "sourceModule": "Project Module 19",
+          "size": "full"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
+          "width": 1400,
+          "height": 788,
+          "alt": "Doble página sobre fondo azul.",
+          "caption": "",
+          "sourceModule": "Project Module 20",
+          "size": "full"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f91403191469177.65ce890462695.gif",
           "width": 1400,
           "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Doble página animada dedicada a los extraterrestres que habitaron la Tierra.",
           "caption": "",
           "sourceModule": "Project Module 21",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1fe84191469177.65ce89046867c.gif",
           "width": 1200,
           "height": 200,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Secuencia de retratos de personajes de la publicación.",
           "caption": "",
           "sourceModule": "Project Module 22",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9de11a191469177.65ce917a2904a.gif",
           "width": 1400,
           "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Doble página animada: transición hacia la historia de Maradona.",
           "caption": "",
           "sourceModule": "Project Module 23",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b5cc65191469177.65ce8904657ea.png",
           "width": 1400,
           "height": 510,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Detalle fotográfico de la textura y las ilustraciones de la publicación.",
           "caption": "",
           "sourceModule": "Project Module 24",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
+          "width": 1400,
+          "height": 788,
+          "alt": "Doble página con una composición de Maradona, la Tierra y el espacio.",
+          "caption": "",
+          "sourceModule": "Project Module 25",
+          "size": "full"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
+          "width": 1400,
+          "height": 787,
+          "alt": "Doble página: Barrilete cósmico.",
+          "caption": "",
+          "sourceModule": "Project Module 26",
+          "size": "full"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b8708d191469177.65ce890461115.gif",
           "width": 1400,
           "height": 509,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Registro animado de la publicación sostenida entre las manos.",
           "caption": "",
           "sourceModule": "Project Module 27",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de33a2191469177.65ceb294b3a97.gif",
           "width": 1400,
           "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Doble página animada con retrato y texto de Maradona.",
           "caption": "",
           "sourceModule": "Project Module 28",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/12903c191469177.65ce89045e595.png",
           "width": 1400,
           "height": 510,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Detalle fotográfico de un texto dedicado a Diego Maradona.",
           "caption": "",
           "sourceModule": "Project Module 29",
-          "surface": "#000000"
+          "size": "full"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
           "width": 1400,
           "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+          "alt": "Contratapa de la publicación sobre fondo negro.",
           "caption": "",
           "sourceModule": "Project Module 30",
-          "surface": "#000000"
+          "size": "full"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
+          "width": 1176,
+          "height": 640,
+          "alt": "Animación de cierre con un objeto flotando en el espacio.",
+          "caption": "",
+          "sourceModule": "Project Module 32",
+          "size": "full"
         }
       ],
       "title": "Maradona Alien",
@@ -961,243 +985,218 @@
         },
         {
           "type": "text",
-          "text": "La historia de la vida en Marte da paso a los aliens más importantes que habitaron la Tierra. El recorrido termina con el marciano que más impacto tuvo en la humanidad: Diego Armando Maradona.",
+          "text": "La publicación recorre la historia de la vida en Marte y los aliens que habitaron la Tierra. Sus últimas páginas se centran en el marciano que más impacto tuvo en la humanidad: Diego Armando Maradona.",
           "links": [],
           "sourceModule": "Project Module 11",
           "heading": "Publicación impresa / A4"
         },
         {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
-          "width": 1400,
-          "height": 464,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 12",
-          "surface": "#000000"
-        },
-        {
           "type": "gallery",
-          "columns": 2,
+          "columns": 1,
+          "seamless": true,
+          "layout": "original-sequence",
           "images": [
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b46b65191469177.65ccf92f4cd6f.png",
+              "width": 1400,
+              "height": 464,
+              "alt": "Vista de conjunto de la publicación: tapa y dobles páginas dispuestas sobre fondo azul.",
+              "caption": "",
+              "sourceModule": "Project Module 12",
+              "size": "full"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1e491c191469177.65ce917a275b9.gif",
               "width": 1400,
               "height": 788,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Tapa animada de la publicación sobre fondo azul.",
               "caption": "",
               "sourceModule": "Project Module 13",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/afe9f2191469177.65ce890461bda.png",
               "width": 1400,
               "height": 787,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Tapa de la publicación sobre fondo negro.",
               "caption": "",
               "sourceModule": "Project Module 14",
-              "surface": "#000000"
-            }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
-          "width": 1400,
-          "height": 397,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 15",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
-          "width": 1400,
-          "height": 787,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 16",
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+              "size": "full"
+            },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/17eef9191469177.65ce89045fb4f.png",
+              "width": 1400,
+              "height": 397,
+              "alt": "Apertura: ¿de qué planeta viniste?",
+              "caption": "",
+              "sourceModule": "Project Module 15",
+              "size": "full"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc10d2191469177.65ce890463e0e.png",
+              "width": 1400,
+              "height": 787,
+              "alt": "Doble página con información sobre los orígenes de la vida, sobre fondo rojo.",
+              "caption": "",
+              "sourceModule": "Project Module 16",
+              "size": "full"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/805898191469177.65ce917a282df.gif",
               "width": 1400,
               "height": 397,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Doble página animada: imágenes y textos sobre la vida extraterrestre.",
               "caption": "",
               "sourceModule": "Project Module 17",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d1a14c191469177.65ce890460634.png",
               "width": 1400,
               "height": 397,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Doble página tipográfica: la distancia entre Marte y la Tierra.",
               "caption": "",
               "sourceModule": "Project Module 18",
-              "surface": "#000000"
-            }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
-          "width": 1400,
-          "height": 510,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 19",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
-          "width": 1400,
-          "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 20",
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+              "size": "full"
+            },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cf383d191469177.65ce89046336a.png",
+              "width": 1400,
+              "height": 510,
+              "alt": "Detalle fotográfico de la tipografía de la publicación.",
+              "caption": "",
+              "sourceModule": "Project Module 19",
+              "size": "full"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/80e561191469177.65ce890467bac.gif",
+              "width": 1400,
+              "height": 788,
+              "alt": "Doble página sobre fondo azul.",
+              "caption": "",
+              "sourceModule": "Project Module 20",
+              "size": "full"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f91403191469177.65ce890462695.gif",
               "width": 1400,
               "height": 397,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Doble página animada dedicada a los extraterrestres que habitaron la Tierra.",
               "caption": "",
               "sourceModule": "Project Module 21",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a1fe84191469177.65ce89046867c.gif",
               "width": 1200,
               "height": 200,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Secuencia de retratos de personajes de la publicación.",
               "caption": "",
               "sourceModule": "Project Module 22",
-              "surface": "#000000"
-            }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+              "size": "full"
+            },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9de11a191469177.65ce917a2904a.gif",
               "width": 1400,
               "height": 397,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Doble página animada: transición hacia la historia de Maradona.",
               "caption": "",
               "sourceModule": "Project Module 23",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b5cc65191469177.65ce8904657ea.png",
               "width": 1400,
               "height": 510,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Detalle fotográfico de la textura y las ilustraciones de la publicación.",
               "caption": "",
               "sourceModule": "Project Module 24",
-              "surface": "#000000"
-            }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
-          "width": 1400,
-          "height": 788,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 25",
-          "surface": "#000000",
-          "size": "detail"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
-          "width": 1400,
-          "height": 787,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 26",
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+              "size": "full"
+            },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f124bb191469177.65ce890469146.png",
+              "width": 1400,
+              "height": 788,
+              "alt": "Doble página con una composición de Maradona, la Tierra y el espacio.",
+              "caption": "",
+              "sourceModule": "Project Module 25",
+              "size": "full"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f9271191469177.65ce8904648c7.png",
+              "width": 1400,
+              "height": 787,
+              "alt": "Doble página: Barrilete cósmico.",
+              "caption": "",
+              "sourceModule": "Project Module 26",
+              "size": "full"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b8708d191469177.65ce890461115.gif",
               "width": 1400,
               "height": 509,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Registro animado de la publicación sostenida entre las manos.",
               "caption": "",
               "sourceModule": "Project Module 27",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/de33a2191469177.65ceb294b3a97.gif",
               "width": 1400,
               "height": 397,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Doble página animada con retrato y texto de Maradona.",
               "caption": "",
               "sourceModule": "Project Module 28",
-              "surface": "#000000"
-            }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+              "size": "full"
+            },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/12903c191469177.65ce89045e595.png",
               "width": 1400,
               "height": 510,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Detalle fotográfico de un texto dedicado a Diego Maradona.",
               "caption": "",
               "sourceModule": "Project Module 29",
-              "surface": "#000000"
+              "size": "full"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/254489191469177.65ce89045d879.png",
               "width": 1400,
               "height": 788,
-              "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
+              "alt": "Contratapa de la publicación sobre fondo negro.",
               "caption": "",
               "sourceModule": "Project Module 30",
-              "surface": "#000000"
+              "size": "full"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
+              "width": 1176,
+              "height": 640,
+              "alt": "Animación de cierre con un objeto flotando en el espacio.",
+              "caption": "",
+              "sourceModule": "Project Module 32",
+              "size": "full"
             }
-          ],
-          "surface": "#000000"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a16c191469177.65ce8e51b09cf.gif",
-          "width": 1176,
-          "height": 640,
-          "alt": "vr Virtual reality Web Design  Web editorial typography   fadu argentina longinotti ai",
-          "caption": "",
-          "sourceModule": "Project Module 32",
-          "surface": "#000000"
+          ]
         }
       ],
       "contenidoFuente": {
@@ -1208,7 +1207,14 @@
         "embeds": 1,
         "textBlocks": 4
       },
-      "context": "Tipografía 2 · Longinotti · FADU / UBA"
+      "context": "Tipografía 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "FACHADA",
@@ -1505,35 +1511,6 @@
           "surface": "#111822"
         },
         {
-          "url": "/assets/fachada/galeria.webp",
-          "width": 1920,
-          "height": 1081,
-          "alt": "Archivo visual de Hidalgo: fotografías y planos dispuestos en profundidad.",
-          "caption": "El archivo visual como una secuencia de documentos."
-        },
-        {
-          "url": "/assets/fachada/cronologia.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Línea de tiempo de estilos arquitectónicos, desde el eclecticismo popular al modernismo.",
-          "caption": "El edificio dentro de una historia más amplia.",
-          "surface": "#111822"
-        },
-        {
-          "url": "/assets/fachada/despiece.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Fachada de Hidalgo descompuesta en elementos arquitectónicos separados en un espacio tridimensional.",
-          "caption": "De la fachada completa a sus elementos."
-        },
-        {
-          "url": "/assets/fachada/mapa-ruta.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Mapa de Buenos Aires con fachadas de una colección y una ruta trazada entre ellas.",
-          "caption": "Transformar la colección en un recorrido urbano."
-        },
-        {
           "url": "/assets/fachada/seleccion.webp",
           "width": 1920,
           "height": 1080,
@@ -1546,6 +1523,13 @@
           "height": 1081,
           "alt": "Ficha patrimonial de Hidalgo 1332/4, con fotografía y datos del edificio.",
           "caption": "Abrir su ficha patrimonial."
+        },
+        {
+          "url": "/assets/fachada/galeria.webp",
+          "width": 1920,
+          "height": 1081,
+          "alt": "Archivo visual de Hidalgo: fotografías y planos dispuestos en profundidad.",
+          "caption": "El archivo visual como una secuencia de documentos."
         },
         {
           "url": "/assets/fachada/documento-seleccion.webp",
@@ -1562,6 +1546,14 @@
           "caption": "Consultar el plano y sus datos."
         },
         {
+          "url": "/assets/fachada/cronologia.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Línea de tiempo de estilos arquitectónicos, desde el eclecticismo popular al modernismo.",
+          "caption": "El edificio dentro de una historia más amplia.",
+          "surface": "#111822"
+        },
+        {
           "url": "/assets/fachada/estilo.webp",
           "width": 1920,
           "height": 1080,
@@ -1574,6 +1566,13 @@
           "height": 1122,
           "alt": "Ficha de un arquitecto, relacionada con las obras y los estilos del archivo.",
           "caption": "Del estilo a sus autores."
+        },
+        {
+          "url": "/assets/fachada/despiece.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Fachada de Hidalgo descompuesta en elementos arquitectónicos separados en un espacio tridimensional.",
+          "caption": "De la fachada completa a sus elementos."
         },
         {
           "url": "/assets/fachada/escudo.webp",
@@ -1602,6 +1601,13 @@
           "height": 1080,
           "alt": "Colección de fachadas Neo-Tudor y ornamentos conectados entre sí.",
           "caption": "Relacionar las piezas elegidas."
+        },
+        {
+          "url": "/assets/fachada/mapa-ruta.webp",
+          "width": 1920,
+          "height": 1080,
+          "alt": "Mapa de Buenos Aires con fachadas de una colección y una ruta trazada entre ellas.",
+          "caption": "Transformar la colección en un recorrido urbano."
         },
         {
           "url": "/assets/fachada/app-inicio.webp",
@@ -2089,29 +2095,19 @@
       "fuente": "https://www.behance.net/gallery/190909103/Esquematica-Microevento-Fuego-Tipografia-Longinotti-2",
       "imagenes": [
         {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d059a190909103.65c5326bae1f9.jpg",
-          "width": 1400,
-          "height": 979,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 1"
+          "url": "/assets/presentation/esquematica-entera-480.webp",
+          "width": 480,
+          "height": 1859,
+          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
+          "size": "overview"
         },
         {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
-          "width": 1400,
-          "height": 1614,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 2"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27be9d190909103.65c529fa1e318.jpg",
-          "width": 1400,
-          "height": 5423,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 4",
-          "size": "detail"
+          "url": "/assets/presentation/esquematica-entera.webp",
+          "width": 2215,
+          "height": 8580,
+          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
+          "size": "bleed",
+          "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/96f177190909103.65c283a71eaae.jpg",
@@ -2168,34 +2164,26 @@
       "previewHeight": 359,
       "blocks": [
         {
+          "type": "image",
+          "url": "/assets/presentation/esquematica-entera-480.webp",
+          "width": 480,
+          "height": 1859,
+          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
+          "size": "overview"
+        },
+        {
           "type": "text",
-          "text": "El análisis de una acción cotidiana se convierte en un sistema de conexiones, escalas y secuencias.\n\nProyecto expuesto por la cátedra",
-          "links": [
-            {
-              "href": "https://www.instagram.com/p/C4dcApqOxkz/?img_index=1",
-              "text": "Proyecto expuesto por la cátedra"
-            }
-          ],
-          "sourceModule": "Project Module 0",
-          "heading": "Del microevento al mapa"
+          "heading": "Una acción, múltiples relaciones",
+          "text": "La pieza completa reúne escalas, secuencias y conexiones en torno al encendido de una hornalla. El formato vertical permite seguir esas relaciones de arriba hacia abajo."
         },
         {
           "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d059a190909103.65c5326bae1f9.jpg",
-          "width": 1400,
-          "height": 979,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 1"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
-          "width": 1400,
-          "height": 1614,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 2"
+          "url": "/assets/presentation/esquematica-entera.webp",
+          "width": 2215,
+          "height": 8580,
+          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
+          "size": "bleed",
+          "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
         },
         {
           "type": "gallery",
@@ -2225,16 +2213,6 @@
           "sourceModule": "Project Module 3",
           "columns": 3,
           "gap": 12
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/27be9d190909103.65c529fa1e318.jpg",
-          "width": 1400,
-          "height": 5423,
-          "alt": "fire infographic information design data visualization poster typography   fadu longinotti scheme",
-          "caption": "",
-          "sourceModule": "Project Module 4",
-          "size": "detail"
         },
         {
           "type": "gallery",
@@ -2284,24 +2262,6 @@
       "herramientas": "Photoshop · Illustrator · Spline",
       "fuente": "https://www.behance.net/gallery/190740099/Editorial-experimental-Morfologia-Longinotti-2",
       "imagenes": [
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b1accf190740099.65c118e0d8a5a.gif",
-          "width": 1400,
-          "height": 438,
-          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
-          "caption": "",
-          "sourceModule": "Project Module 15",
-          "surface": "#000000"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
-          "width": 720,
-          "height": 720,
-          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
-          "caption": "",
-          "sourceModule": "Project Module 19",
-          "surface": "#000000"
-        },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/40e3d8190740099.65c01f055e159.gif",
           "width": 1400,
@@ -2444,6 +2404,15 @@
           "surface": "#000000"
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b1accf190740099.65c118e0d8a5a.gif",
+          "width": 1400,
+          "height": 438,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 15",
+          "surface": "#000000"
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/770b94190740099.65c1362a2b144.jpg",
           "width": 1280,
           "height": 853,
@@ -2529,6 +2498,15 @@
           "height": 853,
           "alt": "",
           "caption": "",
+          "surface": "#000000"
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/source/585740190740099.65c118e0d7f6f.gif",
+          "width": 720,
+          "height": 720,
+          "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
+          "caption": "",
+          "sourceModule": "Project Module 19",
           "surface": "#000000"
         }
       ],
@@ -2891,7 +2869,14 @@
           "href": "https://es.wikipedia.org/wiki/Proxima_Centauri_b",
           "text": "Proxima Centauri B"
         }
-      ]
+      ],
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "EDITORIAL TIPOGRÁFICO / 2023",
@@ -2901,22 +2886,6 @@
       "herramientas": "Illustrator · InDesign",
       "fuente": "https://www.behance.net/gallery/189668095/Editorial-Tipografia-Longinotti-2-2023",
       "imagenes": [
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce34fb189668095.65b2c999066bc.png",
-          "width": 1280,
-          "height": 863,
-          "alt": "",
-          "caption": "",
-          "sourceModule": "Project Module 5"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc339d189668095.65b2c9999e6f1.jpg",
-          "width": 1280,
-          "height": 863,
-          "alt": "",
-          "caption": "",
-          "sourceModule": "Project Module 6"
-        },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c818d0189668095.65b1b5aa1898e.png",
           "width": 1280,
@@ -3021,6 +2990,22 @@
           "height": 863,
           "alt": "",
           "caption": ""
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ce34fb189668095.65b2c999066bc.png",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 5"
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fc339d189668095.65b2c9999e6f1.jpg",
+          "width": 1280,
+          "height": 863,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 6"
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/10f942189668095.65b2c99a18f19.jpg",
@@ -3328,7 +3313,14 @@
         "embeds": 0,
         "textBlocks": 1
       },
-      "context": "Tipografía 2 · Longinotti · FADU / UBA"
+      "context": "Tipografía 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "REGISTROS",
@@ -4211,7 +4203,14 @@
         "embeds": 0,
         "textBlocks": 1
       },
-      "context": "Morfología 2 · Longinotti · FADU / UBA"
+      "context": "Morfología 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#001A29",
+        "text": "#ECECEC",
+        "secondary": "#C8D1D9",
+        "muted": "#A5B3C0",
+        "line": "#344350"
+      }
     },
     {
       "nombre": "FANZINE DG2 GABRIELE",
@@ -4352,16 +4351,6 @@
       ],
       "imagenes": [
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1",
-          "width": 1920,
-          "height": 1376,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 9",
-          "surface": "#776a5b"
-        },
-        {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/a25d517a-2d65-47fe-a18e-4e70a74c95d5_rw_1920.gif?h=f030d2bd5a367b6595b2346a40b23d5e",
           "width": 1920,
           "height": 1376,
@@ -4440,6 +4429,16 @@
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 8",
           "surface": "#776a5b"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1",
+          "width": 1920,
+          "height": 1376,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_600.jpg?h=446c113079a039a0822c7a33e9e5345e 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1200.jpg?h=d24be0679860ae77f6961b0ece5d91ce 1200w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/31645aaa-7b67-4e67-9884-e8b249cf7377_rw_1920.jpg?h=1ac13196cf8e1c3d7bb4ac2dad0648f1 1920w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 9",
+          "surface": "#776a5b"
         }
       ],
       "contenidoFuente": {
@@ -4453,7 +4452,14 @@
       "disciplineOrigin": "descriptor derivado del título público",
       "context": "Diseño Gráfico 2 · Gabriele · FADU / UBA",
       "previewWidth": 573,
-      "previewHeight": 429
+      "previewHeight": 429,
+      "theme": {
+        "bg": "#776A5B",
+        "text": "#FFF9F1",
+        "secondary": "#FFF9F1",
+        "muted": "#FFF9F1",
+        "line": "#C9BBAB"
+      }
     },
     {
       "nombre": "CUANDO ACECHA LA MALDAD - AFICHE CINE",
@@ -4575,7 +4581,14 @@
       ],
       "context": "Diseño Gráfico 2 · Gabriele · FADU / UBA",
       "previewWidth": 3556,
-      "previewHeight": 2667
+      "previewHeight": 2667,
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "FESTIVAL - SISTEMA GRÁFICO - V1",
@@ -4677,15 +4690,6 @@
           "sourceModule": "Adobe module 1"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-          "width": 992,
-          "height": 523,
-          "alt": "",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 6"
-        },
-        {
           "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
           "width": 991,
           "height": 896,
@@ -4720,6 +4724,15 @@
           "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
           "dimensionOrigin": "public-image-header",
           "sourceModule": "Adobe module 7"
+        },
+        {
+          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
+          "width": 992,
+          "height": 523,
+          "alt": "",
+          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
+          "dimensionOrigin": "public-image-header",
+          "sourceModule": "Adobe module 6"
         }
       ],
       "contenidoFuente": {
@@ -5053,7 +5066,14 @@
         "embeds": 1,
         "textBlocks": 1
       },
-      "context": "Tipografía 2 · Longinotti · FADU / UBA"
+      "context": "Tipografía 2 · Longinotti · FADU / UBA",
+      "theme": {
+        "bg": "#000000",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "VIDEO CINÉTICA DG2 GABRIELE",
@@ -5576,24 +5596,6 @@
           "surface": "#050609"
         },
         {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe4d7c190236999.65b8029edeb7a.jpg",
-          "width": 1280,
-          "height": 1504,
-          "alt": "",
-          "caption": "",
-          "sourceModule": "Project Module 11",
-          "surface": "#050609"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2d5360190236999.65b8029f62b10.jpg",
-          "width": 1280,
-          "height": 1920,
-          "alt": "",
-          "caption": "",
-          "sourceModule": "Project Module 13",
-          "surface": "#050609"
-        },
-        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c8eca190236999.65b8029aca6a6.jpg",
           "width": 1280,
           "height": 822,
@@ -5762,6 +5764,15 @@
           "surface": "#050609"
         },
         {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe4d7c190236999.65b8029edeb7a.jpg",
+          "width": 1280,
+          "height": 1504,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 11",
+          "surface": "#050609"
+        },
+        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/712335190236999.65b803b237af3.jpg",
           "width": 1280,
           "height": 853,
@@ -5807,6 +5818,15 @@
           "height": 1920,
           "alt": "",
           "caption": "",
+          "surface": "#050609"
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/2d5360190236999.65b8029f62b10.jpg",
+          "width": 1280,
+          "height": 1920,
+          "alt": "",
+          "caption": "",
+          "sourceModule": "Project Module 13",
           "surface": "#050609"
         },
         {
@@ -6194,7 +6214,14 @@
         "embeds": 0,
         "textBlocks": 1
       },
-      "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA"
+      "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA",
+      "theme": {
+        "bg": "#050609",
+        "text": "#ECECEC",
+        "secondary": "#A7A7A7",
+        "muted": "#858585",
+        "line": "#2A2A2A"
+      }
     },
     {
       "nombre": "AFICHE Y BROCHURE",
@@ -6211,14 +6238,6 @@
           "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
           "caption": "",
           "sourceModule": "Project Module 1"
-        },
-        {
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e0f1b4154717681.634726f0acb6f.jpg",
-          "width": 1400,
-          "height": 985,
-          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "caption": "",
-          "sourceModule": "Project Module 4"
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f54a9c154717681.634726f0aab29.jpg",
@@ -6243,6 +6262,14 @@
           "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
           "caption": "",
           "sourceModule": "Project Module 5"
+        },
+        {
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e0f1b4154717681.634726f0acb6f.jpg",
+          "width": 1400,
+          "height": 985,
+          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
+          "caption": "",
+          "sourceModule": "Project Module 4"
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/82c821154717681.634726efecc7b.jpg",

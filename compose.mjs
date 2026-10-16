@@ -16,22 +16,24 @@ const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
 const versionedAsset=(route,source)=>sitePath(route)+'?v='+createHash('sha256').update(fs.readFileSync(source)).digest('hex').slice(0,10);
 const assetPath=url=>url.startsWith('/')&&!url.startsWith('//')?sitePath(url):url;
+const assetSrcset=srcset=>srcset.replace(/(^|,\s*)(\/[^,\s]+)/g,(_,lead,url)=>lead+assetPath(url));
 const origin=(process.env.SITE_ORIGIN||'https://pacosanx.github.io').replace(/\/+$/,'');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
 const lightSurface=color=>/^#[0-9a-f]{6}$/i.test(color||'')&&[1,3,5].reduce((sum,i,j)=>sum+parseInt(color.slice(i,i+2),16)*[.2126,.7152,.0722][j],0)>155;
+const caseTheme=p=>Object.entries(p.theme||{}).filter(([key,value])=>['bg','text','secondary','muted','line'].includes(key)&&/^#[0-9a-f]{6}$/i.test(value)).map(([key,value])=>`--${key}:${value}`).join(';');
 const favicon="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 24V8h8a6 6 0 0 1 0 12h-4v4zm4-8h4a2 2 0 0 0 0-4h-4z' fill='%23ececec'/%3E%3C/svg%3E";
 
-function document(title,description,route,body){return `<!doctype html>
+function document(title,description,route,body,theme){return `<!doctype html>
 <html lang="es" data-base-path="${basePath}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0a0a0a"><meta name="description" content="${esc(description)}">
+<meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
 <title>${esc(title)}</title><link rel="canonical" href="${origin}${sitePath(route)}">
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${sitePath('/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
-</head><body><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
+</head><body${theme?` class="case-page" style="${caseTheme({theme})}"`:''}><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
 <a class="identity" href="${sitePath('/')}" aria-label="Paco Sanchez, inicio">Francisco ‘Paco’ Sanchez<span>Diseñador</span></a>
@@ -52,7 +54,7 @@ function imageDescription(image,p,j){
   const alt=String(image.alt||'').trim();
   return alt&&!/\b(fadu|webflow|identity|Historias Minimas)\b/i.test(alt)?alt:image.caption||p.title+', vista '+(j+1);
 }
-function caseImage(image,p,j){return `<figure class="case-figure${image.size==='detail'?' is-detail':''}"${image.surface?` style="--surface:${esc(image.surface)};background:var(--surface)"`:''}><a class="case-zoom" href="${esc(assetPath(image.url))}" target="_blank" rel="noopener noreferrer" aria-label="${esc('Ampliar: '+imageDescription(image,p,j))}"><img src="${esc(assetPath(image.url))}" ${image.srcset?`srcset="${esc(image.srcset)}" sizes="(max-width:600px) calc(100vw - 48px), 90vw"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(imageDescription(image,p,j))}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
+function caseImage(image,p,j){return `<figure class="case-figure${['detail','overview','bleed'].includes(image.size)?' is-'+image.size:''}"${image.surface?` style="--surface:${esc(image.surface)};background:var(--surface)"`:''}><a class="case-zoom" href="${esc(assetPath(image.url))}" target="_blank" rel="noopener noreferrer" aria-label="${esc('Ampliar: '+imageDescription(image,p,j))}"><img src="${esc(assetPath(image.url))}" ${image.srcset?`srcset="${esc(assetSrcset(image.srcset))}" sizes="${image.size==='overview'?'220px':'(max-width:600px) calc(100vw - 48px), 90vw'}"`:''} ${image.width?`width="${image.width}"`:''} ${image.height?`height="${image.height}"`:''} alt="${esc(imageDescription(image,p,j))}" ${j?'loading="lazy"':'fetchpriority="high"'} decoding="async"></a>${image.caption?`<figcaption>${esc(image.caption)}</figcaption>`:''}</figure>`}
 function caseText(block,embedded=false){
   const text=String(block.text||'').trim().replace(/\n{3,}/g,'\n\n');
   let linked=esc(text);
@@ -84,7 +86,7 @@ function caseGallery(p,embedded=false){
   const blocks=p.blocks?.length?p.blocks:p.imagenes.map(image=>({type:'image',...image}));
   const render=block=>{
     if(block.type==='image')return caseImage(block,p,imageIndex++);
-    if(block.type==='gallery')return `<div class="case-image-group${block.seamless?' is-seamless':''}${block.surface?' has-surface':''}${lightSurface(block.surface)?' is-light':''}" style="--columns:${Math.max(1,Math.min(4,block.columns||2))}${block.surface?`;--surface:${esc(block.surface)}`:''}">${block.images.map(image=>caseImage(image,p,imageIndex++)).join('')}</div>`;
+    if(block.type==='gallery')return `<div class="case-image-group${block.layout==='original-sequence'?' original-sequence':''}${block.seamless?' is-seamless':''}${block.surface?' has-surface':''}${lightSurface(block.surface)?' is-light':''}" style="--columns:${Math.max(1,Math.min(4,block.columns||2))}${block.surface?`;--surface:${esc(block.surface)}`:''}">${block.images.map(image=>caseImage(image,p,imageIndex++)).join('')}</div>`;
     if(block.type==='statement')return `<div class="case-statement">${block.label?`<p class="case-statement-label">${esc(block.label)}</p>`:''}<p>${esc(block.text)}</p></div>`;
     if(block.type==='text')return caseText(block,embedded);
     if(block.type==='embed'){
@@ -113,17 +115,17 @@ function caseGallery(p,embedded=false){
 
 function caseContent(p,i,embedded=false){
   const next=projects[i+1],titleTag=embedded?'h2':'h1',toolsTag=embedded?'h3':'h2',titleId=embedded?'viewer-title':'case-title';
-  return `<section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p>${(p.context??'FADU / UBA')?`<p class="mono">${esc(p.context??'FADU / UBA')}</p>`:''}<p class="case-discipline">${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div>
+  return `<div class="case-presentation" style="${caseTheme(p)}"><section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p>${(p.context??'FADU / UBA')?`<p class="mono">${esc(p.context??'FADU / UBA')}</p>`:''}<p class="case-discipline">${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div>
   <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}>${p.descripcion?`<p class="case-description">${caseDescription(p)}</p>`:''}</div>
   <div class="case-tools">${p.tools.length?`<${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}<a class="text-link case-source" href="${esc(assetPath(p.fuente))}" target="_blank" rel="noopener noreferrer">${esc(p.fuenteLabel||(p.fuente.includes('youtu')?'Ver en YouTube':p.fuente.includes('myportfolio.com')?'Ver en Adobe Portfolio':'Ver en Behance'))}</a></div></section>
   <div class="case-gallery" data-case="${esc(p.ruta.split('/').at(-1))}">${caseGallery(p,embedded)}</div>
-  <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="${sitePath('/')}#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?sitePath(next.ruta)+'/':sitePath('/#proyectos')}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>`;
+  <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="${sitePath('/')}#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?sitePath(next.ruta)+'/':sitePath('/#proyectos')}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav></div>`;
 }
 
 const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby="viewer-title">
 <div class="viewer-toolbar shell"><button class="text-link" type="button" data-close-project autofocus>Volver al índice</button><span class="mono muted" data-viewer-index></span></div>
 <div class="viewer-content case shell" data-viewer-content></div></dialog>
-${projects.map((p,i)=>`<template data-project-template data-project-route="${sitePath(p.ruta)}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
+${projects.map((p,i)=>`<template data-project-template data-project-theme="${caseTheme(p)}" data-project-route="${sitePath(p.ruta)}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
 
 const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><div class="opening-atmosphere" aria-hidden="true"><canvas class="opening-shader"></canvas></div><script src="${sitePath('/hero.js')}?v=${heroRevision}" defer></script><p class="eyebrow opening-label">Portfolio / ${period}</p>
@@ -145,7 +147,7 @@ for(const [i,p] of projects.entries()){
   ${caseContent(p,i)}
   </main>${contact()}`;
   const routeDir=path.join('dist',p.ruta);fs.mkdirSync(routeDir,{recursive:true});
-  fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — Paco Sanchez`,p.descripcion,p.ruta+'/',body));
+  fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — Paco Sanchez`,p.descripcion,p.ruta+'/',body,p.theme));
 }
 
 const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(image=>({...image,src:assetPath(image.src)}))}));

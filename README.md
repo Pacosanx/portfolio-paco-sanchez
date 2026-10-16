@@ -44,3 +44,7 @@ La publicación principal es [GitHub Pages](https://pacosanx.github.io/portfolio
 Los bloques `gallery` admiten `columns` de 1 a 4. Las vistas principales se muestran amplias y los detalles se agrupan; todas las imágenes se pueden ampliar. `surface` define un fondo compartido y `seamless: true` elimina separaciones. Los medios consecutivos con el mismo fondo forman una banda continua. El lector responde a su propio ancho, tanto en página completa como dentro del panel.
 
 `assets/fachada`, `assets/presentation` y `assets/previews` contienen medios locales y se copian a `dist/assets` al generar. Las previews del índice se definen en `preview-selection.json`. Los archivos de revisión y las copias previas se conservan fuera de la publicación en `.qa/`.
+
+`theme` permite adaptar el fondo y los colores de lectura de una ficha completa, incluido el visor. Esquemática combina una vista `overview` de la pieza entera con una vista `bleed` que llega a los bordes; sus variantes `srcset` conservan la legibilidad sin cargar siempre el original completo. La secuencia editorial de Maradona Alien usa `layout: "original-sequence"` para respetar el orden y las composiciones del proyecto original.
+
+Cada vista previa reúne tres imágenes: una pieza completa (`role: "whole"`) y dos vistas complementarias. `crop` y `clipPath` excluyen los fondos exteriores sin modificar la obra original. La composición acompaña la altura del título activo y se mantiene dentro de la ventana.
