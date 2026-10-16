@@ -21,7 +21,7 @@ const splineExplorations = [
   width: animatedSplineIds.has(id) ? 360 : 1304,
   height: animatedSplineIds.has(id) ? 187 : 624
 }));
-const renderExploration = (item, sitePath) => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="${item.width}" height="${item.height}" alt="Vista previa de la exploración ${item.number}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`;
+const renderExploration = (item, sitePath) => `<a class="lab-entry" draggable="false" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="${item.width}" height="${item.height}" alt="Vista previa de la exploración ${item.number}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`;
 
 export function parallelSection(sitePath = route => route) {
   return `<section id="en-paralelo" class="parallel" aria-labelledby="parallel-title">
