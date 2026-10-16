@@ -154,7 +154,7 @@
   document.addEventListener('portfolio:reveal', hide);
   desktop.addEventListener('change', () => { hide(); if (desktop.matches && focusedIndex() >= 0) show(focusedIndex()); });
   const basePath = document.documentElement.dataset.basePath || '';
-  fetch(`${basePath}/preview-data.json`)
+  fetch(`${basePath}/preview-data.json`, { cache: 'no-cache' })
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
     .then(data => {
       records = rows.map(row => data.find(record => new URL(row.href, location.href).pathname.replace(/\/$/, '') === `${basePath}${record.route}`.replace(/\/$/, '')));
