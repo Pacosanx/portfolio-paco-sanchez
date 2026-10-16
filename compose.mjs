@@ -29,7 +29,7 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <html lang="es" data-base-path="${basePath}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
-<title>${esc(title)}</title><script>if(new URLSearchParams(location.search).has('panel'))document.documentElement.classList.add('panel-mode')</script><link rel="canonical" href="${origin}${sitePath(route)}">
+<title>${esc(title)}</title><script>if(new URLSearchParams(location.search).has('panel'))document.documentElement.classList.add('panel-mode')</script>${route.startsWith('/en-desarrollo/')?`<script>if(!new URLSearchParams(location.search).has('panel'))location.replace('${sitePath('/')}#proyecto/${route.split('/').filter(Boolean).at(-1)}')</script>`:''}<link rel="canonical" href="${origin}${sitePath(route)}">
 <link rel="icon" type="image/svg+xml" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
