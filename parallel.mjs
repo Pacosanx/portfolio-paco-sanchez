@@ -21,7 +21,7 @@ const splineExplorations = [
   width: animatedSplineIds.has(id) ? 360 : 1304,
   height: animatedSplineIds.has(id) ? 187 : 624
 }));
-const renderExploration = item => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="${item.width}" height="${item.height}" alt="Vista previa de la exploración ${item.number}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`;
+const renderExploration = (item, sitePath) => `<a class="lab-entry" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline"><img src="${item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview}" width="${item.width}" height="${item.height}" alt="Vista previa de la exploración ${item.number}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">Exploración en Spline</span><span class="lab-entry-action">Ver escena</span></span></a>`;
 
 export function parallelSection(sitePath = route => route) {
   return `<section id="en-paralelo" class="parallel" aria-labelledby="parallel-title">
@@ -36,8 +36,8 @@ export function parallelSection(sitePath = route => route) {
     <div class="lab-heading"><p class="resource-kicker mono">Pruebas gráficas y técnicas</p><h3 id="lab-title">Exploraciones.</h3><p class="lab-description">Estudios de forma, espacio e interacción realizados en Spline.</p></div>
     <div class="lab-gallery" role="region" tabindex="0" aria-label="Galería horizontal infinita de exploraciones 3D en Spline">
       <div class="lab-track">
-        <div class="lab-set">${splineExplorations.map(renderExploration).join('')}</div>
-        <div class="lab-set" aria-hidden="true" inert>${splineExplorations.map(renderExploration).join('')}</div>
+        <div class="lab-set">${splineExplorations.map(item => renderExploration(item, sitePath)).join('')}</div>
+        <div class="lab-set" aria-hidden="true" inert>${splineExplorations.map(item => renderExploration(item, sitePath)).join('')}</div>
       </div>
     </div>
   </article>
