@@ -140,7 +140,7 @@
   });
   rows.forEach((row, i) => {
     row.addEventListener('pointerenter', () => { if (!keyboardFocus || focusedIndex() < 0) show(i); });
-    row.addEventListener('focusin', () => show(i));
+    row.addEventListener('focusin', event => { if (event.isTrusted) show(i); });
     row.addEventListener('focusout', () => queueMicrotask(() => { if (focusedIndex() < 0) hide(); }));
   });
   index.addEventListener('pointerleave', () => { const i = focusedIndex(); i < 0 ? hide() : show(i); });
