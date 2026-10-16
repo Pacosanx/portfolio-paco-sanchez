@@ -56,9 +56,9 @@
 
       // Three small green lights sit behind three independently moving blue layers.
       float green = pool(p, vec2(0.67 + 0.025 * sin(t), 0.28), vec2(0.12, 0.27));
-      float greenLeft = pool(p, vec2(0.25 + 0.025 * sin(t * 0.8 + 1.2), 0.34), vec2(0.10, 0.22));
-      float greenRight = pool(p, vec2(0.82 + 0.02 * cos(t * 0.75), 0.49), vec2(0.10, 0.22));
-      vec3 light = vec3(0.0, 1.0, 0.0) * (green * 0.54 + greenLeft * 0.42 + greenRight * 0.42);
+      float greenLeft = pool(p, vec2(0.24 + 0.025 * sin(t * 0.8 + 1.2), 0.30), vec2(0.12, 0.25));
+      float greenRight = pool(p, vec2(0.86 + 0.02 * cos(t * 0.75), 0.32), vec2(0.12, 0.25));
+      vec3 light = vec3(0.0, 1.0, 0.0) * (green * 0.54 + greenLeft * 0.54 + greenRight * 0.54);
       float deep = pool(p, vec2(0.43, 0.04), vec2(0.93, 0.85));
       float cobalt = pool(p, vec2(0.24 + 0.09 * sin(t), 0.16 + 0.055 * cos(t)), vec2(0.50, 0.49));
       float azure = pool(p, vec2(0.79 + 0.055 * cos(t * 0.8), -0.02 + 0.04 * sin(t)), vec2(0.43, 0.56));
