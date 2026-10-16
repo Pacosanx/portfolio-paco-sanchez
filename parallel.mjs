@@ -33,7 +33,7 @@ const splineExplorations = [
   return {
     number: String(index + 1).padStart(2, '0'),
     url: `https://app.spline.design/file/${id}`,
-    preview: animatedSplineIds.has(id) ? `/assets/spline/${id}-loop3.gif` : `https://filespreview.spline.design/${id}.jpg`,
+    preview: animatedSplineIds.has(id) ? `/assets/spline/${id}-loop4.gif` : `https://filespreview.spline.design/${id}.jpg`,
     width,
     height
   };

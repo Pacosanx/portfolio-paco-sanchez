@@ -29,7 +29,7 @@
 .parallel .lab-set>.lab-entry:nth-child(10){--lab-card-width:320px}
 .parallel .lab-set>.lab-entry:nth-child(11){--lab-card-width:300px}
 .parallel .lab-set>.lab-entry:nth-child(12){--lab-card-width:320px}
-.parallel .lab-set>.lab-entry:nth-child(13){--lab-card-width:600px}
+.parallel .lab-set>.lab-entry:nth-child(13){--lab-card-width:330px}
 .parallel .lab-entry:hover,.parallel .lab-entry:focus-visible{color:var(--text)}
 .parallel .lab-entry:hover{border-color:var(--muted)}
 .parallel .lab-entry:focus-visible{outline:2px solid var(--text);outline-offset:4px}
