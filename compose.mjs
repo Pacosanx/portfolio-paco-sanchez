@@ -23,6 +23,7 @@ const origin=(process.env.SITE_ORIGIN||'https://pacosanx.github.io').replace(/\/
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
 const projectFormat=p=>{
+  if(p.format)return p.format;
   const text=(p.discipline+' '+p.title).toLowerCase(),formats=[];
   const add=value=>{if(!formats.includes(value))formats.push(value)};
   if(text.includes('realidad virtual'))add('VR');

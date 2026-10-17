@@ -192,7 +192,7 @@
           "surface": "#000000"
         }
       ],
-      "title": "METAPHEX",
+      "title": "Metaphex",
       "discipline": "Video reactivo / Web interactiva",
       "tools": [
         "TouchDesigner",
@@ -791,7 +791,7 @@
           "size": "full"
         }
       ],
-      "title": "Maradona Alien",
+      "title": "Pesadilla VR",
       "discipline": "Editorial / Web / Realidad virtual",
       "tools": [
         "Photoshop",
@@ -1209,11 +1209,12 @@
           "href": "https://app.spline.design/file/46ab8d65-a885-4576-9414-ade562b50e7f",
           "text": "Ver demo VR de Maradona en Spline"
         }
-      ]
+      ],
+      "format": "VR · Editorial · Web"
     },
     {
       "nombre": "FACHADA",
-      "title": "FACHADA",
+      "title": "Fachada",
       "sourceTitle": "Web patrimonio arquitectónico",
       "ruta": "/proyectos/web-arquitectura",
       "anio": "2025",
@@ -1662,7 +1663,8 @@
         "materialLocal": "Behance/FACHADA/vista-previa.html, composicion.json, fuentes/ y videos/",
         "fechaVerificacion": "2026-10-16",
         "notas": "Pantallas originales de Figma y fotogramas del registro original. No se usaron las láminas con textos de presentación incrustados. Créditos individuales y rol de Paco pendientes de confirmar en la fuente; no se atribuyen nombres ni roles no verificados."
-      }
+      },
+      "format": "3D · Web"
     },
     {
       "nombre": "INSTALACIÓN DE REALIDAD VIRTUAL",
@@ -1690,7 +1692,7 @@
           "size": "detail"
         }
       ],
-      "title": "INMSON — Forma, sonido y movimiento",
+      "title": "INMSON VR",
       "discipline": "Realidad virtual",
       "tools": [
         "Unity 3D",
@@ -1753,11 +1755,12 @@
         "secondary": "#A7A7A7",
         "muted": "#858585",
         "line": "#2A2A2A"
-      }
+      },
+      "format": "VR"
     },
     {
       "nombre": "EXPERIENCIA VR / MEDIOS GROISMAN 2",
-      "title": "Experiencia VR / Medios Groisman 2",
+      "title": "Pesadilla VR",
       "ruta": "/proyectos/vr-medios-groisman-2",
       "anio": "2024",
       "descripcion": "Una pesadilla infantil reconstruida como fragmentos de memoria: escenas familiares aparecen desordenadas, deformadas y conectadas por sonidos que se activan al acercarse.",
@@ -2107,7 +2110,8 @@
         "embeds": 0,
         "textBlocks": 1
       },
-      "context": "Tipografía 2 · Longinotti · FADU / UBA"
+      "context": "Tipografía 2 · Longinotti · FADU / UBA",
+      "format": "Tipografía y 3D"
     },
     {
       "nombre": "EDITORIAL ESPACIAL",
@@ -2737,7 +2741,8 @@
         "secondary": "#A7A7A7",
         "muted": "#858585",
         "line": "#2A2A2A"
-      }
+      },
+      "format": "Editorial · 3D"
     },
     {
       "nombre": "EDITORIAL TIPOGRÁFICO / 2023",
@@ -4074,7 +4079,8 @@
         "secondary": "#C8D1D9",
         "muted": "#A5B3C0",
         "line": "#2A2A2A"
-      }
+      },
+      "format": "3D · Editorial"
     },
     {
       "nombre": "FANZINE DG2 GABRIELE",
@@ -4659,7 +4665,8 @@
         "secondary": "#CBCBC5",
         "muted": "#AAAAA4",
         "line": "#454545"
-      }
+      },
+      "format": "Identidad · 3D"
     },
     {
       "nombre": "FESTIVAL - SISTEMA GRÁFICO - V2",
@@ -4945,7 +4952,8 @@
         "secondary": "#CBCBC5",
         "muted": "#AAAAA4",
         "line": "#454545"
-      }
+      },
+      "format": "Identidad · 3D"
     },
     {
       "nombre": "MOTION GRAPHICS",
@@ -5062,7 +5070,8 @@
         "secondary": "#A7A7A7",
         "muted": "#858585",
         "line": "#2A2A2A"
-      }
+      },
+      "format": "Motion graphics"
     },
     {
       "nombre": "VIDEO CINÉTICA DG2 GABRIELE",
