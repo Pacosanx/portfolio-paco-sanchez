@@ -11,3 +11,6 @@
 @media(max-width:760px){.development-tools ul{justify-content:flex-end}}
 
 .development-panel{padding-bottom:64px}
+
+.project-viewer .development-title h2{font-size:clamp(44px,7vw,88px);line-height:.98;letter-spacing:-.065em;margin:18px 0 26px}.project-viewer .development-title h2:focus{outline:none}
+@media(max-width:760px){.project-viewer .development-title h2{font-size:clamp(48px,14vw,76px)}}
