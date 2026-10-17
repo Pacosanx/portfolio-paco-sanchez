@@ -11,3 +11,5 @@
 
 .development-tools{text-align:right}.development-tools ul{list-style:none;padding-left:0}
 @media(max-width:760px){.development-tools ul{justify-content:flex-end}}
+
+.development-panel{padding-bottom:64px}
