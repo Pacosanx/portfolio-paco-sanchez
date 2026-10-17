@@ -210,7 +210,7 @@ const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[])
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});
 if(fs.existsSync('assets/spline'))fs.cpSync('assets/spline',path.join('dist/assets/spline'),{recursive:true});
-for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg','favicon-paco.png']){
+for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-gesto.gif','inmson-recorrido-espacio.gif','inmson-afiche-original.jpg','favicon-paco.png']){
   fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
 }
 if(fs.existsSync('assets/development'))fs.cpSync('assets/development',path.join('dist/assets/development'),{recursive:true});

@@ -1702,40 +1702,33 @@
       "previewHeight": 359,
       "blocks": [
         {
-          "type": "video",
-          "url": "/assets/inmson-recorrido-vr.mp4",
-          "poster": "/assets/inmson-recorrido.jpg",
-          "title": "Recorrido en primera persona a través del dibujo de INMSON",
-          "caption": "Demostración de 14 segundos realizada en Unity con una cámara automatizada. Recorrido a lo largo del rectángulo, sin casco ni sonido."
-        },
-        {
-          "type": "text",
-          "text": "Del gesto al volumen.\nEl dibujo se construye con líneas translúcidas que permanecen en el espacio. La posición vertical del gesto modifica el sonido: abajo, grave; arriba, agudo.",
-          "heading": "01 / La idea"
+          "type": "embed",
+          "url": "https://www.youtube.com/embed/_oieEi2r6M4",
+          "title": "Inmson - Instalación de realidad virtual",
+          "aspectRatio": 1.77778,
+          "poster": "https://i.ytimg.com/vi/_oieEi2r6M4/maxresdefault.jpg"
         },
         {
           "type": "image",
-          "url": "/assets/inmson-recorrido.jpg",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Trazos azules irregulares y superpuestos dentro del rectángulo de movimiento de INMSON",
-          "caption": "Un dibujo que ocupa el espacio y puede atravesarse."
+          "url": "/assets/inmson-recorrido-gesto.gif",
+          "width": 480,
+          "height": 270,
+          "alt": "El trazo azul se construye en capas dentro del espacio virtual de INMSON.",
+          "caption": "El gesto aparece y se superpone."
+        },
+        {
+          "type": "image",
+          "url": "/assets/inmson-recorrido-espacio.gif",
+          "width": 480,
+          "height": 270,
+          "alt": "Las líneas azules llenan la escena durante el recorrido de INMSON.",
+          "caption": "El dibujo se expande por el espacio."
         },
         {
           "type": "interactive",
           "title": "Dibujá el sonido.",
           "description": "Mantené presionado y mové el mouse, o usá el dedo. Subí hacia el agudo. Bajá hacia el grave.",
-          "caption": "Adaptación interactiva en 2D. El sonido se sintetiza a partir de la altura del trazo."
-        },
-        {
-          "type": "text",
-          "text": "Entrar en las capas.\nAl caminar entre las líneas cambia la percepción del conjunto. El rectángulo del piso delimita la zona segura; el recorrido avanza por su largo y permanece dentro de esos límites.",
-          "heading": "03 / Recorrer el dibujo"
-        },
-        {
-          "type": "text",
-          "text": "Tres relaciones organizan la experiencia.\nMovimiento: convierte el recorrido del lápiz en una forma persistente.\nAltura: modifica el tono del sonido.\nAcumulación: construye capas que se pueden recorrer.\n\nProyecto individual.",
-          "heading": "04 / Del gesto al sistema"
+          "caption": "El tono cambia con la altura del gesto."
         },
         {
           "type": "image",
@@ -1743,15 +1736,8 @@
           "width": 861,
           "height": 1291,
           "alt": "Afiche de INMSON: gesto, sonido y experiencia inmersiva, sin la placa exterior de presentación.",
-          "caption": "Afiche de presentación original del proyecto.",
+          "caption": "Afiche original de INMSON.",
           "size": "detail"
-        },
-        {
-          "type": "embed",
-          "url": "https://www.youtube.com/embed/_oieEi2r6M4",
-          "title": "Inmson - Instalación de realidad virtual",
-          "aspectRatio": 1.77778,
-          "poster": "https://i.ytimg.com/vi/_oieEi2r6M4/maxresdefault.jpg"
         }
       ],
       "contenidoFuente": {
