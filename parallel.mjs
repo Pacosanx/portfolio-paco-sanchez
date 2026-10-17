@@ -48,12 +48,14 @@ const mediaExplorations = [
 ];
 const explorations = [...splineExplorations, ...mediaExplorations];
 const renderExploration = (item, sitePath) => {
-  const ariaLabel = item.tool ? `Abrir exploración ${item.number} de ${item.tool}` : `Abrir exploración ${item.number} en Spline`;
   const title = item.title || 'Exploración en Spline';
-  const action = item.tool ? 'Ver GIF' : 'Ver escena';
-  const href = item.url.startsWith('/assets/') ? sitePath(item.url) : item.url;
   const preview = item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview;
-  return `<a class="lab-entry" draggable="false" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${ariaLabel}"><img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async"><span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">${title}</span><span class="lab-entry-action">${action}</span></span></a>`;
+  const image = `<img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async">`;
+  const caption = `<span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">${title}</span>${item.tool ? '' : '<span class="lab-entry-action">Ver escena</span>'}</span>`;
+
+  if (item.tool) return `<div class="lab-entry lab-entry-media">${image}${caption}</div>`;
+
+  return `<a class="lab-entry" draggable="false" href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Abrir exploración ${item.number} en Spline">${image}${caption}</a>`;
 };
 
 export function parallelSection(sitePath = route => route) {
