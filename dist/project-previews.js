@@ -133,8 +133,10 @@
 
   const focusedIndex = () => rows.findIndex(row => row.contains(document.activeElement));
   document.addEventListener('keydown', event => {
+    if (document.documentElement.classList.contains('viewer-open')) return;
+    if (!['Tab', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) return;
     keyboardFocus = true;
-    if (event.key === 'Tab' && !document.documentElement.classList.contains('viewer-open')) previewSuppressed = false;
+    if (event.key === 'Tab') previewSuppressed = false;
   }, true);
   index.addEventListener('pointermove', event => {
     keyboardFocus = false;
@@ -143,11 +145,22 @@
     if (i >= 0 && selected !== i) show(i);
   });
   rows.forEach((row, i) => {
-    row.addEventListener('pointerenter', () => { previewSuppressed = false; if (!keyboardFocus || focusedIndex() < 0) show(i); });
+    row.addEventListener('pointerenter', () => {
+      keyboardFocus = false;
+      previewSuppressed = false;
+      show(i);
+    });
+    row.addEventListener('pointerleave', event => {
+      if (!keyboardFocus && !event.relatedTarget?.closest('.project-row')) hide();
+    });
     row.addEventListener('focusin', () => { if (!previewSuppressed) show(i); });
     row.addEventListener('focusout', () => queueMicrotask(() => { if (focusedIndex() < 0) hide(); }));
   });
-  index.addEventListener('pointerleave', () => { const i = focusedIndex(); i < 0 ? hide() : show(i); });
+  index.addEventListener('pointerleave', () => {
+    if (previewSuppressed || !keyboardFocus) { hide(); return; }
+    const i = focusedIndex();
+    i < 0 ? hide() : show(i);
+  });
   const reposition = () => {
     cancelAnimationFrame(frame);
     frame = requestAnimationFrame(() => {
@@ -158,7 +171,10 @@
   window.addEventListener('resize', reposition);
   document.addEventListener('portfolio:filter', hide);
   document.addEventListener('portfolio:reveal', () => { previewSuppressed = true; hide(); });
-  desktop.addEventListener('change', () => { hide(); if (desktop.matches && focusedIndex() >= 0) show(focusedIndex()); });
+  desktop.addEventListener('change', () => {
+    hide();
+    if (desktop.matches && !previewSuppressed && focusedIndex() >= 0) show(focusedIndex());
+  });
   const basePath = document.documentElement.dataset.basePath || '';
   fetch(`${basePath}/preview-data.json`, { cache: 'no-cache' })
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
