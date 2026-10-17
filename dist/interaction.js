@@ -1,4 +1,19 @@
 (() => {
+  const header=document.querySelector('.site-header');
+  const menuToggle=header?.querySelector('.menu-toggle');
+  const primaryNav=header?.querySelector('#primary-navigation');
+  if(header&&menuToggle&&primaryNav){
+    const setMenuOpen=(open,restoreFocus=false)=>{
+      header.classList.toggle('is-menu-open',open);
+      menuToggle.setAttribute('aria-expanded',String(open));
+      menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+      if(!open&&restoreFocus)menuToggle.focus();
+    };
+    menuToggle.addEventListener('click',()=>setMenuOpen(menuToggle.getAttribute('aria-expanded')!=='true'));
+    primaryNav.addEventListener('click',event=>{if(event.target.closest('a'))setMenuOpen(false)});
+    document.addEventListener('click',event=>{if(!header.contains(event.target))setMenuOpen(false)});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true')setMenuOpen(false,true)});
+  }
   const viewer=document.querySelector('#project-viewer');
   if(!viewer||typeof viewer.showModal!=='function')return;
   const content=viewer.querySelector('[data-viewer-content]');

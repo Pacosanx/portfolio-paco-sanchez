@@ -39,7 +39,8 @@ function document(title,description,route,body,theme){return `<!doctype html>
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
 <a class="identity" href="${sitePath('/')}" aria-label="Paco Sanchez, inicio">Francisco ‘Paco’ Sanchez<span>Diseñador</span></a>
-<nav aria-label="Principal"><a href="${prefix}#proyectos">Proyectos</a><a href="${prefix}#en-desarrollo">En desarrollo</a><a href="${prefix}#en-paralelo">En paralelo</a><a href="${prefix}#trayectoria">Trayectoria</a><a href="${prefix}#contacto">Contacto</a></nav>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Abrir menú"><span></span><span></span></button>
+<nav id="primary-navigation" aria-label="Principal"><a href="${prefix}#proyectos">Proyectos</a><a href="${prefix}#en-desarrollo">En desarrollo</a><a href="${prefix}#en-paralelo">En paralelo</a><a href="${prefix}#trayectoria">Trayectoria</a><a href="${prefix}#contacto">Contacto</a></nav>
 <a class="header-email" href="mailto:fasanchez1998@gmail.com">Email</a></header>`}
 
 function contact(){return `<footer id="contacto" class="contact shell" aria-labelledby="contact-title">
