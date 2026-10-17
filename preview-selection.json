@@ -136,10 +136,10 @@
       "height": 853,
       "role": "detail",
       "crop": {
-        "x": 0.03,
-        "y": 0.02,
-        "width": 0.5,
-        "height": 0.88
+        "x": 0.02,
+        "y": 0.04,
+        "width": 0.42,
+        "height": 0.82
       }
     },
     {
@@ -149,9 +149,9 @@
       "role": "detail",
       "crop": {
         "x": 0.02,
-        "y": 0.1,
-        "width": 0.54,
-        "height": 0.86
+        "y": 0.13,
+        "width": 0.48,
+        "height": 0.78
       }
     }
   ],
