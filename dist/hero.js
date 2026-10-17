@@ -130,9 +130,9 @@
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
   const uniforms = Object.fromEntries(['resolution', 'pixelRatio', 'time', 'pointer', 'scrollProgress', 'viewGeometry'].map(key => [key, gl.getUniformLocation(program, key)]));
   const compactDevice = matchMedia('(max-width: 700px), (pointer: coarse)').matches;
-  const lensMapWidth = compactDevice ? 96 : 128;
-  const lensMapHeight = compactDevice ? 48 : 64;
-  const lensPixelBudget = compactDevice ? 560000 : 1400000;
+  const lensMapWidth = compactDevice ? 64 : 128;
+  const lensMapHeight = compactDevice ? 32 : 64;
+  const lensPixelBudget = compactDevice ? 280000 : 1400000;
   const lensPixelRatioLimit = compactDevice ? 1 : 1.5;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let inView = true;
@@ -151,7 +151,8 @@
   filterSvg.setAttribute('height', '0');
   filterSvg.style.position = 'absolute';
   opening.prepend(filterSvg);
-  const textLenses = [...opening.querySelectorAll('.opening-label, .opening-copy, .opening-lead, .opening-cue')].map((element, index) => {
+  const textTargets = compactDevice ? '.opening-copy' : '.opening-label, .opening-copy, .opening-lead, .opening-cue';
+  const textLenses = [...opening.querySelectorAll(textTargets)].map((element, index) => {
     const filter = document.createElementNS(svgNS, 'filter');
     filter.id = `opening-scroll-lens-${index}`;
     filter.setAttribute('filterUnits', 'userSpaceOnUse');
@@ -225,7 +226,7 @@
     const progressStep = compactDevice ? 0.004 : 0.001;
     const scrollStep = compactDevice ? 2.5 : 0.5;
     if (Math.abs(lastLensProgress - scrollProgress) < progressStep && Math.abs(lastLensScroll - scrollY) < scrollStep && lastLensSize === size) return;
-    if (compactDevice && now - lastLensUpdate < 1000 / 18 && lastLensSize === size) return;
+    if (compactDevice && now - lastLensUpdate < 1000 / 15 && lastLensSize === size) return;
     lastLensProgress = scrollProgress;
     lastLensScroll = scrollY;
     lastLensSize = size;
@@ -335,7 +336,10 @@
   function animate(now) {
     frame = 0;
     if (!inView || document.hidden || reduced.matches || lost) return;
-    if (now - last >= 1000 / 30) {
+    const scrollMoving = Math.abs(targetScroll - scrollProgress) > 0.002;
+    const pointerMoving = Math.abs(targetPointer.x - pointer.x) + Math.abs(targetPointer.y - pointer.y) + Math.abs(targetPointer.active - pointer.active) > 0.01;
+    const frameInterval = compactDevice ? 1000 / (scrollMoving || pointerMoving ? 24 : 15) : 1000 / 30;
+    if (now - last >= frameInterval) {
       const dt = Number.isFinite(last) ? Math.min(now - last, 80) / 1000 : 1 / 30;
       elapsed += dt;
       const follow = 1 - Math.exp(-dt * 9);
