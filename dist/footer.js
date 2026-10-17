@@ -144,8 +144,8 @@
   let lost = false;
   const targetPointer = { x: 0.5, y: 0.35, active: 0 };
   const pointer = { ...targetPointer };
-  let targetScroll = 0.48;
-  let scrollProgress = 0.48;
+  let targetScroll = 0;
+  let scrollProgress = 0;
   const svgNS = 'http://www.w3.org/2000/svg';
   const filterSvg = document.createElementNS(svgNS, 'svg');
   filterSvg.setAttribute('aria-hidden', 'true');
@@ -316,7 +316,7 @@
   }
   function updateScroll() {
     // Keep the shader's band fixed inside the footer; page scroll does not drive it.
-    targetScroll = 0.48;
+    targetScroll = 0;
     if (reduced.matches) {
       scrollProgress = targetScroll;
       draw();
