@@ -29,8 +29,8 @@
     const all=category==='todos',query=normalize(search.value),filtered=!all||Boolean(query);
     rows.forEach(row=>{
       const area=all||row.dataset.categories.split(' ').includes(category);
-      const program=!query||normalize(row.dataset.programs).includes(query);
-      row.hidden=!area||!program||(!filtered&&!expanded&&row.hasAttribute('data-overflow'));
+      const matches=!query||normalize(row.dataset.search).includes(query);
+      row.hidden=!area||!matches||(!filtered&&!expanded&&row.hasAttribute('data-overflow'));
     });
     const count=rows.filter(row=>!row.hidden).length;
     result.textContent=count+' de '+rows.length+' proyectos';

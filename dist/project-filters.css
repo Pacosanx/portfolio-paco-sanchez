@@ -17,16 +17,17 @@
 .work-heading .filter-result{margin-top:24px;font-size:.75rem}
 .project-row[hidden],.index-more[hidden]{display:none}
 .work-section{min-height:calc(100dvh - 140px);overflow-anchor:none}
-.project-row{grid-template-columns:28px minmax(0,1fr) 42px;align-items:baseline;padding-block:18px;column-gap:24px}
+.project-row{grid-template-columns:28px minmax(0,1fr) minmax(100px,.45fr) 42px;align-items:baseline;padding-block:18px;column-gap:18px}
 .project-name h3{font-size:clamp(18px,1.4vw,23px);line-height:1.35;letter-spacing:-.022em}
-.project-no,.project-year{padding-top:0}
+.project-no,.project-year{padding-top:0;line-height:1.35}
+.project-format{font-size:.75rem;line-height:1.5;color:var(--muted)}
 .project-row:last-of-type{border-bottom:1px solid var(--line)}
 .index-more{display:block;border:0;background:none;color:var(--secondary);font:inherit;font-size:.875rem;line-height:1.6;padding:0;margin:32px 0 0 52px;cursor:pointer;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#636363}
 .index-more:hover{color:var(--text)}
 .case-reference .project-status{font-size:.875rem;line-height:1.6;margin-top:28px;color:var(--text)}
 @media(min-width:1600px){.project-row{padding-block:19px}}
 @media(max-width:1000px){.work-heading{padding-right:24px}.project-row{padding-block:18px}.project-name h3{font-size:20px}}
-@media(max-width:600px){.work-heading{display:block;max-width:none;padding:0 0 36px}.work-heading h2{display:inline-block}.work-heading>.mono{float:right}.project-filters{margin-top:28px;max-width:280px}.project-filters label{margin-bottom:6px}.work-heading .filter-result{display:block;margin-top:18px}.project-row{grid-template-columns:20px minmax(0,1fr) 36px;gap:12px;padding-block:17px}.project-name h3{font-size:18px}.index-more{margin-left:32px}.work-section{min-height:0}}
+@media(max-width:600px){.work-heading{display:block;max-width:none;padding:0 0 36px}.work-heading h2{display:inline-block}.work-heading>.mono{float:right}.project-filters{margin-top:28px;max-width:280px}.project-filters label{margin-bottom:6px}.work-heading .filter-result{display:block;margin-top:18px}.project-row{grid-template-columns:20px minmax(0,1fr) 36px;gap:8px 12px;padding-block:17px}.project-no{grid-column:1;grid-row:1}.project-name{grid-column:2;grid-row:1}.project-year{grid-column:3;grid-row:1}.project-format{grid-column:2;grid-row:2;font-size:.6875rem}.project-name h3{font-size:18px}.index-more{margin-left:32px}.work-section{min-height:0}}
 
 .program-search{margin-top:32px}
 .program-search label{display:block;color:var(--muted);font-size:.875rem;line-height:1.6;margin-bottom:12px}

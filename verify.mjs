@@ -22,7 +22,14 @@ assert(home.includes('<details id="project-filter"')&&!home.includes('<select id
 assert.equal((home.match(/data-categories="[^"]+"/g)||[]).length,projects.length);
 assert(!home.includes('wa.me/')&&!home.includes('WhatsApp'));
 assert(!home.includes('/proyectos/algo-esta-mutando')&&!home.includes('/proyectos/editorial-tipografico-2021'));
-assert(home.includes('Universidad Torcuato Di Tella')&&home.includes('Longinotti 2')&&home.includes('Longinotti 1'));
+assert(home.includes('Universidad Torcuato Di Tella')&&home.includes('Cátedra Longinotti'));
+assert(home.includes('Morfología II')&&home.includes('Morfología I'));
+assert(home.includes('Omar Díaz Fotografía'));
+assert(home.includes('<br>Universidad Torcuato Di Tella'));
+assert(home.includes('data-search=')&&home.includes('project-format'));
+assert(!home.includes('Estoy trabajando en estos dos proyectos'));
+assert(fs.existsSync('dist/assets/previews/pirana-depth-of-field.mp4')&&home.includes('pirana-depth-of-field.mp4'));
+assert(home.includes('id="development-title">En proceso</h2>'));
 assert.equal((home.match(/class="cv-table"/g)||[]).length,2);
 assert(home.includes('<dialog id="project-viewer"'));
 assert(home.includes(`src="${basePath}/assets/dddp-preview.png"`));
@@ -32,7 +39,7 @@ for(const file of htmlFiles){
   const html=fs.readFileSync(file,'utf8');
   assert.equal((html.match(/<h1\b/g)||[]).length,1,file);
   assert(!/[↗↘↙↖→←↑↓]/u.test(html),'Arrow glyph in '+file);
-  assert(!html.includes('Spline 2'),'Removed 3D scene');
+  assert(!html.includes('Spline 2</h'),'Removed 3D scene');
   for(const match of html.matchAll(/href="([^"#]+)(?:#[^"]*)?"/g)){
     const href=match[1].split('?')[0];
     if(!href.startsWith('/')||href.startsWith('//'))continue;

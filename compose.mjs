@@ -22,6 +22,25 @@ const assetSrcset=srcset=>srcset.replace(/(^|,\s*)(\/[^,\s]+)/g,(_,lead,url)=>le
 const origin=(process.env.SITE_ORIGIN||'https://pacosanx.github.io').replace(/\/+$/,'');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
+const projectFormat=p=>{
+  const text=(p.discipline+' '+p.title).toLowerCase(),formats=[];
+  const add=value=>{if(!formats.includes(value))formats.push(value)};
+  if(text.includes('realidad virtual'))add('VR');
+  if(text.includes('realidad aumentada')||text.includes('filtros'))add('AR');
+  if(text.includes('editorial')||text.includes('fanzine'))add('Editorial');
+  if(text.includes('modelado')||text.includes('3d'))add('3D');
+  if(text.includes('animación')||text.includes('animacion'))add('Animación');
+  if(text.includes('web'))add('Web');
+  if(text.includes('app'))add('App');
+  if(text.includes('video'))add('Video');
+  if(text.includes('motion')||text.includes('movimiento')||text.includes('cinética')||text.includes('cinetica'))add('Motion graphics');
+  if(text.includes('tipografía')||text.includes('tipografia'))add('Tipografía');
+  if(text.includes('identidad')||text.includes('sistema gráfico')||text.includes('sistema grafico'))add('Identidad');
+  if(text.includes('afiche'))add('Afiche');
+  if(text.includes('esquemática')||text.includes('esquematica')||text.includes('gráfica')||text.includes('grafica')||text.includes('lenguajes visuales'))add('Gráfica');
+  if(text.includes('narrativa')||text.includes('redes sociales'))add('Redes sociales');
+  return formats.slice(0,2).join(' · ')||'Diseño';
+};
 const lightSurface=color=>/^#[0-9a-f]{6}$/i.test(color||'')&&[1,3,5].reduce((sum,i,j)=>sum+parseInt(color.slice(i,i+2),16)*[.2126,.7152,.0722][j],0)>155;
 const caseTheme=p=>Object.entries(p.theme||{}).filter(([key,value])=>['bg','text','secondary','muted','line'].includes(key)&&/^#[0-9a-f]{6}$/i.test(value)).map(([key,value])=>`--${key}:${value}`).join(';');
 const favicon=sitePath('/assets/favicon-paco.png');
@@ -49,10 +68,10 @@ function contact(){return `<footer id="contacto" class="contact shell" aria-labe
 <div class="contact-social"><a class="text-link" href="https://www.behance.net/pacosanx" target="_blank" rel="noopener noreferrer">Behance</a></div>
 <div class="colophon"><span>Francisco ‘Paco’ Sanchez</span><a href="#" class="text-link">Volver arriba</a></div></footer>`}
 
-function projectRow(p,i){return `<a class="project-row" href="${sitePath(p.ruta)}/" data-project="${i}" data-categories="${projectCategories(p).join(' ')}" data-programs="${esc(p.tools.join(' '))}" ${i>=15?'data-overflow hidden':''}>
-<span class="project-no">${number(i)}</span><div class="project-name"><h3>${esc(p.title)}</h3></div><span class="project-year">${esc(p.anio)}</span></a>`}
+function projectRow(p,i){const format=projectFormat(p);return `<a class="project-row" href="${sitePath(p.ruta)}/" data-project="${i}" data-categories="${projectCategories(p).join(' ')}" data-search="${esc([p.title,p.discipline,p.descripcion,p.context,p.tools.join(' '),p.anio,format].filter(Boolean).join(' '))}" ${i>=15?'data-overflow hidden':''}>
+<span class="project-no">${number(i)}</span><div class="project-name"><h3>${esc(p.title)}</h3></div><span class="project-format">${esc(format)}</span><span class="project-year">${esc(p.anio)}</span></a>`}
 
-function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context)}</td></tr>`).join('')}</tbody></table>`}
+function cv(items,label){return `<table class="cv-table" aria-label="${label}"><colgroup><col><col><col></colgroup><thead class="sr-only"><tr><th scope="col">Período</th><th scope="col">Actividad</th><th scope="col">Detalle</th></tr></thead><tbody>${items.map(x=>`<tr><td class="cv-date mono">${esc(x.date)}</td><th class="cv-role" scope="row">${esc(x.title)}</th><td class="cv-context">${esc(x.context).split(String.fromCharCode(10)).join('<br>')}</td></tr>`).join('')}</tbody></table>`}
 
 function imageDescription(image,p,j){
   const alt=String(image.alt||'').trim();
@@ -137,10 +156,10 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1></div><p class="opening-lead">Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p><a class="opening-cue mono" href="#proyectos">Deslizá para explorar</a>
 </section>
 <section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
-<div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No hay proyectos con esta combinación.<br>Probá otro programa o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
+<div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No se encontraron proyectos.<br>Probá con otros términos o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>
 <section class="development-section shell" id="en-desarrollo" aria-labelledby="development-title">
-  <div class="development-heading"><p class="eyebrow">En proceso</p><h2 id="development-title">Proyectos<br>en desarrollo.</h2><p>Estoy trabajando en estos dos proyectos y voy a ir sumando acá avances, pruebas y decisiones del proceso.</p></div>
+  <h2 class="eyebrow" id="development-title">En proceso</h2>
   <div class="development-projects">
     ${developmentProjects.map((p,i)=>`<a class="development-project" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="development-meta"><span class="mono">${number(i)}</span><span class="mono">${esc(p.status)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><span class="development-cta">Ver proyecto</span></a>`).join('')}
   </div>
