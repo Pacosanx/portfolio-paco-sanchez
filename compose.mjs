@@ -24,14 +24,14 @@ const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll
 const number=n=>String(n+1).padStart(2,'0');
 const lightSurface=color=>/^#[0-9a-f]{6}$/i.test(color||'')&&[1,3,5].reduce((sum,i,j)=>sum+parseInt(color.slice(i,i+2),16)*[.2126,.7152,.0722][j],0)>155;
 const caseTheme=p=>Object.entries(p.theme||{}).filter(([key,value])=>['bg','text','secondary','muted','line'].includes(key)&&/^#[0-9a-f]{6}$/i.test(value)).map(([key,value])=>`--${key}:${value}`).join(';');
-const favicon="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 24V8h8a6 6 0 0 1 0 12h-4v4zm4-8h4a2 2 0 0 0 0-4h-4z' fill='%23ececec'/%3E%3C/svg%3E";
+const favicon=sitePath('/assets/favicon-paco.png');
 
 function document(title,description,route,body,theme){return `<!doctype html>
 <html lang="es" data-base-path="${basePath}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
 <title>${esc(title)}</title><script>if(new URLSearchParams(location.search).has('panel'))document.documentElement.classList.add('panel-mode')</script>${route.startsWith('/en-desarrollo/')?`<script>if(!new URLSearchParams(location.search).has('panel'))location.replace('${sitePath('/')}#proyecto/${route.split('/').filter(Boolean).at(-1)}')</script>`:''}<link rel="canonical" href="${origin}${sitePath(route)}">
-<link rel="icon" type="image/svg+xml" href="${favicon}">
+<link rel="icon" type="image/png" sizes="256x256" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${sitePath('/styles.css')}"><link rel="stylesheet" href="${versionedAsset('/parallel.css','dist/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${sitePath('/project-filters.css')}"><link rel="stylesheet" href="${sitePath('/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}${route.startsWith('/en-desarrollo/')?`<link rel="stylesheet" href="${versionedAsset('/development-pages.css','dist/development-pages.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script>${route==='/'?`<script src="${versionedAsset('/parallel.js','dist/parallel.js')}" defer></script>`:''}${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
@@ -179,7 +179,7 @@ const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[])
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});
 if(fs.existsSync('assets/spline'))fs.cpSync('assets/spline',path.join('dist/assets/spline'),{recursive:true});
-for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg']){
+for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido-vr.mp4','inmson-afiche-original.jpg','favicon-paco.png']){
   fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
 }
 if(fs.existsSync('assets/development'))fs.cpSync('assets/development',path.join('dist/assets/development'),{recursive:true});
