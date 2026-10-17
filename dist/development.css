@@ -10,3 +10,4 @@
 .development-project>p{margin-top:14px;color:var(--secondary);font-size:.875rem;line-height:1.7}
 @media(max-width:1000px){.development-section{margin-top:112px;padding-top:48px;padding-bottom:100px}.development-heading{grid-column:1/4}.development-projects{grid-column:4/13;column-gap:32px}.development-project{min-height:208px}}
 @media(max-width:600px){.development-section{display:block;margin-top:88px;padding-top:40px;padding-bottom:88px}.development-heading{max-width:360px}.development-heading h2 br{display:none}.development-heading>p:last-child{margin-top:18px}.development-projects{display:block;margin-top:48px}.development-project{min-height:0;padding:16px 0 28px}.development-project h3{margin-top:42px;font-size:29px}.development-projects .development-project:last-child{border-bottom:1px solid var(--line)}}
+@media(min-width:1001px){.development-heading{margin-left:calc(-1 * var(--gutter))}}
