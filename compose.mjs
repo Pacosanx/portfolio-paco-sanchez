@@ -30,7 +30,7 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <html lang="es" data-base-path="${basePath}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
-<title>${esc(title)}</title><script>if(new URLSearchParams(location.search).has('panel'))document.documentElement.classList.add('panel-mode')</script>${route.startsWith('/en-desarrollo/')?`<script>if(!new URLSearchParams(location.search).has('panel'))location.replace('${sitePath('/')}#proyecto/${route.split('/').filter(Boolean).at(-1)}')</script>`:''}<link rel="canonical" href="${origin}${sitePath(route)}">
+<title>${esc(title)}</title>${route.startsWith('/en-desarrollo/')?`<script>location.replace('${sitePath('/')}#proyecto/${route.split('/').filter(Boolean).at(-1)}')</script>`:''}<link rel="canonical" href="${origin}${sitePath(route)}">
 <link rel="icon" type="image/png" sizes="256x256" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
@@ -149,7 +149,7 @@ ${parallelSection(sitePath)}
 <div class="experience"><h3 class="cv-heading">Experiencia</h3>${cv([...teaching,...content.experience],'Experiencia')}</div>
 <div class="education"><h3 class="cv-heading">Formación</h3>${cv(content.education,'Formación')}</div></section>
 </main>${contact()}${viewer}`;
-fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home));
+
 
 for(const [i,p] of projects.entries()){
   const body=`${header()}<main id="contenido" class="case shell">
@@ -170,11 +170,21 @@ for(const p of developmentProjects){
   <a class="text-link development-back" href="${sitePath('/')}#en-desarrollo">← Volver a proyectos en desarrollo</a>
   <section class="development-hero"><div class="development-project-meta"><span class="mono">${esc(p.context)}</span><span class="mono">${esc(p.status)}</span></div><div class="development-title"><p class="eyebrow">${esc(p.discipline)}</p>${p.collaboration?`<p class="development-collaboration">En dupla con ${esc(p.collaboration)}</p>`:''}<h1>${esc(p.title)}</h1><p class="development-lead">${esc(p.description)}</p></div><div class="development-tools"><p class="eyebrow">Herramientas y medios</p><ul>${p.tools.map(tool=>`<li>${esc(tool)}</li>`).join('')}</ul></div></section>
   ${projectBody}
-  <nav class="development-pagination" aria-label="Otros proyectos en desarrollo">${developmentProjects.filter(other=>other.slug!==p.slug).map(other=>`<a href="${sitePath('/en-desarrollo/'+other.slug)}/"><span class="eyebrow">También en desarrollo</span><span>${esc(other.title)}</span></a>`).join('')}</nav>
+  <nav class="development-pagination" aria-label="Otros proyectos en desarrollo">${developmentProjects.filter(other=>other.slug!==p.slug).map(other=>`<a class="next-project" href="${sitePath('/en-desarrollo/'+other.slug)}/"><span class="eyebrow">También en desarrollo</span><span>${esc(other.title)}</span></a>`).join('')}</nav>
   </main>${contact()}`;
   const routeDir=path.join('dist','en-desarrollo',p.slug);fs.mkdirSync(routeDir,{recursive:true});
   fs.writeFileSync(path.join(routeDir,'index.html'),document(`${p.title} — En desarrollo | Paco Sanchez`,p.summary,route+'/',body));
 }
+
+
+const developmentTemplates=developmentProjects.map((p,i)=>{
+  const page=fs.readFileSync(path.join('dist','en-desarrollo',p.slug,'index.html'),'utf8');
+  const match=page.match(/<main id="contenido" class="development-case shell">([\\s\\S]*?)<\\/main>/);
+  if(!match)throw new Error('No se pudo preparar la ficha lateral de '+p.slug);
+  const content=match[1].replace(/^\\s*<a class="text-link development-back"[\\s\\S]*?<\\/a>/,'').replace(/<h1>([\\s\\S]*?)<\\/h1>/,'<h1 id="viewer-title" tabindex="-1">$1</h1>');
+  return `<template data-project-template data-project-kind="development" data-project-route="${sitePath('/en-desarrollo/'+p.slug)}/" data-project-slug="${p.slug}" data-project-title="${esc(p.title)}" data-project-index="${i}" data-project-count="${developmentProjects.length}"><div class="development-panel">${content}</div></template>`;
+}).join('');
+fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home+developmentTemplates));
 
 const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(image=>({...image,src:assetPath(image.src)}))}));
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
