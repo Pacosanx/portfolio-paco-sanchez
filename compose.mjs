@@ -179,9 +179,9 @@ for(const p of developmentProjects){
 
 const developmentTemplates=developmentProjects.map((p,i)=>{
   const page=fs.readFileSync(path.join('dist','en-desarrollo',p.slug,'index.html'),'utf8');
-  const match=page.match(/<main id="contenido" class="development-case shell">([\\s\\S]*?)<\\/main>/);
+  const match=page.match(/<main id="contenido" class="development-case shell">([\s\S]*?)<\/main>/);
   if(!match)throw new Error('No se pudo preparar la ficha lateral de '+p.slug);
-  const content=match[1].replace(/^\\s*<a class="text-link development-back"[\\s\\S]*?<\\/a>/,'').replace(/<h1>([\\s\\S]*?)<\\/h1>/,'<h1 id="viewer-title" tabindex="-1">$1</h1>');
+  const content=match[1].replace(/^\s*<a class="text-link development-back"[\s\S]*?<\/a>/,'').replace(/<h1>([\s\S]*?)<\/h1>/,'<h1 id="viewer-title" tabindex="-1">$1</h1>');
   return `<template data-project-template data-project-kind="development" data-project-route="${sitePath('/en-desarrollo/'+p.slug)}/" data-project-slug="${p.slug}" data-project-title="${esc(p.title)}" data-project-index="${i}" data-project-count="${developmentProjects.length}"><div class="development-panel">${content}</div></template>`;
 }).join('');
 fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home+developmentTemplates));
