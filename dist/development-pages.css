@@ -14,3 +14,8 @@
 
 .project-viewer .development-title h2{font-size:clamp(44px,7vw,88px);line-height:.98;letter-spacing:-.065em;margin:18px 0 26px}.project-viewer .development-title h2:focus{outline:none}
 @media(max-width:760px){.project-viewer .development-title h2{font-size:clamp(48px,14vw,76px)}}
+
+
+/* Alinear la introducción de etapas con la columna de lectura de las secciones. */
+.development-overview{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}.development-overview>.eyebrow,.development-overview-intro{grid-column:3/11}.development-stage-nav{grid-column:1/-1}
+@media(max-width:760px){.development-overview{display:block}}
