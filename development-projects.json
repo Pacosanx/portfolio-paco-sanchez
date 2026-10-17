@@ -65,48 +65,79 @@
     "slug": "espora",
     "title": "Espora",
     "context": "2024—2026 · Cultivo experimental PO-W-2024",
-    "status": "En desarrollo",
-    "discipline": "Herramienta de documentación y análisis micológico",
-    "summary": "Un entorno para registrar el cultivo, seguir su evolución y observar sus formas en 3D.",
-    "description": "Espora organiza el proceso de un cultivo experimental de hongos. Conecta datos y observaciones en el tiempo con visualizaciones que permiten estudiar el desarrollo, la morfología y distintas capas de una seta.",
+    "status": "Primera etapa documentada · proyecto en evolución",
+    "discipline": "Sistema de registro y exploración de un cultivo experimental",
+    "summary": "Espora conecta el seguimiento de un cultivo de Pleurotus ostreatus con un mapa de proceso, registros y una exploración tridimensional de la seta.",
+    "description": "Espora es una herramienta de documentación y análisis desarrollada a partir del cultivo experimental PO-W-2024. En su primera etapa reúne el recorrido del cultivo, su evolución temporal, las observaciones y el estudio morfológico en 3D. El video recorre todas las pantallas de esa etapa. El proyecto siguió actualizándose después; esas mejoras posteriores no están representadas en esta grabación ni en las capturas.",
     "tools": [
-      "Blender",
       "Figma",
-      "Modelado y captura 3D",
+      "Blender",
+      "Registro y análisis experimental",
+      "Modelado y visualización 3D",
       "Desarrollo web"
     ],
     "sections": [
       {
         "label": "01 / El sistema",
-        "title": "Del cultivo a la observación",
-        "text": "El proyecto reúne un mapa de nodos para representar etapas y operaciones del cultivo, una línea de tiempo para seguir su evolución y visores para examinar muestras. La intención es que el recorrido desde la placa hasta la seta pueda leerse y compararse."
+        "title": "Registrar el cultivo como un recorrido",
+        "text": "Espora parte de un cultivo experimental y organiza sus etapas y operaciones en un mapa de nodos. Vincula las observaciones con la evolución temporal y reúne condiciones, registros y material de cada fase para que el proceso pueda leerse como un conjunto conectado."
       },
       {
-        "label": "02 / Avances actuales",
-        "title": "Visor y estudio de Pleurotus",
-        "text": "El visor ya permite explorar una muestra de Pleurotus ostreatus en 3D, desplazarse por el registro temporal y consultar capas de análisis morfológico. En paralelo, se está refinando la captura y representación de la seta.",
+        "label": "02 / La observación",
+        "title": "Explorar las muestras en distintas escalas",
+        "text": "El recorrido alterna el registro del cultivo con la observación de muestras de Pleurotus ostreatus. El visor permite examinar la seta en 3D y consultar capas de análisis morfológico, mientras la línea de tiempo conecta cada observación con su momento dentro del proceso."
+      },
+      {
+        "label": "03 / El recorrido interactivo",
+        "title": "Conectar etapas, datos y formas",
+        "text": "El mapa de nodos y la línea de tiempo estructuran la navegación entre registros, operaciones y muestras. Los visores acercan el proceso a distintas escalas, desde el cultivo y sus relaciones hasta la forma de una seta."
+      },
+      {
+        "label": "04 / Primera etapa completa",
+        "title": "Un recorrido por todas las pantallas",
+        "text": "El video muestra el proyecto completo en su primera etapa e incluye todas las pantallas. Las capturas siguientes documentan algunos momentos de ese recorrido. Después de esta versión se actualizaron varias partes del proyecto; esos cambios no aparecen en el video ni en las capturas disponibles.",
         "embed": {
           "url": "https://drive.google.com/file/d/1ueNLM_gGR97Yji9lAhLg67ZVu019lOtv/preview",
           "title": "Proceso de Espora · primera etapa",
           "caption": "Recorrido completo por las pantallas de la primera etapa. Algunas partes del proyecto se actualizaron después de esta grabación."
         }
-      },
-      {
-        "label": "03 / En desarrollo",
-        "title": "Unir y ampliar la lectura",
-        "text": "El trabajo sigue integrando los visualizadores con el mapa y la línea de tiempo compartidos, además de ajustar controles, marcadores y ayudas para que la información experimental sea más clara."
       }
     ],
     "images": [
       {
-        "url": "/assets/development/espora/visor.png",
-        "alt": "Espora: visor 3D de una muestra de seta con línea de tiempo y panel de análisis morfológico",
-        "caption": "Visor de muestra · análisis morfológico y registro temporal"
+        "url": "/assets/development/espora/pantallas/espora-1.webp",
+        "alt": "Pantalla inicial del proyecto Espora.",
+        "caption": "Espora · pantalla de inicio"
       },
       {
-        "url": "/assets/development/espora/pleurotus.png",
-        "alt": "Modelo 3D de Pleurotus ostreatus desarrollado para el proyecto Espora",
-        "caption": "Pleurotus ostreatus · estudio 3D"
+        "url": "/assets/development/espora/pantallas/espora-2.webp",
+        "alt": "Entorno tridimensional de Espora con muestras de hongos en un paisaje de cultivo.",
+        "caption": "Entorno de cultivo · visualización 3D"
+      },
+      {
+        "url": "/assets/development/espora/pantallas/espora-5.webp",
+        "alt": "Interfaz para explorar una colección de muestras de Pleurotus ostreatus.",
+        "caption": "Colección de muestras · visor 3D"
+      },
+      {
+        "url": "/assets/development/espora/pantallas/espora-16.webp",
+        "alt": "Mapa de nodos que conecta etapas y operaciones del cultivo.",
+        "caption": "Mapa del proceso · nodos y relaciones"
+      },
+      {
+        "url": "/assets/development/espora/pantallas/espora-31.webp",
+        "alt": "Muestra de Pleurotus ostreatus en el visor tridimensional con herramientas de análisis.",
+        "caption": "Pleurotus ostreatus · análisis morfológico"
+      },
+      {
+        "url": "/assets/development/espora/pantallas/espora-55.webp",
+        "alt": "Pantalla de registro y seguimiento de condiciones del cultivo.",
+        "caption": "Registro experimental · condiciones de cultivo"
+      },
+      {
+        "url": "/assets/development/espora/pantallas/espora-60.webp",
+        "alt": "Mapa de nodos del recorrido experimental de Espora.",
+        "caption": "Recorrido del cultivo · sistema de seguimiento"
       }
     ]
   }
