@@ -7,7 +7,7 @@
   const rows = [...index.querySelectorAll('.project-row')];
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
-  let records = [], selected = -1, request = 0, keyboardFocus = false, frame;
+  let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
   const arrangements = {
     metaphex: 'right', 'maradona-alien': 'left', 'instalacion-vr': 'fan',
     'esquematica-microevento': 'poster', 'editorial-espacial': 'right',
@@ -132,15 +132,19 @@
   };
 
   const focusedIndex = () => rows.findIndex(row => row.contains(document.activeElement));
-  document.addEventListener('keydown', () => { keyboardFocus = true; }, true);
+  document.addEventListener('keydown', event => {
+    keyboardFocus = true;
+    if (event.key === 'Tab' && !document.documentElement.classList.contains('viewer-open')) previewSuppressed = false;
+  }, true);
   index.addEventListener('pointermove', event => {
     keyboardFocus = false;
+    previewSuppressed = false;
     const i = rows.indexOf(event.target.closest('.project-row'));
     if (i >= 0 && selected !== i) show(i);
   });
   rows.forEach((row, i) => {
-    row.addEventListener('pointerenter', () => { if (!keyboardFocus || focusedIndex() < 0) show(i); });
-    row.addEventListener('focusin', event => { if (event.isTrusted) show(i); });
+    row.addEventListener('pointerenter', () => { previewSuppressed = false; if (!keyboardFocus || focusedIndex() < 0) show(i); });
+    row.addEventListener('focusin', () => { if (!previewSuppressed) show(i); });
     row.addEventListener('focusout', () => queueMicrotask(() => { if (focusedIndex() < 0) hide(); }));
   });
   index.addEventListener('pointerleave', () => { const i = focusedIndex(); i < 0 ? hide() : show(i); });
@@ -153,7 +157,7 @@
   window.addEventListener('scroll', reposition, { passive: true });
   window.addEventListener('resize', reposition);
   document.addEventListener('portfolio:filter', hide);
-  document.addEventListener('portfolio:reveal', hide);
+  document.addEventListener('portfolio:reveal', () => { previewSuppressed = true; hide(); });
   desktop.addEventListener('change', () => { hide(); if (desktop.matches && focusedIndex() >= 0) show(focusedIndex()); });
   const basePath = document.documentElement.dataset.basePath || '';
   fetch(`${basePath}/preview-data.json`, { cache: 'no-cache' })
