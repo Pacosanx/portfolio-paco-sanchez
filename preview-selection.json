@@ -125,21 +125,21 @@
   ],
   "/proyectos/editorial-registros": [
     {
-      "src": "/assets/previews/editorial-registros-v2-01.webp",
-      "width": 600,
-      "height": 400,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
+      "width": 1400,
+      "height": 247,
       "role": "whole"
     },
     {
-      "src": "/assets/previews/editorial-registros-v2-02.webp",
-      "width": 600,
-      "height": 400,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
+      "width": 1400,
+      "height": 247,
       "role": "detail"
     },
     {
-      "src": "/assets/previews/editorial-registros-v2-03.webp",
-      "width": 600,
-      "height": 400,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/50df76190030769.65baac573895e.png",
+      "width": 1400,
+      "height": 247,
       "role": "detail"
     }
   ],
@@ -477,13 +477,25 @@
       "src": "/assets/previews/video-cinetica-dg2-gabriele-v2-02.webp",
       "width": 720,
       "height": 540,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.02,
+        "y": 0.08,
+        "width": 0.34,
+        "height": 0.84
+      }
     },
     {
       "src": "/assets/previews/video-cinetica-dg2-gabriele-v2-03.webp",
       "width": 720,
       "height": 540,
-      "role": "detail"
+      "role": "detail",
+      "crop": {
+        "x": 0.64,
+        "y": 0.08,
+        "width": 0.34,
+        "height": 0.84
+      }
     }
   ],
   "/proyectos/lenguajes-visuales-tp2-dg1-catedra-gabriele": [
