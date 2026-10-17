@@ -84,7 +84,12 @@
       {
         "label": "02 / Avances actuales",
         "title": "Visor y estudio de Pleurotus",
-        "text": "El visor ya permite explorar una muestra de Pleurotus ostreatus en 3D, desplazarse por el registro temporal y consultar capas de análisis morfológico. En paralelo, se está refinando la captura y representación de la seta."
+        "text": "El visor ya permite explorar una muestra de Pleurotus ostreatus en 3D, desplazarse por el registro temporal y consultar capas de análisis morfológico. En paralelo, se está refinando la captura y representación de la seta.",
+        "embed": {
+          "url": "https://drive.google.com/file/d/1gvoYKMmqeQGOW2DtaCzHH8OccKKh5fu7/preview",
+          "title": "Proceso de Espora",
+          "caption": "Registro audiovisual del proyecto Espora."
+        }
       },
       {
         "label": "03 / En desarrollo",
