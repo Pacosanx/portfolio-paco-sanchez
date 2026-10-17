@@ -1,10 +1,3 @@
-.opening-copy{grid-column:4/11}
-.opening-copy>p{max-width:540px}
-.contact-main{grid-column:4/10}
 @media(min-width:1001px){
- .site-header{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
- .site-header .identity{grid-column:1/4}
- .site-header nav{grid-column:4/11}
- .header-email{grid-column:12/13;justify-self:end}
+ .header-email{justify-self:end}
 }
-@media(max-width:1000px) and (min-width:601px){.opening-copy{grid-column:4/13}.contact-main{grid-column:4/11}}

@@ -4,6 +4,12 @@
   if (!canvas) return;
   const field = canvas.parentElement;
   const opening = field.closest('.opening');
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const syncHeroHeight = () => opening.style.setProperty('--hero-header-height', `${header.getBoundingClientRect().height}px`);
+    syncHeroHeight();
+    new ResizeObserver(syncHeroHeight).observe(header);
+  }
   const gl = canvas.getContext('webgl', {
     alpha: true, antialias: false, depth: false, stencil: false,
     premultipliedAlpha: true, powerPreference: 'low-power'
@@ -70,7 +76,8 @@
       vec3 core = vec3(profile(d + split, width), profile(d, width), profile(d - split, width));
       float halo = profile(d, width + 0.045);
       vec3 light = tint * (0.45 + core * 0.55);
-      float edgeFade = smoothstep(0.0, 0.16, uv.y);
+      // Fill the viewport's lower edge on arrival; soften the plane as it scrolls away.
+      float edgeFade = mix(1.0, smoothstep(0.0, 0.16, uv.y), smoothstep(0.0, 0.12, travel));
       float alpha = clamp(halo * 1.7, 0.0, 0.98) * edgeFade;
 
       // Small crosses travel with the plane and share its refraction, revealing the lens.

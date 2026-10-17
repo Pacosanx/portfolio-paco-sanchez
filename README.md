@@ -39,6 +39,10 @@ La publicación principal es [GitHub Pages](https://pacosanx.github.io/portfolio
 
 ## Presentaciones de proyectos
 
+`dist/layout-system.css` centraliza la grilla, la escala de espaciado y las reglas tipográficas compartidas. Las secciones se separan 96 px en escritorio y 64 px en pantallas menores; las fichas adaptan sus columnas al ancho de su contenedor, incluido el panel lateral.
+
+El índice presenta áreas y búsqueda en la columna izquierda, con opciones de texto y selección subrayada. En pantallas de hasta 800 px, los controles pasan encima del listado. Área y búsqueda se combinan y se pueden restablecer juntas.
+
 `content.json` es la fuente de las fichas y del panel de lectura. Las descripciones introducen el proyecto; los bloques `text` usan `heading` para organizar el recorrido sin repetir la introducción. La tipografía de las piezas se conserva como obra; las placas explicativas se escriben como HTML.
 
 Los bloques `gallery` admiten `columns` de 1 a 4. Las vistas principales se muestran amplias y los detalles se agrupan; todas las imágenes se pueden ampliar. `surface` define un fondo compartido y `seamless: true` elimina separaciones. Los medios consecutivos con el mismo fondo forman una banda continua. El lector responde a su propio ancho, tanto en página completa como dentro del panel.

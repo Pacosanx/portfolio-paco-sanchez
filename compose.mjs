@@ -23,7 +23,9 @@ const origin=(process.env.SITE_ORIGIN||'https://pacosanx.github.io').replace(/\/
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const number=n=>String(n+1).padStart(2,'0');
 const projectFormat=p=>{
-  if(p.format)return p.format;
+  const clean=value=>value.split(/\s*(?:·|\||,|\by\b)\s*/i).map(part=>part.trim()).filter(part=>!/^tipograf[ií]a$/i.test(part)).join(' · ');
+  if(/esquem[aá]tica/i.test(p.title))return 'Afiche';
+  if(p.format){const format=clean(p.format);if(format)return format}
   const text=(p.discipline+' '+p.title).toLowerCase(),formats=[];
   const add=value=>{if(!formats.includes(value))formats.push(value)};
   if(text.includes('realidad virtual'))add('VR');
@@ -35,7 +37,6 @@ const projectFormat=p=>{
   if(text.includes('app'))add('App');
   if(text.includes('video'))add('Video');
   if(text.includes('motion')||text.includes('movimiento')||text.includes('cinética')||text.includes('cinetica'))add('Motion graphics');
-  if(text.includes('tipografía')||text.includes('tipografia'))add('Tipografía');
   if(text.includes('identidad')||text.includes('sistema gráfico')||text.includes('sistema grafico'))add('Identidad');
   if(text.includes('afiche'))add('Afiche');
   if(text.includes('esquemática')||text.includes('esquematica')||text.includes('gráfica')||text.includes('grafica')||text.includes('lenguajes visuales'))add('Gráfica');
@@ -54,8 +55,8 @@ function document(title,description,route,body,theme){return `<!doctype html>
 <link rel="icon" type="image/png" sizes="256x256" href="${favicon}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${versionedAsset('/styles.css','dist/styles.css')}"><link rel="stylesheet" href="${versionedAsset('/parallel.css','dist/parallel.css')}"><link rel="stylesheet" href="${sitePath('/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${versionedAsset('/project-filters.css','dist/project-filters.css')}"><link rel="stylesheet" href="${versionedAsset('/editorial-grid.css','dist/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}${route==='/'||route.startsWith('/en-desarrollo/')?`<link rel="stylesheet" href="${versionedAsset('/development-pages.css','dist/development-pages.css')}">`:''}<script src="${sitePath('/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script><script src="${versionedAsset('/footer.js','dist/footer.js')}" defer></script>${route==='/'?`<script src="${versionedAsset('/parallel.js','dist/parallel.js')}" defer></script>`:''}${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
-</head><body${theme?` class="case-page" style="${caseTheme({theme})}"`:''}><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
+<link rel="stylesheet" href="${versionedAsset('/styles.css','dist/styles.css')}"><link rel="stylesheet" href="${versionedAsset('/parallel.css','dist/parallel.css')}"><link rel="stylesheet" href="${versionedAsset('/trajectory.css','dist/trajectory.css')}"><link rel="stylesheet" href="${versionedAsset('/project-previews.css','dist/project-previews.css')}"><link rel="stylesheet" href="${versionedAsset('/case-content.css','dist/case-content.css')}"><link rel="stylesheet" href="${versionedAsset('/project-filters.css','dist/project-filters.css')}"><link rel="stylesheet" href="${versionedAsset('/editorial-grid.css','dist/editorial-grid.css')}">${route==='/'?`<link rel="stylesheet" href="${sitePath('/hero.css')}?v=${heroRevision}"><link rel="stylesheet" href="${versionedAsset('/development.css','dist/development.css')}">`:''}${route==='/'||route.startsWith('/en-desarrollo/')?`<link rel="stylesheet" href="${versionedAsset('/development-pages.css','dist/development-pages.css')}">`:''}<script src="${versionedAsset('/project-filters.js','dist/project-filters.js')}" defer></script><script src="${versionedAsset('/interaction.js','dist/interaction.js')}" defer></script><script src="${versionedAsset('/project-previews.js','dist/project-previews.js')}" defer></script><script src="${versionedAsset('/footer.js','dist/footer.js')}" defer></script>${route==='/'?`<script src="${versionedAsset('/parallel.js','dist/parallel.js')}" defer></script>`:''}${route==='/'||route.replace(/\/+$/,'')==='/proyectos/instalacion-vr'?`<script src="${versionedAsset('/assets/inmson-drawing.js','assets/inmson-drawing.js')}" defer></script>`:''}
+<link rel="stylesheet" href="${versionedAsset('/layout-system.css','dist/layout-system.css')}"></head><body${theme?` class="case-page" style="${caseTheme({theme})}"`:''}><a class="skip-link" href="#contenido">Ir al contenido</a>${body}</body></html>`}
 
 function header(home=false){const prefix=home?'':sitePath('/');return `<header class="site-header shell">
 <a class="identity" href="${sitePath('/')}" aria-label="Paco Sanchez, inicio">Francisco ‘Paco’ Sanchez<span>Diseñador</span></a>
@@ -125,7 +126,11 @@ function caseGallery(p,embedded=false){
   let output='';
   for(let i=0;i<blocks.length;i++){
     const block=blocks[i];
-    if(block.type==='embed'&&block.aspectRatio<1){
+    if(['/proyectos/festival-sistema-grafico','/proyectos/festival-sistema-grafico-v1'].includes(p.ruta)&&['image','gallery','placeholder'].includes(block.type)){
+      const group=[block];
+      while(['image','gallery','placeholder'].includes(blocks[i+1]?.type))group.push(blocks[++i]);
+      output+='<div class="case-artwork-sequence">'+group.map(render).join('')+'</div>';
+    }else if(block.type==='embed'&&block.aspectRatio<1){
       const group=[block];
       while(blocks[i+1]?.type==='embed'&&blocks[i+1].aspectRatio<1)group.push(blocks[++i]);
       output+=`<div class="case-embed-strip" style="--columns:${Math.min(4,group.length)}">${group.map(render).join('')}</div>`;
@@ -156,10 +161,10 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="opening" aria-labelledby="intro-title"><div class="opening-atmosphere" aria-hidden="true"><canvas class="opening-shader"></canvas></div><script src="${sitePath('/hero.js')}?v=${heroRevision}" defer></script><p class="eyebrow opening-label">Portfolio / ${period}</p>
 <div class="opening-copy"><h1 id="intro-title">Experimento con tecnología.<br><span>Diseño experiencias digitales<br>e interactivas.</span></h1></div><p class="opening-lead">Exploro la vanguardia digital a través de la web, los entornos inmersivos y la imagen en movimiento.</p><a class="opening-cue mono" href="#proyectos">Deslizá para explorar</a>
 </section>
-<section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span>${projectFilters(projects)}</div>
+<section class="work-section" id="proyectos" aria-labelledby="work-title"><div class="project-sidebar"><div class="work-heading"><h2 id="work-title">Proyectos</h2><span class="mono muted">01—${String(projectCount).padStart(2,'0')}</span></div>${projectFilters(projects)}</div>
 <div class="work-index" id="project-index">${projects.map(projectRow).join('')}<p class="project-empty" data-project-empty hidden>No se encontraron proyectos.<br>Probá con otros términos o cambiá el área.</p><button class="index-more" type="button" data-project-more aria-expanded="false" aria-controls="project-index">Ver ${Math.max(0,projectCount-15)} proyectos más</button><noscript><style>.project-row[hidden]{display:grid}.index-more{display:none}</style></noscript></div>
 <aside class="preview-column" aria-hidden="true"><div class="preview-stage"><div class="preview-image-wrap"></div></div></aside></section>
-<section class="development-section shell" id="en-desarrollo" aria-labelledby="development-title">
+<section class="development-section" id="en-desarrollo" aria-labelledby="development-title">
   <h2 class="eyebrow" id="development-title">En proceso</h2>
   <div class="development-projects">
     ${developmentProjects.map(p=>`<a class="development-project resource-entry" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="resource-heading"><p class="resource-kicker mono">${esc(p.status)}</p><h3>${esc(p.title)}</h3></div><div class="resource-context"><p>${esc(p.summary)}</p></div><span class="text-link resource-link">Ver proyecto</span></a>`).join('')}

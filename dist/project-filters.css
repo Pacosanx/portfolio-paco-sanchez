@@ -1,54 +1,36 @@
-.work-heading{grid-column:1/4;padding-right:40px;max-width:300px}
-.project-filters{margin-top:52px;min-width:0}
-.project-filters #filter-label{font-size:.875rem;color:var(--muted);margin:0 0 16px;line-height:1.6}
-.filter-picker{position:relative}
-.filter-picker summary{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid #525252;padding:12px 0;font-size:.875rem;line-height:1.6;color:var(--text);cursor:pointer;list-style:none}
-.filter-picker summary::-webkit-details-marker{display:none}
-.filter-action{font-size:.75rem;color:var(--muted)}
-.filter-picker[open] .filter-action{color:var(--text)}
-.filter-options{position:absolute;top:100%;left:0;right:0;z-index:6;padding:16px 20px 20px;background:var(--bg);border:1px solid var(--line);border-top:0;max-height:min(440px,var(--filter-space,calc(100dvh - 340px)));overflow-y:auto;overscroll-behavior:contain;scrollbar-color:var(--line) var(--bg);scrollbar-width:thin}
-.filter-picker.opens-up .filter-options{top:auto;bottom:100%;border-top:1px solid var(--line);border-bottom:0}
-.filter-options button{display:block;width:100%;border:0;background:none;padding:10px 0;text-align:left;color:var(--secondary);font:inherit;font-size:.875rem;line-height:1.6;cursor:pointer}
-.filter-options button:hover,.filter-options button[aria-pressed=true]{color:var(--text)}
-.filter-options button[aria-pressed=true]{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
-.filter-group{border-top:1px solid var(--line);margin-top:18px;padding-top:20px}
-.filter-group>.mono{color:var(--muted);margin:0 0 10px;font-size:.75rem;line-height:1.6}
-.filter-picker summary:focus-visible,.filter-options button:focus-visible,.index-more:focus-visible{outline:1px solid var(--text);outline-offset:6px}
-.work-heading .filter-result{margin-top:24px;font-size:.75rem}
-.project-row[hidden],.index-more[hidden]{display:none}
-.work-section{min-height:calc(100dvh - 140px);overflow-anchor:none}
-.project-row{grid-template-columns:28px minmax(0,1fr) minmax(76px,.35fr) 48px;align-items:baseline;padding-block:18px;column-gap:18px}.project-no{grid-column:1;grid-row:1}.project-name{grid-column:2;grid-row:1}.project-format{grid-column:3;grid-row:1}.project-year{grid-column:4;grid-row:1;justify-self:end;white-space:nowrap}
+.project-filters,.project-toolbar{min-width:0}
+.project-filters #filter-label,.program-search label{display:block;font-family:var(--mono);font-size:.75rem;color:var(--muted);line-height:1.5}
+.filter-options{display:flex;flex-direction:column;align-items:flex-start}
+.filter-options button{min-height:40px;max-width:100%;border:0;border-radius:0;background:none;text-align:left;color:var(--muted);font:inherit;font-size:.875rem;line-height:1.4;cursor:pointer}
+.filter-options button:hover{color:var(--text)}
+.filter-options button[aria-pressed=true]{color:var(--text);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.filter-options button:focus-visible,.index-more:focus-visible,.filter-reset:focus-visible{outline:1px solid var(--text);outline-offset:4px}
+.project-filter-status{display:flex;align-items:baseline;flex-wrap:wrap;min-height:24px}
+.filter-result{font-size:.75rem;color:var(--muted)}
+.filter-reset{border:0;background:transparent;color:var(--secondary);font:inherit;font-size:.75rem;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.filter-reset:hover{color:var(--text)}
+.project-row[hidden],.index-more[hidden],.filter-reset[hidden],.program-search button[hidden],.project-empty[hidden]{display:none}
+.work-section{overflow-anchor:none}
+.project-row{align-items:baseline}
+.project-year{justify-self:end;white-space:nowrap;text-align:right}
 .project-name h3{font-size:clamp(18px,1.4vw,23px);line-height:1.35;letter-spacing:-.022em}
 .project-name,.project-format{min-width:0}
-.project-no,.project-year{padding-top:0;line-height:1.35}.project-year{text-align:right}
+.project-no,.project-year{line-height:1.35}
 .project-format{font-size:.75rem;line-height:1.5;color:var(--muted)}
 .project-row:last-of-type{border-bottom:1px solid var(--line)}
-.index-more{display:block;border:0;background:none;color:var(--secondary);font:inherit;font-size:.875rem;line-height:1.6;padding:0;margin:32px 0 0 52px;cursor:pointer;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#636363}
+.index-more{display:block;border:0;background:none;color:var(--secondary);font:inherit;font-size:.875rem;line-height:1.6;cursor:pointer;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#636363}
 .index-more:hover{color:var(--text)}
-.case-reference .project-status{font-size:.875rem;line-height:1.6;margin-top:28px;color:var(--text)}
-@media(min-width:601px){
- .project-row{grid-template-columns:minmax(0,1fr) minmax(104px,.34fr) 48px}
- .project-no{position:static;grid-column:1;grid-row:1;justify-self:start;width:28px;transform:translateX(-52px)}
- .project-name{grid-column:1}
- .project-format{grid-column:2}
- .project-year{grid-column:3}
- .index-more{margin-left:0}
-}
-@media(min-width:1600px){.project-row{padding-block:19px}}
-@media(max-width:1000px){.work-heading{padding-right:24px}.project-row{padding-block:18px}.project-name h3{font-size:20px}}
-@media(max-width:600px){.work-heading{display:flow-root;max-width:none;padding:0 0 36px}.work-heading h2{display:inline-block}.work-heading>span.mono{float:right}.project-filters{margin-top:28px;max-width:280px}.project-filters label{margin-bottom:6px}.work-heading .filter-result{display:block;margin-top:18px}.project-row{grid-template-columns:20px minmax(0,1fr) 40px;gap:8px 12px;padding-block:17px}.project-no{grid-column:1;grid-row:1}.project-name{grid-column:2;grid-row:1}.project-year{grid-column:3;grid-row:1}.project-format{grid-column:2;grid-row:2;font-size:.6875rem}.project-name h3{font-size:18px}.index-more{margin-left:32px}.work-section{min-height:0}}
-
-.program-search{margin-top:32px}
-.program-search label{display:block;color:var(--muted);font-size:.875rem;line-height:1.6;margin-bottom:12px}
-.program-search-field{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid #525252}
-.program-search input{width:100%;min-width:0;border:0;border-radius:0;background:transparent;color:var(--text);font:inherit;font-size:.875rem;line-height:1.6;padding:12px 0;appearance:none}
+.case-reference .project-status{font-size:.875rem;line-height:1.6;color:var(--text)}
+.program-search-field{display:flex;align-items:center;min-height:40px;border-bottom:1px solid var(--line)}
+.program-search input{width:100%;min-width:0;border:0;border-radius:0;background:transparent;color:var(--text);font:inherit;font-size:.875rem;line-height:1.4;appearance:none}
 .program-search input::placeholder{color:var(--muted);font-size:.8125rem}
 .program-search input::-webkit-search-cancel-button{appearance:none}
-.program-search-field:focus-within{border-bottom-color:var(--text)}
-.program-search input:focus-visible{outline:1px solid var(--text);outline-offset:6px}
-.program-search button{background:none;border:0;color:var(--secondary);font:inherit;font-size:.75rem;padding:0;cursor:pointer}
+.program-search-field:focus-within{border-color:var(--text)}
+.program-search input:focus-visible{outline:none}
+.program-search button{background:none;border:0;color:var(--secondary);font:inherit;font-size:.75rem;cursor:pointer}
 .program-search button:hover{color:var(--text)}
-.program-search button:focus-visible{outline:1px solid var(--text);outline-offset:6px}
-.program-search button[hidden],.project-empty[hidden]{display:none}
-.project-empty{padding:28px 0;border-top:1px solid var(--line);font-size:.875rem;line-height:1.7;color:var(--secondary)}
-@media(max-width:600px){.program-search{margin-top:24px}.project-empty{padding:24px 0}}
+.program-search button:focus-visible{outline:1px solid var(--text);outline-offset:2px}
+.project-empty{border-top:1px solid var(--line);font-size:.875rem;line-height:1.7;color:var(--secondary)}
+@media(max-width:1000px){.project-name h3{font-size:20px}}
+@media(max-width:800px){.filter-options{flex-direction:row;flex-wrap:wrap}}
+@media(max-width:600px){.filter-options button{font-size:.8125rem}.project-format{font-size:.6875rem}.project-name h3{font-size:18px}}
