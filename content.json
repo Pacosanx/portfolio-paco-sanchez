@@ -6225,15 +6225,6 @@
       "fuente": "https://www.behance.net/gallery/154717681/Tipografia-como-imagen-TP4-DG1-Catedra-Gabriele",
       "imagenes": [
         {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
-          "width": 1400,
-          "height": 1066,
-          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "caption": "",
-          "sourceModule": "Project Module 1"
-        },
-        {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f54a9c154717681.634726f0aab29.jpg",
           "width": 1400,
           "height": 1942,
@@ -6324,15 +6315,6 @@
           ],
           "sourceModule": "Project Module 0",
           "heading": "Del afiche a la publicación"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e9d63d154717681.634726f0adba7.jpg",
-          "width": 1400,
-          "height": 1066,
-          "alt": "brochure diseño gráfico editorial fadu folleto Gabriele Technology typography  ",
-          "caption": "",
-          "sourceModule": "Project Module 1"
         },
         {
           "type": "gallery",
