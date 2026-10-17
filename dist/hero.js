@@ -34,7 +34,8 @@
       return mod(2.0 * p.x + 3.0 * p.y, 4.0);
     }
     float profile(float d, float width) {
-      return exp(-pow(d / width, 2.0) * 1.35);
+      float normalizedDistance = d / width;
+      return exp(-(normalizedDistance * normalizedDistance) * 1.35);
     }
 
     void main() {
@@ -62,7 +63,8 @@
       vec3 cobalt = vec3(0.012, 0.085, 0.84);
       vec3 cyan = vec3(0.0, 0.47, 0.76);
       vec3 tint = mix(cobalt, cyan, clamp(edges * 0.76 + smoothstep(0.52, 0.97, gradientX) * 0.16, 0.0, 1.0));
-      float green = exp(-pow((gradientX - 0.76) / 0.12, 2.0));
+      float greenDistance = (gradientX - 0.76) / 0.12;
+      float green = exp(-(greenDistance * greenDistance));
       tint = mix(tint, vec3(0.005, 0.64, 0.24), green * 0.30);
       float split = (0.002 + edges * 0.004) * sin(travel * 3.14159265);
       vec3 core = vec3(profile(d + split, width), profile(d, width), profile(d - split, width));
@@ -132,8 +134,8 @@
   const compactDevice = matchMedia('(max-width: 700px), (pointer: coarse)').matches;
   const lensMapWidth = compactDevice ? 64 : 128;
   const lensMapHeight = compactDevice ? 32 : 64;
-  const lensPixelBudget = compactDevice ? 280000 : 1400000;
-  const lensPixelRatioLimit = compactDevice ? 1 : 1.5;
+  const lensPixelBudget = compactDevice ? 280000 : 1100000;
+  const lensPixelRatioLimit = compactDevice ? 1 : 1.35;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let inView = true;
   let frame = 0;
@@ -226,7 +228,8 @@
     const progressStep = compactDevice ? 0.004 : 0.001;
     const scrollStep = compactDevice ? 2.5 : 0.5;
     if (Math.abs(lastLensProgress - scrollProgress) < progressStep && Math.abs(lastLensScroll - scrollY) < scrollStep && lastLensSize === size) return;
-    if (compactDevice && now - lastLensUpdate < 1000 / 15 && lastLensSize === size) return;
+    const lensUpdateRate = compactDevice ? 15 : 24;
+    if (now - lastLensUpdate < 1000 / lensUpdateRate && lastLensSize === size) return;
     lastLensProgress = scrollProgress;
     lastLensScroll = scrollY;
     lastLensSize = size;
@@ -338,7 +341,8 @@
     if (!inView || document.hidden || reduced.matches || lost) return;
     const scrollMoving = Math.abs(targetScroll - scrollProgress) > 0.002;
     const pointerMoving = Math.abs(targetPointer.x - pointer.x) + Math.abs(targetPointer.y - pointer.y) + Math.abs(targetPointer.active - pointer.active) > 0.01;
-    const frameInterval = compactDevice ? 1000 / (scrollMoving || pointerMoving ? 24 : 15) : 1000 / 30;
+    const frameRate = compactDevice ? (scrollMoving || pointerMoving ? 24 : 15) : (scrollMoving || pointerMoving ? 30 : 24);
+    const frameInterval = 1000 / frameRate;
     if (now - last >= frameInterval) {
       const dt = Number.isFinite(last) ? Math.min(now - last, 80) / 1000 : 1 / 30;
       elapsed += dt;
