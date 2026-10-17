@@ -161,7 +161,7 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="development-section shell" id="en-desarrollo" aria-labelledby="development-title">
   <h2 class="eyebrow" id="development-title">En proceso</h2>
   <div class="development-projects">
-    ${developmentProjects.map((p,i)=>`<a class="development-project" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="development-meta"><span class="mono">${number(i)}</span><span class="mono">${esc(p.status)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><span class="development-cta">Ver proyecto</span></a>`).join('')}
+    ${developmentProjects.map(p=>`<a class="development-project resource-entry" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="resource-heading"><p class="resource-kicker mono">${esc(p.status)}</p><h3>${esc(p.title)}</h3></div><div class="resource-context"><p>${esc(p.summary)}</p></div><span class="text-link resource-link">Ver proyecto</span></a>`).join('')}
   </div>
 </section>
 ${parallelSection(sitePath)}

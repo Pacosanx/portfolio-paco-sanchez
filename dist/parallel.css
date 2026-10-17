@@ -1,13 +1,15 @@
 .parallel{row-gap:0;padding-bottom:176px}
 .parallel .datita{grid-column:4/13;max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,96px);align-items:start}
-.parallel .datita-heading{grid-column:1;max-width:380px}
-.parallel .datita-context{grid-column:1/-1;padding-top:0;max-width:540px;margin-top:36px}
-.parallel .resource-kicker{margin-bottom:30px;color:var(--muted)}
-.parallel .datita-context>p{font-size:1.0625rem;line-height:1.75;color:var(--secondary)}
+.resource-entry{min-width:0}
+.resource-entry .resource-heading{grid-column:1/-1;max-width:380px}
+.resource-entry .resource-heading h3{margin:0;font-size:clamp(26px,2.3vw,36px);line-height:1.14;letter-spacing:-.03em}
+.resource-entry .resource-context{grid-column:1/-1;padding-top:0;max-width:540px;margin-top:36px}
+.resource-entry .resource-kicker,.parallel .resource-kicker{margin-bottom:30px;color:var(--muted)}
+.resource-entry .resource-context>p{font-size:1.0625rem;line-height:1.75;color:var(--secondary)}
 .parallel .datita-context>p.resource-note{font-size:.8125rem;line-height:1.8;color:var(--muted);margin-top:26px}
 .parallel article>a.datita-preview{grid-column:1/-1;display:block;width:100%;margin-top:64px;border:1px solid var(--line);overflow:hidden}
 .parallel .datita-preview img{display:block;width:100%;height:auto}
-.parallel article>a.datita-link{grid-column:1/-1;justify-self:start;margin-top:24px;font-size:.9375rem;line-height:1.7}
+.resource-entry>.resource-link{display:inline-block;grid-column:1/-1;justify-self:start;margin-top:24px;font-size:.9375rem;line-height:1.7}
 .parallel .lab{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;width:100vw;margin:152px 0 0 calc(50% - 50vw);padding-inline:var(--gutter);max-width:none}
 .parallel .lab-heading{grid-column:4/13;max-width:300px}
 .parallel .lab-description{font-size:1rem;line-height:1.75;color:var(--secondary);margin-top:28px}
@@ -39,6 +41,6 @@
 .parallel .lab-entry-number{font-size:.7rem;color:var(--muted)}
 .parallel .lab-entry-title{overflow:hidden;font-size:.9375rem;line-height:1.5;text-overflow:ellipsis;white-space:nowrap}
 .parallel .lab-entry-action{font-size:.8125rem;color:var(--muted);text-align:right;white-space:nowrap}
-@media(max-width:1000px){.parallel{padding-bottom:120px}.parallel .datita{grid-column:4/13;display:block}.parallel .datita-context{max-width:500px;margin-top:36px}.parallel article>a.datita-preview{margin-top:48px}.parallel .lab{grid-column:1/-1;margin-top:120px}.parallel .lab-heading{grid-column:3/13}}
-@media(max-width:600px){.parallel{padding-bottom:88px}.parallel .datita{max-width:none;margin-left:0}.parallel .datita-context{margin-top:28px}.parallel .datita-context>p{font-size:1rem}.parallel article>a.datita-preview{margin-top:40px}.parallel .lab{display:block;margin-top:100px}.parallel .lab-heading{max-width:300px}.parallel .lab-gallery{margin-top:36px}.parallel .lab-entry{width:min(var(--lab-card-width,320px),calc(100vw - 2 * var(--gutter)));max-width:none;height:357px}.parallel .lab-entry-caption{padding-inline:12px}}
+@media(max-width:1000px){.parallel{padding-bottom:120px}.parallel .datita{grid-column:4/13;display:block}.resource-entry .resource-context{max-width:500px;margin-top:36px}.parallel article>a.datita-preview{margin-top:48px}.parallel .lab{grid-column:1/-1;margin-top:120px}.parallel .lab-heading{grid-column:3/13}}
+@media(max-width:600px){.resource-entry .resource-heading h3{font-size:28px}.parallel{padding-bottom:88px}.parallel .datita{max-width:none;margin-left:0}.resource-entry .resource-context{margin-top:28px}.resource-entry .resource-context>p{font-size:1rem}.parallel article>a.datita-preview{margin-top:40px}.parallel .lab{display:block;margin-top:100px}.parallel .lab-heading{max-width:300px}.parallel .lab-gallery{margin-top:36px}.parallel .lab-entry{width:min(var(--lab-card-width,320px),calc(100vw - 2 * var(--gutter)));max-width:none;height:357px}.parallel .lab-entry-caption{padding-inline:12px}}
 @media(prefers-reduced-motion:reduce){.parallel .lab-gallery{scroll-behavior:auto}}
