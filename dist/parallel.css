@@ -31,6 +31,8 @@
 .parallel .lab-set>.lab-entry:nth-child(12){--lab-card-width:366px}\n.parallel .lab-set>.lab-entry:nth-child(n+13){--lab-card-width:540px}
 .parallel .lab-entry:hover,.parallel .lab-entry:focus-visible{color:var(--text)}
 .parallel .lab-entry:hover{border-color:var(--muted)}
+.parallel .lab-entry-media:hover{color:var(--secondary);border-color:var(--line)}
+.parallel .lab-entry-media .lab-entry-caption{grid-template-columns:34px minmax(0,1fr)}
 .parallel .lab-entry:focus-visible{outline:2px solid var(--text);outline-offset:4px}
 .parallel .lab-entry img{display:block;width:100%;height:100%;min-height:0;object-fit:cover;object-position:center center;background:#000;-webkit-user-drag:none}
 .parallel .lab-entry-caption{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:12px;min-width:0;height:52px;box-sizing:border-box;overflow:hidden;padding:0 16px}
