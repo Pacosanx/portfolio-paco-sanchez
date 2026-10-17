@@ -2,28 +2,29 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 const content=JSON.parse(fs.readFileSync('content.json','utf8'));
+const projects=content.projects.filter(p=>!['/proyectos/algo-esta-mutando','/proyectos/editorial-tipografico-2021','/proyectos/pirana-modelado-3d'].includes(p.ruta));
 const home=fs.readFileSync('dist/index.html','utf8');
 const basePath=(home.match(/data-base-path="([^"]*)"/)||[])[1]||'';
 const assetUrl=url=>url.startsWith('/')&&!url.startsWith('//')?basePath+url:url;
 const localPath=url=>path.join('dist',url.slice(basePath.length));
-assert.equal((home.match(/class="project-row"/g)||[]).length,content.projects.length);
-assert.equal((home.match(/<template data-project-template/g)||[]).length,content.projects.length);
+assert.equal((home.match(/class="project-row"/g)||[]).length,projects.length);
+assert.equal((home.match(/<template data-project-template/g)||[]).length,projects.length);
 assert(home.includes('id="project-filter"')&&home.includes('aria-controls="project-index"'));
-assert.equal((home.match(/data-overflow hidden/g)||[]).length,Math.max(0,content.projects.length-15));
-assert.equal(content.projects[0].ruta,'/proyectos/metaphex');
-assert(content.projects.some(p=>p.ruta==='/proyectos/historias-instagram'));
+assert.equal((home.match(/data-overflow hidden/g)||[]).length,Math.max(0,projects.length-15));
+assert.equal(projects[0].ruta,'/proyectos/metaphex');
+assert(projects.some(p=>p.ruta==='/proyectos/historias-instagram'));
 assert(!home.includes('class="touch-preview"'));
 assert(!home.includes('Índice de proyectos'));
 assert.equal((home.match(/Auxiliar docente de /g)||[]).length,3);
 assert(home.includes('<details id="project-filter"')&&!home.includes('<select id="project-filter"'));
-assert.equal((home.match(/data-categories="[^"]+"/g)||[]).length,content.projects.length);
+assert.equal((home.match(/data-categories="[^"]+"/g)||[]).length,projects.length);
 assert(!home.includes('wa.me/')&&!home.includes('WhatsApp'));
 assert(!home.includes('/proyectos/algo-esta-mutando')&&!home.includes('/proyectos/editorial-tipografico-2021'));
 assert(home.includes('Universidad Torcuato Di Tella')&&home.includes('Longinotti 2')&&home.includes('Longinotti 1'));
 assert.equal((home.match(/class="cv-table"/g)||[]).length,2);
 assert(home.includes('<dialog id="project-viewer"'));
 assert(home.includes(`src="${basePath}/assets/dddp-preview.png"`));
-const htmlFiles=['dist/index.html',...content.projects.map(p=>path.join('dist',p.ruta,'index.html'))];
+const htmlFiles=['dist/index.html',...projects.map(p=>path.join('dist',p.ruta,'index.html'))];
 let links=0,images=0;
 for(const file of htmlFiles){
   const html=fs.readFileSync(file,'utf8');
@@ -48,7 +49,7 @@ for(const file of htmlFiles){
     }
   }
 }
-for(const [i,p] of content.projects.entries()){
+for(const [i,p] of projects.entries()){
   const html=fs.readFileSync(htmlFiles[i+1],'utf8');
   const blocks=p.blocks||p.imagenes.map(image=>({type:'image',...image}));
   const galleryImages=blocks.flatMap(b=>b.type==='image'?[b]:b.type==='gallery'?b.images:[]);
@@ -67,15 +68,15 @@ for(const [i,p] of content.projects.entries()){
   assert(html.includes(assetUrl(p.fuente).replaceAll('&','&amp;')),p.title);
   if(p.theme)assert(html.includes(`--bg:${p.theme.bg}`),`${p.title}: missing project canvas color`);
   for(const link of p.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
-  assert(html.includes(i<content.projects.length-1?content.projects[i+1].ruta+'/':'/#proyectos'),p.title);
+  assert(html.includes(i<projects.length-1?projects[i+1].ruta+'/':'/#proyectos'),p.title);
 }
 const previews=JSON.parse(fs.readFileSync('dist/preview-data.json','utf8'));
-assert.equal(previews.length,content.projects.length);
+assert.equal(previews.length,projects.length);
 for(const [i,preview] of previews.entries()){
-  assert(preview.images.length>=3,`${content.projects[i].title}: at least three previews required`);
-  assert.equal(preview.images[0].role,'whole',`${content.projects[i].title}: the first preview must show the complete piece`);
+  assert(preview.images.length>=3,`${projects[i].title}: at least three previews required`);
+  assert.equal(preview.images[0].role,'whole',`${projects[i].title}: the first preview must show the complete piece`);
   for(const image of preview.images){
-    assert(image.width>0&&image.height>0,content.projects[i].title);
+    assert(image.width>0&&image.height>0,projects[i].title);
     if(image.src.startsWith('/'))assert(fs.existsSync(localPath(image.src)),image.src);
     if(image.crop){
       const c=image.crop;
@@ -83,7 +84,7 @@ for(const [i,preview] of previews.entries()){
     }
     if(image.clipPath)assert(/^(polygon|inset)\([\d\s.,%+-]+\)$/.test(image.clipPath),`${image.src}: invalid image clipping path`);
   }
-  if(content.projects[i].imagenes.length)for(const image of preview.images)assert.notEqual(image.src,content.projects[i].preview);
+  if(projects[i].imagenes.length)for(const image of preview.images)assert.notEqual(image.src,projects[i].preview);
 }
-console.log(JSON.stringify({pages:htmlFiles.length,internalLinks:links,imageReferences:images,projectImages:content.projects.reduce((n,p)=>n+p.imagenes.length,0),passed:true}));
+console.log(JSON.stringify({pages:htmlFiles.length,internalLinks:links,imageReferences:images,projectImages:projects.reduce((n,p)=>n+p.imagenes.length,0),passed:true}));
 
