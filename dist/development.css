@@ -1,4 +1,4 @@
-.development-section{margin-top:144px;padding-top:64px;padding-bottom:132px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start;scroll-margin-top:48px}
+.development-section{margin-top:144px;padding:64px 0 48px;border-top:1px solid var(--line);display:grid;padding-inline:0;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start;scroll-margin-top:48px}
 .development-heading{grid-column:4/13;max-width:none}
 .development-heading>.eyebrow{color:var(--muted);margin-bottom:30px}
 .development-heading h2{font-size:clamp(26px,2.3vw,36px);line-height:1.14;letter-spacing:-.03em}
@@ -8,5 +8,8 @@
 .development-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.6875rem;line-height:1.6}
 .development-project h3{margin-top:68px;font-size:clamp(26px,2.2vw,36px);line-height:1.14;letter-spacing:-.035em}
 .development-project>p{margin-top:14px;color:var(--secondary);font-size:.875rem;line-height:1.7}
-@media(max-width:1000px){.development-section{margin-top:112px;padding-top:48px;padding-bottom:100px}.development-heading{grid-column:4/13}.development-projects{grid-column:4/13;column-gap:32px}.development-project{min-height:208px}}
-@media(max-width:600px){.development-section{display:block;margin-top:88px;padding-top:40px;padding-bottom:88px}.development-heading{max-width:360px}.development-heading h2 br{display:none}.development-heading>p:last-child{margin-top:18px}.development-projects{display:block;margin-top:48px}.development-project{min-height:0;padding:16px 0 28px}.development-project h3{margin-top:42px;font-size:29px}.development-projects .development-project:last-child{border-bottom:1px solid var(--line)}}
+@media(max-width:1000px){.development-section{margin-top:112px;padding-top:48px;padding-bottom:40px}.development-heading{grid-column:4/13}.development-projects{grid-column:4/13;column-gap:32px}.development-project{min-height:208px}}
+.development-section+.parallel{margin-top:96px}
+@media(max-width:1000px){.development-section+.parallel{margin-top:80px}}
+@media(max-width:600px){.development-section+.parallel{margin-top:64px}}
+@media(max-width:600px){.development-section{display:block;margin-top:88px;padding:40px 0 40px}.development-heading{max-width:360px}.development-heading h2 br{display:none}.development-heading>p:last-child{margin-top:18px}.development-projects{display:block;margin-top:48px}.development-project{min-height:0;padding:16px 0 28px}.development-project h3{margin-top:42px;font-size:29px}.development-projects .development-project:last-child{border-bottom:1px solid var(--line)}}
