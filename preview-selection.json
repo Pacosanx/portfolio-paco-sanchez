@@ -93,85 +93,115 @@
   ],
   "/proyectos/editorial-espacial": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/40e3d8190740099.65c01f055e159.gif",
-      "width": 1400,
-      "height": 525,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/770b94190740099.65c1362a2b144.jpg",
+      "width": 1280,
+      "height": 853,
       "role": "whole"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/683611190740099.65c02bb74b675.jpg",
-      "width": 1400,
-      "height": 525,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8f80b190740099.65c1362abf350.jpg",
+      "width": 1280,
+      "height": 853,
       "role": "detail"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1270ca190740099.65c02d5fb387e.jpg",
-      "width": 1400,
-      "height": 306,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/70f71d190740099.65c1362b74adb.jpg",
+      "width": 1280,
+      "height": 853,
       "role": "detail"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e65744190740099.65c02bb750220.jpg",
-      "width": 1400,
-      "height": 525,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d10abb190740099.65c1362b76503.jpg",
+      "width": 1280,
+      "height": 853,
       "role": "detail"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/c2c6da190740099.65c02bb74caaa.gif",
-      "width": 1400,
-      "height": 525,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
+      "width": 1280,
+      "height": 853,
       "role": "detail"
     }
   ],
   "/proyectos/editorial-registros": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
-      "width": 1400,
-      "height": 247,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a252cd190030769.65bab83a26f5b.jpg",
+      "width": 1280,
+      "height": 853,
       "role": "whole"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
-      "width": 1400,
-      "height": 247,
-      "role": "detail"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d2405f190030769.65bab83ad190e.jpg",
+      "width": 1280,
+      "height": 853,
+      "role": "detail",
+      "crop": {
+        "x": 0.03,
+        "y": 0.02,
+        "width": 0.5,
+        "height": 0.88
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/50df76190030769.65baac573895e.png",
-      "width": 1400,
-      "height": 247,
-      "role": "detail"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f89173190030769.65bab83ad05df.jpg",
+      "width": 1280,
+      "height": 853,
+      "role": "detail",
+      "crop": {
+        "x": 0.02,
+        "y": 0.1,
+        "width": 0.54,
+        "height": 0.86
+      }
     }
   ],
   "/proyectos/editorial-tipografico-2023": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c818d0189668095.65b1b5aa1898e.png",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe8e99189668095.65b2c9973894e.jpg",
       "width": 1280,
-      "height": 428,
+      "height": 853,
       "role": "whole"
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7404d7189668095.65b1b5aa1e9b2.png",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/66234b189668095.65b2c99805713.jpg",
       "width": 1280,
-      "height": 428,
-      "role": "detail"
+      "height": 863,
+      "role": "detail",
+      "crop": {
+        "x": 0.46,
+        "y": 0.13,
+        "width": 0.4,
+        "height": 0.76
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2c0b21189668095.65b1b5aa1993f.png",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3837b3189668095.65b2c9980665d.jpg",
       "width": 1280,
-      "height": 428,
-      "role": "detail"
+      "height": 863,
+      "role": "detail",
+      "crop": {
+        "x": 0.46,
+        "y": 0.08,
+        "width": 0.4,
+        "height": 0.82
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ac307a189668095.65b1b5aa1cfb2.png",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/91310f189668095.65b2c99804b5a.jpg",
       "width": 1280,
-      "height": 428,
-      "role": "detail"
+      "height": 863,
+      "role": "detail",
+      "crop": {
+        "x": 0.43,
+        "y": 0.13,
+        "width": 0.39,
+        "height": 0.78
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1fe279189668095.65b1b5aa1bd0c.png",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/750e50189668095.65b2c99883096.jpg",
       "width": 1280,
-      "height": 428,
+      "height": 863,
       "role": "detail"
     }
   ],
