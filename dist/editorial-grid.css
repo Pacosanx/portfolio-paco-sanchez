@@ -1,12 +1,6 @@
 .opening-copy{grid-column:4/11}
 .opening-copy>p{max-width:540px}
 .contact-main{grid-column:4/10}
-@media(min-width:601px){
- .project-row{grid-template-columns:minmax(0,1fr) 42px}
- .project-no{position:absolute;left:-52px;top:18px;width:28px}
- .index-more{margin-left:0}
-}
-@media(min-width:1600px){.project-no{top:19px}}
 @media(min-width:1001px){
  .site-header{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
  .site-header .identity{grid-column:1/4}
