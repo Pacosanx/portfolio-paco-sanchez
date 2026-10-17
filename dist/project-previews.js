@@ -88,10 +88,10 @@
       const whole = card.dataset.role === 'whole';
       const layout = wrap.dataset.layout;
       const count = wrap.children.length;
-      const mainWidth = count > 3 ? .56 : layout === 'fan' ? .88 : layout === 'poster' ? .76 : .91;
-      const detailWidth = count > 5 ? .29 : count > 3 ? .36 : i === 1 ? .65 : .61;
+      const mainWidth = count > 5 ? .4 : count > 3 ? .48 : .74;
+      const detailWidth = count > 5 ? .24 : count > 3 ? .32 : .48;
       const maxWidth = width * (whole ? mainWidth : detailWidth);
-      const maxHeight = height * (whole ? (count > 3 ? .62 : ratio < 1 ? .82 : .68) : count > 3 ? .36 : i === 1 ? .49 : .45);
+      const maxHeight = height * (whole ? (count > 5 ? .45 : count > 3 ? .56 : ratio < 1 ? .78 : .64) : count > 5 ? .28 : count > 3 ? .34 : .44);
       const cardWidth = Math.min(maxWidth, maxHeight * ratio);
       card.style.width = `${cardWidth}px`;
       card.style.height = `${cardWidth / ratio}px`;
