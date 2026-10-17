@@ -129,6 +129,11 @@
   gl.enableVertexAttribArray(position);
   gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
   const uniforms = Object.fromEntries(['resolution', 'pixelRatio', 'time', 'pointer', 'scrollProgress', 'viewGeometry'].map(key => [key, gl.getUniformLocation(program, key)]));
+  const compactDevice = matchMedia('(max-width: 700px), (pointer: coarse)').matches;
+  const lensMapWidth = compactDevice ? 96 : 128;
+  const lensMapHeight = compactDevice ? 48 : 64;
+  const lensPixelBudget = compactDevice ? 560000 : 1400000;
+  const lensPixelRatioLimit = compactDevice ? 1 : 1.5;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let inView = true;
   let frame = 0;
@@ -205,20 +210,26 @@
     filter.append(map, smoothMap, displacement, softText, red, green, blue, redOffset, blueOffset, redGreen, chromaticText);
     filterSvg.append(filter);
     const bitmap = document.createElement('canvas');
-    bitmap.width = 128;
-    bitmap.height = 64;
+    bitmap.width = lensMapWidth;
+    bitmap.height = lensMapHeight;
     return { element, filter, map, bitmap, context: bitmap.getContext('2d'), redOffset, blueOffset };
   });
   let lastLensProgress = -1;
   let lastLensScroll = -1;
   let lastLensSize = '';
+  let lastLensUpdate = -Infinity;
 
   function refractText(fieldBounds) {
     const size = `${innerWidth}:${innerHeight}`;
-    if (Math.abs(lastLensProgress - scrollProgress) < 0.001 && Math.abs(lastLensScroll - scrollY) < 0.5 && lastLensSize === size) return;
+    const now = performance.now();
+    const progressStep = compactDevice ? 0.004 : 0.001;
+    const scrollStep = compactDevice ? 2.5 : 0.5;
+    if (Math.abs(lastLensProgress - scrollProgress) < progressStep && Math.abs(lastLensScroll - scrollY) < scrollStep && lastLensSize === size) return;
+    if (compactDevice && now - lastLensUpdate < 1000 / 18 && lastLensSize === size) return;
     lastLensProgress = scrollProgress;
     lastLensScroll = scrollY;
     lastLensSize = size;
+    lastLensUpdate = now;
     const travel = 1 - Math.pow(1 - scrollProgress, 1.6);
     const bandY = 0.16 + travel;
     const width = 0.12 + 0.08 * Math.sin(travel * Math.PI);
@@ -234,6 +245,17 @@
         lens.element.style.removeProperty('filter');
         continue;
       }
+      const centerX = (bounds.left + bounds.right) * 0.5;
+      const centerY = (bounds.top + bounds.bottom) * 0.5;
+      const centerRayX = ((centerX - fieldBounds.left) / fieldBounds.width - 0.5) * 2;
+      const centerViewY = 1 - centerY / innerHeight;
+      const centerRayY = (centerViewY - 0.5) * 2;
+      const centerSurfaceY = 0.5 + (centerViewY - 0.5) / (1 + curvature * centerRayX * centerRayX + 0.20 * centerRayY * centerRayY);
+      const centerDistance = (centerSurfaceY - bandY) / width;
+      if (Math.abs(centerDistance) > 2.8) {
+        lens.element.style.removeProperty('filter');
+        continue;
+      }
       const distortionFade = smooth(0.015, 0.22, scrollProgress);
       const departure = smooth(0.12, 0.48, scrollProgress) * (1 - smooth(12, 180, bounds.top));
       const channelShift = 0.25 + departure * 1.2;
@@ -242,12 +264,12 @@
       const pad = 32;
       const w = bounds.width + pad * 2;
       const h = bounds.height + pad * 2;
-      const image = lens.context.createImageData(128, 64);
+      const image = lens.context.createImageData(lensMapWidth, lensMapHeight);
       let strongest = 0;
-      for (let y = 0; y < 64; y++) {
-        for (let x = 0; x < 128; x++) {
-          const screenX = bounds.left - pad + (x + 0.5) / 128 * w;
-          const screenY = bounds.top - pad + (y + 0.5) / 64 * h;
+      for (let y = 0; y < lensMapHeight; y++) {
+        for (let x = 0; x < lensMapWidth; x++) {
+          const screenX = bounds.left - pad + (x + 0.5) / lensMapWidth * w;
+          const screenY = bounds.top - pad + (y + 0.5) / lensMapHeight * h;
           const rx = ((screenX - fieldBounds.left) / fieldBounds.width - 0.5) * 2;
           const vy = 1 - screenY / innerHeight;
           const ry = (vy - 0.5) * 2;
@@ -255,7 +277,7 @@
           const d = (surfaceY - bandY) / width;
           const influence = Math.exp(-d * d * 1.35);
           strongest = Math.max(strongest, influence);
-          const offset = (y * 128 + x) * 4;
+          const offset = (y * lensMapWidth + x) * 4;
           image.data[offset] = 128 + rx * influence * 20 / 64 * 255 * distortionFade;
           image.data[offset + 1] = 128 - d * influence * 42 / 64 * 255 * distortionFade;
           image.data[offset + 2] = 128;
@@ -300,7 +322,7 @@
   }
   function resize() {
     const { width, height } = field.getBoundingClientRect();
-    const ratio = Math.min(devicePixelRatio || 1, 1.5, Math.sqrt(1400000 / Math.max(1, width * height)));
+    const ratio = Math.min(devicePixelRatio || 1, lensPixelRatioLimit, Math.sqrt(lensPixelBudget / Math.max(1, width * height)));
     canvas.width = Math.max(1, Math.round(width * ratio));
     canvas.height = Math.max(1, Math.round(height * ratio));
     gl.viewport(0, 0, canvas.width, canvas.height);
