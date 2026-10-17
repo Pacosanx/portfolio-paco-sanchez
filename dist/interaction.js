@@ -16,6 +16,7 @@
     template.dataset.projectIndex=String(i);
     template.dataset.projectCount=String(developmentLinks.length);
     document.body.append(template);
+    templates.push(template);
   });
   const byRoute=new Map(templates.map(t=>[t.dataset.projectRoute,t]));
   const bySlug=new Map(templates.map(t=>[t.dataset.projectSlug,t]));
