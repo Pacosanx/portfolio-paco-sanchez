@@ -4,20 +4,6 @@
   const content=viewer.querySelector('[data-viewer-content]');
   const counter=viewer.querySelector('[data-viewer-index]');
   const templates=[...document.querySelectorAll('[data-project-template]')];
-  const developmentLinks=[...document.querySelectorAll('.development-project')];
-  developmentLinks.forEach((link,i)=>{
-    const template=document.createElement('template');
-    const route=link.getAttribute('href');
-    template.dataset.projectTemplate='';
-    template.dataset.projectKind='development';
-    template.dataset.projectRoute=route;
-    template.dataset.projectSlug=new URL(route,location.href).pathname.split('/').filter(Boolean).at(-1);
-    template.dataset.projectTitle=link.querySelector('h3')?.textContent.trim()||'Proyecto en desarrollo';
-    template.dataset.projectIndex=String(i);
-    template.dataset.projectCount=String(developmentLinks.length);
-    document.body.append(template);
-    templates.push(template);
-  });
   const byRoute=new Map(templates.map(t=>[t.dataset.projectRoute,t]));
   const bySlug=new Map(templates.map(t=>[t.dataset.projectSlug,t]));
   const baseTitle=document.title;
@@ -30,14 +16,7 @@
   };
   const fill=template=>{
     viewer.style.cssText=template.dataset.projectTheme||'';
-    if(template.dataset.projectKind==='development'){
-      const frame=document.createElement('iframe');
-      frame.className='development-project-frame';
-      frame.src=template.dataset.projectRoute+'?panel=1';
-      frame.title=template.dataset.projectTitle;
-      frame.setAttribute('loading','eager');
-      content.replaceChildren(frame);
-    }else content.replaceChildren(template.content.cloneNode(true));
+    content.replaceChildren(template.content.cloneNode(true));
     const filtered=document.querySelector('#project-filter')?.dataset.value;
     const searching=document.querySelector('#project-program')?.value.trim();
     if((filtered&&filtered!=='todos')||searching){
@@ -51,7 +30,7 @@
         if(next)link.removeAttribute('data-close-project');else link.setAttribute('data-close-project','');
       }
     }
-    counter.textContent=template.dataset.projectKind==='development'?`En desarrollo / ${String(Number(template.dataset.projectIndex)+1).padStart(2,'0')} de ${template.dataset.projectCount}`:`Proyecto / ${String(Number(template.dataset.projectIndex)+1).padStart(2,'0')} de ${templates.length-developmentLinks.length}`;
+    counter.textContent=template.dataset.projectKind==='development'?`En desarrollo / ${String(Number(template.dataset.projectIndex)+1).padStart(2,'0')} de ${template.dataset.projectCount}`:`Proyecto / ${String(Number(template.dataset.projectIndex)+1).padStart(2,'0')} de ${templates.filter(t=>t.dataset.projectKind!=='development').length}`;
     document.title=`${template.dataset.projectTitle} — Paco Sanchez`;
     viewer.scrollTop=0;
   };
@@ -122,6 +101,12 @@
   });
   viewer.addEventListener('click',event=>{
     if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const stageLink=event.target.closest('.development-stage-nav a');
+    if(stageLink){
+      const target=content.querySelector(stageLink.getAttribute('href'));
+      if(target){event.preventDefault();target.scrollIntoView({behavior:reducedMotion.matches?'instant':'smooth',block:'start'});}
+      return;
+    }
     if(event.target.closest('[data-close-project]')){event.preventDefault();close()}
     else if(event.target===viewer&&event.clientX<viewer.getBoundingClientRect().left)close();
   });
