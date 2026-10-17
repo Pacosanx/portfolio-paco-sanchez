@@ -2,6 +2,7 @@
 .opening-label{grid-row:1;grid-column:1/4}
 .opening-copy{grid-row:1;grid-column:4/10}
 .opening-lead{grid-row:1;grid-column:11/13;margin-top:9px;font-size:.875rem;line-height:1.8;color:var(--secondary);max-width:260px}
+@media(min-width:1001px){.opening-lead{justify-self:end;text-align:right}}
 .opening-cue{grid-row:3;grid-column:4/10;justify-self:start;align-self:end;color:var(--secondary);font-size:.75rem;line-height:1.6;padding-bottom:8px;border-bottom:1px solid #444;transition:color 180ms ease,border-color 180ms ease}
 .opening-cue:hover{color:var(--text);border-color:var(--text)}
 .opening-atmosphere{position:absolute;z-index:0;pointer-events:none;left:calc(-1 * var(--gutter));right:calc(-1 * var(--gutter));top:0;bottom:-220px;height:auto;overflow:hidden;background:linear-gradient(90deg,#005baf,#0a24dc 48%,#008e99);mask-image:radial-gradient(ellipse 100% 40% at 50% 108%,#000 15%,transparent 98%);-webkit-mask-image:radial-gradient(ellipse 100% 40% at 50% 108%,#000 15%,transparent 98%)}
