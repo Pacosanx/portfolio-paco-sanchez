@@ -6,7 +6,8 @@ import { parallelSection } from './parallel.mjs';
 import { projectFilters, projectCategories } from './filters.mjs';
 
 const content=JSON.parse(fs.readFileSync(new URL('./content.json',import.meta.url),'utf8'));
-const projects=content.projects.filter(p=>!['/proyectos/algo-esta-mutando','/proyectos/editorial-tipografico-2021'].includes(p.ruta));
+const projects=content.projects.filter(p=>!['/proyectos/algo-esta-mutando','/proyectos/editorial-tipografico-2021','/proyectos/pirana-modelado-3d'].includes(p.ruta));
+if(!projects.some(p=>p.ruta==='/proyectos/pirana-modelado-3d'))fs.rmSync(new URL('./dist/proyectos/pirana-modelado-3d/',import.meta.url),{recursive:true,force:true});
 const projectCount=projects.length;
 const years=projects.map(p=>Number(p.anio)).filter(Number.isFinite);
 const period=[Math.min(...years),Math.max(...years)].join('–');

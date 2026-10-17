@@ -87,9 +87,11 @@
       const ratio = Number(card.dataset.ratio) || 1;
       const whole = card.dataset.role === 'whole';
       const layout = wrap.dataset.layout;
-      const mainWidth = layout === 'fan' ? .88 : layout === 'poster' ? .76 : .91;
-      const maxWidth = width * (whole ? mainWidth : i === 1 ? .65 : .61);
-      const maxHeight = height * (whole ? (ratio < 1 ? .82 : .68) : i === 1 ? .49 : .45);
+      const count = wrap.children.length;
+      const mainWidth = count > 3 ? .56 : layout === 'fan' ? .88 : layout === 'poster' ? .76 : .91;
+      const detailWidth = count > 5 ? .29 : count > 3 ? .36 : i === 1 ? .65 : .61;
+      const maxWidth = width * (whole ? mainWidth : detailWidth);
+      const maxHeight = height * (whole ? (count > 3 ? .62 : ratio < 1 ? .82 : .68) : count > 3 ? .36 : i === 1 ? .49 : .45);
       const cardWidth = Math.min(maxWidth, maxHeight * ratio);
       card.style.width = `${cardWidth}px`;
       card.style.height = `${cardWidth / ratio}px`;
@@ -115,8 +117,8 @@
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
     stage.classList.remove('is-visible');
     position();
-    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 3);
-    if (assets.length < 3) { wrap.replaceChildren(); return; }
+    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 7);
+    if (assets.length < 3) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); return; }
     const current = () => token === request && selected === i && desktop.matches;
     try {
       const entries = assets.map(load);
@@ -126,6 +128,7 @@
       await Promise.all(cards.map(({ image }) => image.decode()));
       if (!current()) return;
       wrap.replaceChildren(...cards.map(({ card }) => card));
+      wrap.dataset.previewCount = String(cards.length);
       wrap.dataset.projectIndex = i;
       stage.classList.toggle('is-visible', position());
     } catch { if (current()) wrap.replaceChildren(); }
@@ -164,7 +167,7 @@
   const reposition = () => {
     cancelAnimationFrame(frame);
     frame = requestAnimationFrame(() => {
-      stage.classList.toggle('is-visible', Number(wrap.dataset.projectIndex) === selected && wrap.childElementCount === 3 && position());
+      stage.classList.toggle('is-visible', Number(wrap.dataset.projectIndex) === selected && wrap.childElementCount === Number(wrap.dataset.previewCount || 0) && position());
     });
   };
   window.addEventListener('scroll', reposition, { passive: true });

@@ -1774,7 +1774,7 @@
       "title": "Experiencia VR / Medios Groisman 2",
       "ruta": "/proyectos/vr-medios-groisman-2",
       "anio": "2024",
-      "descripcion": "Exploración espacial y narrativa sonora en realidad virtual. Un bosque conecta objetos infantiles, interiores y figuras; la cercanía a cada zona activa las voces y los sonidos del recorrido.",
+      "descripcion": "Una pesadilla infantil reconstruida como fragmentos de memoria: escenas familiares aparecen desordenadas, deformadas y conectadas por sonidos que se activan al acercarse.",
       "herramientas": "Unity",
       "tools": [
         "Unity"
@@ -1784,34 +1784,6 @@
       "fuente": "/assets/vr-medios2/recorrido-completo.mp4",
       "fuenteLabel": "Ver recorrido completo",
       "imagenes": [
-        {
-          "url": "/assets/vr-medios2/01-bosque.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Bosque y tren de juguete en la experiencia de realidad virtual",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/02-tren.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Detalle del tren de juguete en el bosque",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/03-habitacion.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Habitación infantil integrada al bosque",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/04-objeto-papel.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Figura de papel en el recorrido virtual",
-          "caption": ""
-        },
         {
           "url": "/assets/vr-medios2/05-detalle-tren.gif",
           "width": 560,
@@ -1831,41 +1803,6 @@
           "alt": "Detalle de la figura de papel en movimiento"
         },
         {
-          "url": "/assets/vr-medios2/05-ruinas.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Ruinas y vegetación del entorno virtual",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/06-caballito.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Caballito de juguete entre las raíces",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/07-hospital.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Interior de hospital en la experiencia virtual",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/08-camilla.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Detalle de la camilla de hospital",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/09-memoria.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Mesa y objetos del espacio funerario",
-          "caption": ""
-        },
-        {
           "url": "/assets/vr-medios2/08-detalle-caballito.gif",
           "width": 560,
           "height": 315,
@@ -1876,27 +1813,6 @@
           "width": 560,
           "height": 315,
           "alt": "Detalle de la camilla de hospital en movimiento"
-        },
-        {
-          "url": "/assets/vr-medios2/10-maniquies.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Grupo de maniquíes en el tramo final",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/11-ataud.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Ataúd al final del recorrido",
-          "caption": ""
-        },
-        {
-          "url": "/assets/vr-medios2/12-aparicion.webp",
-          "width": 1920,
-          "height": 1080,
-          "alt": "Aparición de la figura de papel sobre el ataúd",
-          "caption": ""
         },
         {
           "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
@@ -1925,43 +1841,8 @@
         },
         {
           "type": "text",
-          "text": "Un tren, una habitación y una figura de papel aparecen entre árboles y raíces. Los objetos y las voces marcan distintos puntos de exploración.",
-          "heading": "Infancia en el bosque"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/01-bosque.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Bosque y tren de juguete en la experiencia de realidad virtual",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/02-tren.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Detalle del tren de juguete en el bosque",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/03-habitacion.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Habitación infantil integrada al bosque",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/04-objeto-papel.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Figura de papel en el recorrido virtual",
-              "caption": ""
-            }
-          ],
-          "columns": 2,
-          "gap": 12
+          "text": "El bosque se reconstruye como un recuerdo incompleto: un tren, una habitación y una figura aparecen fuera de lugar, como imágenes que vuelven sin orden.",
+          "heading": "Fragmentos de una pesadilla"
         },
         {
           "type": "gallery",
@@ -1990,50 +1871,8 @@
         },
         {
           "type": "text",
-          "text": "El recorrido continúa entre ruinas, un caballito y una habitación de hospital. Las activaciones de proximidad acompañan el cambio de escena con voces y sonidos.",
-          "heading": "Objetos, interiores y sonido"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/05-ruinas.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Ruinas y vegetación del entorno virtual",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/06-caballito.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Caballito de juguete entre las raíces",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/07-hospital.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Interior de hospital en la experiencia virtual",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/08-camilla.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Detalle de la camilla de hospital",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/09-memoria.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Mesa y objetos del espacio funerario",
-              "caption": ""
-            }
-          ],
-          "columns": 2,
-          "gap": 12
+          "text": "Los objetos cambian de escala y de contexto. El recorrido mezcla espacios infantiles, ruinas y escenas inquietantes para acercarse a la lógica fragmentada de una pesadilla.",
+          "heading": "Escenas distorsionadas"
         },
         {
           "type": "gallery",
@@ -2056,36 +1895,8 @@
         },
         {
           "type": "text",
-          "text": "Un grupo de figuras conduce hacia el último sector del recorrido. Al acercarse al ataúd, se activa la aparición final.",
-          "heading": "El tramo final"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/10-maniquies.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Grupo de maniquíes en el tramo final",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/11-ataud.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Ataúd al final del recorrido",
-              "caption": ""
-            },
-            {
-              "url": "/assets/vr-medios2/12-aparicion.webp",
-              "width": 1920,
-              "height": 1080,
-              "alt": "Aparición de la figura de papel sobre el ataúd",
-              "caption": ""
-            }
-          ],
-          "columns": 3,
-          "gap": 12
+          "text": "Las figuras conducen a una última aparición. Los sonidos que responden a la proximidad acentúan el paso entre fragmentos de memoria.",
+          "heading": "El recuerdo final"
         },
         {
           "type": "gallery",
@@ -2226,15 +2037,6 @@
         },
         {
           "type": "image",
-          "url": "/assets/presentation/esquematica-entera.webp",
-          "width": 2215,
-          "height": 8580,
-          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
-          "size": "bleed",
-          "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
-        },
-        {
-          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f3ba25190909103.65c533e49d702.jpg",
           "width": 1400,
           "height": 1614,
@@ -2242,6 +2044,15 @@
           "caption": "",
           "sourceModule": "Project Module 2",
           "size": "detail"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/esquematica-entera.webp",
+          "width": 2215,
+          "height": 8580,
+          "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
+          "size": "bleed",
+          "srcset": "/assets/presentation/esquematica-entera-1100.webp 1100w, /assets/presentation/esquematica-entera-1600.webp 1600w, /assets/presentation/esquematica-entera.webp 2215w"
         },
         {
           "type": "gallery",
@@ -3786,7 +3597,7 @@
           "type": "gallery",
           "columns": 1,
           "seamless": true,
-          "surface": "#001a29",
+          "surface": "#000000",
           "images": [
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f6eb7a190030769.65bab83cdfc07.gif",
@@ -3795,7 +3606,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 1",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e2ec9c190030769.65baac5734dd4.png",
@@ -3804,7 +3615,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 2",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/80a655190030769.65baac573a423.png",
@@ -3813,7 +3624,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 3",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/50df76190030769.65baac573895e.png",
@@ -3822,7 +3633,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 4",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/980cb3190030769.65baac57379d6.png",
@@ -3831,7 +3642,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 5",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e67c1d190030769.65baac57396e0.png",
@@ -3840,7 +3651,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 6",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cc18a8190030769.65baac5736a09.png",
@@ -3849,7 +3660,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 7",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d2257190030769.65baac5733d78.png",
@@ -3858,7 +3669,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 8",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2eb824190030769.65baac5735db2.png",
@@ -3867,7 +3678,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 9",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c9b506190030769.65baac5732ee6.png",
@@ -3876,7 +3687,7 @@
               "alt": "editorial Photography  longinotti fadu argentina graphic design  morfologia 3д",
               "caption": "",
               "sourceModule": "Project Module 10",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ]
         },
@@ -3889,7 +3700,7 @@
               "height": 1280,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/02893d190030769.65bae86ee1cf0.gif",
@@ -3897,7 +3708,7 @@
               "height": 1280,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ea9d9d190030769.65bae86ee2edf.gif",
@@ -3905,13 +3716,13 @@
               "height": 1280,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 12",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -3922,7 +3733,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/726823190030769.65bad3ecc8c56.jpg",
@@ -3930,7 +3741,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/be980f190030769.65bab83a2891f.jpg",
@@ -3938,13 +3749,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 14",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -3955,7 +3766,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f89173190030769.65bab83ad05df.jpg",
@@ -3963,13 +3774,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 15",
           "columns": 2,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -3980,7 +3791,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ccbcc4190030769.65bab83b4f8b9.jpg",
@@ -3988,7 +3799,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0f0fcb190030769.65bad3ed2ebbc.jpg",
@@ -3996,13 +3807,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 16",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4013,7 +3824,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/216abb190030769.65bab83bc6167.jpg",
@@ -4021,7 +3832,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3e46a9190030769.65bab83bc55c6.jpg",
@@ -4029,7 +3840,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/a79533190030769.65bad3eda1cc5.jpg",
@@ -4037,13 +3848,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 17",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4054,7 +3865,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9f19c0190030769.65bab83c3e964.jpg",
@@ -4062,7 +3873,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c79d50190030769.65bab83c3d868.jpg",
@@ -4070,7 +3881,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9accfa190030769.65bad3ee46a3e.jpg",
@@ -4078,13 +3889,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 18",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4095,7 +3906,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f8d311190030769.65bad3eeabbf6.jpg",
@@ -4103,7 +3914,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/cae49c190030769.65bab8b85340e.jpg",
@@ -4111,13 +3922,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 19",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4128,7 +3939,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1d8020190030769.65bad6b189473.jpg",
@@ -4136,13 +3947,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 20",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4153,7 +3964,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d9cda1190030769.65bad3ef463cc.jpg",
@@ -4161,7 +3972,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4e4949190030769.65bad3ef47001.jpg",
@@ -4169,13 +3980,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 21",
           "columns": 2,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4186,7 +3997,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/028679190030769.65bad6b4dd7a5.jpg",
@@ -4194,13 +4005,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 22",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4211,7 +4022,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ca5cbd190030769.65bad3f09017f.jpg",
@@ -4219,7 +4030,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/55ce0f190030769.65bad3f090ec8.jpg",
@@ -4227,13 +4038,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 23",
           "columns": 3,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         },
         {
           "type": "gallery",
@@ -4244,7 +4055,7 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9281b2190030769.65bad3f14bcd5.jpg",
@@ -4252,13 +4063,13 @@
               "height": 853,
               "alt": "",
               "caption": "",
-              "surface": "#001a29"
+              "surface": "#000000"
             }
           ],
           "sourceModule": "Project Module 24",
           "columns": 2,
           "gap": 12,
-          "surface": "#001a29"
+          "surface": "#000000"
         }
       ],
       "contenidoFuente": {
@@ -4271,11 +4082,11 @@
       },
       "context": "Morfología 2 · Longinotti · FADU / UBA",
       "theme": {
-        "bg": "#001A29",
+        "bg": "#000000",
         "text": "#ECECEC",
         "secondary": "#C8D1D9",
         "muted": "#A5B3C0",
-        "line": "#344350"
+        "line": "#2A2A2A"
       }
     },
     {
@@ -5305,50 +5116,37 @@
       "nombre": "HISTORIAS MÍNIMAS",
       "ruta": "/proyectos/historias-instagram",
       "anio": "2022",
-      "descripcion": "Cuatro historias de Instagram a partir de “Kabuki en el Monte Fuji”. El collage combina figuras, objetos y paisajes en una secuencia vertical.",
+      "descripcion": "Cuatro historias independientes a partir de “Kabuki en el Monte Fuji”. Cada imagen funciona como una pieza completa dentro de la secuencia.",
       "herramientas": "Photoshop",
       "fuente": "https://www.behance.net/gallery/148175971/Historias-minimas-TP3-DG1-Catedra-Gabriele",
       "imagenes": [
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
-          "width": 1400,
-          "height": 646,
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 1"
-        },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a87cf148175971.62d06f46a2048.jpg",
           "width": 1400,
           "height": 2490,
           "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 2"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6b4fd2148175971.62d06f46a1a69.jpg",
           "width": 1400,
           "height": 2489,
           "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 3"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/604066148175971.62d06f46a146a.jpg",
           "width": 1400,
           "height": 2490,
           "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 4"
+          "caption": ""
         },
         {
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e4d737148175971.62d06f46a0d5c.jpg",
           "width": 1400,
           "height": 2490,
           "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 5"
+          "caption": ""
         }
       ],
       "title": "Historias mínimas",
@@ -5375,15 +5173,6 @@
           ],
           "sourceModule": "Project Module 0",
           "heading": "Una secuencia para pantalla"
-        },
-        {
-          "type": "image",
-          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe6142148175971.62d06f46a03ce.jpg",
-          "width": 1400,
-          "height": 646,
-          "alt": "art collage Gabriele Historias Minimas japan kabuki",
-          "caption": "",
-          "sourceModule": "Project Module 1"
         },
         {
           "type": "gallery",
@@ -5508,7 +5297,7 @@
       "nombre": "FILTROS INSTAGRAM",
       "ruta": "/proyectos/filtros-instagram",
       "anio": "2023",
-      "descripcion": "Una selección de filtros de realidad aumentada para Instagram, creados con Illustrator y Meta Spark Studio.",
+      "descripcion": "Filtros de realidad aumentada para marcas y eventos de Event Media; “Hyperfuente holograma” fue realizado para Tipografía 2.",
       "herramientas": "Illustrator ·Meta Spark Studio",
       "fuente": "https://youtube.com/playlist?list=PLwr4VuFxH3a9lBVtp5qzS2M9Hpyn8Lfdq&si=q9q7vmK2hXkSO8Tg",
       "imagenes": [],
@@ -5528,7 +5317,8 @@
           "title": "Filtro Instagram - Coca Cola",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/r0xyek9isUU",
-          "poster": "https://i.ytimg.com/vi/r0xyek9isUU/oar2.jpg?sqp=-oaymwEbCJUDEOAESFqQAgHyq4qpAwoIARUAAIhCyAEB&rs=AOn4CLCpOrJ2C4c191zaFzwjOYw_GzFdiA&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/r0xyek9isUU/oar2.jpg?sqp=-oaymwEbCJUDEOAESFqQAgHyq4qpAwoIARUAAIhCyAEB&rs=AOn4CLCpOrJ2C4c191zaFzwjOYw_GzFdiA&usqp=CCk",
+          "caption": "Event Media · Coca Cola"
         },
         {
           "type": "embed",
@@ -5536,7 +5326,8 @@
           "title": "Filtro Instagram - Mobil",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/Cwy_yDbxPoA",
-          "poster": "https://i.ytimg.com/vi/Cwy_yDbxPoA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBx8OGUKiBiIMTG_FJfCpH9RFaQ4w&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/Cwy_yDbxPoA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBx8OGUKiBiIMTG_FJfCpH9RFaQ4w&usqp=CCk",
+          "caption": "Event Media · Mobil"
         },
         {
           "type": "embed",
@@ -5544,7 +5335,8 @@
           "title": "Filtro Instagram - Samsung 1",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/pKPYyGp2alo",
-          "poster": "https://i.ytimg.com/vi/pKPYyGp2alo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA12Sdsk2srEUy2qavqkSSZeRZQxQ&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/pKPYyGp2alo/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLA12Sdsk2srEUy2qavqkSSZeRZQxQ&usqp=CCk",
+          "caption": "Event Media · Samsung 1"
         },
         {
           "type": "embed",
@@ -5552,7 +5344,8 @@
           "title": "Filtro Instagram - Samsung 2",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/9UQdbv_JUkI",
-          "poster": "https://i.ytimg.com/vi/9UQdbv_JUkI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCVvkSCNIJNoDBM_f7rirFL-gMEXQ&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/9UQdbv_JUkI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCVvkSCNIJNoDBM_f7rirFL-gMEXQ&usqp=CCk",
+          "caption": "Event Media · Samsung 2"
         },
         {
           "type": "embed",
@@ -5560,7 +5353,8 @@
           "title": "Filtro Instagram - Natura & Co",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/uS3G65fcuVk",
-          "poster": "https://i.ytimg.com/vi/uS3G65fcuVk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8ttqLtu2PlVNf_pnp6tUPdfv2Qg&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/uS3G65fcuVk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLC8ttqLtu2PlVNf_pnp6tUPdfv2Qg&usqp=CCk",
+          "caption": "Event Media · Natura & Co"
         },
         {
           "type": "embed",
@@ -5568,7 +5362,8 @@
           "title": "Filtro Instagram - Zona Prop",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/1owvhUvCNfs",
-          "poster": "https://i.ytimg.com/vi/1owvhUvCNfs/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBKFLIuRPWtqPyE3boPAxrnCpk7nQ&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/1owvhUvCNfs/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBKFLIuRPWtqPyE3boPAxrnCpk7nQ&usqp=CCk",
+          "caption": "Event Media · Zona Prop"
         },
         {
           "type": "embed",
@@ -5576,7 +5371,8 @@
           "title": "Filtro Instagram - Hyperfuente holograma",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/wOvxQYjDazA",
-          "poster": "https://i.ytimg.com/vi/wOvxQYjDazA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvXS_6KcjLS3Q8yMwaQ0qB5vZesA&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/wOvxQYjDazA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBvXS_6KcjLS3Q8yMwaQ0qB5vZesA&usqp=CCk",
+          "caption": "Tipografía 2 · Hyperfuente holograma"
         },
         {
           "type": "embed",
@@ -5584,7 +5380,8 @@
           "title": "Filtro Instagram - Fiesta Nacional de la Cebada Cervecera (Puan)",
           "aspectRatio": 0.5625,
           "link": "https://www.youtube.com/shorts/_XH8rAyeaAI",
-          "poster": "https://i.ytimg.com/vi/_XH8rAyeaAI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCPfr7ASTfPOvjeLq0mNyDuSN9e5A&usqp=CCk"
+          "poster": "https://i.ytimg.com/vi/_XH8rAyeaAI/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLCPfr7ASTfPOvjeLq0mNyDuSN9e5A&usqp=CCk",
+          "caption": "Event Media · Fiesta Nacional de la Cebada Cervecera (Puan)"
         }
       ],
       "contenidoFuente": {
@@ -5593,7 +5390,7 @@
         "embeds": 8,
         "images": 8
       },
-      "context": ""
+      "context": "Event Media · Filtros de Instagram"
     },
     {
       "nombre": "LENGUAJES VISUALES - TP2 DG1 - CÁTEDRA GABRIELE",
