@@ -761,7 +761,7 @@
       "src": "/assets/previews/vaiven-figma-01.jpg",
       "width": 1920,
       "height": 1376,
-      "role": "detail",
+      "role": "whole",
       "crop": {
         "x": 0.07331,
         "y": 0.0679,
