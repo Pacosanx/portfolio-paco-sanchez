@@ -643,5 +643,25 @@
       "height": 405,
       "role": "detail"
     }
+  ],
+  "/proyectos/nexo": [
+    {
+      "src": "/assets/presentation/nexo/cover.png",
+      "width": 1600,
+      "height": 900,
+      "role": "whole"
+    },
+    {
+      "src": "/assets/presentation/nexo/home.png",
+      "width": 360,
+      "height": 800,
+      "role": "detail"
+    },
+    {
+      "src": "/assets/presentation/nexo/followup.png",
+      "width": 316,
+      "height": 702,
+      "role": "detail"
+    }
   ]
 }
