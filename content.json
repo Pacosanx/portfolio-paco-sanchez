@@ -1596,14 +1596,8 @@
         {
           "type": "gallery",
           "layout": "installation-records",
-          "columns": 3,
+          "columns": 2,
           "images": [
-            {
-              "url": "/assets/inmson/instalacion-en-uso.jpg",
-              "width": 960,
-              "height": 720,
-              "alt": "Una persona usa el visor y los controles de INMSON frente a la proyección de la instalación."
-            },
             {
               "type": "video",
               "url": "/assets/inmson/registro-instalacion-01.mp4",
