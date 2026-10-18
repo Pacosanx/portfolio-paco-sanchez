@@ -55,7 +55,7 @@ const renderExploration = (item, sitePath, decorative = false) => {
   const title = item.title || 'Exploración en Spline';
   const preview = item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview;
   const loop = item.loop === false ? "" : " loop";
-  const image = item.video && !decorative ? `<video data-gallery-video data-src="${sitePath(item.video)}" poster="${preview}" width="${item.width}" height="${item.height}" muted${loop} playsinline preload="none" aria-hidden="true"></video>` : `<img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async">`;
+  const image = item.video ? `<video data-gallery-video data-src="${sitePath(item.video)}" poster="${preview}" width="${item.width}" height="${item.height}" muted${loop} playsinline preload="none" aria-hidden="true"></video>` : `<img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async">`;
   const caption = `<span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">${title}</span>${item.tool ? '' : '<span class="lab-entry-action">Ver escena</span>'}</span>`;
 
   if (item.tool) return `<div class="lab-entry lab-entry-media">${image}${caption}</div>`;
