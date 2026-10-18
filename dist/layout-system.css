@@ -334,3 +334,6 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
 /* GIF strips bleed to the reader edges and meet without gaps. */
 .case-gallery:has(.case-image-group.is-strip) { max-width:none; }
 .case-image-group.is-strip { width:calc(100% + 2 * var(--gutter)); max-width:none; margin-inline:calc(-1 * var(--gutter)); padding:0; grid-template-columns:repeat(var(--strip-count),minmax(0,1fr)); gap:0; }
+.case-image-group.is-strip + .case-image-group.is-strip { margin-top:calc(-1 * var(--module-gap)); }
+.case-gallery:has(.case-image-group.is-strip) { max-width:none; }
+.case-image-group.is-strip { width:calc(100% + 2 * var(--gutter)); max-width:none; margin-inline:calc(-1 * var(--gutter)); padding:0; grid-template-columns:repeat(var(--strip-count),minmax(0,1fr)); gap:0; }
