@@ -331,8 +331,6 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
   .development-copy+.development-copy,.development-image-gallery .development-figure+.development-figure { margin:0; }
 }
 
-/* Compact galleries keep repeated studies small in both reader views. */
-.case-image-group.is-compact { width:100%; max-width:calc(var(--columns,4) * 180px); margin-inline:auto; padding-block:var(--s5); grid-template-columns:repeat(var(--columns,4),minmax(0,1fr)); gap:var(--s4); }
-@container(max-width:650px) {
-  .case-image-group.is-compact { max-width:360px; grid-template-columns:repeat(2,minmax(0,1fr)); }
-}
+/* GIF strips bleed to the reader edges and meet without gaps. */
+.case-gallery:has(.case-image-group.is-strip) { max-width:none; }
+.case-image-group.is-strip { width:calc(100% + 2 * var(--gutter)); max-width:none; margin-inline:calc(-1 * var(--gutter)); padding:0; grid-template-columns:repeat(var(--strip-count),minmax(0,1fr)); gap:0; }

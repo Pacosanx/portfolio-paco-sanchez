@@ -368,9 +368,10 @@
           ],
           "sourceModule": "Project Module 18",
           "columns": 3,
-          "gap": 12,
+          "gap": 0,
           "surface": "#000000",
-          "layout": "compact"
+          "layout": "strip",
+          "seamless": true
         },
         {
           "type": "gallery",
@@ -458,9 +459,10 @@
           ],
           "sourceModule": "Project Module 18",
           "columns": 4,
-          "gap": 12,
+          "gap": 0,
           "surface": "#000000",
-          "layout": "compact"
+          "layout": "strip",
+          "seamless": true
         },
         {
           "type": "image",
