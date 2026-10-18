@@ -107,9 +107,9 @@
       const hasBounds = Number.isFinite(bounds.left) && Number.isFinite(bounds.right)
         && Number.isFinite(bounds.top) && Number.isFinite(bounds.bottom)
         && groupWidth > 0 && groupHeight > 0;
-      const columnBounds = column.getBoundingClientRect();
+      const tableRight = index.getBoundingClientRect().right;
       const safeInset = 12;
-      const areaLeft = Math.max(safeInset, columnBounds.left + safeInset);
+      const areaLeft = Math.max(safeInset, tableRight + safeInset);
       const areaRight = innerWidth - safeInset;
       const areaTop = Math.max(safeInset, section.top + safeInset);
       const areaBottom = Math.min(innerHeight - safeInset, section.bottom - safeInset);
@@ -186,7 +186,8 @@
       };
     }, { left: Infinity, right: -Infinity });
     if (Number.isFinite(group.left) && Number.isFinite(group.right)) {
-      const targetCenter = (box.left + innerWidth) / 2;
+      const tableRight = index.getBoundingClientRect().right;
+      const targetCenter = (tableRight + innerWidth) / 2;
       const groupCenter = (group.left + group.right) / 2;
       stage.style.left = `${box.left + padding + targetCenter - groupCenter}px`;
     }
