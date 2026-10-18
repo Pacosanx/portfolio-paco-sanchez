@@ -105,10 +105,16 @@
 .phone-mockups>.case-figure:nth-child(1) .case-zoom{transform:rotateY(-8deg) rotateZ(-2deg)}
 .phone-mockups>.case-figure:nth-child(2) .case-zoom{transform:translateY(-12px) rotateY(2deg)}
 .phone-mockups>.case-figure:nth-child(3) .case-zoom{transform:translateY(12px) rotateY(8deg) rotateZ(2deg)}
+.phone-mockups figcaption{margin-top:24px}
+.phone-mockups>.case-figure:nth-child(2) figcaption{transform:translateY(-12px)}
+.phone-mockups>.case-figure:nth-child(3) figcaption{transform:translateY(12px)}
 @container(max-width:650px){
  .case-image-group.phone-mockups{justify-content:flex-start;flex-wrap:nowrap;gap:32px;max-width:none;padding:36px 8px 48px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory}
  .phone-mockups>.case-figure{flex:0 0 148px;width:148px;max-width:148px;scroll-snap-align:center}
  .phone-mockups>.case-figure:nth-child(1) .case-zoom{transform:rotateY(-6deg) rotateZ(-1deg)}
  .phone-mockups>.case-figure:nth-child(2) .case-zoom{transform:translateY(-8px) rotateY(1deg)}
  .phone-mockups>.case-figure:nth-child(3) .case-zoom{transform:translateY(8px) rotateY(6deg) rotateZ(1deg)}
+ .phone-mockups figcaption{margin-top:20px}
+ .phone-mockups>.case-figure:nth-child(2) figcaption{transform:translateY(-8px)}
+ .phone-mockups>.case-figure:nth-child(3) figcaption{transform:translateY(8px)}
 }
