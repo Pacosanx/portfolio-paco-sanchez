@@ -161,6 +161,7 @@
     stage.style.left = `${box.left + padding}px`;
     stage.style.width = `${width}px`;
     stage.style.top = `${sectionTop}px`;
+    wrap.style.width = `${width}px`;
     wrap.style.height = `${height}px`;
     [...wrap.children].forEach(card => {
       const ratio = Number(card.dataset.ratio) || 1;
