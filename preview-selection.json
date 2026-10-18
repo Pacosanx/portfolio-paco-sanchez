@@ -397,52 +397,74 @@
   ],
   "/proyectos/editorial-tipografico-2023": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fe8e99189668095.65b2c9973894e.jpg",
-      "width": 1280,
-      "height": 853,
-      "role": "whole"
-    },
-    {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/66234b189668095.65b2c99805713.jpg",
-      "width": 1280,
-      "height": 863,
-      "role": "detail",
-      "crop": {
-        "x": 0.46,
-        "y": 0.13,
-        "width": 0.4,
-        "height": 0.76
+      "src": "/assets/previews/figma/editorial-tipografico-01.png",
+      "width": 725,
+      "height": 611,
+      "role": "whole",
+      "geometry": {
+        "x": 1573.904,
+        "y": 455.95,
+        "width": 296.292,
+        "height": 249.703,
+        "rotation": -15.45,
+        "zIndex": 1
       }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/3837b3189668095.65b2c9980665d.jpg",
-      "width": 1280,
-      "height": 863,
+      "src": "/assets/previews/figma/editorial-tipografico-02.png",
+      "width": 714,
+      "height": 607,
       "role": "detail",
-      "crop": {
-        "x": 0.46,
-        "y": 0.08,
-        "width": 0.4,
-        "height": 0.82
+      "geometry": {
+        "x": 1577,
+        "y": 140,
+        "width": 290,
+        "height": 247,
+        "rotation": 0,
+        "zIndex": 2
       }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/91310f189668095.65b2c99804b5a.jpg",
-      "width": 1280,
-      "height": 863,
+      "src": "/assets/previews/figma/editorial-tipografico-03.png",
+      "width": 415,
+      "height": 569,
       "role": "detail",
-      "crop": {
-        "x": 0.43,
-        "y": 0.13,
-        "width": 0.39,
-        "height": 0.78
+      "geometry": {
+        "x": 1476.823,
+        "y": 547.768,
+        "width": 198.161,
+        "height": 271.695,
+        "rotation": -79.28,
+        "zIndex": 3
       }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/750e50189668095.65b2c99883096.jpg",
-      "width": 1280,
-      "height": 863,
-      "role": "detail"
+      "src": "/assets/previews/figma/editorial-tipografico-04.png",
+      "width": 748,
+      "height": 647,
+      "role": "detail",
+      "geometry": {
+        "x": 1421.038,
+        "y": 297.805,
+        "width": 303.193,
+        "height": 262.254,
+        "rotation": -9.76,
+        "zIndex": 4
+      }
+    },
+    {
+      "src": "/assets/previews/figma/editorial-tipografico-05.png",
+      "width": 807,
+      "height": 1155,
+      "role": "detail",
+      "geometry": {
+        "x": 1455.49,
+        "y": 106.902,
+        "width": 138.531,
+        "height": 198.269,
+        "rotation": -8.24,
+        "zIndex": 5
+      }
     }
   ],
   "/proyectos/motion-graphics": [
