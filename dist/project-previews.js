@@ -110,7 +110,7 @@
       const columnBounds = column.getBoundingClientRect();
       const safeInset = 12;
       const areaLeft = Math.max(safeInset, columnBounds.left + safeInset);
-      const areaRight = Math.min(innerWidth - safeInset, columnBounds.right - safeInset);
+      const areaRight = innerWidth - safeInset;
       const areaTop = Math.max(safeInset, section.top + safeInset);
       const areaBottom = Math.min(innerHeight - safeInset, section.bottom - safeInset);
       const areaWidth = areaRight - areaLeft;
