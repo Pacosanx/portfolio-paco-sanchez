@@ -78,3 +78,14 @@
 .case-tools{text-align:right;justify-content:flex-end}
 .case-tools ul{justify-content:flex-end}
 .case-gallery[data-case="vr-medios-groisman-2"] :is(.case-figure img,.case-video video,.case-embed iframe){filter:contrast(1.15) saturate(1.06)}
+
+/* Follow the Behance sequence: full-width plates, grouped details and a centered closing GIF. */
+.case-gallery[data-case="editorial-espacial"] > .case-media-run {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s5);
+}
+.case-gallery[data-case="editorial-espacial"] .case-media-run > .case-figure.is-detail {
+  grid-column: 1 / -1;
+  width: min(100%, 720px);
+  justify-self: center;
+}

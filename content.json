@@ -2425,13 +2425,7 @@
               "caption": "",
               "sourceModule": "Project Module 3",
               "surface": "#000000"
-            }
-          ]
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e65744190740099.65c02bb750220.jpg",
               "width": 1400,
@@ -2449,15 +2443,7 @@
               "caption": "",
               "sourceModule": "Project Module 5",
               "surface": "#000000"
-            }
-          ],
-          "seamless": true,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7cbcbd190740099.65c02bb74269f.jpg",
               "width": 1400,
@@ -2475,15 +2461,7 @@
               "caption": "",
               "sourceModule": "Project Module 7",
               "surface": "#000000"
-            }
-          ],
-          "seamless": true,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6d67a0190740099.65c02bb746bad.jpg",
               "width": 1400,
@@ -2501,15 +2479,7 @@
               "caption": "",
               "sourceModule": "Project Module 9",
               "surface": "#000000"
-            }
-          ],
-          "seamless": true,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/dbdc23190740099.65c02bb749992.gif",
               "width": 1400,
@@ -2527,15 +2497,7 @@
               "caption": "",
               "sourceModule": "Project Module 11",
               "surface": "#000000"
-            }
-          ],
-          "seamless": true,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "columns": 2,
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/052b85190740099.65c030775378a.jpg",
               "width": 1400,
@@ -2554,9 +2516,7 @@
               "sourceModule": "Project Module 13",
               "surface": "#000000"
             }
-          ],
-          "seamless": true,
-          "surface": "#000000"
+          ]
         },
         {
           "type": "gallery",
@@ -2636,6 +2596,8 @@
         },
         {
           "type": "gallery",
+          "columns": 4,
+          "surface": "#000000",
           "images": [
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8f80b190740099.65c1362abf350.jpg",
@@ -2668,16 +2630,7 @@
               "alt": "",
               "caption": "",
               "surface": "#000000"
-            }
-          ],
-          "sourceModule": "Project Module 17",
-          "columns": 4,
-          "gap": 12,
-          "surface": "#000000"
-        },
-        {
-          "type": "gallery",
-          "images": [
+            },
             {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/70f71d190740099.65c1362b74adb.jpg",
               "width": 1280,
@@ -2710,11 +2663,7 @@
               "caption": "",
               "surface": "#000000"
             }
-          ],
-          "sourceModule": "Project Module 18",
-          "columns": 4,
-          "gap": 12,
-          "surface": "#000000"
+          ]
         },
         {
           "type": "image",
@@ -2724,7 +2673,8 @@
           "alt": "3D fadu morfologia longinotti diseño gráfico Space  fanzine editorial design  diseño visual identity",
           "caption": "",
           "sourceModule": "Project Module 19",
-          "surface": "#000000"
+          "surface": "#000000",
+          "size": "detail"
         }
       ],
       "contenidoFuente": {
