@@ -6,147 +6,236 @@
       "anio": "2023",
       "descripcion": "Video reactivo a fragmentos de canciones de Aphex Twin y una web interactiva que presenta la pieza y su proceso.",
       "herramientas": "Touchdesigner · After Effects · Spline · Webflow",
-      "fuente": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
+      "fuente": "https://www.behance.net/gallery/191707843/METAPHEX-web-y-video-reactivo-Morfologia-Longinotti",
       "imagenes": [
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
           "width": 1400,
           "height": 698,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: presentación animada de la web interactiva",
           "caption": "",
           "sourceModule": "Project Module 5",
           "surface": "#000000"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
+          "width": 1400,
+          "height": 474,
+          "alt": "Paco Sanchez · Morfología Longinotti II · 2023. Explorando el diálogo entre distintos sonidos de Aphex Twin y una posible representación visual de los mismos.",
+          "caption": "",
+          "sourceModule": "Project Module 6",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
+          "width": 1400,
+          "height": 203,
+          "alt": "Creado con After Effects y TouchDesigner",
+          "caption": "",
+          "sourceModule": "Project Module 8",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
           "width": 1400,
           "height": 408,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: composición visual de los fragmentos del video",
           "caption": "",
           "sourceModule": "Project Module 10",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ad211191707843.65e0fc27c44f0.png",
           "width": 1400,
           "height": 624,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 1",
           "caption": "",
           "sourceModule": "Project Module 12",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/860605191707843.65e0fc27c556f.png",
           "width": 1400,
           "height": 612,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 2",
           "caption": "",
           "sourceModule": "Project Module 14",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/208529191707843.65e0fc27c37e7.png",
           "width": 1400,
           "height": 601,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 3",
           "caption": "",
           "sourceModule": "Project Module 16",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1d1a76191707843.65d02e9909d59.gif",
           "width": 1280,
           "height": 2280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 01",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4f624191707843.65d02e990cf8c.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "METAPHEX: estudio animado 02",
+          "caption": "",
+          "sourceModule": "Project Module 18",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/934628191707843.65d02e99058a3.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 03",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/aacc4f191707843.65d02e9907623.gif",
+          "width": 1280,
+          "height": 1280,
+          "alt": "METAPHEX: estudio animado 04",
+          "caption": "",
+          "sourceModule": "Project Module 18",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "METAPHEX: estudio animado 05",
+          "caption": "",
+          "sourceModule": "Project Module 18",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 06",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
           "width": 1280,
           "height": 2280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 07",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f24332191707843.65d02e9908ace.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 08",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 09",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
           "width": 1280,
           "height": 2280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 10",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/016e83191707843.65d02e99093f1.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 11",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/55d335191707843.65d02e9907fcf.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 12",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/db8393191707843.65d02e9906d18.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 13",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
           "width": 1280,
           "height": 2280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 14",
           "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
+          "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d7548191707843.65d02e990bcec.gif",
           "width": 1280,
           "height": 1280,
-          "alt": "",
+          "alt": "METAPHEX: estudio animado 15",
           "caption": "",
+          "sourceModule": "Project Module 18",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
+          "width": 1280,
+          "height": 2280,
+          "alt": "METAPHEX: estudio animado 16",
+          "caption": "",
+          "sourceModule": "Project Module 18",
           "surface": "#000000"
         },
         {
@@ -154,7 +243,7 @@
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
           "width": 1400,
           "height": 698,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: cierre animado con las vistas de la web",
           "caption": "",
           "sourceModule": "Project Module 19",
           "surface": "#000000"
@@ -175,7 +264,7 @@
       "blocks": [
         {
           "type": "text",
-          "text": "Un diálogo entre el sonido y su representación visual, desarrollado con After Effects y TouchDesigner.\n\nProyecto expuesto por la cátedra",
+          "text": "El proyecto consistió en crear un video que acompañe algunos fragmentos de canciones de Aphex Twin. Luego creé una web para presentar el video y el proceso de este.",
           "links": [
             {
               "href": "https://www.instagram.com/p/C4Qtm9SOdD5/?img_index=1",
@@ -186,246 +275,331 @@
         },
         {
           "type": "text",
-          "text": "Ver la pieza completa",
+          "heading": "VIDEO",
+          "spaceBefore": 3,
           "links": [
             {
               "href": "https://www.youtube.com/watch?v=gctzzon1tuM",
-              "text": "Ver la pieza completa"
+              "text": "youtube.com"
             }
           ],
-          "sourceModule": "Project Module 1",
-          "heading": "Video"
+          "sourceModule": "Project Module 1"
         },
         {
           "type": "embed",
           "url": "https://www.youtube.com/embed/gctzzon1tuM",
-          "title": "METAPHEX — video del proyecto",
-          "aspectRatio": 1.77809,
+          "title": "METAPHEX — video reactivo completo",
+          "aspectRatio": 1.7780938833570412,
+          "maxWidth": 1250,
           "sourceModule": "Project Module 2"
         },
         {
           "type": "text",
-          "text": "Explorar METAPHEX desde una computadora",
+          "heading": "WEB INTERACTIVA",
+          "spaceBefore": 2,
           "links": [
             {
               "href": "https://metaphex.webflow.io/",
-              "text": "Explorar METAPHEX desde una computadora"
+              "text": "metaphex.webflow.io",
+              "suffix": "(PC)"
             }
           ],
-          "sourceModule": "Project Module 3",
-          "heading": "Web interactiva"
+          "sourceModule": "Project Module 3"
         },
         {
           "type": "embed",
           "url": "https://www.youtube.com/embed/xO3VJeRHVFo",
-          "title": "METAPHEX — video del proyecto",
-          "aspectRatio": 2.11238,
+          "title": "METAPHEX — recorrido por la web interactiva",
+          "aspectRatio": 2.112211221122112,
+          "maxWidth": 1280,
           "sourceModule": "Project Module 4"
         },
         {
-          "type": "gallery",
-          "columns": 1,
-          "seamless": true,
-          "surface": "#000000",
-          "images": [
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
-              "width": 1400,
-              "height": 698,
-              "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-              "caption": "",
-              "sourceModule": "Project Module 5",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
-              "width": 1400,
-              "height": 408,
-              "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-              "caption": "",
-              "sourceModule": "Project Module 10",
-              "surface": "#000000"
-            }
-          ]
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/10b648191707843.65d02e99e7cad.gif",
+          "width": 1400,
+          "height": 698,
+          "alt": "METAPHEX: presentación animada de la web interactiva",
+          "caption": "",
+          "sourceModule": "Project Module 5",
+          "surface": "#000000"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/64d061191707843.65cfecf50bba0.png",
+          "width": 1400,
+          "height": 474,
+          "alt": "Paco Sanchez · Morfología Longinotti II · 2023. Explorando el diálogo entre distintos sonidos de Aphex Twin y una posible representación visual de los mismos.",
+          "caption": "",
+          "sourceModule": "Project Module 6",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 2,
+          "sourceModule": "Project Module 7"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/900164191707843.65cfecf506bb9.png",
+          "width": 1400,
+          "height": 203,
+          "alt": "Creado con After Effects y TouchDesigner",
+          "caption": "",
+          "sourceModule": "Project Module 8",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 2,
+          "sourceModule": "Project Module 9"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/360af8191707843.65e0fc27c2abf.png",
+          "width": 1400,
+          "height": 408,
+          "alt": "METAPHEX: composición visual de los fragmentos del video",
+          "caption": "",
+          "sourceModule": "Project Module 10",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 2,
+          "sourceModule": "Project Module 11"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ad211191707843.65e0fc27c44f0.png",
+          "width": 1400,
+          "height": 624,
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 1",
+          "caption": "",
+          "sourceModule": "Project Module 12",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 2,
+          "sourceModule": "Project Module 13"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/860605191707843.65e0fc27c556f.png",
+          "width": 1400,
+          "height": 612,
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 2",
+          "caption": "",
+          "sourceModule": "Project Module 14",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 2,
+          "sourceModule": "Project Module 15"
+        },
+        {
+          "type": "image",
+          "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/208529191707843.65e0fc27c37e7.png",
+          "width": 1400,
+          "height": 601,
+          "alt": "METAPHEX: proceso en la red de nodos de TouchDesigner, vista 3",
+          "caption": "",
+          "sourceModule": "Project Module 16",
+          "surface": "#000000"
+        },
+        {
+          "type": "spacer",
+          "lines": 3,
+          "sourceModule": "Project Module 17"
         },
         {
           "type": "gallery",
-          "columns": 3,
-          "images": [
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/1ad211191707843.65e0fc27c44f0.png",
-              "width": 1400,
-              "height": 624,
-              "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-              "caption": "",
-              "sourceModule": "Project Module 12",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/860605191707843.65e0fc27c556f.png",
-              "width": 1400,
-              "height": 612,
-              "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-              "caption": "",
-              "sourceModule": "Project Module 14",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/208529191707843.65e0fc27c37e7.png",
-              "width": 1400,
-              "height": 601,
-              "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
-              "caption": "",
-              "sourceModule": "Project Module 16",
-              "surface": "#000000"
-            }
+          "layout": "behance-mosaic",
+          "rowLengths": [
+            8,
+            8
           ],
-          "surface": "#000000",
-          "layout": "spaced"
-        },
-        {
-          "type": "gallery",
           "images": [
             {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/934628191707843.65d02e99058a3.gif",
-              "width": 1280,
-              "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
-              "width": 1280,
-              "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f24332191707843.65d02e9908ace.gif",
-              "width": 1280,
-              "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
-              "width": 1280,
-              "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            }
-          ],
-          "sourceModule": "Project Module 18",
-          "columns": 4,
-          "gap": 0,
-          "surface": "#000000",
-          "layout": "strip",
-          "seamless": true
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1d1a76191707843.65d02e9909d59.gif",
               "width": 1280,
               "height": 2280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 01",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4f624191707843.65d02e990cf8c.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 02",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/934628191707843.65d02e99058a3.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 03",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/aacc4f191707843.65d02e9907623.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 04",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "METAPHEX: estudio animado 05",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 06",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
               "width": 1280,
               "height": 2280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 07",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f24332191707843.65d02e9908ace.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 08",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
+              "width": 1280,
+              "height": 1280,
+              "alt": "METAPHEX: estudio animado 09",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
               "width": 1280,
               "height": 2280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 10",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
-              "width": 1280,
-              "height": 2280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            }
-          ],
-          "sourceModule": "Project Module 18",
-          "columns": 4,
-          "gap": 0,
-          "surface": "#000000",
-          "layout": "strip",
-          "seamless": true
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/016e83191707843.65d02e99093f1.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 11",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/55d335191707843.65d02e9907fcf.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 12",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/db8393191707843.65d02e9906d18.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 13",
               "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             },
             {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "METAPHEX: estudio animado 14",
+              "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d7548191707843.65d02e990bcec.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
+              "alt": "METAPHEX: estudio animado 15",
               "caption": "",
+              "sourceModule": "Project Module 18",
+              "surface": "#000000"
+            },
+            {
+              "type": "image",
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "METAPHEX: estudio animado 16",
+              "caption": "",
+              "sourceModule": "Project Module 18",
               "surface": "#000000"
             }
           ],
-          "sourceModule": "Project Module 18",
-          "columns": 4,
-          "gap": 0,
           "surface": "#000000",
-          "layout": "strip",
-          "seamless": true
+          "sourceModule": "Project Module 18"
         },
         {
           "type": "image",
           "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/ba2e8d191707843.65d02e99e8b3b.gif",
           "width": 1400,
           "height": 698,
-          "alt": "TouchDesigner Webflow spline 3D interactive reactive aphex twin",
+          "alt": "METAPHEX: cierre animado con las vistas de la web",
           "caption": "",
           "sourceModule": "Project Module 19",
           "surface": "#000000"
         }
       ],
       "contenidoFuente": {
-        "url": "https://www.behance.net/gallery/191707843/METAPHEX-video-reactivo-y-web-Morfologia-Longinotti",
-        "fechaVerificacion": "2026-10-08",
+        "url": "https://www.behance.net/gallery/191707843/METAPHEX-web-y-video-reactivo-Morfologia-Longinotti",
+        "fechaVerificacion": "2026-10-18",
         "moduleCount": 20,
         "images": 24,
         "embeds": 2,
@@ -438,7 +612,8 @@
         "secondary": "#C8D1D9",
         "muted": "#A5B3C0",
         "line": "#344350"
-      }
+      },
+      "presentationLayout": "behance-original"
     },
     {
       "nombre": "MARADONA ALIEN",

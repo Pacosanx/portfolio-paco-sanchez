@@ -123,3 +123,24 @@
 .case-gallery>.case-image-group.installation-records{max-width:560px;justify-self:center;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:center}
 .installation-records video{display:block;width:100%;height:auto;background:#000}
 @container(max-width:650px){.case-gallery>.case-image-group.installation-records{max-width:320px;grid-template-columns:1fr;gap:24px}}
+
+/* METAPHEX follows the authored Behance modules, including its blank text modules. */
+.case-presentation--behance{width:calc(100% + 2 * var(--gutter));margin-inline:calc(-1 * var(--gutter));background:#000}
+.case-presentation--behance>.case-gallery{display:block;max-width:1400px;margin-inline:auto;padding-top:84px}
+.case-presentation--behance .behance-copy{display:block;width:86%;max-width:none;margin-inline:auto;padding-top:calc(var(--blank-lines,0) * 28px);font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px;letter-spacing:normal;color:#696969;text-align:left;text-wrap:wrap}
+.case-presentation--behance .behance-copy :is(p,h2,h3){margin:0;padding:0;font:inherit;letter-spacing:normal;text-wrap:wrap}
+.case-presentation--behance .behance-copy :is(h2,h3){font-size:30px;line-height:42px;color:#fff}
+.case-presentation--behance .behance-copy a{color:#0057ff;text-decoration:none}
+.case-presentation--behance .behance-copy a:hover{text-decoration:underline}
+.case-presentation--behance .behance-copy .behance-links{margin-top:28px}
+.case-presentation--behance .behance-section-heading{padding-bottom:28px}
+.case-presentation--behance .behance-section-heading .behance-links{margin-top:0}
+.case-presentation--behance .behance-spacer{height:calc(var(--blank-lines,2) * 28px);margin:0;padding:0}
+.case-presentation--behance :is(.case-figure,.behance-embed,.behance-mosaic){margin-block:0;padding:0;min-width:0}
+.case-presentation--behance .behance-embed{width:100%;max-width:var(--embed-width);margin-inline:auto}
+.case-presentation--behance .case-figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#000}
+.case-presentation--behance .behance-mosaic{display:grid;gap:4px}
+.case-presentation--behance .behance-mosaic-row{display:grid;gap:4px;align-items:start;min-width:0}
+.case-presentation--behance .behance-mosaic-row .case-figure{margin:0;min-width:0}
+.case-presentation--behance>.case-pagination{margin-inline:var(--gutter)}
+.case-presentation--behance>.behance-source{margin:32px var(--gutter) 0;font-size:.75rem;color:var(--secondary)}

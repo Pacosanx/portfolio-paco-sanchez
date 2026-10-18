@@ -66,7 +66,8 @@ for(const [i,p] of projects.entries()){
   assert.equal((html.match(/class="case-figure(?: is-(?:detail|overview|bleed))?"/g)||[]).length,galleryImages.length,p.title);
   for(const image of galleryImages)assert(html.includes(assetUrl(image.url).replaceAll('&','&amp;')),p.title);
   for(const block of blocks){
-    assert(['image','gallery','text','embed','video','interactive','statement','placeholder'].includes(block.type),p.title);
+    assert(['image','gallery','text','embed','video','interactive','statement','placeholder','spacer'].includes(block.type),p.title);
+    if(block.type==='spacer')assert(p.presentationLayout==='behance-original'&&Number.isInteger(block.lines)&&block.lines>0,p.title);
     if(block.type==='placeholder')assert(block.title&&html.includes(block.title.replaceAll('&','&amp;'))&&html.includes('case-placeholder-panel'),p.title);
     if(block.type==='embed')assert(html.includes(block.url.replaceAll('&','&amp;')),p.title);
     if(block.type==='interactive')assert(html.includes('<inmson-drawing>')&&html.includes('inmson-drawing.js'),p.title);
@@ -101,4 +102,5 @@ for(const [i,preview] of previews.entries()){
   if(projects[i].imagenes.length)for(const image of preview.images)assert.notEqual(image.src,projects[i].preview);
 }
 console.log(JSON.stringify({pages:htmlFiles.length,internalLinks:links,imageReferences:images,projectImages:projects.reduce((n,p)=>n+p.imagenes.length,0),passed:true}));
+
 

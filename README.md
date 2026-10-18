@@ -62,3 +62,7 @@ Los bloques `placeholder` reservan piezas pendientes con un rectángulo rojo gra
 INMSON presenta una vista general, dos loops complementarios en dos columnas (dibujar en primera persona y atravesar los trazos) y una franja pequeña de registros de uso. Los medios de `assets/inmson/` provienen de las capturas de Unity realizadas el 15 de octubre de 2026: `04-primera-persona.mp4` (25–30 s), `05-atravesar-dibujo.mp4` (4–9 s), `vista-previa.jpg`. Los loops están optimizados a 560 × 315 y 8 fps; cada uno tiene una captura estática para movimiento reducido. Son demostraciones automatizadas de la escena original, conservada sin cambios.
 
 La interacción de INMSON se presenta sin introducción ni epígrafe exterior. Los videos `20231003_123236.mp4` y `VID_20231010_125503357.mp4`, aportados por Paco, documentan el uso con visor y la versión táctil en tablet. Se publican en `assets/inmson/` a 960 px de ancho; los videos completos se convierten a H.264/AAC con reproducción manual y audio original.
+
+METAPHEX usa `presentationLayout: "behance-original"` y `behance-presentation.mjs` para conservar sus veinte módulos originales: introducción, títulos y vínculos, proporciones de los videos, placas tipográficas, pausas de 56/84 px, capturas completas y mosaico de dieciséis GIFs en dos filas. Los bloques `spacer` conservan los módulos de texto en blanco; cada bloque identifica su `sourceModule` para contrastarlo con Behance.
+
+

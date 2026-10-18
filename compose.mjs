@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import { renderBehanceModules } from './behance-presentation.mjs';
 const heroRevision=createHash('sha256').update(fs.readFileSync(new URL('./dist/hero.css',import.meta.url))).update(fs.readFileSync(new URL('./dist/hero.js',import.meta.url))).digest('hex').slice(0,12);
 import { parallelSection } from './parallel.mjs';
 import { projectFilters, projectCategories } from './filters.mjs';
@@ -145,11 +146,13 @@ function caseGallery(p,embedded=false){
 
 function caseContent(p,i,embedded=false){
   const next=projects[i+1],titleTag=embedded?'h2':'h1',toolsTag=embedded?'h3':'h2',titleId=embedded?'viewer-title':'case-title';
+  const pagination=`<nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="${sitePath('/')}#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?sitePath(next.ruta)+'/':sitePath('/#proyectos')}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav>`;
+  if(p.presentationLayout==='behance-original')return `<div class="case-presentation case-presentation--behance" style="${caseTheme(p)}"><${titleTag} id="${titleId}" class="sr-only" tabindex="-1">${esc(p.title)}</${titleTag}><div class="case-gallery" data-case="${esc(p.ruta.split('/').at(-1))}">${renderBehanceModules(p,{embedded})}</div><p class="behance-source"><a class="text-link" href="${esc(p.fuente)}" target="_blank" rel="noopener noreferrer">Ver presentación original en Behance</a></p>${pagination}</div>`;
   return `<div class="case-presentation" style="${caseTheme(p)}"><section class="case-intro" aria-labelledby="${titleId}"><div class="case-reference"><p class="case-year mono">${esc(p.anio)}</p>${(p.context??'FADU / UBA')?`<p class="mono">${esc(p.context??'FADU / UBA')}</p>`:''}<p class="case-discipline">${esc(p.discipline)}</p>${p.status?`<p class="project-status">${esc(p.status)}</p>`:''}</div>
   <div class="case-title-block"><${titleTag} id="${titleId}" tabindex="-1">${esc(p.title)}</${titleTag}>${p.descripcion?`<p class="case-description">${caseDescription(p)}</p>`:''}</div>
   <div class="case-tools">${p.tools.length?`<${toolsTag} class="eyebrow">Herramientas</${toolsTag}><ul>${p.tools.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}${p.fuente?`<a class="text-link case-source" href="${esc(assetPath(p.fuente))}" target="_blank" rel="noopener noreferrer">${esc(p.fuenteLabel||(p.fuente.includes('youtu')?'Ver en YouTube':p.fuente.includes('myportfolio.com')?'Ver en Adobe Portfolio':'Ver en Behance'))}</a>`:''}</div></section>
   <div class="case-gallery" data-case="${esc(p.ruta.split('/').at(-1))}">${caseGallery(p,embedded)}</div>
-  <nav class="case-pagination" aria-label="Navegación entre proyectos"><a class="text-link" href="${sitePath('/')}#proyectos" ${embedded?'data-close-project':''}>Volver al índice</a><a class="next-project" href="${next?sitePath(next.ruta)+'/':sitePath('/#proyectos')}" ${embedded&&!next?'data-close-project':''}><span class="eyebrow">${next?'Siguiente proyecto':'Fin del índice'}</span><span>${next?esc(next.title):'Volver a proyectos'}</span></a></nav></div>`;
+  ${pagination}</div>`;
 }
 
 const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby="viewer-title">
@@ -227,4 +230,5 @@ for(const directory of ['fachada','previews','presentation','inmson']){
   if(fs.existsSync(source))fs.cpSync(source,path.join('dist/assets',directory),{recursive:true});
 }
 console.log(JSON.stringify({pages:projects.length+1,projects:projects.length,galleryImages:projects.reduce((n,p)=>n+p.imagenes.length,0)}));
+
 
