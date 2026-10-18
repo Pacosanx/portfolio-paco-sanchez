@@ -76,9 +76,8 @@
       vec3 core = vec3(profile(d + split, width), profile(d, width), profile(d - split, width));
       float halo = profile(d, width + 0.045);
       vec3 light = tint * (0.45 + core * 0.55);
-      // Fill the viewport's lower edge on arrival; soften the plane as it scrolls away.
-      float edgeFade = mix(1.0, smoothstep(0.0, 0.16, uv.y), smoothstep(0.0, 0.12, travel));
-      float alpha = clamp(halo * 1.7, 0.0, 0.98) * edgeFade;
+      // The field continues below the hero; its profile supplies the natural falloff.
+      float alpha = clamp(halo * 1.7, 0.0, 0.98);
 
       // Small crosses travel with the plane and share its refraction, revealing the lens.
       vec2 grid = vec2(surface.x * resolution.x / pixelRatio, (surface.y - bandY) * viewGeometry.z) / 10.0;

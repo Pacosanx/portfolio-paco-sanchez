@@ -42,7 +42,8 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
 .opening h1 { font-size:clamp(32px,3.2vw,52px); line-height:1.12; letter-spacing:-.035em; font-weight:400; }
 .opening-lead { grid-column:11/13; grid-row:1; margin:0; padding:0; max-width:26ch; font-size:.875rem; line-height:1.7; }
 .opening-cue { grid-column:4/10; grid-row:3; margin:0; padding-bottom:var(--s2); }
-.opening-atmosphere { bottom:0; }
+/* Keep the render surface a full viewport below the hero, including during fast scroll. */
+.opening-atmosphere { bottom:-100svh; }
 
 /* Project index. The number hangs in the gutter on wide screens. */
 .work-section { min-height:0; row-gap:var(--s7); }
