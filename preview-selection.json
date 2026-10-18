@@ -758,27 +758,103 @@
   ],
   "/proyectos/fanzine-dg2-gabriele": [
     {
-      "src": "/assets/previews/fanzine-dg2-gabriele-v2-01.webp",
-      "width": 707,
-      "height": 1000,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/fanzine-dg2-gabriele-v2-02.webp",
-      "width": 720,
-      "height": 509,
-      "role": "detail"
-    },
-    {
-      "src": "/assets/previews/fanzine-dg2-gabriele-v2-03.webp",
-      "width": 720,
-      "height": 509,
+      "src": "/assets/previews/vaiven-figma-01.jpg",
+      "width": 1920,
+      "height": 1376,
       "role": "detail",
       "crop": {
-        "x": 0.02993158494868871,
-        "y": 0.039919354838709675,
-        "width": 0.9401368301026226,
-        "height": 0.9201612903225806
+        "x": 0.07331,
+        "y": 0.0679,
+        "width": 0.88802,
+        "height": 0.86483
+      },
+      "geometry": {
+        "x": 1565.833,
+        "y": 523.707,
+        "width": 284,
+        "height": 198,
+        "rotation": 5.16,
+        "zIndex": 1
+      }
+    },
+    {
+      "src": "/assets/previews/vaiven-figma-02.jpg",
+      "width": 1920,
+      "height": 1376,
+      "role": "detail",
+      "crop": {
+        "x": 0.07395,
+        "y": 0.0661,
+        "width": 0.88441,
+        "height": 0.86775
+      },
+      "geometry": {
+        "x": 1570.262,
+        "y": 180.629,
+        "width": 283,
+        "height": 199,
+        "rotation": 9.33,
+        "zIndex": 2
+      }
+    },
+    {
+      "src": "/assets/previews/vaiven-figma-03.jpg",
+      "width": 1920,
+      "height": 1376,
+      "role": "detail",
+      "crop": {
+        "x": 0.28331,
+        "y": 0.0669,
+        "width": 0.43333,
+        "height": 0.86267
+      },
+      "geometry": {
+        "x": 1487.173,
+        "y": 648.984,
+        "width": 139,
+        "height": 198,
+        "rotation": -9.36,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/vaiven-figma-04.jpg",
+      "width": 1920,
+      "height": 1376,
+      "role": "detail",
+      "crop": {
+        "x": 0.0579,
+        "y": 0.06398,
+        "width": 0.88699,
+        "height": 0.87062
+      },
+      "geometry": {
+        "x": 1458.207,
+        "y": 352.265,
+        "width": 284,
+        "height": 200,
+        "rotation": -7.76,
+        "zIndex": 4
+      }
+    },
+    {
+      "src": "/assets/previews/vaiven-figma-05.jpg",
+      "width": 1920,
+      "height": 1376,
+      "role": "detail",
+      "crop": {
+        "x": 0.2833,
+        "y": 0.0625,
+        "width": 0.43802,
+        "height": 0.875
+      },
+      "geometry": {
+        "x": 1468.942,
+        "y": 58.057,
+        "width": 141,
+        "height": 201,
+        "rotation": -5.28,
+        "zIndex": 5
       }
     }
   ],
