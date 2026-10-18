@@ -1591,18 +1591,36 @@
           ]
         },
         {
-          "type": "image",
-          "url": "/assets/inmson/dibujo-denso.jpg",
-          "width": 1280,
-          "height": 720,
-          "alt": "Tres espirales azules superpuestas forman un dibujo denso frente a la pizarra de INMSON.",
-          "caption": "La acumulación de gestos construye un volumen."
+          "type": "interactive"
         },
         {
-          "type": "interactive",
-          "title": "Dibujá el sonido.",
-          "description": "Mantené presionado y mové el mouse, o usá el dedo. Subí hacia el agudo. Bajá hacia el grave.",
-          "caption": "El tono cambia con la altura del gesto."
+          "type": "gallery",
+          "layout": "installation-records",
+          "columns": 3,
+          "images": [
+            {
+              "url": "/assets/inmson/instalacion-en-uso.jpg",
+              "width": 960,
+              "height": 720,
+              "alt": "Una persona usa el visor y los controles de INMSON frente a la proyección de la instalación."
+            },
+            {
+              "type": "video",
+              "url": "/assets/inmson/registro-instalacion-01.mp4",
+              "poster": "/assets/inmson/registro-instalacion-01.jpg",
+              "width": 960,
+              "height": 540,
+              "alt": "Registro de una persona interactuando con INMSON mediante visor y controles."
+            },
+            {
+              "type": "video",
+              "url": "/assets/inmson/registro-instalacion-02.mp4",
+              "poster": "/assets/inmson/registro-instalacion-02.jpg",
+              "width": 960,
+              "height": 540,
+              "alt": "Registro de la interacción táctil con INMSON en una tablet."
+            }
+          ]
         },
         {
           "type": "image",

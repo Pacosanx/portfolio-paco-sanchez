@@ -118,3 +118,8 @@
  .phone-mockups>.case-figure:nth-child(2) figcaption{transform:translateY(-8px)}
  .phone-mockups>.case-figure:nth-child(3) figcaption{transform:translateY(8px)}
 }
+
+/* Small documentation of the installation in use. */
+.case-gallery>.case-image-group.installation-records{max-width:780px;justify-self:center;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:center}
+.installation-records video{display:block;width:100%;height:auto;background:#000}
+@container(max-width:650px){.case-gallery>.case-image-group.installation-records{max-width:320px;grid-template-columns:1fr;gap:24px}}
