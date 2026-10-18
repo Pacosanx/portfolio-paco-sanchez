@@ -11,7 +11,7 @@
 .preview-card:nth-child(6){--preview-entry-delay:225ms;--preview-float-delay:-4.4s}
 .preview-card:nth-child(7){--preview-entry-delay:270ms;--preview-float-delay:-5.3s}
 .preview-image-wrap[data-layout="figma"] .preview-card{animation-name:preview-card-appear,preview-float;animation-duration:420ms,6.2s;animation-timing-function:cubic-bezier(.2,.7,.2,1),ease-in-out;animation-fill-mode:both;animation-iteration-count:1,infinite}
-.preview-image-wrap[data-project="metaphex"] .preview-card,.preview-image-wrap[data-project="editorial-espacial"] .preview-card,.preview-image-wrap[data-project="vr-medios-groisman-2"] .preview-card{animation:preview-float 6.2s ease-in-out infinite;animation-delay:var(--preview-float-delay,0s);animation-fill-mode:both}
+
 @keyframes preview-card-appear{from{opacity:0;scale:.96}to{opacity:1;scale:1}}
 @keyframes preview-float{0%,100%{translate:0 0}50%{translate:0 -4px}}
 .preview-card:nth-child(1){left:2%;top:4%;transform:rotate(calc(-3deg + var(--preview-tilt,0deg)));z-index:3}
