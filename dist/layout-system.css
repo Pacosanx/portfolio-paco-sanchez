@@ -338,3 +338,22 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
 .case-image-group.is-strip + .case-image-group.is-strip { margin-top:calc(-1 * var(--module-gap)); }
 .case-gallery:has(.case-image-group.is-strip) { max-width:none; }
 .case-image-group.is-strip { width:calc(100% + 2 * var(--gutter)); max-width:none; margin-inline:calc(-1 * var(--gutter)); padding:0; grid-template-columns:repeat(var(--strip-count),minmax(0,1fr)); gap:0; }
+
+
+/* Project section labels share the left rail used by the home sections. */
+.case-gallery>.case-text.has-section-label,.development-copy-section{grid-column:1/-1;max-width:none;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--grid-gap);align-items:start}
+.case-text.has-section-label>.section-label,.development-copy-section>.section-label,.development-stage>.section-label{grid-column:1/4;grid-row:1;margin:0;padding-top:6px;font-family:var(--mono);font-size:.75rem;font-weight:400;line-height:1.5;color:var(--muted)}
+.case-text-body,.development-copy-section>.development-copy{grid-column:4/11;grid-row:1;min-width:0;max-width:var(--reading-width)}
+.development-stage>.development-copy{grid-row:1}
+.case-pagination>.next-project{justify-self:end;text-align:right;align-items:flex-end;min-width:0;max-width:100%}
+.development-pagination>.next-project{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+@container(max-width:1000px){
+ .case-gallery>.case-text.has-section-label,.development-copy-section{grid-template-columns:repeat(8,minmax(0,1fr))}
+ .case-text.has-section-label>.section-label,.development-copy-section>.section-label,.development-stage>.section-label{grid-column:1/3}
+ .case-text-body,.development-copy-section>.development-copy{grid-column:3/-1}
+}
+@container(max-width:650px){
+ .case-gallery>.case-text.has-section-label,.development-copy-section{grid-template-columns:minmax(0,1fr);row-gap:var(--s5)}
+ .case-text.has-section-label>.section-label,.development-copy-section>.section-label,.development-stage>.section-label{grid-column:1/-1;grid-row:auto;padding-top:0}
+ .case-text-body,.development-copy-section>.development-copy,.development-stage>.development-copy{grid-column:1/-1;grid-row:auto}
+}
