@@ -6,7 +6,7 @@ const projects=content.projects.filter(p=>!['/proyectos/algo-esta-mutando','/pro
 const home=fs.readFileSync('dist/index.html','utf8');
 const basePath=(home.match(/data-base-path="([^"]*)"/)||[])[1]||'';
 const assetUrl=url=>url.startsWith('/')&&!url.startsWith('//')?basePath+url:url;
-const localPath=url=>path.join('dist',url.slice(basePath.length));
+const localPath=url=>path.join('dist',url.split(/[?#]/)[0].slice(basePath.length));
 assert.equal((home.match(/class="project-row"/g)||[]).length,projects.length);
 const developmentProjects=JSON.parse(fs.readFileSync('development-projects.json','utf8'));
 assert.equal((home.match(/<template data-project-template/g)||[]).length,projects.length+developmentProjects.length);
@@ -85,9 +85,13 @@ assert.equal(previews.length,projects.length);
 for(const [i,preview] of previews.entries()){
   assert(preview.images.length>=3,`${projects[i].title}: at least three previews required`);
   assert.equal(preview.images[0].role,'whole',`${projects[i].title}: the first preview must show the complete piece`);
-  for(const image of preview.images){
+  for(const image of preview.images.flatMap(image=>[image,...(image.layers||[])])){
     assert(image.width>0&&image.height>0,projects[i].title);
-    if(image.src.startsWith('/'))assert(fs.existsSync(localPath(image.src)),image.src);
+    if(image.src.startsWith('/')){
+      const file=localPath(image.src);
+      assert(fs.existsSync(file),image.src);
+      if(/\.png$/i.test(file))assert.equal(fs.readFileSync(file).subarray(0,8).toString('hex'),'89504e470d0a1a0a',`${image.src}: invalid PNG signature`);
+    }
     if(image.crop){
       const c=image.crop;
       assert(c.x>=0&&c.y>=0&&c.width>0&&c.height>0&&c.x+c.width<=1.001&&c.y+c.height<=1.001,`${image.src}: invalid crop`);
