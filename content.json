@@ -5322,116 +5322,6 @@
       "context": "Event Media · Filtros de Instagram"
     },
     {
-      "nombre": "Nexo",
-      "title": "Nexo",
-      "ruta": "/proyectos/nexo",
-      "anio": "2026",
-      "discipline": "Diseño UX/UI · App · Interactividad",
-      "format": "UX/UI · App",
-      "context": "FADU / UBA · Diseño UX · Cátedra Lopatín",
-      "descripcion": "Diseño de una app para acompañar a docentes de secundaria ante crisis de salud mental en el aula. Conecta con el equipo de psicopedagogía, ofrece una guía de pasos de acción y permite dar seguimiento a cada alumno.",
-      "herramientas": "Figma",
-      "tools": [
-        "Figma"
-      ],
-      "fuente": "",
-      "preview": "/assets/presentation/nexo/cover.png",
-      "previewWidth": 1672,
-      "previewHeight": 941,
-      "imagenes": [],
-      "links": [
-        {
-          "text": "Probar el prototipo",
-          "href": "https://www.figma.com/proto/daFdXQtvCqUT6tN8qpX9YA/Ux?page-id=315%3A4727&node-id=882-23113&viewport=-10344%2C-32097%2C0.38&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=882%3A23113&show-proto-sidebar=1"
-        }
-      ],
-      "blocks": [
-        {
-          "type": "image",
-          "url": "/assets/presentation/nexo/cover.png",
-          "width": 1672,
-          "height": 941,
-          "alt": "Nexo, proyecto de Diseño UX de la Cátedra Lopatín",
-          "caption": ""
-        },
-        {
-          "type": "text",
-          "label": "01 / EL PROBLEMA",
-          "heading": "Acompañar a quienes acompañan",
-          "text": "El proyecto parte de Silvia, una docente de secundaria con más de veinte años de experiencia. Frente a las crisis de salud mental de sus alumnos, necesita herramientas claras y acceso a un equipo de apoyo.\n\nEl desafío de diseño fue reducir la incertidumbre y facilitar el acceso a la información en un contexto de urgencia."
-        },
-        {
-          "type": "text",
-          "label": "02 / LA PROPUESTA",
-          "heading": "De pedir ayuda a dar seguimiento",
-          "text": "El recorrido comienza con un pedido de asistencia al equipo de psicopedagogía. Mientras llega el profesional, la interfaz muestra pasos de acción ilustrados, la ubicación y el tiempo estimado de llegada. Al finalizar, propone actualizar la ficha del alumno.\n\nLa propuesta se completa con fichas compartidas entre docentes y Academia, una sección de aprendizaje a través de trivias."
-        },
-        {
-          "type": "gallery",
-          "columns": 3,
-          "images": [
-            {
-              "url": "/assets/presentation/nexo/home.png",
-              "width": 360,
-              "height": 800,
-              "alt": "Inicio de Nexo con acceso a asistencia, Academia y fichas de alumnos",
-              "caption": "01 / Pedir asistencia"
-            },
-            {
-              "url": "/assets/presentation/nexo/guide.svg",
-              "width": 316,
-              "height": 702,
-              "alt": "Guía ilustrada con pasos de acción y tiempo estimado de llegada del profesional",
-              "caption": "02 / Acompañar durante la espera"
-            },
-            {
-              "url": "/assets/presentation/nexo/followup.png",
-              "width": 316,
-              "height": 702,
-              "alt": "Cierre del recorrido con opción de actualizar la ficha del alumno",
-              "caption": "03 / Registrar y dar seguimiento"
-            }
-          ],
-          "layout": "phone-mockups"
-        },
-        {
-          "type": "text",
-          "label": "03 / PROTOTIPO",
-          "heading": "Recorrer la experiencia",
-          "text": "El video muestra el recorrido del prototipo. También podés abrir la versión interactiva en Figma.",
-          "links": [
-            {
-              "text": "Probar el prototipo en Figma",
-              "href": "https://www.figma.com/proto/daFdXQtvCqUT6tN8qpX9YA/Ux?page-id=315%3A4727&node-id=882-23113&viewport=-10344%2C-32097%2C0.38&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=882%3A23113&show-proto-sidebar=1"
-            },
-            {
-              "text": "Ver video del prototipo",
-              "href": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/view"
-            }
-          ]
-        },
-        {
-          "type": "embed",
-          "url": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/preview",
-          "title": "Video del prototipo de Nexo",
-          "link": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/view",
-          "aspectRatio": 1.7777777777777777
-        },
-        {
-          "type": "text",
-          "label": "04 / TESTEO",
-          "heading": "Claridad bajo presión",
-          "text": "Según la presentación del proyecto, cinco docentes de nivel secundario probaron el prototipo en una situación simulada de urgencia. Los cinco completaron el flujo sin asistencia en menos de tres minutos, con un tiempo promedio de 2 minutos 40 segundos.\n\nLas devoluciones destacaron la claridad de los pasos y las ilustraciones. También señalaron dudas sobre los subpasos y el avance automático, y el interés por integrar la herramienta a las aplicaciones del colegio."
-        },
-        {
-          "type": "text",
-          "label": "EQUIPO Y CONTEXTO",
-          "heading": "Un proyecto de la FADU",
-          "text": "Trabajo académico de Diseño UX, Cátedra Lopatín, FADU / UBA, 2026.\n\nGrupo Muzzarella / Salud Mental 1: Mercedes Mayol, Ian Daniluk, Juana Nicholson, Martina Benedit y Francisco Sanchez."
-        }
-      ]
-    },
-    {
       "nombre": "LENGUAJES VISUALES - TP2 DG1 - CÁTEDRA GABRIELE",
       "title": "Lenguajes visuales",
       "sourceTitle": "Lenguajes Visuales - TP2 DG1 - Cátedra Gabriele",
@@ -5606,6 +5496,116 @@
       "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA",
       "previewWidth": 1535,
       "previewHeight": 1151
+    },
+    {
+      "nombre": "Nexo",
+      "title": "Nexo",
+      "ruta": "/proyectos/nexo",
+      "anio": "2026",
+      "discipline": "Diseño UX/UI · App · Interactividad",
+      "format": "UX/UI · App",
+      "context": "FADU / UBA · Diseño UX · Cátedra Lopatín",
+      "descripcion": "Diseño de una app para acompañar a docentes de secundaria ante crisis de salud mental en el aula. Conecta con el equipo de psicopedagogía, ofrece una guía de pasos de acción y permite dar seguimiento a cada alumno.",
+      "herramientas": "Figma",
+      "tools": [
+        "Figma"
+      ],
+      "fuente": "",
+      "preview": "/assets/presentation/nexo/cover.png",
+      "previewWidth": 1672,
+      "previewHeight": 941,
+      "imagenes": [],
+      "links": [
+        {
+          "text": "Probar el prototipo",
+          "href": "https://www.figma.com/proto/daFdXQtvCqUT6tN8qpX9YA/Ux?page-id=315%3A4727&node-id=882-23113&viewport=-10344%2C-32097%2C0.38&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=882%3A23113&show-proto-sidebar=1"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "url": "/assets/presentation/nexo/cover.png",
+          "width": 1672,
+          "height": 941,
+          "alt": "Nexo, proyecto de Diseño UX de la Cátedra Lopatín",
+          "caption": ""
+        },
+        {
+          "type": "text",
+          "label": "01 / EL PROBLEMA",
+          "heading": "Acompañar a quienes acompañan",
+          "text": "El proyecto parte de Silvia, una docente de secundaria con más de veinte años de experiencia. Frente a las crisis de salud mental de sus alumnos, necesita herramientas claras y acceso a un equipo de apoyo.\n\nEl desafío de diseño fue reducir la incertidumbre y facilitar el acceso a la información en un contexto de urgencia."
+        },
+        {
+          "type": "text",
+          "label": "02 / LA PROPUESTA",
+          "heading": "De pedir ayuda a dar seguimiento",
+          "text": "El recorrido comienza con un pedido de asistencia al equipo de psicopedagogía. Mientras llega el profesional, la interfaz muestra pasos de acción ilustrados, la ubicación y el tiempo estimado de llegada. Al finalizar, propone actualizar la ficha del alumno.\n\nLa propuesta se completa con fichas compartidas entre docentes y Academia, una sección de aprendizaje a través de trivias."
+        },
+        {
+          "type": "gallery",
+          "columns": 3,
+          "images": [
+            {
+              "url": "/assets/presentation/nexo/home.png",
+              "width": 360,
+              "height": 800,
+              "alt": "Inicio de Nexo con acceso a asistencia, Academia y fichas de alumnos",
+              "caption": "01 / Pedir asistencia"
+            },
+            {
+              "url": "/assets/presentation/nexo/guide.svg",
+              "width": 316,
+              "height": 702,
+              "alt": "Guía ilustrada con pasos de acción y tiempo estimado de llegada del profesional",
+              "caption": "02 / Acompañar durante la espera"
+            },
+            {
+              "url": "/assets/presentation/nexo/followup.png",
+              "width": 316,
+              "height": 702,
+              "alt": "Cierre del recorrido con opción de actualizar la ficha del alumno",
+              "caption": "03 / Registrar y dar seguimiento"
+            }
+          ],
+          "layout": "phone-mockups"
+        },
+        {
+          "type": "text",
+          "label": "03 / PROTOTIPO",
+          "heading": "Recorrer la experiencia",
+          "text": "El video muestra el recorrido del prototipo. También podés abrir la versión interactiva en Figma.",
+          "links": [
+            {
+              "text": "Probar el prototipo en Figma",
+              "href": "https://www.figma.com/proto/daFdXQtvCqUT6tN8qpX9YA/Ux?page-id=315%3A4727&node-id=882-23113&viewport=-10344%2C-32097%2C0.38&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=882%3A23113&show-proto-sidebar=1"
+            },
+            {
+              "text": "Ver video del prototipo",
+              "href": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/view"
+            }
+          ]
+        },
+        {
+          "type": "embed",
+          "url": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/preview",
+          "title": "Video del prototipo de Nexo",
+          "link": "https://drive.google.com/file/d/1G7vkqwx2qaSVXcP1t3XU0B4hMojrxnEN/view",
+          "aspectRatio": 1.7777777777777777
+        },
+        {
+          "type": "text",
+          "label": "04 / TESTEO",
+          "heading": "Claridad bajo presión",
+          "text": "Según la presentación del proyecto, cinco docentes de nivel secundario probaron el prototipo en una situación simulada de urgencia. Los cinco completaron el flujo sin asistencia en menos de tres minutos, con un tiempo promedio de 2 minutos 40 segundos.\n\nLas devoluciones destacaron la claridad de los pasos y las ilustraciones. También señalaron dudas sobre los subpasos y el avance automático, y el interés por integrar la herramienta a las aplicaciones del colegio."
+        },
+        {
+          "type": "text",
+          "label": "EQUIPO Y CONTEXTO",
+          "heading": "Un proyecto de la FADU",
+          "text": "Trabajo académico de Diseño UX, Cátedra Lopatín, FADU / UBA, 2026.\n\nGrupo Muzzarella / Salud Mental 1: Mercedes Mayol, Ian Daniluk, Juana Nicholson, Martina Benedit y Francisco Sanchez."
+        }
+      ]
     },
     {
       "nombre": "SISTEMA GRÁFICO / DILLOM",
