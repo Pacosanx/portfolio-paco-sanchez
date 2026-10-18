@@ -1,126 +1,366 @@
 {
   "/proyectos/metaphex": [
     {
-      "src": "/assets/previews/metaphex-v3-01.webp",
-      "width": 720,
-      "height": 493,
-      "role": "whole"
+      "src": "/assets/previews/figma/23dc6.png",
+      "width": 834,
+      "height": 456,
+      "role": "whole",
+      "geometry": {
+        "x": 1434.55,
+        "y": 349.753,
+        "width": 305,
+        "height": 167,
+        "rotation": -1.8,
+        "zIndex": 3
+      }
     },
     {
-      "src": "/assets/previews/metaphex-v2-01.webp",
-      "width": 600,
-      "height": 299,
-      "role": "detail"
+      "src": "/assets/previews/figma/847bd.png",
+      "width": 1400,
+      "height": 408,
+      "role": "detail",
+      "geometry": {
+        "x": 1442.45,
+        "y": 169.893,
+        "width": 154,
+        "height": 100,
+        "rotation": 6.9,
+        "zIndex": 2
+      },
+      "crop": {
+        "x": 0,
+        "y": 0.03982300884955752,
+        "width": 0.19857029388403494,
+        "height": 0.4424778761061947
+      }
     },
     {
-      "src": "/assets/previews/metaphex-v2-02.webp",
-      "width": 128,
-      "height": 128,
-      "role": "detail"
+      "src": "/assets/previews/figma/847bd.png",
+      "width": 1400,
+      "height": 408,
+      "role": "detail",
+      "geometry": {
+        "x": 1702.233,
+        "y": 494.332,
+        "width": 154,
+        "height": 226,
+        "rotation": 5.91,
+        "zIndex": 4
+      },
+      "crop": {
+        "x": 0.19970214455917393,
+        "y": 0,
+        "width": 0.19857029388403494,
+        "height": 0.4424778761061947
+      }
+    },
+    {
+      "src": "/assets/previews/figma/847bd.png",
+      "width": 1400,
+      "height": 408,
+      "role": "detail",
+      "geometry": {
+        "x": 1487.331,
+        "y": 586.006,
+        "width": 154,
+        "height": 226,
+        "rotation": -9.35,
+        "zIndex": 1
+      },
+      "crop": {
+        "x": 0.6010722795869737,
+        "y": 0,
+        "width": 0.19857029388403494,
+        "height": 0.4424778761061947
+      }
+    },
+    {
+      "src": "/assets/previews/figma/ad4c6.png",
+      "width": 676,
+      "height": 531,
+      "role": "detail",
+      "geometry": {
+        "x": 1622,
+        "y": 152,
+        "width": 276,
+        "height": 217,
+        "rotation": 0,
+        "zIndex": 5
+      }
     }
   ],
   "/proyectos/maradona-alien": [
     {
-      "src": "/assets/previews/maradona-alien-web.webp",
-      "width": 600,
-      "height": 343,
-      "role": "whole"
+      "src": "/assets/previews/figma/5e6ca.png",
+      "width": 737,
+      "height": 593,
+      "role": "whole",
+      "geometry": {
+        "x": 1437.402,
+        "y": 168.6,
+        "width": 218,
+        "height": 176,
+        "rotation": -8.17,
+        "zIndex": 2
+      }
     },
     {
-      "src": "/assets/previews/maradona-alien-vr.webp",
-      "width": 600,
-      "height": 480,
-      "role": "detail"
+      "src": "/assets/previews/figma/b9d60.png",
+      "width": 490,
+      "height": 279,
+      "role": "detail",
+      "geometry": {
+        "x": 1615.51,
+        "y": 255.166,
+        "width": 254.495,
+        "height": 144.906,
+        "rotation": 5.65,
+        "zIndex": 3
+      }
     },
     {
-      "src": "/assets/previews/maradona-alien-editorial.webp",
-      "width": 600,
-      "height": 218,
-      "role": "detail"
+      "src": "/assets/previews/figma/93b6c.png",
+      "width": 724,
+      "height": 426,
+      "role": "detail",
+      "geometry": {
+        "x": 1455.691,
+        "y": 378.294,
+        "width": 248.201,
+        "height": 146.041,
+        "rotation": -3.91,
+        "zIndex": 4
+      }
+    },
+    {
+      "src": "/assets/previews/figma/48cdb.png",
+      "width": 447,
+      "height": 632,
+      "role": "detail",
+      "geometry": {
+        "x": 1717.044,
+        "y": 433.509,
+        "width": 135.129,
+        "height": 191.055,
+        "rotation": 4.98,
+        "zIndex": 5
+      }
+    },
+    {
+      "src": "/assets/previews/figma/036dd.png",
+      "width": 881,
+      "height": 630,
+      "role": "detail",
+      "geometry": {
+        "x": 1443.16,
+        "y": 564.852,
+        "width": 248,
+        "height": 177,
+        "rotation": 5.69,
+        "zIndex": 1
+      }
+    },
+    {
+      "src": "/assets/previews/figma/636b5.png",
+      "width": 418,
+      "height": 298,
+      "role": "detail",
+      "geometry": {
+        "x": 1615.782,
+        "y": 654.804,
+        "width": 247,
+        "height": 176,
+        "rotation": -4.69,
+        "zIndex": 2
+      }
     }
   ],
   "/proyectos/instalacion-vr": [
     {
-      "src": "/assets/previews/instalacion-vr-v2-01.webp",
-      "width": 720,
-      "height": 405,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/instalacion-vr-v2-02.webp",
-      "width": 720,
-      "height": 405,
-      "role": "detail",
-      "crop": {
-        "x": 0.28020833333333334,
-        "y": 0.1,
-        "width": 0.4895833333333333,
-        "height": 0.7296296296296296
+      "src": "/assets/previews/figma/7c52d.png",
+      "width": 977,
+      "height": 974,
+      "role": "whole",
+      "geometry": {
+        "x": 1478.131,
+        "y": 202.158,
+        "width": 184.728,
+        "height": 184.161,
+        "rotation": -5.31,
+        "zIndex": 2
       }
     },
     {
-      "src": "/assets/previews/instalacion-vr-v2-03.webp",
-      "width": 720,
-      "height": 638,
+      "src": "/assets/previews/figma/677ab.png",
+      "width": 978,
+      "height": 973,
       "role": "detail",
-      "crop": {
-        "x": 0.275,
-        "y": 0.1811764705882353,
-        "width": 0.45,
-        "height": 0.76
+      "geometry": {
+        "x": 1677.266,
+        "y": 320.301,
+        "width": 184.735,
+        "height": 183.791,
+        "rotation": 4.05,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/figma/4ede1.png",
+      "width": 1280,
+      "height": 720,
+      "role": "detail",
+      "geometry": {
+        "x": 1470.833,
+        "y": 508.859,
+        "width": 297.601,
+        "height": 167.401,
+        "rotation": -5.08,
+        "zIndex": 4
+      }
+    },
+    {
+      "src": "/assets/previews/figma/bfdaf.png",
+      "width": 974,
+      "height": 974,
+      "role": "detail",
+      "geometry": {
+        "x": 1625.509,
+        "y": 683.509,
+        "width": 184.082,
+        "height": 184.082,
+        "rotation": 3.54,
+        "zIndex": 1
       }
     }
   ],
   "/proyectos/esquematica-microevento": [
     {
-      "src": "/assets/previews/esquematica-microevento-v3-01.webp",
-      "width": 600,
-      "height": 692,
-      "role": "whole"
+      "src": "/assets/previews/figma/139e3.png",
+      "width": 480,
+      "height": 1859,
+      "role": "whole",
+      "geometry": {
+        "x": 1461,
+        "y": 210,
+        "width": 170,
+        "height": 659,
+        "rotation": 0,
+        "zIndex": 1
+      }
     },
     {
-      "src": "/assets/previews/esquematica-microevento-v2-02.webp",
-      "width": 600,
-      "height": 400,
-      "role": "detail"
+      "src": "/assets/previews/figma/40be0.png",
+      "width": 1400,
+      "height": 933,
+      "role": "detail",
+      "geometry": {
+        "x": 1663.934,
+        "y": 677.451,
+        "width": 175,
+        "height": 116,
+        "rotation": -13.2,
+        "zIndex": 4
+      }
     },
     {
-      "src": "/assets/previews/esquematica-microevento-v2-03.webp",
-      "width": 600,
-      "height": 400,
-      "role": "detail"
+      "src": "/assets/previews/figma/96e96.png",
+      "width": 1400,
+      "height": 933,
+      "role": "detail",
+      "geometry": {
+        "x": 1667.137,
+        "y": 466.225,
+        "width": 175,
+        "height": 116,
+        "rotation": 9.19,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/figma/fae91.png",
+      "width": 1400,
+      "height": 933,
+      "role": "detail",
+      "geometry": {
+        "x": 1667.608,
+        "y": 258.972,
+        "width": 174,
+        "height": 116,
+        "rotation": -9.81,
+        "zIndex": 2
+      }
     }
   ],
   "/proyectos/editorial-espacial": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/770b94190740099.65c1362a2b144.jpg",
-      "width": 1280,
-      "height": 853,
-      "role": "whole"
+      "src": "/assets/previews/figma/d67b9.png",
+      "width": 736,
+      "height": 367,
+      "role": "whole",
+      "geometry": {
+        "x": 1553.932,
+        "y": 308.528,
+        "width": 296,
+        "height": 148,
+        "rotation": 7.02,
+        "zIndex": 3
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/e8f80b190740099.65c1362abf350.jpg",
-      "width": 1280,
-      "height": 853,
-      "role": "detail"
+      "src": "/assets/previews/figma/d07d9.png",
+      "width": 1482,
+      "height": 372,
+      "role": "detail",
+      "geometry": {
+        "x": 1467.136,
+        "y": 611.745,
+        "width": 384.558,
+        "height": 96.529,
+        "rotation": 1.42,
+        "zIndex": 4
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/70f71d190740099.65c1362b74adb.jpg",
-      "width": 1280,
-      "height": 853,
-      "role": "detail"
+      "src": "/assets/previews/figma/2ca93.png",
+      "width": 740,
+      "height": 371,
+      "role": "detail",
+      "geometry": {
+        "x": 1530.215,
+        "y": 724.03,
+        "width": 297,
+        "height": 149,
+        "rotation": -4.34,
+        "zIndex": 5
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d10abb190740099.65c1362b76503.jpg",
-      "width": 1280,
-      "height": 853,
-      "role": "detail"
+      "src": "/assets/previews/figma/2a819.png",
+      "width": 368,
+      "height": 369,
+      "role": "detail",
+      "geometry": {
+        "x": 1464.439,
+        "y": 194.439,
+        "width": 149,
+        "height": 149,
+        "rotation": -5.19,
+        "zIndex": 1
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/996507190740099.65c1362b73c6d.gif",
-      "width": 1280,
-      "height": 853,
-      "role": "detail"
+      "src": "/assets/previews/figma/af53d.png",
+      "width": 741,
+      "height": 369,
+      "role": "detail",
+      "geometry": {
+        "x": 1456.227,
+        "y": 456.892,
+        "width": 299,
+        "height": 149,
+        "rotation": -3.46,
+        "zIndex": 2
+      }
     }
   ],
   "/proyectos/editorial-registros": [
@@ -350,28 +590,116 @@
   ],
   "/proyectos/web-arquitectura": [
     {
-      "src": "/assets/previews/web-arquitectura-v2-01.webp",
-      "width": 720,
-      "height": 405,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/web-arquitectura-v2-02.webp",
-      "width": 720,
-      "height": 405,
-      "role": "detail",
-      "crop": {
-        "x": 0.15,
-        "y": 0.12037037037037036,
-        "width": 0.7098958333333333,
-        "height": 0.7898148148148149
+      "src": "/assets/previews/figma/f1a83.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "whole",
+      "geometry": {
+        "x": 1444.928,
+        "y": 214.267,
+        "width": 223,
+        "height": 125,
+        "rotation": 1.69,
+        "zIndex": 1
       }
     },
     {
-      "src": "/assets/previews/web-arquitectura-v3-03.webp",
-      "width": 720,
-      "height": 405,
-      "role": "detail"
+      "src": "/assets/previews/figma/678a7.png",
+      "width": 1920,
+      "height": 1081,
+      "role": "detail",
+      "geometry": {
+        "x": 1643.281,
+        "y": 243.646,
+        "width": 223,
+        "height": 125,
+        "rotation": -6.51,
+        "zIndex": 2
+      }
+    },
+    {
+      "src": "/assets/previews/figma/84652.png",
+      "width": 1920,
+      "height": 1081,
+      "role": "detail",
+      "geometry": {
+        "x": 1448.865,
+        "y": 354.086,
+        "width": 222,
+        "height": 125,
+        "rotation": -2.46,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/figma/95d2c.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "detail",
+      "geometry": {
+        "x": 1648.544,
+        "y": 566.601,
+        "width": 223,
+        "height": 125,
+        "rotation": 2.42,
+        "zIndex": 4
+      }
+    },
+    {
+      "src": "/assets/previews/figma/445bf.png",
+      "width": 1672,
+      "height": 941,
+      "role": "detail",
+      "geometry": {
+        "x": 1649.997,
+        "y": 402.291,
+        "width": 223,
+        "height": 125,
+        "rotation": 3.82,
+        "zIndex": 5
+      }
+    },
+    {
+      "src": "/assets/previews/figma/37b56.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "detail",
+      "geometry": {
+        "x": 1447.978,
+        "y": 668.541,
+        "width": 223,
+        "height": 125,
+        "rotation": -1.87,
+        "zIndex": 6
+      }
+    },
+    {
+      "src": "/assets/previews/figma/75bdb.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "detail",
+      "geometry": {
+        "x": 1445.847,
+        "y": 511.155,
+        "width": 223,
+        "height": 125,
+        "rotation": -3.75,
+        "zIndex": 7
+      }
+    },
+    {
+      "src": "/assets/previews/figma/4bb3c.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "detail",
+      "geometry": {
+        "x": 1638.955,
+        "y": 743.483,
+        "width": 222,
+        "height": 125,
+        "rotation": 1.85,
+        "zIndex": 8
+      }
     }
   ],
   "/proyectos/cuando-acecha-la-maldad-afiche-cine": [
@@ -626,22 +954,134 @@
   ],
   "/proyectos/vr-medios-groisman-2": [
     {
-      "src": "/assets/previews/vr-medios-groisman-2-v2-01.webp",
-      "width": 720,
-      "height": 405,
-      "role": "whole"
+      "src": "/assets/previews/figma/f1a83.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "whole",
+      "geometry": {
+        "x": 1444.928,
+        "y": 207.267,
+        "width": 223,
+        "height": 125,
+        "rotation": 1.69,
+        "zIndex": 2
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/f1a83.png",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/previews/figma/922a9.png",
+          "width": 482,
+          "height": 270
+        }
+      ]
     },
     {
-      "src": "/assets/previews/vr-medios-groisman-2-v2-02.webp",
-      "width": 720,
-      "height": 405,
-      "role": "detail"
+      "src": "/assets/previews/figma/678a7.png",
+      "width": 1920,
+      "height": 1081,
+      "role": "detail",
+      "geometry": {
+        "x": 1643.281,
+        "y": 323.246,
+        "width": 223,
+        "height": 125,
+        "rotation": -6.51,
+        "zIndex": 3
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/678a7.png",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/assets/previews/figma/e3525.png",
+          "width": 484,
+          "height": 271
+        }
+      ]
     },
     {
-      "src": "/assets/previews/vr-medios-groisman-2-v2-03.webp",
-      "width": 720,
-      "height": 405,
-      "role": "detail"
+      "src": "/assets/previews/figma/84652.png",
+      "width": 1920,
+      "height": 1081,
+      "role": "detail",
+      "geometry": {
+        "x": 1448.865,
+        "y": 463.716,
+        "width": 222,
+        "height": 125,
+        "rotation": -2.46,
+        "zIndex": 4
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/84652.png",
+          "width": 1920,
+          "height": 1081
+        },
+        {
+          "src": "/assets/previews/figma/ec41f.png",
+          "width": 483,
+          "height": 271
+        }
+      ]
+    },
+    {
+      "src": "/assets/previews/figma/445bf.png",
+      "width": 1672,
+      "height": 941,
+      "role": "detail",
+      "geometry": {
+        "x": 1649.997,
+        "y": 605.291,
+        "width": 223,
+        "height": 125,
+        "rotation": 3.82,
+        "zIndex": 5
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/445bf.png",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "src": "/assets/previews/figma/75f37.png",
+          "width": 740,
+          "height": 419
+        }
+      ]
+    },
+    {
+      "src": "/assets/previews/figma/75bdb.png",
+      "width": 1920,
+      "height": 1080,
+      "role": "detail",
+      "geometry": {
+        "x": 1445.847,
+        "y": 714.155,
+        "width": 223,
+        "height": 125,
+        "rotation": -3.75,
+        "zIndex": 1
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/75bdb.png",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "src": "/assets/previews/figma/4629c.png",
+          "width": 734,
+          "height": 419
+        }
+      ]
     }
   ],
   "/proyectos/nexo": [
