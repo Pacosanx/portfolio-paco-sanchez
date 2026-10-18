@@ -66,3 +66,6 @@ La interacción de INMSON se presenta sin introducción ni epígrafe exterior. L
 METAPHEX usa `presentationLayout: "behance-original"` y `behance-presentation.mjs` para conservar sus veinte módulos originales: introducción, títulos y vínculos, proporciones de los videos, placas tipográficas, pausas de 56/84 px, capturas completas y mosaico de dieciséis GIFs en dos filas. Los bloques `spacer` conservan los módulos de texto en blanco; cada bloque identifica su `sourceModule` para contrastarlo con Behance.
 
 
+
+
+Editorial Registros conserva sus 26 módulos de Behance mediante `presentationLayout: "behance-original"`: las diez imágenes de apertura, las pausas en blanco, los tres GIFs y las once composiciones de fotografías (incluidas las dos de 2 × 2). Los párrafos, el enlace de la reserva y la cursiva de Medium se mantienen en la introducción, sobre el fondo #001829.

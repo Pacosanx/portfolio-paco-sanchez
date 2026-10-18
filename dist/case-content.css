@@ -125,7 +125,7 @@
 @container(max-width:650px){.case-gallery>.case-image-group.installation-records{max-width:320px;grid-template-columns:1fr;gap:24px}}
 
 /* METAPHEX follows the authored Behance modules, including its blank text modules. */
-.case-presentation--behance{width:calc(100% + 2 * var(--gutter));margin-inline:calc(-1 * var(--gutter));background:#000}
+.case-presentation--behance{width:calc(100% + 2 * var(--gutter));margin-inline:calc(-1 * var(--gutter));background:var(--bg)}
 .case-presentation--behance>.case-gallery{display:block;max-width:1400px;margin-inline:auto;padding-top:84px}
 .case-presentation--behance .behance-copy{display:block;width:86%;max-width:none;margin-inline:auto;padding-top:calc(var(--blank-lines,0) * 28px);font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px;letter-spacing:normal;color:#696969;text-align:left;text-wrap:wrap}
 .case-presentation--behance .behance-copy :is(p,h2,h3){margin:0;padding:0;font:inherit;letter-spacing:normal;text-wrap:wrap}
@@ -138,9 +138,16 @@
 .case-presentation--behance .behance-spacer{height:calc(var(--blank-lines,2) * 28px);margin:0;padding:0}
 .case-presentation--behance :is(.case-figure,.behance-embed,.behance-mosaic){margin-block:0;padding:0;min-width:0}
 .case-presentation--behance .behance-embed{width:100%;max-width:var(--embed-width);margin-inline:auto}
-.case-presentation--behance .case-figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#000}
+.case-presentation--behance .case-figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:var(--bg)}
 .case-presentation--behance .behance-mosaic{display:grid;gap:4px}
 .case-presentation--behance .behance-mosaic-row{display:grid;gap:4px;align-items:start;min-width:0}
 .case-presentation--behance .behance-mosaic-row .case-figure{margin:0;min-width:0}
 .case-presentation--behance>.case-pagination{margin-inline:var(--gutter)}
 .case-presentation--behance>.behance-source{margin:32px var(--gutter) 0;font-size:.75rem;color:var(--secondary)}
+
+
+/* Editorial Registros: the original 26 Behance modules and photographic groupings. */
+.case-presentation--behance .behance-copy>p+p{margin-top:28px}
+.case-presentation--behance .behance-mosaic.behance-inset{width:85.8%;margin-inline:auto}
+.case-presentation--behance>.case-gallery[data-case="editorial-registros"]{display:flex;flex-direction:column;gap:4px;padding-bottom:30px}
+.case-gallery[data-case="editorial-registros"]>.behance-copy{width:85.8%;max-width:800px}

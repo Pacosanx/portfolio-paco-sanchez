@@ -11,8 +11,15 @@ export function renderBehanceModules(project,{embedded=false}={}){
   return project.blocks.map(block=>{
     if(block.type==='text'){
       const tag=embedded?'h3':'h2';
-      const links=(block.links||[]).map(link=>`<a href="${esc(link.href)}" target="_blank" rel="noopener noreferrer">${esc(link.text)}</a>${link.suffix?` ${esc(link.suffix)}`:''}`).join('<br>');
-      return `<section class="behance-copy${block.heading?' behance-section-heading':''}"${source(block)} style="--blank-lines:${Number(block.spaceBefore)||0}">${block.heading?`<${tag}>${esc(block.heading)}</${tag}>`:''}${block.text?`<p>${esc(block.text)}</p>`:''}${links?`<p class="behance-links">${links}</p>`:''}</section>`;
+      let text=esc(block.text||'');
+      for(const word of block.emphasis||[])text=text.replace(esc(word),`<em>${esc(word)}</em>`);
+      const extra=[];
+      for(const link of block.links||[]){
+        const label=esc(link.text),anchor=`<a href="${esc(link.href)}" target="_blank" rel="noopener noreferrer">${label}</a>${link.suffix?` ${esc(link.suffix)}`:''}`;
+        if(text.includes(label))text=text.replace(label,anchor);else extra.push(anchor);
+      }
+      const paragraphs=text?text.split(/\n\s*\n/).map(paragraph=>`<p>${paragraph.replaceAll('\n','<br>')}</p>`).join(''):'';
+      return `<section class="behance-copy${block.heading?' behance-section-heading':''}"${source(block)} style="--blank-lines:${Number(block.spaceBefore)||0}">${block.heading?`<${tag}>${esc(block.heading)}</${tag}>`:''}${paragraphs}${extra.length?`<p class="behance-links">${extra.join('<br>')}</p>`:''}</section>`;
     }
     if(block.type==='spacer')return `<div class="behance-spacer"${source(block)} style="--blank-lines:${Number(block.lines)||0}" aria-hidden="true"></div>`;
     if(block.type==='image')return image(block);
@@ -23,8 +30,9 @@ export function renderBehanceModules(project,{embedded=false}={}){
         const images=block.images.slice(offset,offset+length);offset+=length;
         return `<div class="behance-mosaic-row" style="grid-template-columns:${images.map(item=>`${Number(item.width)/Number(item.height)}fr`).join(' ')}">${images.map(image).join('')}</div>`;
       }).join('');
-      return `<div class="behance-mosaic"${source(block)} aria-label="Estudios animados de METAPHEX">${rows}</div>`;
+      return `<div class="behance-mosaic${block.inset?' behance-inset':''}"${source(block)} aria-label="${esc(block.label||`Estudios animados de ${project.title.toUpperCase()}`)}">${rows}</div>`;
     }
     throw new Error(`Módulo original sin soporte: ${block.type}`);
   }).join('');
 }
+
