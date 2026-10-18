@@ -172,7 +172,7 @@ const home=`${header(true)}<main id="contenido" class="shell">
 </section>
 ${parallelSection(sitePath)}
 <section id="trayectoria" class="trajectory" aria-labelledby="trajectory-title"><h2 class="eyebrow" id="trajectory-title">Trayectoria</h2>
-<div class="experience"><h3 class="cv-heading">Experiencia</h3>${cv([...teaching,...content.experience],'Experiencia')}</div>
+<div class="experience"><h3 class="cv-heading">Experiencia laboral</h3>${cv([...teaching,...content.experience],'Experiencia')}</div>
 <div class="education"><h3 class="cv-heading">Formación</h3>${cv(content.education,'Formación')}</div></section>
 </main>${contact()}${viewer}`;
 
