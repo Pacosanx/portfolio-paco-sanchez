@@ -11,7 +11,7 @@
   const arrangements = {
     metaphex: 'figma', 'maradona-alien': 'figma', 'instalacion-vr': 'figma',
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
-    'editorial-registros': 'fan', 'editorial-tipografico-2023': 'left',
+    'editorial-registros': 'fan', 'editorial-tipografico-2023': 'figma',
     'motion-graphics': 'right', 'filtros-instagram': 'poster',
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
     'historias-instagram': 'poster', 'web-arquitectura': 'figma',
@@ -84,9 +84,35 @@
     if (!section || section.bottom <= 0 || section.top >= innerHeight || rows[selected].hidden) return false;
     const layout = wrap.dataset.layout;
     if (layout === 'figma') {
-      const scale = Math.min(innerWidth / 1919, innerHeight / 905);
+      const images = records[selected]?.images || [];
+      const bounds = images.reduce((result, image) => {
+        const geometry = image.geometry;
+        if (!geometry) return result;
+        const angle = (Number(geometry.rotation) || 0) * Math.PI / 180;
+        const rotatedHeight = Math.abs(Number(geometry.width) * Math.sin(angle))
+          + Math.abs(Number(geometry.height) * Math.cos(angle));
+        const centerY = Number(geometry.y) + Number(geometry.height) / 2;
+        return {
+          top: Math.min(result.top, centerY - rotatedHeight / 2),
+          bottom: Math.max(result.bottom, centerY + rotatedHeight / 2)
+        };
+      }, { top: Infinity, bottom: -Infinity });
+      const groupHeight = bounds.bottom - bounds.top;
+      const hasBounds = Number.isFinite(bounds.top) && Number.isFinite(bounds.bottom) && groupHeight > 0;
+      const frameScale = Math.min(innerWidth / 1919, innerHeight / 905);
+      const scale = hasBounds
+        ? Math.min(frameScale, section.height / groupHeight)
+        : frameScale;
       const offsetX = (innerWidth - 1919 * scale) / 2;
       const offsetY = (innerHeight - 905 * scale) / 2;
+      const groupTop = hasBounds ? offsetY + bounds.top * scale : 0;
+      const groupBottom = hasBounds ? offsetY + bounds.bottom * scale : 0;
+      const centeredShift = hasBounds ? innerHeight / 2 - (groupTop + groupBottom) / 2 : 0;
+      const minimumShift = hasBounds ? section.top - groupTop : 0;
+      const maximumShift = hasBounds ? section.bottom - groupBottom : 0;
+      const verticalShift = hasBounds
+        ? Math.min(maximumShift, Math.max(minimumShift, centeredShift))
+        : 0;
       stage.style.left = '0px';
       stage.style.width = `${innerWidth}px`;
       stage.style.top = '0px';
@@ -94,14 +120,13 @@
       wrap.style.width = `${innerWidth}px`;
       wrap.style.height = `${innerHeight}px`;
       wrap.style.maxHeight = 'none';
-      const images = records[selected]?.images || [];
       [...wrap.children].forEach((card, i) => {
         const geometry = images[i]?.geometry;
         if (!geometry) return;
         // Figma geometry replaces the card's initial centered transform; don't animate that repositioning.
         card.style.transition = 'none';
         card.style.setProperty('left', `${offsetX + Number(geometry.x) * scale}px`, 'important');
-        card.style.setProperty('top', `${offsetY + Number(geometry.y) * scale}px`, 'important');
+        card.style.setProperty('top', `${offsetY + Number(geometry.y) * scale + verticalShift}px`, 'important');
         card.style.setProperty('right', 'auto', 'important');
         card.style.setProperty('bottom', 'auto', 'important');
         card.style.setProperty('width', `${Number(geometry.width) * scale}px`, 'important');
@@ -172,7 +197,6 @@
       // A small, stable tilt change keeps related projects from sharing one stack.
       const seed = [...(slug || '')].reduce((sum, char) => sum + char.charCodeAt(0), 0);
       wrap.style.setProperty('--preview-tilt', `${(seed % 5) - 2}deg`);
-      position();
       wrap.replaceChildren(...cards.map(({ card }) => card));
       wrap.dataset.previewCount = String(cards.length);
       wrap.dataset.projectIndex = i;
