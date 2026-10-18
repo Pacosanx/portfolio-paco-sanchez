@@ -1643,164 +1643,6 @@
       "format": "VR"
     },
     {
-      "nombre": "EXPERIENCIA VR / MEDIOS GROISMAN 2",
-      "title": "Pesadilla VR",
-      "ruta": "/proyectos/vr-medios-groisman-2",
-      "anio": "2024",
-      "descripcion": "Una pesadilla infantil reconstruida como fragmentos de memoria: escenas familiares aparecen desordenadas, deformadas y conectadas por sonidos que se activan al acercarse.",
-      "herramientas": "Unity",
-      "tools": [
-        "Unity"
-      ],
-      "discipline": "Realidad virtual · Diseño de interacción",
-      "context": "Medios 2 · Groisman · FADU / UBA",
-      "fuente": "/assets/vr-medios2/recorrido-completo.mp4",
-      "fuenteLabel": "Ver recorrido completo",
-      "imagenes": [
-        {
-          "url": "/assets/vr-medios2/05-detalle-tren.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Movimiento de cámara alrededor del tren"
-        },
-        {
-          "url": "/assets/vr-medios2/06-detalle-habitacion.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Movimiento de cámara dentro de la habitación infantil"
-        },
-        {
-          "url": "/assets/vr-medios2/07-detalle-monstruo.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Detalle de la figura de papel en movimiento"
-        },
-        {
-          "url": "/assets/vr-medios2/08-detalle-caballito.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Movimiento de cámara alrededor del caballito"
-        },
-        {
-          "url": "/assets/vr-medios2/09-detalle-hospital.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Detalle de la camilla de hospital en movimiento"
-        },
-        {
-          "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Recorrido de cámara junto a los maniquíes"
-        },
-        {
-          "url": "/assets/vr-medios2/11-detalle-ataud.gif",
-          "width": 560,
-          "height": 315,
-          "alt": "Ataúd y figura de papel en la escena final"
-        }
-      ],
-      "preview": "/assets/vr-medios2/01-bosque.webp",
-      "previewWidth": 1920,
-      "previewHeight": 1080,
-      "galleryLayout": "grid",
-      "blocks": [
-        {
-          "type": "video",
-          "url": "/assets/vr-medios2/recorrido-completo.mp4",
-          "poster": "/assets/vr-medios2/01-bosque.webp",
-          "title": "Recorrido de la experiencia VR de Medios Groisman 2",
-          "caption": "Recorrido completo · 1 min 56 s · con sonido. Registro de 2026 desde la escena original de Unity, con cámara de escritorio y sin casco."
-        },
-        {
-          "type": "text",
-          "text": "El bosque se reconstruye como un recuerdo incompleto: un tren, una habitación y una figura aparecen fuera de lugar, como imágenes que vuelven sin orden.",
-          "heading": "Fragmentos de una pesadilla"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/05-detalle-tren.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Movimiento de cámara alrededor del tren"
-            },
-            {
-              "url": "/assets/vr-medios2/06-detalle-habitacion.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Movimiento de cámara dentro de la habitación infantil"
-            },
-            {
-              "url": "/assets/vr-medios2/07-detalle-monstruo.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Detalle de la figura de papel en movimiento"
-            }
-          ],
-          "columns": 3,
-          "gap": 12
-        },
-        {
-          "type": "text",
-          "text": "Los objetos cambian de escala y de contexto. El recorrido mezcla espacios infantiles, ruinas y escenas inquietantes para acercarse a la lógica fragmentada de una pesadilla.",
-          "heading": "Escenas distorsionadas"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/08-detalle-caballito.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Movimiento de cámara alrededor del caballito"
-            },
-            {
-              "url": "/assets/vr-medios2/09-detalle-hospital.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Detalle de la camilla de hospital en movimiento"
-            }
-          ],
-          "columns": 2,
-          "gap": 12
-        },
-        {
-          "type": "text",
-          "text": "Las figuras conducen a una última aparición. Los sonidos que responden a la proximidad acentúan el paso entre fragmentos de memoria.",
-          "heading": "El recuerdo final"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Recorrido de cámara junto a los maniquíes"
-            },
-            {
-              "url": "/assets/vr-medios2/11-detalle-ataud.gif",
-              "width": 560,
-              "height": 315,
-              "alt": "Ataúd y figura de papel en la escena final"
-            }
-          ],
-          "columns": 2,
-          "gap": 12
-        }
-      ],
-      "contenidoFuente": {
-        "fechaRegistro": "2026-10-15",
-        "anioProyecto": "2024",
-        "images": 12,
-        "gifs": 7,
-        "videos": 1,
-        "origen": "Capturas nuevas de la escena original de Unity; cámara y desplazamiento automatizados en una copia del proyecto."
-      }
-    },
-    {
       "nombre": "ESQUEMÁTICA / MICROEVENTO",
       "ruta": "/proyectos/esquematica-microevento",
       "anio": "2023",
@@ -4162,6 +4004,164 @@
         "secondary": "#FFF9F1",
         "muted": "#FFF9F1",
         "line": "#C9BBAB"
+      }
+    },
+    {
+      "nombre": "EXPERIENCIA VR / MEDIOS GROISMAN 2",
+      "title": "Pesadilla VR",
+      "ruta": "/proyectos/vr-medios-groisman-2",
+      "anio": "2024",
+      "descripcion": "Una pesadilla infantil reconstruida como fragmentos de memoria: escenas familiares aparecen desordenadas, deformadas y conectadas por sonidos que se activan al acercarse.",
+      "herramientas": "Unity",
+      "tools": [
+        "Unity"
+      ],
+      "discipline": "Realidad virtual · Diseño de interacción",
+      "context": "Medios 2 · Groisman · FADU / UBA",
+      "fuente": "/assets/vr-medios2/recorrido-completo.mp4",
+      "fuenteLabel": "Ver recorrido completo",
+      "imagenes": [
+        {
+          "url": "/assets/vr-medios2/05-detalle-tren.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Movimiento de cámara alrededor del tren"
+        },
+        {
+          "url": "/assets/vr-medios2/06-detalle-habitacion.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Movimiento de cámara dentro de la habitación infantil"
+        },
+        {
+          "url": "/assets/vr-medios2/07-detalle-monstruo.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Detalle de la figura de papel en movimiento"
+        },
+        {
+          "url": "/assets/vr-medios2/08-detalle-caballito.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Movimiento de cámara alrededor del caballito"
+        },
+        {
+          "url": "/assets/vr-medios2/09-detalle-hospital.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Detalle de la camilla de hospital en movimiento"
+        },
+        {
+          "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Recorrido de cámara junto a los maniquíes"
+        },
+        {
+          "url": "/assets/vr-medios2/11-detalle-ataud.gif",
+          "width": 560,
+          "height": 315,
+          "alt": "Ataúd y figura de papel en la escena final"
+        }
+      ],
+      "preview": "/assets/vr-medios2/01-bosque.webp",
+      "previewWidth": 1920,
+      "previewHeight": 1080,
+      "galleryLayout": "grid",
+      "blocks": [
+        {
+          "type": "video",
+          "url": "/assets/vr-medios2/recorrido-completo.mp4",
+          "poster": "/assets/vr-medios2/01-bosque.webp",
+          "title": "Recorrido de la experiencia VR de Medios Groisman 2",
+          "caption": "Recorrido completo · 1 min 56 s · con sonido. Registro de 2026 desde la escena original de Unity, con cámara de escritorio y sin casco."
+        },
+        {
+          "type": "text",
+          "text": "El bosque se reconstruye como un recuerdo incompleto: un tren, una habitación y una figura aparecen fuera de lugar, como imágenes que vuelven sin orden.",
+          "heading": "Fragmentos de una pesadilla"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/05-detalle-tren.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara alrededor del tren"
+            },
+            {
+              "url": "/assets/vr-medios2/06-detalle-habitacion.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara dentro de la habitación infantil"
+            },
+            {
+              "url": "/assets/vr-medios2/07-detalle-monstruo.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Detalle de la figura de papel en movimiento"
+            }
+          ],
+          "columns": 3,
+          "gap": 12
+        },
+        {
+          "type": "text",
+          "text": "Los objetos cambian de escala y de contexto. El recorrido mezcla espacios infantiles, ruinas y escenas inquietantes para acercarse a la lógica fragmentada de una pesadilla.",
+          "heading": "Escenas distorsionadas"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/08-detalle-caballito.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Movimiento de cámara alrededor del caballito"
+            },
+            {
+              "url": "/assets/vr-medios2/09-detalle-hospital.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Detalle de la camilla de hospital en movimiento"
+            }
+          ],
+          "columns": 2,
+          "gap": 12
+        },
+        {
+          "type": "text",
+          "text": "Las figuras conducen a una última aparición. Los sonidos que responden a la proximidad acentúan el paso entre fragmentos de memoria.",
+          "heading": "El recuerdo final"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "/assets/vr-medios2/10-detalle-maniquies.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Recorrido de cámara junto a los maniquíes"
+            },
+            {
+              "url": "/assets/vr-medios2/11-detalle-ataud.gif",
+              "width": 560,
+              "height": 315,
+              "alt": "Ataúd y figura de papel en la escena final"
+            }
+          ],
+          "columns": 2,
+          "gap": 12
+        }
+      ],
+      "contenidoFuente": {
+        "fechaRegistro": "2026-10-15",
+        "anioProyecto": "2024",
+        "images": 12,
+        "gifs": 7,
+        "videos": 1,
+        "origen": "Capturas nuevas de la escena original de Unity; cámara y desplazamiento automatizados en una copia del proyecto."
       }
     },
     {
