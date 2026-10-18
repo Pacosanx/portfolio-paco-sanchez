@@ -14,13 +14,13 @@
     'editorial-registros': 'fan', 'editorial-tipografico-2023': 'left',
     'motion-graphics': 'right', 'filtros-instagram': 'poster',
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
-    'historias-instagram': 'poster', 'web-arquitectura': 'right',
+    'historias-instagram': 'poster', 'web-arquitectura': 'figma',
     'cuando-acecha-la-maldad-afiche-cine': 'left', 'fanzine-dg2-gabriele': 'poster',
     'festival-sistema-grafico-v1': 'fan', 'festival-sistema-grafico': 'poster',
     'video-cinetica-dg2-gabriele': 'left',
     'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'fan',
     'demo-youtube-darksidesports': 'right', 'pirana-modelado-3d': 'fan',
-    'vr-medios-groisman-2': 'left'
+    'vr-medios-groisman-2': 'figma'
   };
 
   const load = asset => {
@@ -43,35 +43,71 @@
 
   const createCard = entry => {
     const { asset } = entry;
-    const raw = asset.crop || { x: 0, y: 0, width: 1, height: 1 };
-    const crop = {
-      x: Math.max(0, Math.min(.99, Number(raw.x) || 0)),
-      y: Math.max(0, Math.min(.99, Number(raw.y) || 0)),
-      width: Math.max(.01, Math.min(1, Number(raw.width) || 1)),
-      height: Math.max(.01, Math.min(1, Number(raw.height) || 1))
-    };
     const card = document.createElement('div');
     card.className = 'preview-card';
     card.dataset.role = asset.role || 'detail';
-    card.dataset.ratio = asset.width * crop.width / (asset.height * crop.height);
+    const geometry = asset.geometry;
+    card.dataset.ratio = geometry?.width && geometry?.height
+      ? geometry.width / geometry.height
+      : asset.width / asset.height;
     const cropFrame = document.createElement('div');
     cropFrame.className = 'preview-crop';
-    const image = entry.image.cloneNode(true);
-    image.className = 'preview-image';
-    image.style.width = `${100 / crop.width}%`;
-    image.style.height = `${100 / crop.height}%`;
-    image.style.left = `${-100 * crop.x / crop.width}%`;
-    image.style.top = `${-100 * crop.y / crop.height}%`;
-    if (/^(polygon|inset)\([\d\s.,%+-]+\)$/.test(asset.clipPath || '')) image.style.clipPath = asset.clipPath;
-    cropFrame.append(image);
+    const sources = entry.layers?.length ? entry.layers : [entry];
+    const images = sources.map(source => {
+      const sourceAsset = source.asset || asset;
+      const raw = sourceAsset.crop || (!source.asset ? asset.crop : null) || { x: 0, y: 0, width: 1, height: 1 };
+      const crop = {
+        x: Math.max(0, Math.min(.99, Number(raw.x) || 0)),
+        y: Math.max(0, Math.min(.99, Number(raw.y) || 0)),
+        width: Math.max(.01, Math.min(1, Number(raw.width) || 1)),
+        height: Math.max(.01, Math.min(1, Number(raw.height) || 1))
+      };
+      const image = source.image.cloneNode(true);
+      image.className = 'preview-image';
+      image.style.width = `${100 / crop.width}%`;
+      image.style.height = `${100 / crop.height}%`;
+      image.style.left = `${-100 * crop.x / crop.width}%`;
+      image.style.top = `${-100 * crop.y / crop.height}%`;
+      if (/^(polygon|inset)\\([\\d\\s.,%+-]+\\)$/.test(sourceAsset.clipPath || '')) image.style.clipPath = sourceAsset.clipPath;
+      cropFrame.append(image);
+      return image;
+    });
     card.append(cropFrame);
-    return { card, image };
+    return { card, images };
   };
 
   const position = () => {
     if (selected < 0 || !desktop.matches) return false;
     const section = column.closest('.work-section')?.getBoundingClientRect();
     if (!section || section.bottom <= 0 || section.top >= innerHeight || rows[selected].hidden) return false;
+    const layout = wrap.dataset.layout;
+    if (layout === 'figma') {
+      const scale = Math.min(innerWidth / 1919, innerHeight / 905);
+      const offsetX = (innerWidth - 1919 * scale) / 2;
+      const offsetY = (innerHeight - 905 * scale) / 2;
+      stage.style.left = '0px';
+      stage.style.width = `${innerWidth}px`;
+      stage.style.top = '0px';
+      stage.style.height = `${innerHeight}px`;
+      wrap.style.width = `${innerWidth}px`;
+      wrap.style.height = `${innerHeight}px`;
+      wrap.style.maxHeight = 'none';
+      const images = records[selected]?.images || [];
+      [...wrap.children].forEach((card, i) => {
+        const geometry = images[i]?.geometry;
+        if (!geometry) return;
+        card.style.setProperty('left', `${offsetX + Number(geometry.x) * scale}px`, 'important');
+        card.style.setProperty('top', `${offsetY + Number(geometry.y) * scale}px`, 'important');
+        card.style.setProperty('right', 'auto', 'important');
+        card.style.setProperty('bottom', 'auto', 'important');
+        card.style.setProperty('width', `${Number(geometry.width) * scale}px`, 'important');
+        card.style.setProperty('height', `${Number(geometry.height) * scale}px`, 'important');
+        card.style.setProperty('transform', `rotate(${Number(geometry.rotation) || 0}deg)`, 'important');
+        card.style.setProperty('transform-origin', 'center', 'important');
+        card.style.setProperty('z-index', String(Number(geometry.zIndex) || i + 1), 'important');
+      });
+      return true;
+    }
     const box = column.getBoundingClientRect();
     const padding = parseFloat(getComputedStyle(column).paddingLeft) || 0;
     const width = Math.max(0, box.width - padding);
@@ -83,10 +119,9 @@
     stage.style.width = `${width}px`;
     stage.style.top = `${sectionTop}px`;
     wrap.style.height = `${height}px`;
-    [...wrap.children].forEach((card, i) => {
+    [...wrap.children].forEach(card => {
       const ratio = Number(card.dataset.ratio) || 1;
       const whole = card.dataset.role === 'whole';
-      const layout = wrap.dataset.layout;
       const count = wrap.children.length;
       const mainWidth = count > 5 ? .4 : count > 3 ? .48 : .74;
       const detailWidth = count > 5 ? .24 : count > 3 ? .32 : .48;
@@ -117,15 +152,19 @@
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
     stage.classList.remove('is-visible');
     position();
-    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 7);
+    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 12);
     if (assets.length < 3) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); return; }
     const current = () => token === request && selected === i && desktop.matches;
     try {
-      const entries = assets.map(load);
-      await Promise.all(entries.map(entry => entry.promise));
+      const entries = assets.map(asset => {
+        const main = load(asset);
+        const layers = (asset.layers || []).map(load);
+        return { asset, image: main.image, promise: main.promise, layers };
+      });
+      await Promise.all(entries.flatMap(entry => [entry.promise, ...entry.layers.map(layer => layer.promise)]));
       if (!current()) return;
       const cards = entries.map(createCard);
-      await Promise.all(cards.map(({ image }) => image.decode()));
+      await Promise.all(cards.flatMap(({ images }) => images.map(image => image.decode())));
       if (!current()) return;
       wrap.replaceChildren(...cards.map(({ card }) => card));
       wrap.dataset.previewCount = String(cards.length);
