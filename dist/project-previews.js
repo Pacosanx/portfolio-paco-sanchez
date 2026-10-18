@@ -15,7 +15,7 @@
     'motion-graphics': 'right', 'filtros-instagram': 'poster',
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
     'historias-instagram': 'poster', 'web-arquitectura': 'figma',
-    'cuando-acecha-la-maldad-afiche-cine': 'left', 'fanzine-dg2-gabriele': 'poster',
+    'cuando-acecha-la-maldad-afiche-cine': 'figma', 'fanzine-dg2-gabriele': 'figma',
     'festival-sistema-grafico-v1': 'fan', 'festival-sistema-grafico': 'poster',
     'video-cinetica-dg2-gabriele': 'left',
     'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'fan',
@@ -210,7 +210,7 @@
     if (hadPreview) stage.classList.add('is-changing');
     else stage.classList.remove('is-visible', 'is-changing');
     const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 12);
-    if (assets.length < 3) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); return; }
+    if (!assets.length) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); return; }
     const current = () => token === request && selected === i && desktop.matches;
     try {
       const entries = assets.map(asset => {

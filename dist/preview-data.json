@@ -282,15 +282,15 @@
     "route": "/proyectos/fanzine-dg2-gabriele",
     "images": [
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/vaiven-figma-01.jpg",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/vaiven-18-110.png?v=5e7c95ea96",
         "width": 1920,
         "height": 1376,
-        "role": "detail",
+        "role": "whole",
         "crop": {
-          "x": 0.07331,
-          "y": 0.0679,
-          "width": 0.88802,
-          "height": 0.86483
+          "x": 0.05781014119527573,
+          "y": 0.06762950791317132,
+          "width": 0.8880206020779682,
+          "height": 0.8648274669203494
         },
         "geometry": {
           "x": 1565.833,
@@ -302,19 +302,19 @@
         }
       },
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/vaiven-figma-02.jpg",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/vaiven-18-106.png?v=7ccf25568e",
         "width": 1920,
         "height": 1376,
         "role": "detail",
         "crop": {
-          "x": 0.07395,
-          "y": 0.0661,
-          "width": 0.88441,
-          "height": 0.86775
+          "x": 0.057840275935261344,
+          "y": 0.06612287400208261,
+          "width": 0.8844078889183692,
+          "height": 0.8677542519958348
         },
         "geometry": {
           "x": 1570.262,
-          "y": 180.629,
+          "y": 180.6285,
           "width": 283,
           "height": 199,
           "rotation": 9.33,
@@ -322,19 +322,19 @@
         }
       },
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/vaiven-figma-03.jpg",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/vaiven-18-112.png?v=14e38d5372",
         "width": 1920,
         "height": 1376,
         "role": "detail",
         "crop": {
-          "x": 0.28331,
-          "y": 0.0669,
-          "width": 0.43333,
-          "height": 0.86267
+          "x": 0.2833123889587034,
+          "y": 0.06685645272601794,
+          "width": 0.43333188889370367,
+          "height": 0.862663906142167
         },
         "geometry": {
           "x": 1487.173,
-          "y": 648.984,
+          "y": 648.9835,
           "width": 139,
           "height": 198,
           "rotation": -9.36,
@@ -342,19 +342,19 @@
         }
       },
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/vaiven-figma-04.jpg",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/vaiven-18-108.png?v=b8c0cf46cf",
         "width": 1920,
         "height": 1376,
         "role": "detail",
         "crop": {
-          "x": 0.0579,
-          "y": 0.06398,
-          "width": 0.88699,
-          "height": 0.87062
+          "x": 0.057832180237715095,
+          "y": 0.06399094549886819,
+          "width": 0.8869966294128083,
+          "height": 0.8706251088281386
         },
         "geometry": {
-          "x": 1458.207,
-          "y": 352.265,
+          "x": 1458.2065,
+          "y": 352.2645,
           "width": 284,
           "height": 200,
           "rotation": -7.76,
@@ -362,19 +362,19 @@
         }
       },
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/vaiven-figma-05.jpg",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/vaiven-18-104.png?v=7896b5f941",
         "width": 1920,
         "height": 1376,
         "role": "detail",
         "crop": {
-          "x": 0.2833,
-          "y": 0.0625,
-          "width": 0.43802,
-          "height": 0.875
+          "x": 0.283311432325887,
+          "y": 0.062472657275352166,
+          "width": 0.4380201489268506,
+          "height": 0.8749671887304226
         },
         "geometry": {
           "x": 1468.942,
-          "y": 58.057,
+          "y": 58.0565,
           "width": 141,
           "height": 201,
           "rotation": -5.28,
@@ -387,33 +387,17 @@
     "route": "/proyectos/cuando-acecha-la-maldad-afiche-cine",
     "images": [
       {
-        "src": "/portfolio-paco-sanchez/assets/previews/cuando-acecha-la-maldad-afiche-cine-v2-01.webp",
-        "width": 560,
-        "height": 800,
-        "role": "whole"
-      },
-      {
-        "src": "/portfolio-paco-sanchez/assets/previews/cuando-acecha-la-maldad-afiche-cine-v2-02.webp",
-        "width": 560,
-        "height": 800,
-        "role": "detail",
-        "crop": {
-          "x": 0.2,
-          "y": 0.08,
-          "width": 0.6107142857142858,
-          "height": 0.47
-        }
-      },
-      {
-        "src": "/portfolio-paco-sanchez/assets/previews/cuando-acecha-la-maldad-afiche-cine-v2-03.webp",
-        "width": 560,
-        "height": 800,
-        "role": "detail",
-        "crop": {
-          "x": 0.060714285714285714,
-          "y": 0.49,
-          "width": 0.8785714285714286,
-          "height": 0.43
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/maldad-18-124.png?v=3359901f78",
+        "width": 1920,
+        "height": 2743,
+        "role": "whole",
+        "geometry": {
+          "x": 1462.334,
+          "y": 184.8755,
+          "width": 374.795,
+          "height": 535.449,
+          "rotation": 1.84,
+          "zIndex": 1
         }
       }
     ]

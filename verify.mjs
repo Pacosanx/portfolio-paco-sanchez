@@ -84,7 +84,7 @@ for(const [i,p] of projects.entries()){
 const previews=JSON.parse(fs.readFileSync('dist/preview-data.json','utf8'));
 assert.equal(previews.length,projects.length);
 for(const [i,preview] of previews.entries()){
-  assert(preview.images.length>=3,`${projects[i].title}: at least three previews required`);
+  assert(preview.images.length>=1,`${projects[i].title}: at least one preview required`);
   assert.equal(preview.images[0].role,'whole',`${projects[i].title}: the first preview must show the complete piece`);
   for(const image of preview.images.flatMap(image=>[image,...(image.layers||[])])){
     assert(image.width>0&&image.height>0,projects[i].title);

@@ -69,3 +69,5 @@ METAPHEX usa `presentationLayout: "behance-original"` y `behance-presentation.mj
 
 
 Editorial Registros conserva sus 26 módulos de Behance mediante `presentationLayout: "behance-original"`: las diez imágenes de apertura, las pausas en blanco, los tres GIFs y las once composiciones de fotografías (incluidas las dos de 2 × 2). Los párrafos, el enlace de la reserva y la cursiva de Medium se mantienen en la introducción, sobre el fondo #001829.
+
+Los hovers de Vaivén (18:75) y Cuando Acecha la Maldad (18:114) usan las imágenes originales de Figma y `geometry` con sus recortes, tamaños, posiciones y giros. Vaivén conserva cinco piezas; el afiche se presenta como una sola pieza completa. El lector de previews admite una o más imágenes y estos dos grupos no flotan después de aparecer.

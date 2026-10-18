@@ -52,3 +52,6 @@
 .preview-image-wrap[data-preview-count="7"] .preview-card:nth-child(5){left:27%!important;right:auto!important;top:67%!important;bottom:auto!important;transform:translate(-50%,-50%) rotate(-3deg)!important;z-index:1}
 .preview-image-wrap[data-preview-count="7"] .preview-card:nth-child(6){left:73%!important;right:auto!important;top:67%!important;bottom:auto!important;transform:translate(-50%,-50%) rotate(3deg)!important;z-index:3}
 .preview-image-wrap[data-preview-count="7"] .preview-card:nth-child(7){left:50%!important;right:auto!important;top:82%!important;bottom:auto!important;transform:translate(-50%,-50%) rotate(2deg)!important;z-index:2}
+
+/* These two Figma compositions keep their authored rotation and fixed layer positions. */
+.preview-image-wrap:is([data-project="fanzine-dg2-gabriele"],[data-project="cuando-acecha-la-maldad-afiche-cine"]) .preview-card{animation-name:preview-card-appear;filter:none}
