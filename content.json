@@ -1179,13 +1179,13 @@
       "sourceTitle": "Web patrimonio arquitectónico",
       "ruta": "/proyectos/web-arquitectura",
       "anio": "2025",
-      "descripcion": "Un archivo digital para explorar el patrimonio arquitectónico de Buenos Aires. La propuesta conecta fachadas, documentos, estilos y autores, y transforma esas relaciones en colecciones y recorridos para la web y el móvil.",
+      "descripcion": "Un archivo digital para explorar el patrimonio arquitectónico de Buenos Aires. La propuesta conecta fachadas, documentos, estilos y autores, y transforma esas relaciones en colecciones y recorridos urbanos.",
       "herramientas": "Figma · HTML",
       "tools": [
         "Figma",
         "HTML"
       ],
-      "discipline": "Archivo digital / Web / App / Realidad aumentada",
+      "discipline": "Archivo digital / Web",
       "context": "Trabajo grupal · Diseño Gráfico 3 · FADU / UBA",
       "status": "Diseño y prototipos",
       "fuente": "https://pacosanx.myportfolio.com/web-arquitectura",
@@ -1202,14 +1202,6 @@
           "aspectRatio": 1.77778,
           "title": "FACHADA — recorrido completo del prototipo web",
           "caption": "Recorrido completo: de la red de fachadas al archivo, los detalles y las colecciones."
-        },
-        {
-          "type": "image",
-          "url": "/assets/fachada/orden-pantallas.svg",
-          "width": 1920,
-          "height": 1240,
-          "alt": "Orden de las veinte pantallas de FACHADA: archivo, historia, elementos, colecciones, app y realidad aumentada.",
-          "caption": "Las pantallas se leen de izquierda a derecha y de arriba abajo. Ampliá la imagen para ver el recorrido completo."
         },
         {
           "type": "image",
@@ -1402,84 +1394,9 @@
           "height": 1080,
           "alt": "Mapa de Buenos Aires con fachadas de una colección y una ruta trazada entre ellas.",
           "caption": "Transformar la colección en un recorrido urbano."
-        },
-        {
-          "type": "text",
-          "heading": "06 / Llevar el archivo a la ciudad",
-          "text": "La propuesta móvil acompaña la visita: permite elegir una colección, seguir el recorrido y volver al archivo de las fachadas visitadas. El mismo patrimonio se consulta desde la pantalla y frente al edificio."
-        },
-        {
-          "type": "gallery",
-          "columns": 4,
-          "images": [
-            {
-              "url": "/assets/fachada/app-inicio.webp",
-              "width": 780,
-              "height": 1688,
-              "alt": "Pantalla de inicio de la aplicación móvil FACHADA.",
-              "caption": "Iniciar la exploración."
-            },
-            {
-              "url": "/assets/fachada/app-ruta.webp",
-              "width": 780,
-              "height": 1688,
-              "alt": "Aplicación móvil con el recorrido trazado sobre un mapa.",
-              "caption": "Seguir el recorrido."
-            },
-            {
-              "url": "/assets/fachada/app-visitadas.webp",
-              "width": 900,
-              "height": 1920,
-              "alt": "Registro móvil de las fachadas visitadas.",
-              "caption": "Volver a las fachadas visitadas."
-            },
-            {
-              "url": "/assets/fachada/app-galeria.webp",
-              "width": 900,
-              "height": 1920,
-              "alt": "Archivo visual de un edificio desde la aplicación móvil.",
-              "caption": "Consultar su archivo."
-            }
-          ],
-          "layout": "phones"
-        },
-        {
-          "type": "video",
-          "url": "/assets/fachada/16b-app-recorrido.mp4",
-          "title": "Del mapa al elemento arquitectónico en la app",
-          "poster": "/assets/fachada/app-ruta.webp",
-          "width": 780,
-          "height": 1688,
-          "aspectRatio": 0.46209,
-          "caption": "Demostración del recorrido en la aplicación móvil.",
-          "layout": "portrait"
-        },
-        {
-          "type": "text",
-          "heading": "07 / Del archivo al entorno",
-          "text": "La exploración se extiende a la realidad aumentada. El registro muestra un elemento arquitectónico del archivo superpuesto al entorno de la cámara, como otra forma de observarlo fuera de la ficha."
-        },
-        {
-          "type": "video",
-          "url": "/assets/fachada/18-realidad-aumentada.mp4",
-          "title": "Un elemento del archivo en realidad aumentada",
-          "poster": "/assets/fachada/ar.webp",
-          "width": 1080,
-          "height": 1920,
-          "aspectRatio": 0.5625,
-          "caption": "Registro del prototipo de realidad aumentada.",
-          "layout": "portrait"
         }
       ],
       "imagenes": [
-        {
-          "type": "image",
-          "url": "/assets/fachada/orden-pantallas.svg",
-          "width": 1920,
-          "height": 1240,
-          "alt": "Orden de las veinte pantallas de FACHADA: archivo, historia, elementos, colecciones, app y realidad aumentada.",
-          "caption": "Las pantallas se leen de izquierda a derecha y de arriba abajo. Ampliá la imagen para ver el recorrido completo."
-        },
         {
           "type": "image",
           "url": "/assets/fachada/red.webp",
@@ -1589,34 +1506,6 @@
           "height": 1080,
           "alt": "Mapa de Buenos Aires con fachadas de una colección y una ruta trazada entre ellas.",
           "caption": "Transformar la colección en un recorrido urbano."
-        },
-        {
-          "url": "/assets/fachada/app-inicio.webp",
-          "width": 780,
-          "height": 1688,
-          "alt": "Pantalla de inicio de la aplicación móvil FACHADA.",
-          "caption": "Iniciar la exploración."
-        },
-        {
-          "url": "/assets/fachada/app-ruta.webp",
-          "width": 780,
-          "height": 1688,
-          "alt": "Aplicación móvil con el recorrido trazado sobre un mapa.",
-          "caption": "Seguir el recorrido."
-        },
-        {
-          "url": "/assets/fachada/app-visitadas.webp",
-          "width": 900,
-          "height": 1920,
-          "alt": "Registro móvil de las fachadas visitadas.",
-          "caption": "Volver a las fachadas visitadas."
-        },
-        {
-          "url": "/assets/fachada/app-galeria.webp",
-          "width": 900,
-          "height": 1920,
-          "alt": "Archivo visual de un edificio desde la aplicación móvil.",
-          "caption": "Consultar su archivo."
         }
       ],
       "contenidoFuente": {
