@@ -453,11 +453,10 @@
       "tools": [
         "Figma"
       ],
-      "fuente": "https://www.figma.com/design/daFdXQtvCqUT6tN8qpX9YA/Ux?node-id=681-19625",
-      "fuenteLabel": "Ver proceso en Figma",
+      "fuente": "",
       "preview": "/assets/presentation/nexo/cover.png",
-      "previewWidth": 1600,
-      "previewHeight": 900,
+      "previewWidth": 1672,
+      "previewHeight": 941,
       "imagenes": [],
       "links": [
         {
@@ -469,9 +468,9 @@
         {
           "type": "image",
           "url": "/assets/presentation/nexo/cover.png",
-          "width": 1600,
-          "height": 900,
-          "alt": "Nexo, proyecto de Diseño UX de la Cátedra Lopatín, Grupo Muzzarella",
+          "width": 1672,
+          "height": 941,
+          "alt": "Nexo, proyecto de Diseño UX de la Cátedra Lopatín",
           "caption": ""
         },
         {
@@ -511,7 +510,8 @@
               "alt": "Cierre del recorrido con opción de actualizar la ficha del alumno",
               "caption": "03 / Registrar y dar seguimiento"
             }
-          ]
+          ],
+          "layout": "phone-mockups"
         },
         {
           "type": "text",
@@ -541,26 +541,6 @@
           "label": "04 / TESTEO",
           "heading": "Claridad bajo presión",
           "text": "Según la presentación del proyecto, cinco docentes de nivel secundario probaron el prototipo en una situación simulada de urgencia. Los cinco completaron el flujo sin asistencia en menos de tres minutos, con un tiempo promedio de 2 minutos 40 segundos.\n\nLas devoluciones destacaron la claridad de los pasos y las ilustraciones. También señalaron dudas sobre los subpasos y el avance automático, y el interés por integrar la herramienta a las aplicaciones del colegio."
-        },
-        {
-          "type": "text",
-          "label": "05 / PROCESO Y COMUNICACIÓN",
-          "heading": "Explorar el proyecto completo",
-          "text": "El archivo de Figma reúne el proceso y el prototipo. La presentación sintetiza el problema, la solución y el testeo; las historias de Instagram desarrollan la comunicación del proyecto.",
-          "links": [
-            {
-              "text": "Ver proceso y prototipo en Figma",
-              "href": "https://www.figma.com/design/daFdXQtvCqUT6tN8qpX9YA/Ux?node-id=681-19625"
-            },
-            {
-              "text": "Ver presentación",
-              "href": "https://drive.google.com/file/d/1Rkd-YD6uSPNy5YKrLtKK8-xoZmOcbZw0/view"
-            },
-            {
-              "text": "Ver historias de Instagram",
-              "href": "https://drive.google.com/file/d/1uMoVagenwuzYCVmW6WMKT9zeyBTwgPeh/view"
-            }
-          ]
         },
         {
           "type": "text",

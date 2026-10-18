@@ -75,7 +75,7 @@ for(const [i,p] of projects.entries()){
     if(block.type==='gallery')assert(block.images.length&&(!block.columns||(block.columns>=1&&block.columns<=4)),p.title);
     for(const link of block.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
   }
-  assert(html.includes(assetUrl(p.fuente).replaceAll('&','&amp;')),p.title);
+  if(p.fuente)assert(html.includes(assetUrl(p.fuente).replaceAll('&','&amp;')),p.title);
   if(p.theme)assert(html.includes(`--bg:${p.theme.bg}`),`${p.title}: missing project canvas color`);
   for(const link of p.links||[])assert(html.includes(link.href.replaceAll('&','&amp;')),p.title);
   assert(html.includes(i<projects.length-1?projects[i+1].ruta+'/':'/#proyectos'),p.title);

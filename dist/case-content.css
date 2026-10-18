@@ -89,3 +89,13 @@
   width: min(100%, 720px);
   justify-self: center;
 }
+
+/* Compact phone mockups keep the UX screens legible at a natural device scale. */
+.case-image-group.phone-mockups{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:40px 32px;width:100%;max-width:760px;margin-inline:auto}
+.case-image-group.phone-mockups>.case-figure{flex:0 1 200px;width:200px;min-width:0;max-width:200px}
+.phone-mockups .case-zoom{position:relative;display:block;padding:7px;border:1px solid #696969;border-radius:31px;background:linear-gradient(120deg,#6d6d6d,#151515 18%,#343434 75%,#7b7b7b);box-shadow:0 9px 24px #0005;overflow:visible}
+.phone-mockups .case-zoom::before{content:'';position:absolute;left:-3px;top:72px;width:2px;height:26px;background:#777;border-radius:2px}
+.phone-mockups .case-zoom::after{content:'';position:absolute;right:-3px;top:94px;width:2px;height:38px;background:#777;border-radius:2px}
+.case-image-group.phone-mockups .case-zoom img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:360/800;object-fit:fill;border-radius:24px;background:#0c0c0c}
+.phone-mockups figcaption{font-size:11px;line-height:1.6;margin-top:16px;text-align:center}
+@container(max-width:650px){.case-image-group.phone-mockups{gap:32px 24px}.case-image-group.phone-mockups>.case-figure{flex-basis:170px;width:170px;max-width:170px}}
