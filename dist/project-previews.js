@@ -175,6 +175,21 @@
       card.style.width = `${cardWidth}px`;
       card.style.height = `${cardWidth / ratio}px`;
     });
+    // Center the complete legacy composition between the project table and viewport edge.
+    // The cards use asymmetric percentage anchors, so centering the stage alone is not enough.
+    const cards = [...wrap.children];
+    const group = cards.reduce((bounds, card) => {
+      const rect = card.getBoundingClientRect();
+      return {
+        left: Math.min(bounds.left, rect.left),
+        right: Math.max(bounds.right, rect.right)
+      };
+    }, { left: Infinity, right: -Infinity });
+    if (Number.isFinite(group.left) && Number.isFinite(group.right)) {
+      const targetCenter = (box.left + innerWidth) / 2;
+      const groupCenter = (group.left + group.right) / 2;
+      stage.style.left = `${box.left + padding + targetCenter - groupCenter}px`;
+    }
     return true;
   };
 
