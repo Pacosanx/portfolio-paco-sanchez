@@ -46,7 +46,7 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
 
 /* Project index. The number hangs in the gutter on wide screens. */
 .work-section { min-height:0; row-gap:var(--s7); }
-.project-sidebar { grid-column:1/4; grid-row:1; align-self:start; min-width:0; padding:var(--s5) var(--s8) 0 0; }
+.project-sidebar { position:sticky; top:var(--s7); grid-column:1/4; grid-row:1; align-self:start; min-width:0; padding:var(--s5) var(--s8) 0 0; }
 .work-heading { position:static; display:block; padding:0; max-width:none; }
 .work-heading>.mono { display:block; float:none; margin-top:var(--s4); }
 .work-index { grid-column:4/10; grid-row:1; min-width:0; }
@@ -233,7 +233,7 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
   .contact-social { grid-column:3/-1; flex-direction:row; margin-top:var(--s5); }
 }
 @media(max-width:800px) {
-  .project-sidebar { grid-column:1/-1; grid-row:1; padding:0; }
+  .project-sidebar { position:static; grid-column:1/-1; grid-row:1; padding:0; }
   .project-toolbar { margin-top:var(--s6); gap:var(--s5); }
   .filter-options { gap:0 var(--s5); }
   .work-index { grid-column:1/-1; grid-row:2; }
