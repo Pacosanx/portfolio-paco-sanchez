@@ -1,8 +1,24 @@
 .preview-column{align-self:stretch;pointer-events:none}
-.preview-stage{position:fixed;z-index:3;top:0;left:0;opacity:0;transform:translateY(5px);transition:opacity 160ms ease,transform 180ms ease;pointer-events:none}
+ .preview-stage{position:fixed;z-index:3;top:0;left:0;opacity:0;transform:translateY(5px);transition:opacity 360ms cubic-bezier(.2,.7,.2,1),transform 420ms cubic-bezier(.2,.7,.2,1);pointer-events:none}
 .preview-stage.is-visible{opacity:1;transform:none}
+.preview-stage.is-changing{opacity:.58}
 .preview-stage .preview-image-wrap{position:relative;display:block;width:100%;height:320px;max-height:calc(100dvh - 40px);background:none;isolation:isolate}
-.preview-card{position:absolute;filter:drop-shadow(0 5px 8px #0002);transform-origin:center}
+.preview-card{position:absolute;filter:drop-shadow(0 5px 8px #0002);transform-origin:center;animation:preview-card-appear 420ms cubic-bezier(.2,.7,.2,1) both}
+.preview-card:nth-child(2){animation-delay:45ms}
+.preview-card:nth-child(3){animation-delay:90ms}
+.preview-card:nth-child(4){animation-delay:135ms}
+.preview-card:nth-child(5){animation-delay:180ms}
+.preview-card:nth-child(6){animation-delay:225ms}
+.preview-card:nth-child(7){animation-delay:270ms}
+.preview-image-wrap[data-layout="figma"] .preview-card{animation-name:preview-card-appear,preview-float;animation-duration:420ms,6.2s;animation-timing-function:cubic-bezier(.2,.7,.2,1),ease-in-out;animation-fill-mode:both;animation-iteration-count:1,infinite}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(2){animation-delay:45ms,-.8s}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(3){animation-delay:90ms,-1.7s}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(4){animation-delay:135ms,-2.6s}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(5){animation-delay:180ms,-3.5s}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(6){animation-delay:225ms,-4.4s}
+.preview-image-wrap[data-layout="figma"] .preview-card:nth-child(7){animation-delay:270ms,-5.3s}
+@keyframes preview-card-appear{from{opacity:0;scale:.96}to{opacity:1;scale:1}}
+@keyframes preview-float{0%,100%{translate:0 0}50%{translate:0 -4px}}
 .preview-card:nth-child(1){left:2%;top:4%;transform:rotate(calc(-3deg + var(--preview-tilt,0deg)));z-index:3}
 .preview-card:nth-child(2){right:0;top:32%;transform:rotate(calc(4deg + var(--preview-tilt,0deg)));z-index:1}
 .preview-card:nth-child(3){right:3%;bottom:2%;transform:rotate(calc(-2deg + var(--preview-tilt,0deg)));z-index:2}
@@ -21,7 +37,7 @@
 .preview-crop{position:relative;width:100%;height:100%;overflow:hidden;background:transparent}
 .preview-stage .preview-image{position:absolute;display:block;max-width:none;max-height:none;object-fit:fill;opacity:1;background:transparent}
 @media(max-width:1000px){.preview-column{display:none}.preview-stage{display:none}}
-@media(prefers-reduced-motion:reduce){.preview-stage{transition:none;transform:none}}
+@media(prefers-reduced-motion:reduce){.preview-stage{transition:none;transform:none}.preview-card,.preview-image-wrap[data-layout="figma"] .preview-card{animation:none}}
 
 /* Keep hover pieces in a compact group around the center of the preview area. */
 .preview-image-wrap[data-preview-count="3"] .preview-card:nth-child(1){left:50%!important;right:auto!important;top:50%!important;bottom:auto!important;transform:translate(-50%,-50%) rotate(var(--preview-tilt,0deg))!important;z-index:2}

@@ -8,7 +8,6 @@
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
   let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
-  let pointerX = .5, pointerY = .5;
   const arrangements = {
     metaphex: 'figma', 'maradona-alien': 'figma', 'instalacion-vr': 'figma',
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
@@ -79,20 +78,6 @@
     return { card, images };
   };
 
-  const applyFigmaFloat = () => {
-    if (selected < 0 || wrap.dataset.layout !== 'figma') return;
-    const images = records[selected]?.images || [];
-    const x = (pointerX - .5) * 2;
-    const y = (pointerY - .5) * 2;
-    [...wrap.children].forEach((card, i) => {
-      const geometry = images[i]?.geometry;
-      if (!geometry) return;
-      const depth = 2 + (i % 4) * 1.5;
-      const rotation = (Number(geometry.rotation) || 0) + x * .18;
-      card.style.setProperty('transform', `translate3d(${x * depth}px, ${y * depth}px, 0) rotate(${rotation}deg)`, 'important');
-    });
-  };
-
   const position = () => {
     if (selected < 0 || !desktop.matches) return false;
     const section = column.closest('.work-section')?.getBoundingClientRect();
@@ -123,7 +108,6 @@
         card.style.setProperty('transform-origin', 'center', 'important');
         card.style.setProperty('z-index', String(Number(geometry.zIndex) || i + 1), 'important');
       });
-      applyFigmaFloat();
       return true;
     }
     const box = column.getBoundingClientRect();
@@ -155,23 +139,20 @@
   const hide = () => {
     ++request;
     selected = -1;
-    stage.classList.remove('is-visible');
+    stage.classList.remove('is-visible', 'is-changing');
     rows.forEach(row => row.classList.remove('is-active'));
   };
   const show = async i => {
     selected = i;
     if (!desktop.matches || !records.length) return;
     const token = ++request;
+    const hadPreview = stage.classList.contains('is-visible') && wrap.childElementCount > 0;
     const slug = records[i]?.route?.split('/').filter(Boolean).pop();
-    wrap.dataset.layout = arrangements[slug] || 'fan';
-    // A small, stable tilt change keeps related projects from sharing one stack.
-    const seed = [...(slug || '')].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-    wrap.style.setProperty('--preview-tilt', `${(seed % 5) - 2}deg`);
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
-    stage.classList.remove('is-visible');
-    position();
+    if (hadPreview) stage.classList.add('is-changing');
+    else stage.classList.remove('is-visible', 'is-changing');
     const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 12);
-    if (assets.length < 3) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); return; }
+    if (assets.length < 3) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); return; }
     const current = () => token === request && selected === i && desktop.matches;
     try {
       const entries = assets.map(asset => {
@@ -184,11 +165,17 @@
       const cards = entries.map(createCard);
       await Promise.all(cards.flatMap(({ images }) => images.map(image => image.decode())));
       if (!current()) return;
+      wrap.dataset.layout = arrangements[slug] || 'fan';
+      // A small, stable tilt change keeps related projects from sharing one stack.
+      const seed = [...(slug || '')].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+      wrap.style.setProperty('--preview-tilt', `${(seed % 5) - 2}deg`);
+      position();
       wrap.replaceChildren(...cards.map(({ card }) => card));
       wrap.dataset.previewCount = String(cards.length);
       wrap.dataset.projectIndex = i;
+      stage.classList.remove('is-changing');
       stage.classList.toggle('is-visible', position());
-    } catch { if (current()) wrap.replaceChildren(); }
+    } catch { if (current()) { wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); } }
   };
 
   const focusedIndex = () => rows.findIndex(row => row.contains(document.activeElement));
@@ -199,9 +186,6 @@
     if (event.key === 'Tab') previewSuppressed = false;
   }, true);
   index.addEventListener('pointermove', event => {
-    pointerX = event.clientX / Math.max(innerWidth, 1);
-    pointerY = event.clientY / Math.max(innerHeight, 1);
-    applyFigmaFloat();
     keyboardFocus = false;
     previewSuppressed = false;
     const i = rows.indexOf(event.target.closest('.project-row'));
