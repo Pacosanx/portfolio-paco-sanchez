@@ -10,8 +10,8 @@
   let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
   let pointerX = .5, pointerY = .5;
   const arrangements = {
-    metaphex: 'right', 'maradona-alien': 'left', 'instalacion-vr': 'fan',
-    'esquematica-microevento': 'poster', 'editorial-espacial': 'right',
+    metaphex: 'figma', 'maradona-alien': 'figma', 'instalacion-vr': 'figma',
+    'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
     'editorial-registros': 'fan', 'editorial-tipografico-2023': 'left',
     'motion-graphics': 'right', 'filtros-instagram': 'poster',
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
