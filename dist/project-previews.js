@@ -166,6 +166,7 @@
       await Promise.all(cards.flatMap(({ images }) => images.map(image => image.decode())));
       if (!current()) return;
       wrap.dataset.layout = arrangements[slug] || 'fan';
+      wrap.dataset.project = slug || '';
       // A small, stable tilt change keeps related projects from sharing one stack.
       const seed = [...(slug || '')].reduce((sum, char) => sum + char.charCodeAt(0), 0);
       wrap.style.setProperty('--preview-tilt', `${(seed % 5) - 2}deg`);
