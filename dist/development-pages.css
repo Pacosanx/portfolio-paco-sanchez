@@ -3,7 +3,7 @@
 
 .development-collaboration{color:var(--muted);font-size:.75rem;line-height:1.6}.development-copy-action a{display:inline-flex;align-items:center;color:var(--text);font-size:.8125rem}.development-copy-action a:hover{text-decoration-thickness:1px}.development-gallery-heading{color:var(--muted);font-size:.6875rem}
 
-.development-overview{border-top:1px solid var(--line)}.development-overview>.eyebrow{color:var(--muted);font-size:.6875rem}.development-overview-intro{max-width:70ch;color:var(--secondary);font-size:.9375rem;line-height:1.8}.development-stage-nav{display:grid}.development-stage-nav a{display:flex;flex-direction:column;border-top:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.8125rem;line-height:1.55}.development-stage-nav a .mono{color:var(--muted);font-size:.6875rem}.development-stage-nav a:hover span:last-child{text-decoration:underline}.development-stage{display:grid;border-top:1px solid var(--line);scroll-margin-top:80px}.development-stage .development-copy{max-width:68ch}.development-image-gallery{display:grid}.development-embed{min-width:0}.development-embed iframe{display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:#0a0a0a}.development-embed figcaption{color:var(--muted);font-size:.75rem;line-height:1.6}.development-statement{border-left:0;background:rgba(255,255,255,.025);color:var(--text);font-size:clamp(20px,2.2vw,29px);line-height:1.45;letter-spacing:-.025em;text-wrap:pretty}.development-copy-action a{display:inline-flex;border-bottom:1px solid var(--muted)}
+.development-overview{border-top:1px solid var(--line)}.development-overview>.eyebrow{color:var(--muted);font-size:.6875rem}.development-overview-intro{max-width:70ch;color:var(--secondary);font-size:.9375rem;line-height:1.8}.development-stage-nav{display:grid}.development-stage-nav a{display:flex;flex-direction:column;border-top:1px solid var(--line);color:var(--text);text-decoration:none;font-size:.8125rem;line-height:1.55}.development-stage-nav a .mono{color:var(--muted);font-size:.6875rem}.development-stage-nav a:hover span:last-child{text-decoration:underline}.development-stage{display:grid;border-top:1px solid var(--line);scroll-margin-top:80px}.development-stage .development-copy{max-width:68ch}.development-image-gallery{display:grid}.development-embed{min-width:0}.development-embed iframe{display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:#0a0a0a}.development-embed figcaption{color:var(--muted);font-size:.75rem;line-height:1.6}.development-statement{border-left:0;background:rgba(255,255,255,.025);color:var(--text);font-size:clamp(20px,2.2vw,29px);line-height:1.45;letter-spacing:-.025em;text-wrap:pretty}.development-copy-action a{display:inline-flex;border-bottom:0}
 @media(max-width:760px){.development-stage{display:block}.development-statement{font-size:21px}.development-image-gallery{display:block}.development-embed iframe{aspect-ratio:9/16;max-height:70vh}}
 
 .development-tools{text-align:right}.development-tools ul{list-style:none}
@@ -16,3 +16,15 @@
 /* Alinear la introducción de etapas con la columna de lectura de las secciones. */
 .development-overview{display:grid}
 @media(max-width:760px){.development-overview{display:block}}
+
+/* The experiences only mount after an explicit start action. */
+.development-embed-controls{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:var(--s5,24px);margin-bottom:var(--s4,16px)}
+.development-embed-controls button{background:none;border:0;padding:0;color:var(--text);font:inherit;font-size:.8125rem;cursor:pointer}
+.development-embed-controls button:disabled{color:var(--muted);cursor:default;opacity:.55;text-decoration:none}
+.development-embed-viewport{position:relative;aspect-ratio:16/9;background:#030405;border:1px solid var(--line);overflow:hidden}
+.development-embed-viewport iframe{width:100%;height:100%;aspect-ratio:auto;border:0;max-height:none}
+.development-embed-start{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:var(--s6,32px);background:radial-gradient(ellipse at center,rgba(158,255,58,.06),transparent 65%);border:0;color:var(--text);font:inherit;font-size:.9375rem;cursor:pointer}
+.development-embed-start span{border:1px solid var(--muted);padding:12px 20px}
+.development-embed-start:hover span,.development-embed-start:focus-visible span{border-color:var(--text)}
+.development-embed-start:focus-visible{outline:2px solid var(--text);outline-offset:-4px}
+@container(max-width:650px){.development-embed-viewport{aspect-ratio:9/16}}

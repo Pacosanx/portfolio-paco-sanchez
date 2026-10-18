@@ -29,6 +29,45 @@
     if(!location.hash.startsWith('#proyecto/'))return null;
     try{return bySlug.get(decodeURIComponent(location.hash.slice(10)))}catch{return null}
   };
+  const embedState=figure=>({
+    muted:figure.dataset.embedMuted==='true'
+  });
+  const updateEmbedSound=(figure,muted)=>{
+    figure.dataset.embedMuted=String(muted);
+    const button=figure.querySelector('[data-embed-sound]');
+    if(button){
+      button.setAttribute('aria-pressed',String(muted));
+      button.textContent=muted?'Activar sonido':'Silenciar';
+    }
+  };
+  const startEmbed=figure=>{
+    const viewport=figure.querySelector('[data-embed-viewport]');
+    const frame=document.createElement('iframe');
+    const url=new URL(figure.dataset.embedSrc,location.href);
+    url.searchParams.set('muted',embedState(figure).muted?'1':'0');
+    frame.src=url.href;
+    frame.title=figure.dataset.embedTitle;
+    frame.setAttribute('allow','autoplay; fullscreen; pointer-lock');
+    frame.setAttribute('allowfullscreen','');
+    frame.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+    frame.setAttribute('data-controlled-frame','');
+    frame.addEventListener('load',()=>{
+      for(const button of figure.querySelectorAll('[data-embed-sound],[data-embed-reset]'))button.disabled=false;
+      if(figure.hasAttribute('data-embed-audio')){
+        frame.contentWindow?.postMessage({type:'pericarion:set-muted',muted:embedState(figure).muted},location.origin);
+      }
+    });
+    viewport.replaceChildren(frame);
+    figure.querySelector('[data-embed-status]').textContent='Experiencia iniciada.';
+  };
+  window.addEventListener('message',event=>{
+    if(event.origin!==location.origin||event.data?.type!=='pericarion:state')return;
+    const frame=[...content.querySelectorAll('[data-controlled-frame]')].find(frame=>frame.contentWindow===event.source);
+    if(!frame)return;
+    const figure=frame.closest('[data-interactive-embed]');
+    updateEmbedSound(figure,Boolean(event.data.muted));
+    figure.querySelector('[data-embed-status]').textContent=event.data.muted?'Sonido silenciado.':'Sonido activado.';
+  });
   const fill=template=>{
     viewer.style.cssText=template.dataset.projectTheme||'';
     content.replaceChildren(template.content.cloneNode(true));
@@ -66,6 +105,8 @@
       content.classList.remove('is-changing');
       document.documentElement.classList.add('viewer-open');
       viewer.showModal();
+      viewer.querySelector('[data-close-project]').focus({preventScroll:true});
+      viewer.scrollTop=0;
       viewer.getBoundingClientRect();
     }else if(changed){
       content.classList.add('is-changing');
@@ -80,6 +121,7 @@
     if(!viewer.open)return;
     clearTimeout(changeTimer);clearTimeout(closeTimer);
     activeRoute='';
+    for(const frame of content.querySelectorAll('[data-controlled-frame]'))frame.src='about:blank';
     viewer.classList.remove('is-visible');
     document.title=baseTitle;
     closeTimer=setTimeout(()=>{
@@ -116,6 +158,21 @@
   });
   viewer.addEventListener('click',event=>{
     if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const embedButton=event.target.closest('[data-embed-start],[data-embed-reset],[data-embed-sound]');
+    if(embedButton){
+      const figure=embedButton.closest('[data-interactive-embed]');
+      if(!figure||embedButton.disabled)return;
+      event.preventDefault();
+      if(embedButton.hasAttribute('data-embed-sound')){
+        const muted=!embedState(figure).muted;
+        updateEmbedSound(figure,muted);
+        figure.querySelector('[data-controlled-frame]')?.contentWindow?.postMessage({type:'pericarion:set-muted',muted},location.origin);
+      }else{
+        for(const button of figure.querySelectorAll('[data-embed-sound],[data-embed-reset]'))button.disabled=true;
+        startEmbed(figure);
+      }
+      return;
+    }
     const stageLink=event.target.closest('.development-stage-nav a');
     if(stageLink){
       const target=content.querySelector(stageLink.getAttribute('href'));
