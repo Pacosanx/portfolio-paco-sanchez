@@ -4495,13 +4495,12 @@
         },
         {
           "type": "image",
-          "url": "/assets/presentation/festival-v1-lemas.jpg",
-          "width": 960,
-          "height": 412,
-          "alt": "Lemas de MUTAR V1: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte», sobre el panel verde ácido original.",
+          "url": "/assets/presentation/festival-v1/panel-01.jpg",
+          "width": 2400,
+          "height": 1031,
+          "alt": "Identidad principal de MUTAR V1: marca y denominación del festival de tecnología y creatividad.",
           "size": "full",
-          "sourceModule": "Adobe module 1",
-          "surface": "#C2F700"
+          "sourceModule": "Panel de presentación 01"
         },
         {
           "type": "text",
@@ -4510,26 +4509,39 @@
         },
         {
           "type": "image",
-          "url": "/assets/presentation/festival-v1/identidad.svg",
-          "width": 1920,
-          "height": 412,
-          "alt": "Variantes originales de MUTAR V1, familias Helvetica Neue y Roboto, y paleta verde y negro."
+          "url": "/assets/presentation/festival-v1/panel-02.jpg",
+          "width": 2400,
+          "height": 1029,
+          "alt": "Lemas de MUTAR V1: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte».",
+          "size": "full",
+          "sourceModule": "Panel de presentación 02"
         },
         {
-          "type": "placeholder",
-          "title": "Grilla de afiches",
-          "aspectRatio": 1.7766497461928934,
-          "missingEquivalentToV2Module": 5
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-03.jpg",
+          "width": 2400,
+          "height": 816,
+          "alt": "Variantes originales de la marca MUTAR V1 sobre fondos verde ácido y negro.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 03"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
-          "width": 991,
-          "height": 896,
-          "alt": "Publicaciones, stories y vistas de Instagram del festival MUTAR V1.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 3",
-          "type": "image"
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-04.jpg",
+          "width": 2400,
+          "height": 1387,
+          "alt": "Sistema tipográfico y paleta cromática de MUTAR V1: Helvetica Neue, Roboto, verde ácido y negro.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 04"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-05.jpg",
+          "width": 2400,
+          "height": 2165,
+          "alt": "Aplicaciones para redes de MUTAR V1: afiches, publicaciones, stories y vistas de Instagram.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 05"
         },
         {
           "type": "video",
@@ -4549,44 +4561,40 @@
           "layout": "original-sequence",
           "images": [
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
-              "width": 994,
-              "height": 1420,
-              "alt": "Afiche plegado y brochure de MUTAR V1: frente, reverso, tapa e interior.",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 5",
-              "type": "image"
-            },
-            {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
-              "width": 991,
-              "height": 569,
-              "alt": "Aplicación del sistema MUTAR V1 en una valla de vía pública.",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 4",
-              "type": "image"
+              "type": "image",
+              "url": "/assets/presentation/festival-v1/panel-06.jpg",
+              "width": 1683,
+              "height": 2400,
+              "alt": "Afiche y brochure MUTAR V1: piezas impresas desplegadas y plegadas.",
+              "size": "full",
+              "sourceModule": "Panel de presentación 06"
             },
             {
               "type": "image",
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-              "width": 992,
-              "height": 523,
-              "alt": "Pórtico de ingreso a Tecnópolis con la identidad MUTAR V1.",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 6"
+              "url": "/assets/presentation/festival-v1/panel-07.jpg",
+              "width": 2400,
+              "height": 1262,
+              "alt": "Pórtico de acceso a Tecnópolis con la identidad MUTAR V1 iluminada.",
+              "size": "full",
+              "sourceModule": "Panel de presentación 07"
             },
             {
-              "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
-              "width": 993,
-              "height": 569,
-              "alt": "Pulsera, remeras, tote y prendedores de MUTAR V1.",
-              "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
-              "dimensionOrigin": "public-image-header",
-              "sourceModule": "Adobe module 7",
-              "type": "image"
+              "type": "image",
+              "url": "/assets/presentation/festival-v1/panel-08.jpg",
+              "width": 2400,
+              "height": 1375,
+              "alt": "Aplicación del sistema MUTAR V1 en una valla publicitaria.",
+              "size": "full",
+              "sourceModule": "Panel de presentación 08"
+            },
+            {
+              "type": "image",
+              "url": "/assets/presentation/festival-v1/panel-09.jpg",
+              "width": 2400,
+              "height": 1371,
+              "alt": "Merchandising MUTAR V1: pulseras, remeras, tote y prendedores.",
+              "size": "full",
+              "sourceModule": "Panel de presentación 09"
             }
           ]
         },
@@ -4600,60 +4608,84 @@
       "imagenes": [
         {
           "type": "image",
-          "url": "/assets/presentation/festival-v1/identidad.svg",
-          "width": 1920,
-          "height": 412,
-          "alt": "Variantes originales de MUTAR V1, familias Helvetica Neue y Roboto, y paleta verde y negro."
-        },
-        {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
-          "width": 991,
-          "height": 896,
-          "alt": "Publicaciones, stories y vistas de Instagram del festival MUTAR V1.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_600.png?h=2237df9ddec65fde3b07a61afce1c875 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af 991w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 3",
-          "type": "image"
-        },
-        {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
-          "width": 994,
-          "height": 1420,
-          "alt": "Afiche plegado y brochure de MUTAR V1: frente, reverso, tapa e interior.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_600.png?h=4b4c50185702346b36a38a577f3ff290 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f 994w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 5",
-          "type": "image"
-        },
-        {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
-          "width": 991,
-          "height": 569,
-          "alt": "Aplicación del sistema MUTAR V1 en una valla de vía pública.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_600.png?h=a89dabd922d982357b7d08c980351936 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e 991w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 4",
-          "type": "image"
+          "url": "/assets/presentation/festival-v1/panel-01.jpg",
+          "width": 2400,
+          "height": 1031,
+          "alt": "Identidad principal de MUTAR V1: marca y denominación del festival de tecnología y creatividad.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 01"
         },
         {
           "type": "image",
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-          "width": 992,
-          "height": 523,
-          "alt": "Pórtico de ingreso a Tecnópolis con la identidad MUTAR V1.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_600.png?h=7609ee7893514d89998002100af429f1 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381 992w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 6"
+          "url": "/assets/presentation/festival-v1/panel-02.jpg",
+          "width": 2400,
+          "height": 1029,
+          "alt": "Lemas de MUTAR V1: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte».",
+          "size": "full",
+          "sourceModule": "Panel de presentación 02"
         },
         {
-          "url": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d",
-          "width": 993,
-          "height": 569,
-          "alt": "Pulsera, remeras, tote y prendedores de MUTAR V1.",
-          "srcset": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_600.png?h=e96bf8bab6aae2eaede057ef1fd78499 600w,https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/d5a2607b-be1d-4edd-a0b2-d22c61091212_rw_1200.png?h=0dc990d8264d9e6255887919b99af62d 993w,",
-          "dimensionOrigin": "public-image-header",
-          "sourceModule": "Adobe module 7",
-          "type": "image"
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-03.jpg",
+          "width": 2400,
+          "height": 816,
+          "alt": "Variantes originales de la marca MUTAR V1 sobre fondos verde ácido y negro.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 03"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-04.jpg",
+          "width": 2400,
+          "height": 1387,
+          "alt": "Sistema tipográfico y paleta cromática de MUTAR V1: Helvetica Neue, Roboto, verde ácido y negro.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 04"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-05.jpg",
+          "width": 2400,
+          "height": 2165,
+          "alt": "Aplicaciones para redes de MUTAR V1: afiches, publicaciones, stories y vistas de Instagram.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 05"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-06.jpg",
+          "width": 1683,
+          "height": 2400,
+          "alt": "Afiche y brochure MUTAR V1: piezas impresas desplegadas y plegadas.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 06"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-07.jpg",
+          "width": 2400,
+          "height": 1262,
+          "alt": "Pórtico de acceso a Tecnópolis con la identidad MUTAR V1 iluminada.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 07"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-08.jpg",
+          "width": 2400,
+          "height": 1375,
+          "alt": "Aplicación del sistema MUTAR V1 en una valla publicitaria.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 08"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/panel-09.jpg",
+          "width": 2400,
+          "height": 1371,
+          "alt": "Merchandising MUTAR V1: pulseras, remeras, tote y prendedores.",
+          "size": "full",
+          "sourceModule": "Panel de presentación 09"
         }
       ],
       "contenidoFuente": {
