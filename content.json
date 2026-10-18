@@ -1723,19 +1723,41 @@
         },
         {
           "type": "image",
-          "url": "/assets/inmson-recorrido-gesto.gif",
-          "width": 480,
-          "height": 270,
-          "alt": "El trazo azul se construye en capas dentro del espacio virtual de INMSON.",
-          "caption": "El gesto aparece y se superpone."
+          "url": "/assets/inmson/vista-general.jpg",
+          "width": 1280,
+          "height": 720,
+          "alt": "Vista general de INMSON con el dibujo suspendido frente a la pizarra y el panel de controles a la izquierda.",
+          "caption": "El dibujo se despega de la pizarra y ocupa el espacio."
+        },
+        {
+          "type": "gallery",
+          "columns": 2,
+          "images": [
+            {
+              "url": "/assets/inmson/dibujar-primera-persona.gif",
+              "still": "/assets/inmson/dibujar-primera-persona.jpg",
+              "width": 560,
+              "height": 315,
+              "alt": "Una mano mueve el lápiz y dibuja un trazo azul en primera persona dentro de INMSON.",
+              "caption": "Dibujar: el gesto de la mano deja un trazo suspendido."
+            },
+            {
+              "url": "/assets/inmson/atravesar-trazos.gif",
+              "still": "/assets/inmson/atravesar-trazos.jpg",
+              "width": 560,
+              "height": 315,
+              "alt": "La cámara avanza entre los trazos azules y muestra sus capas transparentes desde dentro del dibujo.",
+              "caption": "Atravesar: las líneas tienen profundidad y se superponen."
+            }
+          ]
         },
         {
           "type": "image",
-          "url": "/assets/inmson-recorrido-espacio.gif",
-          "width": 480,
-          "height": 270,
-          "alt": "Las líneas azules llenan la escena durante el recorrido de INMSON.",
-          "caption": "El dibujo se expande por el espacio."
+          "url": "/assets/inmson/dibujo-denso.jpg",
+          "width": 1280,
+          "height": 720,
+          "alt": "Tres espirales azules superpuestas forman un dibujo denso frente a la pizarra de INMSON.",
+          "caption": "La acumulación de gestos construye un volumen."
         },
         {
           "type": "interactive",

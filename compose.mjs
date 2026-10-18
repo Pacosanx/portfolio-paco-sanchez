@@ -220,7 +220,7 @@ for(const asset of ['inmson-drawing.js','inmson-recorrido.jpg','inmson-recorrido
   fs.copyFileSync(path.join('assets',asset),path.join('dist/assets',asset));
 }
 if(fs.existsSync('assets/development'))fs.cpSync('assets/development',path.join('dist/assets/development'),{recursive:true});
-for(const directory of ['fachada','previews','presentation']){
+for(const directory of ['fachada','previews','presentation','inmson']){
   const source=path.join('assets',directory);
   if(fs.existsSync(source))fs.cpSync(source,path.join('dist/assets',directory),{recursive:true});
 }
