@@ -36,22 +36,25 @@ const splineExplorations = [
   return {
     number: String(index + 1).padStart(2, '0'),
     url: `https://app.spline.design/file/${id}`,
-    preview: id === 'a24cd409-128c-4fae-9247-e804da95457c' ? '/assets/spline/a24cd409-128c-4fae-9247-e804da95457c-centered.png' : animatedSplineIds.has(id) ? `/assets/spline/${id}-${splinePreviewVersions[id] || 'loop4'}.gif` : `https://filespreview.spline.design/${id}.jpg`,
+    preview: id === 'a24cd409-128c-4fae-9247-e804da95457c' ? '/assets/spline/a24cd409-128c-4fae-9247-e804da95457c-centered.png' : animatedSplineIds.has(id) ? `/assets/spline/${id}-${splinePreviewVersions[id] || 'loop4'}.jpg` : `https://filespreview.spline.design/${id}.jpg`,
+    video: animatedSplineIds.has(id) ? `/assets/spline/${id}-${splinePreviewVersions[id] || 'loop4'}.mp4` : null,
+    loop: id !== 'da95f481-47b1-4efb-949f-bf5ab74ff6d2',
     width,
     height
   };
 });
 const mediaExplorations = [
-  { number: '13', tool: 'Blender', title: 'Blender — 0001-0096', url: '/assets/spline/blender-0001-0096.gif', preview: '/assets/spline/blender-0001-0096.gif', width: 360, height: 203 },
-  { number: '14', tool: 'TouchDesigner', title: 'TouchDesigner — TDMovieOut', url: '/assets/spline/touchdesigner-movieout-011111.gif', preview: '/assets/spline/touchdesigner-movieout-011111.gif', width: 360, height: 203 },
-  { number: '15', tool: 'TouchDesigner', title: 'TouchDesigner — DILLOM (Irreversible)', url: '/assets/spline/touchdesigner-dillom-irreversible.gif', preview: '/assets/spline/touchdesigner-dillom-irreversible.gif', width: 360, height: 203 },
+  { number: '13', tool: 'Blender', title: 'Blender — 0001-0096', preview: '/assets/spline/blender-0001-0096.jpg', video: '/assets/spline/blender-0001-0096.mp4', width: 360, height: 203 },
+  { number: '14', tool: 'TouchDesigner', title: 'TouchDesigner — TDMovieOut', preview: '/assets/spline/touchdesigner-movieout-011111.jpg', video: '/assets/spline/touchdesigner-movieout-011111.mp4', width: 360, height: 203 }, 
+  { number: '15', tool: 'TouchDesigner', title: 'TouchDesigner — DILLOM (Irreversible)', preview: '/assets/spline/touchdesigner-dillom-irreversible.jpg', video: '/assets/spline/touchdesigner-dillom-irreversible.mp4', width: 360, height: 203 }, 
   { number: '16', tool: 'Blender', title: 'Piraña — modelado y animación 3D', preview: '/assets/previews/pirana-modelado-3d-v2-01.webp', video: '/assets/previews/pirana-depth-of-field.mp4', width: 719, height: 540 }
 ];
 const explorations = [...splineExplorations, ...mediaExplorations];
 const renderExploration = (item, sitePath, decorative = false) => {
   const title = item.title || 'Exploración en Spline';
   const preview = item.preview.startsWith('/assets/') ? sitePath(item.preview) : item.preview;
-  const image = item.video && !decorative ? `<video src="${sitePath(item.video)}" poster="${preview}" width="${item.width}" height="${item.height}" muted loop autoplay playsinline preload="metadata" aria-label="Animación de ${title}"></video>` : `<img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async">`;
+  const loop = item.loop === false ? "" : " loop";
+  const image = item.video && !decorative ? `<video data-gallery-video data-src="${sitePath(item.video)}" poster="${preview}" width="${item.width}" height="${item.height}" muted${loop} playsinline preload="none" aria-hidden="true"></video>` : `<img src="${preview}" width="${item.width}" height="${item.height}" alt="Vista previa de ${title}" loading="eager" decoding="async">`;
   const caption = `<span class="lab-entry-caption"><span class="lab-entry-number mono">${item.number}</span><span class="lab-entry-title">${title}</span>${item.tool ? '' : '<span class="lab-entry-action">Ver escena</span>'}</span>`;
 
   if (item.tool) return `<div class="lab-entry lab-entry-media">${image}${caption}</div>`;

@@ -17,6 +17,43 @@
 
     const isPaused = () => reducedMotion.matches || pointerDown || document.hidden;
 
+    const videos = [...gallery.querySelectorAll('video[data-gallery-video]')];
+    const videoVisible = () => !reducedMotion.matches && !document.hidden;
+    const videoObserver = 'IntersectionObserver' in window ? new IntersectionObserver(entries => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting && videoVisible()) {
+          if (!target.hasAttribute('src')) {
+            target.src = target.dataset.src;
+            target.load();
+          }
+          target.play().catch(() => {});
+        } else {
+          target.pause();
+          if (!isIntersecting && target.hasAttribute('src')) {
+            target.removeAttribute('src');
+            target.load();
+          }
+        }
+      });
+    }, { root: gallery, rootMargin: '120px 80px', threshold: 0.01 }) : null;
+
+    if (videoObserver) videos.forEach(video => videoObserver.observe(video));
+    else videos.forEach(video => {
+      video.src = video.dataset.src;
+      video.play().catch(() => {});
+    });
+
+    const refreshVideos = () => {
+      if (!videoVisible()) videos.forEach(video => video.pause());
+      else if (videoObserver) videos.forEach(video => {
+        videoObserver.unobserve(video);
+        videoObserver.observe(video);
+      });
+    };
+    document.addEventListener('visibilitychange', refreshVideos);
+    reducedMotion.addEventListener('change', refreshVideos);
+
+
     const normalize = () => {
       if (!setWidth) return;
       if (gallery.scrollLeft >= setWidth) gallery.scrollLeft %= setWidth;
