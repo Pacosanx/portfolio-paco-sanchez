@@ -8,6 +8,7 @@
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
   let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
+  let pointerX = .5, pointerY = .5;
   const arrangements = {
     metaphex: 'right', 'maradona-alien': 'left', 'instalacion-vr': 'fan',
     'esquematica-microevento': 'poster', 'editorial-espacial': 'right',
@@ -46,6 +47,8 @@
     const card = document.createElement('div');
     card.className = 'preview-card';
     card.dataset.role = asset.role || 'detail';
+    card.style.transition = 'transform 220ms cubic-bezier(.2,.7,.2,1)';
+    card.style.willChange = 'transform';
     const geometry = asset.geometry;
     card.dataset.ratio = geometry?.width && geometry?.height
       ? geometry.width / geometry.height
@@ -74,6 +77,20 @@
     });
     card.append(cropFrame);
     return { card, images };
+  };
+
+  const applyFigmaFloat = () => {
+    if (selected < 0 || wrap.dataset.layout !== 'figma') return;
+    const images = records[selected]?.images || [];
+    const x = (pointerX - .5) * 2;
+    const y = (pointerY - .5) * 2;
+    [...wrap.children].forEach((card, i) => {
+      const geometry = images[i]?.geometry;
+      if (!geometry) return;
+      const depth = 2 + (i % 4) * 1.5;
+      const rotation = (Number(geometry.rotation) || 0) + x * .18;
+      card.style.setProperty('transform', `translate3d(${x * depth}px, ${y * depth}px, 0) rotate(${rotation}deg)`, 'important');
+    });
   };
 
   const position = () => {
@@ -106,6 +123,7 @@
         card.style.setProperty('transform-origin', 'center', 'important');
         card.style.setProperty('z-index', String(Number(geometry.zIndex) || i + 1), 'important');
       });
+      applyFigmaFloat();
       return true;
     }
     const box = column.getBoundingClientRect();
@@ -181,6 +199,9 @@
     if (event.key === 'Tab') previewSuppressed = false;
   }, true);
   index.addEventListener('pointermove', event => {
+    pointerX = event.clientX / Math.max(innerWidth, 1);
+    pointerY = event.clientY / Math.max(innerHeight, 1);
+    applyFigmaFloat();
     keyboardFocus = false;
     previewSuppressed = false;
     const i = rows.indexOf(event.target.closest('.project-row'));
