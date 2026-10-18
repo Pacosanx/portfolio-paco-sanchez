@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#030405">
+<title>Pericarión — un territorio en transformación</title>
+<meta name="description" content="Un ecosistema especulativo que se transforma por sus propias relaciones. Entrar, permanecer, desplazarse, dejar de intervenir.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23030405'/%3E%3Cpath d='M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8z' fill='%239EFF3A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script>
+</head>
+<body>
+<main id="territory" aria-label="Territorio de Pericarión">
+<canvas id="world" tabindex="0" aria-label="Ecosistema en transformación. Arrastrá para desplazarte; usá la rueda o los botones para cambiar de escala. Con teclado: flechas para desplazarte, más y menos para acercarte o alejarte. P para alternar presencia en el centro de la vista. Clic o Enter para generar una tensión local.">Necesitás WebGL 2 para entrar.</canvas>
+<div id="field-notes" class="field-notes" aria-hidden="true"></div>
+<header class="topbar"><a class="wordmark" href="#" id="home" aria-label="Pericarión, mostrar pregunta">pericarión<span class="mark" aria-hidden="true"></span></a></header>
+<div class="coordinates" aria-hidden="true"><span id="position">1200 : 1200</span><span id="fps">FPS —</span><span id="field-script" class="field-script"></span></div>
+<nav class="view-controls" aria-label="Controles de la mirada"><button id="zoom-in" aria-label="Acercar">+</button><span id="scale" aria-live="polite">1×</span><button id="zoom-out" aria-label="Alejar">−</button><span class="separator"></span><button id="motion" aria-pressed="false" aria-label="Reducir movimiento visual">Movimiento reducido</button></nav>
+<div class="bottom-note"><span class="bracket">[</span><span id="hint">Recorré. Acercate. Permanecé.</span><span class="bracket">]</span></div>
+<div class="record-controls"><button id="notes-toggle" aria-pressed="true" aria-label="Ocultar bitácora" data-state="A"></button></div>
+<div class="scale-bar" aria-hidden="true"><span></span><small id="scale-unit">100 u</small></div>
+<div id="graphics-error" hidden>Este navegador necesita WebGL 2.</div><div id="presence-status" class="sr-only" aria-live="polite"></div>
+</main>
+<dialog open id="entry" class="entry" tabindex="0" aria-labelledby="entry-question" aria-describedby="entry-access">
+<h1 id="entry-question">¿Bajo qué condiciones podemos considerar a la tecnología como biología y a la biología como tecnología?</h1>
+<span id="entry-access" class="sr-only">Hacé clic en la pantalla o presioná Enter o espacio para recorrer el territorio con sonido.</span>
+</dialog>
+<noscript><div class="no-js">Activá JavaScript para entrar.</div></noscript>
+</body></html>

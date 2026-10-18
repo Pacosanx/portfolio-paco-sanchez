@@ -7,8 +7,7 @@
     "discipline": "Ecosistema digital interactivo",
     "collaboration": "Nacho Araoz · diseñador de imagen y sonido",
     "summary": "De la investigación y el manifiesto a una experiencia web y una futura instalación virtual 3D.",
-    "description": "Pericarion es un proyecto colaborativo que se despliega en tres etapas: investigar y proponer un ecosistema autónomo; llevar esa propuesta a una experiencia web; y adaptarla a una instalación virtual 3D, actualmente en desarrollo.",
-    "stagesIntro": "La investigación y el manifiesto definen la posición del proyecto; la web traduce esa propuesta a un territorio navegable; la tercera etapa lleva el ecosistema a una instalación virtual 3D. Esa adaptación es el trabajo que sigue en curso.",
+    "description": "Un ecosistema que explora el cruce entre biología y tecnología. El proyecto recorre tres etapas: investigación y manifiesto, experiencia web e instalación virtual 3D, actualmente en desarrollo.",
     "stageSequence": true,
     "tools": [
       "Investigación y escritura",
@@ -18,24 +17,21 @@
     ],
     "sections": [
       {
-        "label": "ETAPA 01 / INVESTIGACIÓN Y PROPUESTA",
-        "title": "Un manifiesto para formar parte del sistema",
-        "text": "La investigación pregunta cómo se desarma la frontera entre biología y tecnología cuando ambas se entienden como formas de organización material. El manifiesto propone un ecosistema que existe antes de la llegada humana y continúa en su ausencia; la persona ingresa como una fuerza más, capaz de producir perturbaciones pero no de controlar el mundo.",
-        "statement": "La presencia humana deja de operar como un agente externo de control y se integra como una fuerza material más dentro del ecosistema.",
-        "items": [
-          "El sistema funciona sin intervención humana y conserva sus propios ciclos.",
-          "La presencia modifica relaciones; no da órdenes ni recibe respuestas fijas.",
-          "Los efectos pueden propagarse y aparecer más tarde en otras partes del ecosistema."
-        ]
+        "label": "ETAPA 01",
+        "title": "Investigación y manifiesto",
+        "text": "El manifiesto propone un ecosistema autónomo, donde la presencia humana actúa como una fuerza material más. Sus efectos se propagan sin dar órdenes ni controlar el sistema."
       },
       {
-        "label": "ETAPA 02 / ADAPTACIÓN A EXPERIENCIA WEB",
-        "title": "Recorrer un territorio activo",
-        "text": "La propuesta se traduce a una experiencia navegable desde el navegador. La persona entra a un ecosistema ya en marcha, lo recorre y observa sus relaciones bajo la pregunta: ¿bajo qué condiciones podemos considerar a la tecnología como biología y a la biología como tecnología?",
+        "label": "ETAPA 02",
+        "title": "Experiencia web",
+        "text": "La primera adaptación permite recorrer el ecosistema, observar sus ciclos y alterar sus relaciones mediante la presencia y el movimiento.",
         "embed": {
-          "url": "https://pericarion.p-exp-estudiantes.chatgpt.site/",
+          "url": "/assets/development/pericarion/web/index.html",
           "title": "Experiencia web de Pericarion",
-          "caption": "Prototipo web interactivo · si no carga en esta vista, abrilo en una pestaña nueva."
+          "caption": "Prototipo web interactivo.",
+          "deferred": true,
+          "audioControls": true,
+          "startLabel": "Iniciar experiencia web"
         },
         "link": {
           "href": "https://pericarion.p-exp-estudiantes.chatgpt.site/",
@@ -44,13 +40,15 @@
         }
       },
       {
-        "label": "ETAPA 03 / ADAPTACIÓN A INSTALACIÓN VIRTUAL 3D",
-        "title": "Llevar el ecosistema a una escala corporal",
-        "text": "La propuesta pasa a un espacio virtual tridimensional que se recorre con el cuerpo y el movimiento. Esta es la etapa que está en proceso. La demo actual permite explorar un primer ambiente 3D en primera persona desde el navegador; requiere WebGL 2 y teclado.",
+        "label": "ETAPA 03 · EN DESARROLLO",
+        "title": "Instalación virtual 3D",
+        "text": "La etapa actual traslada el ecosistema a un entorno inmersivo que se recorre con el cuerpo. La demo explora un primer ambiente en primera persona.",
         "embed": {
           "url": "/assets/development/pericarion/vr-demo.html",
           "title": "Demo de exploración 3D de Pericarion",
-          "caption": "Demo interactiva de la futura instalación virtual · requiere WebGL 2 y teclado."
+          "caption": "Demo 3D · requiere WebGL 2 y teclado.",
+          "deferred": true,
+          "startLabel": "Iniciar demo 3D"
         },
         "link": {
           "href": "/assets/development/pericarion/vr-demo.html",
@@ -59,7 +57,8 @@
         }
       }
     ],
-    "images": []
+    "images": [],
+    "showOverview": false
   },
   {
     "slug": "espora",

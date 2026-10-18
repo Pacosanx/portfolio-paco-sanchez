@@ -1,0 +1,15 @@
+import{mouth}from'./anatomy.js';
+// Lines use 14 floats: endpoints, ecology, endpoint IDs, endpoint velocities.
+// 12 floats per visible body: position, velocity, radius/type/fuel/phase, response/age/id/aux.
+export function pack(eco){
+ const bodies=[];const put=(x,y,vx,vy,r,type,fuel,phase,signal,age,id,aux)=>bodies.push(x,y,vx,vy,r,type,fuel,phase,signal,age,id,aux);
+ for(const m of eco.masses)put(m.x,m.y,m.vx||0,m.vy||0,m.base*Math.sqrt(m.mass/m.max),0,m.fuel,m.phase,m.signal,m.age,m.id,m.gate);
+ for(const n of eco.nodes)put(n.x,n.y,n.vx||0,n.vy||0,3+Math.sqrt(n.store)*5,1,n.store,n.group,n.signal,n.age,n.id,n.group%6);
+ for(const p of eco.particles)put(p.x,p.y,p.vx,p.vy,(p.kind===2?3.3:1.2)+p.amount*45,2,p.amount,p.kind,0,p.age,p.id,0);
+ for(const r of eco.residues)put(r.x,r.y,r.vx||0,r.vy||0,3+Math.sqrt(r.mass)*8,4,r.mass,0,0,r.age,r.id,0);
+ for(const o of eco.organisms){const m=eco.byMass.get(o.host),r=m?m.base*Math.sqrt(m.mass/m.max)*o.orbit:0;put(o.x??m?.x+Math.cos(o.phase)*r,o.y??m?.y+Math.sin(o.phase)*r,o.vx||0,o.vy||0,2.4+o.energy*2.4,5,o.energy,o.phase,m?.signal||0,o.age,o.id,m?.family??o.id%6);}
+ const lines=[];for(const e of eco.edges)lines.push(e.a.x,e.a.y,e.b.x,e.b.y,(e.a.store+e.b.store)*.5,e.signal,e.flow,e.age,e.a.id,e.b.id,e.a.vx||0,e.a.vy||0,e.b.vx||0,e.b.vy||0);
+ for(const m of eco.masses){const n=eco.byNode.get(m.host);if(n){const outlet=mouth(m);lines.push(outlet.x,outlet.y,n.x,n.y,m.fuel*.7,m.signal,.6,50,m.id,n.id,m.vx||0,m.vy||0,n.vx||0,n.vy||0);}}
+ const packets=[];for(const p of eco.packets){const n=eco.byNode.get(p.to);if(n){const source=eco.byNode.get(p.fromId)||eco.byMass.get(p.fromId),port=source?.base?mouth(source):source,x=port?.x??p.x0,y=port?.y??p.y0,dx=n.x-x,dy=n.y-y,edge=p.edge||eco.adjacency.get(p.fromId)?.find(a=>a.node.id===n.id)?.edge,reverse=edge?.b.id===p.fromId,angle=Math.atan2(dy,dx)+(reverse?Math.PI:0);packets.push(x+dx*p.t,y+dy*p.t,dx/p.duration,dy/p.duration,1.4+p.amount*25,3,Math.hypot(dx,dy),reverse?1-p.t:p.t,1,angle,p.id,edge?.a.id??p.fromId);}}
+ return {time:eco.time,climate:{...eco.season},storm:eco.storm?{...eco.storm}:null,membranes:eco.masses.map(m=>({id:m.id,x:m.x,y:m.y,phase:m.phase,pressure:m.pressure||0,scar:m.scar||0,refractory:m.refractory||0,fuel:m.fuel,family:m.family??m.id%6,cycles:m.cycles||0,mass:m.mass,base:m.base,age:m.age,gate:m.gate,life:m.life,max:m.max,vx:m.vx||0,vy:m.vy||0,lastRelease:m.lastRelease??-100,lastCapture:m.lastCapture??-100,history:(m.history||[]).map(h=>({...h})),host:eco.byNode.has(m.host)?{id:m.host,x:eco.byNode.get(m.host).x,y:eco.byNode.get(m.host).y,store:eco.byNode.get(m.host).store}:null})),events:eco.events.map(e=>({...e})),bodies:new Float32Array(bodies),lines:new Float32Array(lines),packets:new Float32Array(packets),resource:Float32Array.from(eco.resource),memory:Float32Array.from(eco.memory),stats:{...eco.stats},counts:{masses:eco.masses.length,nodes:eco.nodes.length,particles:eco.particles.length,organisms:eco.organisms.length,residues:eco.residues.length,packets:eco.packets.length}};
+}

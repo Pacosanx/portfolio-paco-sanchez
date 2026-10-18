@@ -330,3 +330,9 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
   .development-stage .development-copy { margin:0; }
   .development-copy+.development-copy,.development-image-gallery .development-figure+.development-figure { margin:0; }
 }
+
+/* Compact galleries keep repeated studies small in both reader views. */
+.case-image-group.is-compact { width:100%; max-width:calc(var(--columns,4) * 180px); margin-inline:auto; padding-block:var(--s5); grid-template-columns:repeat(var(--columns,4),minmax(0,1fr)); gap:var(--s4); }
+@container(max-width:650px) {
+  .case-image-group.is-compact { max-width:360px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+}

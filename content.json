@@ -326,6 +326,56 @@
               "surface": "#000000"
             },
             {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": "",
+              "surface": "#000000"
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": "",
+              "surface": "#000000"
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": "",
+              "surface": "#000000"
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": "",
+              "surface": "#000000"
+            },
+            {
+              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
+              "width": 1280,
+              "height": 2280,
+              "alt": "",
+              "caption": "",
+              "surface": "#000000"
+            }
+          ],
+          "sourceModule": "Project Module 18",
+          "columns": 3,
+          "gap": 12,
+          "surface": "#000000",
+          "layout": "compact"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4f624191707843.65d02e990cf8c.gif",
               "width": 1280,
               "height": 1280,
@@ -350,25 +400,9 @@
               "surface": "#000000"
             },
             {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d28d7191707843.65d02e990a60f.gif",
-              "width": 1280,
-              "height": 2280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb505e191707843.65d02e99061d1.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/175f30191707843.65d02e990e3ba.gif",
-              "width": 1280,
-              "height": 2280,
               "alt": "",
               "caption": "",
               "surface": "#000000"
@@ -385,14 +419,6 @@
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/39d447191707843.65d02e990da70.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/eced9f191707843.65d02e990b081.gif",
-              "width": 1280,
-              "height": 2280,
               "alt": "",
               "caption": "",
               "surface": "#000000"
@@ -422,25 +448,9 @@
               "surface": "#000000"
             },
             {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/7b0191191707843.65d02e990c5cf.gif",
-              "width": 1280,
-              "height": 2280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
               "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/3d7548191707843.65d02e990bcec.gif",
               "width": 1280,
               "height": 1280,
-              "alt": "",
-              "caption": "",
-              "surface": "#000000"
-            },
-            {
-              "url": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/de3004191707843.65d02e9904a94.gif",
-              "width": 1280,
-              "height": 2280,
               "alt": "",
               "caption": "",
               "surface": "#000000"
@@ -449,7 +459,8 @@
           "sourceModule": "Project Module 18",
           "columns": 4,
           "gap": 12,
-          "surface": "#000000"
+          "surface": "#000000",
+          "layout": "compact"
         },
         {
           "type": "image",
@@ -472,7 +483,7 @@
       },
       "context": "Morfología 2 · Longinotti · FADU / UBA",
       "theme": {
-        "bg": "#001A30",
+        "bg": "#000000",
         "text": "#ECECEC",
         "secondary": "#C8D1D9",
         "muted": "#A5B3C0",
