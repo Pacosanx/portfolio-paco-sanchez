@@ -376,7 +376,7 @@
   resize();
   field.classList.add('is-webgl');
   new ResizeObserver(resize).observe(field);
-  new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; sync(); }).observe(opening);
+  new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; sync(); }).observe(field);
   document.addEventListener('visibilitychange', sync);
   reduced.addEventListener('change', () => { lastLensProgress = -1; sync(); });
   window.addEventListener('scroll', updateScroll, { passive: true });
