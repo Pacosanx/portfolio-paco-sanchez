@@ -7,7 +7,7 @@
     "discipline": "Ecosistema digital interactivo",
     "collaboration": "Nacho Araoz · diseñador de imagen y sonido",
     "summary": "De la investigación y el manifiesto a una experiencia web y una futura instalación virtual 3D.",
-    "description": "Un ecosistema que explora el cruce entre biología y tecnología. El proyecto recorre tres etapas: investigación y manifiesto, experiencia web e instalación virtual 3D, actualmente en desarrollo.",
+    "description": "Pericarion propone un ecosistema que existe y se transforma independientemente de la presencia humana. ¿Bajo qué condiciones podemos considerar a la tecnología como biología y a la biología como tecnología?",
     "stageSequence": true,
     "tools": [
       "Investigación y escritura",
@@ -19,7 +19,12 @@
       {
         "label": "ETAPA 01",
         "title": "Investigación y manifiesto",
-        "text": "El manifiesto propone un ecosistema autónomo, donde la presencia humana actúa como una fuerza material más. Sus efectos se propagan sin dar órdenes ni controlar el sistema."
+        "text": "La investigación pregunta qué sucede cuando dejamos de considerar al humano como condición necesaria para definir aquello que es tecnológico.",
+        "link": {
+          "href": "/assets/development/pericarion/pericarion-investigacion-propuesta.pdf",
+          "label": "Leer investigación y propuesta (PDF · 6 páginas)",
+          "newTab": true
+        }
       },
       {
         "label": "ETAPA 02",

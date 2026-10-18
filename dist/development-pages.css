@@ -28,3 +28,6 @@
 .development-embed-start:hover span,.development-embed-start:focus-visible span{border-color:var(--text)}
 .development-embed-start:focus-visible{outline:2px solid var(--text);outline-offset:-4px}
 @container(max-width:650px){.development-embed-viewport{aspect-ratio:9/16}}
+
+/* The hero already supplies the divider before the first stage. */
+.development-stages>.development-stage:first-child{border-top:0;padding-top:0}
