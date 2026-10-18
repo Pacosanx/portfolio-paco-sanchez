@@ -1,0 +1,24 @@
+/* Espora uses the project reader's grid, with alternating scales and quiet details. */
+.espora-presentation{container-type:inline-size}
+.espora-presentation>.case-gallery{grid-template-columns:repeat(12,minmax(0,1fr));row-gap:var(--subsection-gap)}
+.espora-presentation .case-gallery>.case-text{grid-column:4/11}
+.espora-presentation .case-embed{grid-column:1/-1;max-width:none;width:100%}
+.espora-presentation .case-player{aspect-ratio:16/9}
+.espora-presentation .case-image-group:is(.espora-pair,.espora-pair-reverse){grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--grid-gap);align-items:start}
+.espora-presentation .espora-pair>.case-figure:first-child{grid-column:1/5;margin-top:var(--s7)}
+.espora-presentation .espora-pair>.case-figure:last-child{grid-column:6/-1}
+.espora-presentation .espora-pair-reverse>.case-figure:first-child{grid-column:1/9}
+.espora-presentation .espora-pair-reverse>.case-figure:last-child{grid-column:9/-1;margin-top:var(--s8)}
+.espora-presentation .case-gallery>.case-figure.is-detail{grid-column:3/11}
+.espora-presentation .case-gallery>.case-figure.is-detail:has(img[src*="espora-55"]){grid-column:2/7;max-width:440px}
+.espora-presentation .case-gallery>.case-text:last-child{font-size:.75rem;max-width:70ch;color:var(--muted)}
+.espora-presentation picture{display:block}
+@container(max-width:650px){
+ .espora-presentation .case-gallery{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:var(--s7)}
+ .espora-presentation .case-gallery>.case-text,.espora-presentation .case-gallery>.case-figure.is-detail{grid-column:1/-1}
+ .espora-presentation .case-image-group:is(.espora-pair,.espora-pair-reverse){grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s6)}
+ .espora-presentation .case-image-group:is(.espora-pair,.espora-pair-reverse)>.case-figure{grid-column:1/-1;margin-top:0}
+ .espora-presentation .espora-pair>.case-figure:first-child{grid-column:2/5}
+ .espora-presentation .espora-pair-reverse>.case-figure:last-child{grid-column:2/5}
+ .espora-presentation .case-gallery>.case-figure.is-detail:has(img[src*="espora-55"]){grid-column:1/4;max-width:none}
+}

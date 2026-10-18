@@ -37,6 +37,8 @@ La verificación comprueba las páginas de proyectos, sus enlaces internos y las
 
 La publicación principal es [GitHub Pages](https://pacosanx.github.io/portfolio-paco-sanchez/). El workflow configura `SITE_BASE_PATH=/portfolio-paco-sanchez` y `SITE_ORIGIN=https://pacosanx.github.io`; el generador y la verificación admiten también la raíz local.
 
+Espora define su secuencia en `presentation`, dentro de `development-projects.json`, usando los mismos bloques del lector de proyectos. `dist/espora.css` alterna escalas y mantiene el video completo entre ambos márgenes. Los tres GIFs de `assets/development/espora/interacciones` son fragmentos del recorrido original (jardín: 8,5–14,5 s; nodos: 139–146 s; visor: 640–646 s) y tienen una imagen estática para la preferencia de movimiento reducido. El reporte se presenta únicamente como una captura secundaria.
+
 ## Presentaciones de proyectos
 
 `dist/layout-system.css` centraliza la grilla, la escala de espaciado y las reglas tipográficas compartidas. Las secciones se separan 96 px en escritorio y 64 px en pantallas menores; las fichas adaptan sus columnas al ancho de su contenedor, incluido el panel lateral.
