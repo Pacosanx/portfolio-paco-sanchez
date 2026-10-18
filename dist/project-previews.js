@@ -89,30 +89,44 @@
         const geometry = image.geometry;
         if (!geometry) return result;
         const angle = (Number(geometry.rotation) || 0) * Math.PI / 180;
+        const rotatedWidth = Math.abs(Number(geometry.width) * Math.cos(angle))
+          + Math.abs(Number(geometry.height) * Math.sin(angle));
         const rotatedHeight = Math.abs(Number(geometry.width) * Math.sin(angle))
           + Math.abs(Number(geometry.height) * Math.cos(angle));
+        const centerX = Number(geometry.x) + Number(geometry.width) / 2;
         const centerY = Number(geometry.y) + Number(geometry.height) / 2;
         return {
+          left: Math.min(result.left, centerX - rotatedWidth / 2),
+          right: Math.max(result.right, centerX + rotatedWidth / 2),
           top: Math.min(result.top, centerY - rotatedHeight / 2),
           bottom: Math.max(result.bottom, centerY + rotatedHeight / 2)
         };
-      }, { top: Infinity, bottom: -Infinity });
+      }, { left: Infinity, right: -Infinity, top: Infinity, bottom: -Infinity });
+      const groupWidth = bounds.right - bounds.left;
       const groupHeight = bounds.bottom - bounds.top;
-      const hasBounds = Number.isFinite(bounds.top) && Number.isFinite(bounds.bottom) && groupHeight > 0;
+      const hasBounds = Number.isFinite(bounds.left) && Number.isFinite(bounds.right)
+        && Number.isFinite(bounds.top) && Number.isFinite(bounds.bottom)
+        && groupWidth > 0 && groupHeight > 0;
+      const columnBounds = column.getBoundingClientRect();
+      const safeInset = 12;
+      const areaLeft = Math.max(safeInset, columnBounds.left + safeInset);
+      const areaRight = Math.min(innerWidth - safeInset, columnBounds.right - safeInset);
+      const areaTop = Math.max(safeInset, section.top + safeInset);
+      const areaBottom = Math.min(innerHeight - safeInset, section.bottom - safeInset);
+      const areaWidth = areaRight - areaLeft;
+      const areaHeight = areaBottom - areaTop;
+      // Only show the group when there is enough visible section area to keep every card on-screen.
+      if (hasBounds && (areaWidth < 80 || areaHeight < 96)) return false;
       const frameScale = Math.min(innerWidth / 1919, innerHeight / 905);
       const scale = hasBounds
-        ? Math.min(frameScale, section.height / groupHeight)
+        ? Math.min(frameScale, areaWidth / groupWidth, areaHeight / groupHeight)
         : frameScale;
-      const offsetX = (innerWidth - 1919 * scale) / 2;
-      const offsetY = (innerHeight - 905 * scale) / 2;
-      const groupTop = hasBounds ? offsetY + bounds.top * scale : 0;
-      const groupBottom = hasBounds ? offsetY + bounds.bottom * scale : 0;
-      const centeredShift = hasBounds ? innerHeight / 2 - (groupTop + groupBottom) / 2 : 0;
-      const minimumShift = hasBounds ? section.top - groupTop : 0;
-      const maximumShift = hasBounds ? section.bottom - groupBottom : 0;
+      const horizontalShift = hasBounds
+        ? (areaLeft + areaRight) / 2 - (bounds.left + bounds.right) * scale / 2
+        : (innerWidth - 1919 * scale) / 2;
       const verticalShift = hasBounds
-        ? Math.min(maximumShift, Math.max(minimumShift, centeredShift))
-        : 0;
+        ? (areaTop + areaBottom) / 2 - (bounds.top + bounds.bottom) * scale / 2
+        : (innerHeight - 905 * scale) / 2;
       stage.style.left = '0px';
       stage.style.width = `${innerWidth}px`;
       stage.style.top = '0px';
@@ -125,8 +139,8 @@
         if (!geometry) return;
         // Figma geometry replaces the card's initial centered transform; don't animate that repositioning.
         card.style.transition = 'none';
-        card.style.setProperty('left', `${offsetX + Number(geometry.x) * scale}px`, 'important');
-        card.style.setProperty('top', `${offsetY + Number(geometry.y) * scale + verticalShift}px`, 'important');
+        card.style.setProperty('left', `${horizontalShift + Number(geometry.x) * scale}px`, 'important');
+        card.style.setProperty('top', `${verticalShift + Number(geometry.y) * scale}px`, 'important');
         card.style.setProperty('right', 'auto', 'important');
         card.style.setProperty('bottom', 'auto', 'important');
         card.style.setProperty('width', `${Number(geometry.width) * scale}px`, 'important');
