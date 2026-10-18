@@ -98,6 +98,8 @@
       [...wrap.children].forEach((card, i) => {
         const geometry = images[i]?.geometry;
         if (!geometry) return;
+        // Figma geometry replaces the card's initial centered transform; don't animate that repositioning.
+        card.style.transition = 'none';
         card.style.setProperty('left', `${offsetX + Number(geometry.x) * scale}px`, 'important');
         card.style.setProperty('top', `${offsetY + Number(geometry.y) * scale}px`, 'important');
         card.style.setProperty('right', 'auto', 'important');
