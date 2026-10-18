@@ -98,4 +98,21 @@
 .phone-mockups .case-zoom::after{content:'';position:absolute;right:-3px;top:94px;width:2px;height:38px;background:#777;border-radius:2px}
 .case-image-group.phone-mockups .case-zoom img{display:block;width:100%;height:auto;max-height:none;aspect-ratio:360/800;object-fit:fill;border-radius:24px;background:#0c0c0c}
 .phone-mockups figcaption{font-size:11px;line-height:1.6;margin-top:16px;text-align:center}
-@container(max-width:650px){.case-image-group.phone-mockups{gap:32px 24px}.case-image-group.phone-mockups>.case-figure{flex-basis:170px;width:170px;max-width:170px}}
+/* Each device has its own camera angle; captions remain on the reading plane. */
+.case-image-group.phone-mockups{max-width:840px;gap:48px;padding:44px 24px 72px}
+.phone-mockups>.case-figure{perspective:1000px}
+.phone-mockups .case-zoom{transform-origin:50% 50%;box-shadow:2px 2px 0 #4c4c4c,4px 4px 0 #252525,6px 6px 0 #3b3b3b,18px 28px 35px #0008}
+.phone-mockups>.case-figure:nth-child(1) .case-zoom{transform:translateY(28px) rotateX(8deg) rotateY(-24deg) rotateZ(-11deg)}
+.phone-mockups>.case-figure:nth-child(2) .case-zoom{transform:translateY(-20px) rotateX(-9deg) rotateY(15deg) rotateZ(5deg)}
+.phone-mockups>.case-figure:nth-child(3) .case-zoom{transform:translateY(48px) rotateX(10deg) rotateY(-18deg) rotateZ(12deg)}
+.phone-mockups>.case-figure:nth-child(1) figcaption{transform:translateY(34px)}
+.phone-mockups>.case-figure:nth-child(2) figcaption{transform:translateY(-4px)}
+.phone-mockups>.case-figure:nth-child(3) figcaption{transform:translateY(54px)}
+@container(max-width:650px){
+ .case-image-group.phone-mockups{gap:56px 24px;padding:28px 4px 48px}
+ .case-image-group.phone-mockups>.case-figure{flex-basis:140px;width:140px;max-width:140px}
+ .phone-mockups>.case-figure:nth-child(1) .case-zoom{transform:translateY(12px) rotateX(6deg) rotateY(-18deg) rotateZ(-8deg)}
+ .phone-mockups>.case-figure:nth-child(2) .case-zoom{transform:translateY(-10px) rotateX(-7deg) rotateY(12deg) rotateZ(5deg)}
+ .phone-mockups>.case-figure:nth-child(3) .case-zoom{transform:translateY(12px) rotateX(8deg) rotateY(-14deg) rotateZ(9deg)}
+ .phone-mockups>.case-figure:nth-child(1) figcaption,.phone-mockups>.case-figure:nth-child(3) figcaption{transform:translateY(18px)}
+}
