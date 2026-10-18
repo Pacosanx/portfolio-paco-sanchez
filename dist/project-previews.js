@@ -68,7 +68,7 @@
       image.style.height = `${100 / crop.height}%`;
       image.style.left = `${-100 * crop.x / crop.width}%`;
       image.style.top = `${-100 * crop.y / crop.height}%`;
-      if (/^(polygon|inset)\\([\\d\\s.,%+-]+\\)$/.test(sourceAsset.clipPath || '')) image.style.clipPath = sourceAsset.clipPath;
+      if (/^(polygon|inset)\([\d\s.,%+-]+\)$/.test(sourceAsset.clipPath || '')) image.style.clipPath = sourceAsset.clipPath;
       cropFrame.append(image);
       return image;
     });
