@@ -212,7 +212,8 @@ const developmentTemplates=developmentProjects.map((p,i)=>{
 }).join('');
 fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home+developmentTemplates));
 
-const previewAsset=image=>({...image,src:assetPath(image.src),...(image.layers?{layers:image.layers.map(layer=>({...layer,src:assetPath(layer.src)}))}:{})});
+const previewSource=src=>src.startsWith('/assets/previews/figma/')?versionedAsset(src,src.slice(1)):assetPath(src);
+const previewAsset=image=>({...image,src:previewSource(image.src),...(image.layers?{layers:image.layers.map(previewAsset)}:{})});
 const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(previewAsset)}));
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});
