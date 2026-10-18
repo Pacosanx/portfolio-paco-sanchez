@@ -327,6 +327,11 @@
     if (reduced.matches) {
       scrollProgress = targetScroll;
       draw();
+    } else if (Math.abs(targetScroll - scrollProgress) > 0.12) {
+      // Large scroll jumps should never leave the lens behind a clipped section edge.
+      scrollProgress = targetScroll;
+      draw();
+      if (inView && !frame) sync();
     } else if (inView && !frame) {
       sync();
     }
