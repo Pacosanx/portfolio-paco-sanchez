@@ -4585,16 +4585,40 @@
       "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ceeaa2b0-5f99-48e5-a262-cbecbe4cd644_rwc_0x0x1081x810x1081.png?h=aed8d2b836c9a85dbbc32dc1caafe68e",
       "blocks": [
         {
-          "type": "placeholder",
-          "title": "Apertura 3D",
-          "aspectRatio": 1.7766497461928934,
-          "missingEquivalentToV2Module": 1
+          "type": "video",
+          "url": "/assets/presentation/festival-v1/3d-complejo.mp4",
+          "title": "Visual 3D · Complejo",
+          "width": 1594,
+          "height": 1406,
+          "aspectRatio": 1.1337126600284495,
+          "caption": "Render 3D · Complejo."
         },
         {
-          "type": "placeholder",
-          "title": "Marca en movimiento",
-          "aspectRatio": 1.7766497461928934,
-          "missingEquivalentToV2Module": 2
+          "type": "video",
+          "url": "/assets/presentation/festival-v1/3d-tentaculos.mp4",
+          "title": "Visual 3D · Tentáculos",
+          "width": 1920,
+          "height": 1080,
+          "aspectRatio": 1.7777777777777777,
+          "caption": "Render 3D · Tentáculos."
+        },
+        {
+          "type": "video",
+          "url": "/assets/presentation/festival-v1/video-3d-mutar.mp4",
+          "title": "Pieza audiovisual MUTAR V1",
+          "width": 2524,
+          "height": 1080,
+          "aspectRatio": 2.337037037037037,
+          "caption": "Pieza audiovisual 3D de MUTAR V1."
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/marca-v1.png",
+          "width": 2331,
+          "height": 982,
+          "alt": "Marca fija de MUTAR V1 en verde ácido.",
+          "size": "full",
+          "sourceModule": "Marca estática V1"
         },
         {
           "type": "image",
@@ -4789,6 +4813,15 @@
           "alt": "Merchandising MUTAR V1: pulseras, remeras, tote y prendedores.",
           "size": "full",
           "sourceModule": "Panel de presentación 09"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/marca-v1.png",
+          "width": 2331,
+          "height": 982,
+          "alt": "Marca fija de MUTAR V1 en verde ácido.",
+          "size": "full",
+          "sourceModule": "Marca estática V1"
         }
       ],
       "contenidoFuente": {
