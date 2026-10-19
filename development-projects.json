@@ -63,7 +63,13 @@
       }
     ],
     "images": [],
-    "showOverview": false
+    "showOverview": false,
+    "cardImage": {
+      "url": "/assets/development/pericarion/web-cerca.jpg",
+      "alt": "Vista 2D de la web de Pericarion con sus organismos, nodos y controles de interacción.",
+      "width": 1280,
+      "height": 720
+    }
   },
   {
     "slug": "espora",
@@ -195,6 +201,12 @@
         "type": "text",
         "text": "El video y las interacciones corresponden a la primera etapa documentada. Las actualizaciones posteriores del proyecto no están representadas en este recorrido."
       }
-    ]
+    ],
+    "cardImage": {
+      "url": "/assets/development/espora/pantallas/espora-2.webp",
+      "alt": "Jardín 3D de Espora, con muestras de hongos y referencias a distintas especies.",
+      "width": 1280,
+      "height": 720
+    }
   }
 ]

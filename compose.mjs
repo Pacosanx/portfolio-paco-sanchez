@@ -181,7 +181,7 @@ const home=`${header(true)}<main id="contenido" class="shell">
 <section class="development-section" id="en-desarrollo" aria-labelledby="development-title">
   <h2 class="eyebrow" id="development-title">En proceso</h2>
   <div class="development-projects">
-    ${developmentProjects.map(p=>`<a class="development-project resource-entry" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="resource-heading"><p class="resource-kicker mono">${esc(p.status)}</p><h3>${esc(p.title)}</h3></div><div class="resource-context"><p>${esc(p.summary)}</p></div><span class="text-link resource-link">Ver proyecto</span></a>`).join('')}
+    ${developmentProjects.map(p=>`<a class="development-project resource-entry" href="${sitePath('/en-desarrollo/'+p.slug)}/"><div class="resource-heading"><p class="resource-kicker mono">${esc(p.status)}</p><h3>${esc(p.title)}</h3></div><div class="resource-context"><p>${esc(p.summary)}</p></div><span class="text-link resource-link">Ver proyecto</span>${p.cardImage?`<span class="development-project-preview"><img src="${sitePath(p.cardImage.url)}" alt="${esc(p.cardImage.alt)}" width="${p.cardImage.width}" height="${p.cardImage.height}" loading="lazy" decoding="async"></span>`:''}</a>`).join('')}
   </div>
 </section>
 ${parallelSection(sitePath)}

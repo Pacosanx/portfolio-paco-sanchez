@@ -6,3 +6,8 @@
 .development-project.resource-entry:hover .resource-link{text-decoration:underline}
 .development-project.resource-entry:focus-visible{outline:2px solid var(--text);outline-offset:8px}
 @media(max-width:600px){.development-section{display:block}.development-projects{display:grid}}
+
+.development-project-preview{display:block;width:100%;aspect-ratio:16/9;margin-top:var(--s6);overflow:hidden;border:1px solid var(--line);background:#0a0a0a}
+.development-project-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.development-project:hover .development-project-preview img{transform:scale(1.015)}
+@media(prefers-reduced-motion:reduce){.development-project-preview img{transition:none}.development-project:hover .development-project-preview img{transform:none}}
