@@ -35,6 +35,10 @@
 .case-embed-strip .case-embed{max-width:none}
 .case-embed-strip figcaption{font-size:.6875rem}
 .case-video video{display:block;width:100%;height:auto;max-height:85dvh;background:transparent}
+.case-video-stage{position:relative;width:100%;overflow:hidden}
+.case-video-stage video{width:100%}
+.case-video-overlay{position:absolute;top:50%;left:50%;width:42%;max-height:56%;object-fit:contain;transform:translate(-50%,-50%);pointer-events:none}
+.case-video.is-trimmed video{clip-path:inset(.65%)}
 .case-video.is-portrait{max-width:360px}
 .inmson-case-interaction{width:100%}
 .inmson-interaction-intro{max-width:64ch}

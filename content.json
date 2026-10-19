@@ -4586,21 +4586,13 @@
       "blocks": [
         {
           "type": "video",
-          "url": "/assets/presentation/festival-v1/3d-complejo.mp4",
-          "title": "Visual 3D · Complejo",
-          "width": 1594,
-          "height": 1406,
-          "aspectRatio": 1.1337126600284495,
-          "caption": "Render 3D · Complejo."
-        },
-        {
-          "type": "video",
           "url": "/assets/presentation/festival-v1/3d-tentaculos.mp4",
           "title": "Visual 3D · Tentáculos",
           "width": 1920,
           "height": 1080,
           "aspectRatio": 1.7777777777777777,
-          "caption": "Render 3D · Tentáculos."
+          "caption": "Render 3D · Tentáculos.",
+          "loop": true
         },
         {
           "type": "video",
@@ -4609,30 +4601,10 @@
           "width": 2524,
           "height": 1080,
           "aspectRatio": 2.337037037037037,
-          "caption": "Pieza audiovisual 3D de MUTAR V1."
-        },
-        {
-          "type": "image",
-          "url": "/assets/presentation/festival-v1/marca-v1.png",
-          "width": 2331,
-          "height": 982,
-          "alt": "Marca fija de MUTAR V1 en verde ácido.",
-          "size": "full",
-          "sourceModule": "Marca estática V1"
-        },
-        {
-          "type": "image",
-          "url": "/assets/presentation/festival-v1/panel-01.jpg",
-          "width": 2400,
-          "height": 1031,
-          "alt": "Identidad principal de MUTAR V1: marca y denominación del festival de tecnología y creatividad.",
-          "size": "full",
-          "sourceModule": "Panel de presentación 01"
-        },
-        {
-          "type": "text",
-          "heading": "Primera versión del sistema",
-          "text": "Verde ácido, negro y formas tridimensionales de apariencia metálica conviven con la marca y la información del festival. La identidad se aplica a redes, impresos, vía pública, acceso y objetos."
+          "caption": "Pieza audiovisual 3D de MUTAR V1.",
+          "loop": true,
+          "overlayImage": "/assets/presentation/festival-v1/marca-v1.png",
+          "overlayAlt": "Marca MUTAR V1 fija sobre la pieza audiovisual."
         },
         {
           "type": "image",
@@ -4726,22 +4698,18 @@
           ]
         },
         {
-          "type": "placeholder",
-          "title": "Cierre 3D",
-          "aspectRatio": 1.7766497461928934,
-          "missingEquivalentToV2Module": 12
+          "type": "video",
+          "url": "/assets/presentation/festival-v1/3d-complejo.mp4",
+          "title": "Render 3D · Complejo",
+          "width": 1594,
+          "height": 1406,
+          "aspectRatio": 1.1337126600284495,
+          "caption": "Cierre 3D · Complejo.",
+          "loop": true,
+          "trimEdges": true
         }
       ],
       "imagenes": [
-        {
-          "type": "image",
-          "url": "/assets/presentation/festival-v1/panel-01.jpg",
-          "width": 2400,
-          "height": 1031,
-          "alt": "Identidad principal de MUTAR V1: marca y denominación del festival de tecnología y creatividad.",
-          "size": "full",
-          "sourceModule": "Panel de presentación 01"
-        },
         {
           "type": "image",
           "url": "/assets/presentation/festival-v1/panel-02.jpg",
@@ -4813,15 +4781,6 @@
           "alt": "Merchandising MUTAR V1: pulseras, remeras, tote y prendedores.",
           "size": "full",
           "sourceModule": "Panel de presentación 09"
-        },
-        {
-          "type": "image",
-          "url": "/assets/presentation/festival-v1/marca-v1.png",
-          "width": 2331,
-          "height": 982,
-          "alt": "Marca fija de MUTAR V1 en verde ácido.",
-          "size": "full",
-          "sourceModule": "Marca estática V1"
         }
       ],
       "contenidoFuente": {

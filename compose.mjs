@@ -120,7 +120,13 @@ function caseGallery(p,embedded=false){
       const ratio=Number(block.aspectRatio)>0?Number(block.aspectRatio):16/9;
       return `<figure class="case-embed${ratio<1?' is-portrait':''}" style="--media-ratio:${ratio}"><div class="case-player"><iframe src="${esc(assetPath(block.url))}" title="${esc(block.title||p.title)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>${block.link?`<figcaption><a class="text-link" href="${esc(block.link)}" target="_blank" rel="noopener noreferrer">${esc(block.title||'Ver video en YouTube')}</a></figcaption>`:''}</figure>`;
     }
-    if(block.type==='video')return `<figure class="case-video${block.layout==='portrait'||block.aspectRatio<1?' is-portrait':''}"><video src="${esc(assetPath(block.url))}" ${block.poster?`poster="${esc(assetPath(block.poster))}"`:''} controls playsinline preload="none" aria-label="${esc(block.title||p.title)}"></video>${block.caption?`<figcaption>${esc(block.caption)}</figcaption>`:''}</figure>`;
+    if(block.type==='video'){
+      const videoClass='case-video'+(block.layout==='portrait'||block.aspectRatio<1?' is-portrait':'')+(block.trimEdges?' is-trimmed':'');
+      const playback=block.loop?' autoplay loop muted':'';
+      const preload=block.loop?'auto':'none';
+      const overlay=block.overlayImage?'<img class="case-video-overlay" src="'+esc(assetPath(block.overlayImage))+'" alt="'+esc(block.overlayAlt||'')+'"'+(block.overlayAlt?'':' aria-hidden="true"')+'>':'';
+      return '<figure class="'+videoClass+'"><div class="case-video-stage"><video src="'+esc(assetPath(block.url))+'" '+(block.poster?'poster="'+esc(assetPath(block.poster))+'" ':'')+playback+' controls playsinline preload="'+preload+'" aria-label="'+esc(block.title||p.title)+'"></video>'+overlay+'</div>'+(block.caption?'<figcaption>'+esc(block.caption)+'</figcaption>':'')+'</figure>';
+    }
     if(block.type==='interactive')return `<section class="inmson-case-interaction" aria-label="Dibujo sonoro interactivo"><inmson-drawing></inmson-drawing></section>`;
     return '';
   };
