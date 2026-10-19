@@ -4618,7 +4618,8 @@
           "alt": "Variantes originales de la marca MUTAR V1 sobre fondos verde ácido y negro.",
           "size": "full",
           "sourceModule": "Panel de presentación 03",
-          "trimEdges": true
+          "trimEdges": true,
+          "matchPreviousWidth": true
         },
         {
           "type": "image",

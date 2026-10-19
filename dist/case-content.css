@@ -41,6 +41,7 @@
 .case-video.is-trimmed video{clip-path:inset(.65%)}
 .case-figure.is-trimmed .case-zoom{display:block;overflow:hidden}
 .case-figure.is-trimmed img{transform:scale(1.013);transform-origin:center}
+.case-figure.is-width-matched img{transform:scale(1.010)}
 .case-video.is-portrait{max-width:360px}
 .inmson-case-interaction{width:100%}
 .inmson-interaction-intro{max-width:64ch}

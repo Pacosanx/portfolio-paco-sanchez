@@ -63,7 +63,7 @@ for(const [i,p] of projects.entries()){
   const html=fs.readFileSync(htmlFiles[i+1],'utf8');
   const blocks=p.blocks||p.imagenes.map(image=>({type:'image',...image}));
   const galleryImages=blocks.flatMap(b=>b.type==='image'?[b]:b.type==='gallery'?b.images:[]);
-  assert.equal((html.match(/class="case-figure(?: is-(?:detail|overview|bleed|trimmed))*/g)||[]).length,galleryImages.length,p.title);
+  assert.equal((html.match(/class="case-figure(?: is-(?:detail|overview|bleed|trimmed|width-matched))*/g)||[]).length,galleryImages.length,p.title);
   for(const image of galleryImages)assert(html.includes(assetUrl(image.url).replaceAll('&','&amp;')),p.title);
   for(const block of blocks){
     assert(['image','gallery','text','embed','video','interactive','statement','placeholder','spacer'].includes(block.type),p.title);
