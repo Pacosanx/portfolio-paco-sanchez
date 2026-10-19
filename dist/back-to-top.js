@@ -63,9 +63,13 @@
     context.restore();
   }
 
+  function isInteracting() {
+    return visible && button.matches(':hover, :focus-visible, :active');
+  }
+
   function animate(now) {
     frame = 0;
-    if (!visible || document.hidden) return;
+    if (!isInteracting() || document.hidden) return;
     draw(now);
     if (!reducedMotion.matches) frame = requestAnimationFrame(animate);
   }
@@ -75,35 +79,39 @@
     frame = 0;
   }
 
+  function updateFill() {
+    const filled = isInteracting();
+    button.classList.toggle('is-filled', filled);
+    stopAnimation();
+    if (!filled) return;
+    draw(performance.now());
+    if (!reducedMotion.matches && !document.hidden) frame = requestAnimationFrame(animate);
+  }
+
   function updateVisibility() {
     const shouldShow = window.scrollY > 360;
+    visible = shouldShow;
     button.classList.toggle('is-visible', shouldShow);
     button.setAttribute('aria-hidden', String(!shouldShow));
     button.tabIndex = shouldShow ? 0 : -1;
-    if (shouldShow && !visible) {
-      visible = true;
-      draw(performance.now());
-      if (!reducedMotion.matches) frame = requestAnimationFrame(animate);
-    } else if (!shouldShow && visible) {
-      visible = false;
-      stopAnimation();
-    }
+    updateFill();
   }
 
+  button.addEventListener('pointerenter', updateFill);
+  button.addEventListener('pointerleave', updateFill);
+  button.addEventListener('pointerdown', updateFill);
+  button.addEventListener('pointerup', updateFill);
+  button.addEventListener('focus', updateFill);
+  button.addEventListener('blur', updateFill);
   window.addEventListener('scroll', updateVisibility, { passive: true });
-  window.addEventListener('resize', () => draw(performance.now()), { passive: true });
+  window.addEventListener('resize', () => {
+    if (isInteracting()) draw(performance.now());
+  }, { passive: true });
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) stopAnimation();
-    else if (visible) {
-      draw(performance.now());
-      if (!reducedMotion.matches) frame = requestAnimationFrame(animate);
-    }
+    else updateFill();
   });
-  reducedMotion.addEventListener('change', () => {
-    stopAnimation();
-    draw(performance.now());
-    if (visible && !reducedMotion.matches) frame = requestAnimationFrame(animate);
-  });
+  reducedMotion.addEventListener('change', updateFill);
   updateVisibility();
 
   button.addEventListener('click', () => {
