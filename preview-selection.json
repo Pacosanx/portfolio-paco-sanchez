@@ -726,9 +726,9 @@
   ],
   "/proyectos/cuando-acecha-la-maldad-afiche-cine": [
     {
-      "src": "/assets/previews/figma/maldad-18-124.png",
-      "width": 1920,
-      "height": 2743,
+      "src": "/assets/previews/figma/maldad-18-124-hover.webp",
+      "width": 1120,
+      "height": 1600,
       "role": "whole",
       "geometry": {
         "x": 1462.334,
@@ -742,9 +742,9 @@
   ],
   "/proyectos/fanzine-dg2-gabriele": [
     {
-      "src": "/assets/previews/figma/vaiven-18-110.png",
-      "width": 1920,
-      "height": 1376,
+      "src": "/assets/previews/figma/vaiven-18-110-hover.webp",
+      "width": 960,
+      "height": 688,
       "role": "whole",
       "crop": {
         "x": 0.05781014119527573,
@@ -762,9 +762,9 @@
       }
     },
     {
-      "src": "/assets/previews/figma/vaiven-18-106.png",
-      "width": 1920,
-      "height": 1376,
+      "src": "/assets/previews/figma/vaiven-18-106-hover.webp",
+      "width": 960,
+      "height": 688,
       "role": "detail",
       "crop": {
         "x": 0.057840275935261344,
@@ -782,9 +782,9 @@
       }
     },
     {
-      "src": "/assets/previews/figma/vaiven-18-112.png",
-      "width": 1920,
-      "height": 1376,
+      "src": "/assets/previews/figma/vaiven-18-112-hover.webp",
+      "width": 960,
+      "height": 688,
       "role": "detail",
       "crop": {
         "x": 0.2833123889587034,
@@ -802,9 +802,9 @@
       }
     },
     {
-      "src": "/assets/previews/figma/vaiven-18-108.png",
-      "width": 1920,
-      "height": 1376,
+      "src": "/assets/previews/figma/vaiven-18-108-hover.webp",
+      "width": 960,
+      "height": 688,
       "role": "detail",
       "crop": {
         "x": 0.057832180237715095,
@@ -822,9 +822,9 @@
       }
     },
     {
-      "src": "/assets/previews/figma/vaiven-18-104.png",
-      "width": 1920,
-      "height": 1376,
+      "src": "/assets/previews/figma/vaiven-18-104-hover.webp",
+      "width": 960,
+      "height": 688,
       "role": "detail",
       "crop": {
         "x": 0.283311432325887,
