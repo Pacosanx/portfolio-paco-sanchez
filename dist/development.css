@@ -14,3 +14,5 @@
 
 .development-projects{align-items:stretch}
 .development-project.resource-entry{display:grid;grid-template-rows:auto 1fr auto auto}
+
+.development-project .resource-context>p{text-wrap:pretty}
