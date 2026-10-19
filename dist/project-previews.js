@@ -124,8 +124,9 @@
       const horizontalShift = hasBounds
         ? (areaLeft + areaRight) / 2 - (bounds.left + bounds.right) * scale / 2
         : (innerWidth - 1919 * scale) / 2;
+      const projectVerticalOffset = wrap.dataset.project === 'festival-sistema-grafico-v1' ? 24 * frameScale : 0;
       const verticalShift = hasBounds
-        ? (areaTop + areaBottom) / 2 - (bounds.top + bounds.bottom) * scale / 2
+        ? (areaTop + areaBottom) / 2 - (bounds.top + bounds.bottom) * scale / 2 + projectVerticalOffset
         : (innerHeight - 905 * scale) / 2;
       stage.style.left = '0px';
       stage.style.width = `${innerWidth}px`;
