@@ -16,7 +16,7 @@
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
     'historias-instagram': 'poster', 'web-arquitectura': 'figma',
     'cuando-acecha-la-maldad-afiche-cine': 'figma', 'fanzine-dg2-gabriele': 'figma',
-    'festival-sistema-grafico-v1': 'figma', 'festival-sistema-grafico': 'poster',
+    'festival-sistema-grafico-v1': 'figma', 'festival-sistema-grafico': 'figma',
     'video-cinetica-dg2-gabriele': 'left',
     'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'fan',
     'demo-youtube-darksidesports': 'right', 'pirana-modelado-3d': 'fan',
