@@ -6638,6 +6638,39 @@
         "textBlocks": 1
       },
       "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA"
+    },
+    {
+      "nombre": "ILUSTRACIÓN ANIMADA",
+      "ruta": "/proyectos/ilustracion-animada-2021",
+      "anio": "2021",
+      "title": "Ilustración animada",
+      "discipline": "Ilustración / Animación",
+      "format": "Ilustración · GIF",
+      "descripcion": "Dos GIFs realizados en Ilustración I, cátedra Roldán: «Algo está mutando» y una secuencia de collage con un tiburón.",
+      "herramientas": "",
+      "tools": [],
+      "fuente": "",
+      "context": "Ilustración I · Roldán · FADU / UBA",
+      "imagenes": [
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/algo-esta-mutando.gif",
+          "width": 1080,
+          "height": 1080,
+          "alt": "Algo está mutando: ilustración animada de 2021",
+          "caption": "Algo está mutando · 2021",
+          "still": "/assets/presentation/ilustracion-2021/algo-esta-mutando.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/tiburon.gif",
+          "width": 1080,
+          "height": 1080,
+          "alt": "Collage animado de un tiburón que emerge del agua junto a un barco",
+          "caption": "Tiburón · 2021",
+          "still": "/assets/presentation/ilustracion-2021/tiburon.jpg"
+        }
+      ]
     }
   ],
   "experience": [

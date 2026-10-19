@@ -1819,5 +1819,19 @@
         "height": 0.8484642796538265
       }
     }
+  ],
+  "/proyectos/ilustracion-animada-2021": [
+    {
+      "src": "/assets/presentation/ilustracion-2021/algo-esta-mutando.jpg",
+      "width": 1080,
+      "height": 1080,
+      "role": "whole"
+    },
+    {
+      "src": "/assets/presentation/ilustracion-2021/tiburon.jpg",
+      "width": 1080,
+      "height": 1080,
+      "role": "detail"
+    }
   ]
 }
