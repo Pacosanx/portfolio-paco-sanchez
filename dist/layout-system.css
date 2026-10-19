@@ -274,9 +274,10 @@ h1,h2,h3,h4,p,figure,blockquote { margin: 0; }
   .parallel .lab-heading { grid-column:1/-1; }
   .parallel .lab-gallery { margin-top:var(--s6); }
   .trajectory .education { margin-top:var(--subsection-gap); }
-  .cv-table tr { display:grid; grid-template-columns:minmax(0,42fr) minmax(0,58fr); padding-block:var(--s5); gap:var(--s3) var(--s4); }
-  .cv-table tr>* { padding:0!important; }
-  .cv-table .cv-date { grid-column:1/-1; }
+  .cv-table,.cv-table tbody { display:block; width:100%; }
+  .cv-table tr { display:grid; grid-template-columns:minmax(0,1fr); padding-block:var(--s5); gap:var(--s3); }
+  .cv-table tr>* { display:block; grid-column:1; min-width:0; width:100%; padding:0!important; }
+  .cv-table .cv-date { grid-column:1; }
   .contact { padding-bottom:var(--s10); }
   .contact-social { margin-top:var(--s5); }
   .colophon { margin-top:var(--subsection-gap); }
