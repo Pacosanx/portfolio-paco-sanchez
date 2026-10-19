@@ -9,7 +9,7 @@
   const cache = new Map();
   let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
   const arrangements = {
-    metaphex: 'figma', 'maradona-alien': 'figma', 'instalacion-vr': 'figma',
+    metaphex: 'figma', 'maradona-alien': 'figma', nexo: 'figma', 'instalacion-vr': 'figma',
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
     'editorial-registros': 'fan', 'editorial-tipografico-2023': 'figma',
     'motion-graphics': 'figma', 'filtros-instagram': 'figma',
