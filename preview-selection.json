@@ -1764,45 +1764,48 @@
       "width": 360,
       "height": 800,
       "role": "whole",
+      "mockup": "phone",
+      "screenInset": "1.256% 4.286%",
       "geometry": {
-        "x": 1470.74,
-        "y": 46.1915,
-        "width": 197,
-        "height": 418,
-        "rotation": -5.25,
+        "x": 1630,
+        "y": 93,
+        "width": 196.92,
+        "height": 346.175,
+        "rotation": 2.91,
         "zIndex": 1
-      },
-      "mockup": "phone"
-    },
-    {
-      "src": "/assets/previews/figma/nexo-24-138.png",
-      "width": 316,
-      "height": 702,
-      "role": "detail",
-      "geometry": {
-        "x": 1494.7395,
-        "y": 430.187,
-        "width": 197,
-        "height": 418,
-        "rotation": -7.59,
-        "zIndex": 3
-      },
-      "mockup": "phone"
+      }
     },
     {
       "src": "/assets/previews/figma/nexo-24-137.png",
       "width": 316,
       "height": 702,
       "role": "detail",
+      "mockup": "phone",
+      "screenInset": "3.565% 11.745%",
       "geometry": {
-        "x": 1650.267,
-        "y": 236.903,
-        "width": 197,
-        "height": 418,
-        "rotation": 5.63,
+        "x": 1444,
+        "y": 273,
+        "width": 235.331,
+        "height": 363.389,
+        "rotation": -9.89,
         "zIndex": 2
-      },
-      "mockup": "phone"
+      }
+    },
+    {
+      "src": "/assets/previews/figma/nexo-24-138.png",
+      "width": 316,
+      "height": 702,
+      "role": "detail",
+      "mockup": "phone",
+      "screenInset": "2.315% 7.745%",
+      "geometry": {
+        "x": 1645,
+        "y": 459,
+        "width": 213.034,
+        "height": 353.86,
+        "rotation": 5.77,
+        "zIndex": 3
+      }
     }
   ]
 }

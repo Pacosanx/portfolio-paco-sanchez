@@ -662,22 +662,52 @@
     "route": "/proyectos/nexo",
     "images": [
       {
-        "src": "/portfolio-paco-sanchez/assets/presentation/nexo/cover.png",
-        "width": 1672,
-        "height": 941,
-        "role": "whole"
-      },
-      {
-        "src": "/portfolio-paco-sanchez/assets/presentation/nexo/home.png",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/nexo-24-135.png?v=0217cab16d",
         "width": 360,
         "height": 800,
-        "role": "detail"
+        "role": "whole",
+        "mockup": "phone",
+        "screenInset": "1.256% 4.286%",
+        "geometry": {
+          "x": 1630,
+          "y": 93,
+          "width": 196.92,
+          "height": 346.175,
+          "rotation": 2.91,
+          "zIndex": 1
+        }
       },
       {
-        "src": "/portfolio-paco-sanchez/assets/presentation/nexo/followup.png",
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/nexo-24-137.png?v=4a74e51bc7",
         "width": 316,
         "height": 702,
-        "role": "detail"
+        "role": "detail",
+        "mockup": "phone",
+        "screenInset": "3.565% 11.745%",
+        "geometry": {
+          "x": 1444,
+          "y": 273,
+          "width": 235.331,
+          "height": 363.389,
+          "rotation": -9.89,
+          "zIndex": 2
+        }
+      },
+      {
+        "src": "/portfolio-paco-sanchez/assets/previews/figma/nexo-24-138.png?v=2611164c08",
+        "width": 316,
+        "height": 702,
+        "role": "detail",
+        "mockup": "phone",
+        "screenInset": "2.315% 7.745%",
+        "geometry": {
+          "x": 1645,
+          "y": 459,
+          "width": 213.034,
+          "height": 353.86,
+          "rotation": 5.77,
+          "zIndex": 3
+        }
       }
     ]
   },

@@ -45,6 +45,7 @@
     const { asset } = entry;
     const card = document.createElement('div');
     card.className = asset.mockup === 'phone' ? 'preview-card is-phone-mockup' : 'preview-card';
+    if (asset.screenInset) card.style.setProperty('--phone-screen-inset', asset.screenInset);
     card.dataset.role = asset.role || 'detail';
     card.style.transition = 'transform 220ms cubic-bezier(.2,.7,.2,1)';
     card.style.willChange = 'transform';
