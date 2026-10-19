@@ -844,34 +844,102 @@
   ],
   "/proyectos/festival-sistema-grafico-v1": [
     {
-      "src": "/assets/presentation/festival-v1/identidad.svg",
-      "width": 1920,
-      "height": 412,
-      "role": "whole"
+      "src": "/assets/previews/mutar-v1-figma-01.png",
+      "width": 185,
+      "height": 185,
+      "role": "whole",
+      "geometry": {
+        "x": 1468,
+        "y": 187,
+        "width": 184.364,
+        "height": 184.479,
+        "rotation": 0,
+        "zIndex": 1
+      }
     },
     {
-      "src": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/aff8b21b-99bb-4578-8ec5-9a51cc6f0c01_rw_1200.png?h=2e44083e575d7a5dc6bf7101295b78af",
-      "width": 991,
-      "height": 896,
-      "role": "detail"
+      "src": "/assets/previews/mutar-v1-figma-02.png",
+      "width": 179,
+      "height": 179,
+      "role": "detail",
+      "geometry": {
+        "x": 1659,
+        "y": 63,
+        "width": 178.637,
+        "height": 178.637,
+        "rotation": 0,
+        "zIndex": 2
+      }
     },
     {
-      "src": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/e6f67e8e-bfc1-4705-9474-8a6342cade1b_rw_1200.png?h=531039d5de47f106d8be6582a897a58f",
-      "width": 994,
-      "height": 1420,
-      "role": "detail"
+      "src": "/assets/previews/mutar-v1-figma-03.png",
+      "width": 176,
+      "height": 176,
+      "role": "detail",
+      "geometry": {
+        "x": 1470,
+        "y": 54,
+        "width": 175.6,
+        "height": 175.726,
+        "rotation": 0,
+        "zIndex": 3
+      }
     },
     {
-      "src": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/8ca9ccf9-6664-4c22-9ed7-322689c7b336_rw_1200.png?h=65bd6e117655d41e36ba403f9c88697e",
-      "width": 991,
-      "height": 569,
-      "role": "detail"
+      "src": "/assets/previews/mutar-v1-figma-04.png",
+      "width": 171,
+      "height": 171,
+      "role": "detail",
+      "geometry": {
+        "x": 1645,
+        "y": 210,
+        "width": 170.136,
+        "height": 170.136,
+        "rotation": 0,
+        "zIndex": 4
+      }
     },
     {
-      "src": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/35178d8a-efb0-40a0-8be9-063ae0dcf630_rw_1200.png?h=28b1df6c3d7559285a52c4fd76cb7381",
-      "width": 992,
-      "height": 523,
-      "role": "detail"
+      "src": "/assets/previews/mutar-v1-figma-05.png",
+      "width": 224,
+      "height": 281,
+      "role": "detail",
+      "geometry": {
+        "x": 1636,
+        "y": 351,
+        "width": 223.196,
+        "height": 280.835,
+        "rotation": 0,
+        "zIndex": 5
+      }
+    },
+    {
+      "src": "/assets/previews/mutar-v1-figma-06.png",
+      "width": 463,
+      "height": 403,
+      "role": "detail",
+      "geometry": {
+        "x": 1409,
+        "y": 527,
+        "width": 463,
+        "height": 403,
+        "rotation": 0,
+        "zIndex": 6
+      }
+    },
+    {
+      "src": "/assets/previews/mutar-v1-figma-07.png",
+      "width": 238,
+      "height": 291,
+      "role": "detail",
+      "geometry": {
+        "x": 1433,
+        "y": 305,
+        "width": 237.113,
+        "height": 290.485,
+        "rotation": 0,
+        "zIndex": 7
+      }
     }
   ],
   "/proyectos/festival-sistema-grafico": [
