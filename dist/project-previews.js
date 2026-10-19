@@ -7,6 +7,10 @@
   const rows = [...index.querySelectorAll('.project-row')];
   const desktop = window.matchMedia('(min-width:1001px)');
   const cache = new Map();
+  const prepared = new Map();
+  const warmQueue = [];
+  const queued = new Set();
+  let warming = false, warmObserver;
   let records = [], selected = -1, request = 0, keyboardFocus = false, previewSuppressed = false, frame;
   const arrangements = {
     metaphex: 'figma', 'maradona-alien': 'figma', nexo: 'figma', 'instalacion-vr': 'figma',
@@ -23,18 +27,26 @@
     'vr-medios-groisman-2': 'figma'
   };
 
-  const load = asset => {
-    if (cache.has(asset.src)) return { ...cache.get(asset.src), asset };
+  const load = (asset, priority = 'high') => {
+    if (cache.has(asset.src)) {
+      const cached = cache.get(asset.src);
+      if (priority === 'high') cached.image.fetchPriority = 'high';
+      return { ...cached, asset };
+    }
     const image = new Image();
     image.alt = '';
     image.decoding = 'async';
+    image.fetchPriority = priority;
     const entry = { image };
     entry.promise = new Promise((resolve, reject) => {
       image.onload = async () => {
         try { await image.decode(); } catch { /* Loaded source remains usable. */ }
         image.naturalWidth ? resolve(entry) : reject(new Error('Empty preview'));
       };
-      image.onerror = () => reject(new Error('Preview unavailable'));
+      image.onerror = () => {
+        cache.delete(asset.src);
+        reject(new Error('Preview unavailable'));
+      };
     });
     cache.set(asset.src, entry);
     image.src = asset.src;
@@ -77,6 +89,71 @@
     });
     card.append(cropFrame);
     return { card, images };
+  };
+
+  // Prepare each composition once, before hover when possible. Revisits reuse decoded DOM images.
+  const prepare = (i, priority = 'high') => {
+    const existing = prepared.get(i);
+    if (existing) {
+      if (priority === 'high') existing.entries.forEach(entry => {
+        entry.image.fetchPriority = 'high';
+        entry.layers.forEach(layer => { layer.image.fetchPriority = 'high'; });
+      });
+      return existing;
+    }
+    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 12);
+    const entries = assets.map(asset => {
+      const main = load(asset, priority);
+      const layers = (asset.layers || []).map(layer => load(layer, priority));
+      return { asset, image: main.image, promise: main.promise, layers };
+    });
+    const composition = { entries, cards: null };
+    prepared.set(i, composition);
+    composition.promise = (async () => {
+      await Promise.all(entries.flatMap(entry => [entry.promise, ...entry.layers.map(layer => layer.promise)]));
+      const cards = entries.map(createCard);
+      await Promise.all(cards.flatMap(({ images }) => images.map(async image => {
+        try { await image.decode(); } catch (error) { if (!image.naturalWidth) throw error; }
+      })));
+      composition.cards = cards;
+      return cards;
+    })().catch(error => {
+      prepared.delete(i);
+      throw error;
+    });
+    return composition;
+  };
+
+  const canWarm = () => desktop.matches && !navigator.connection?.saveData
+    && !['slow-2g', '2g'].includes(navigator.connection?.effectiveType);
+  const drainWarmQueue = async () => {
+    if (warming || !canWarm()) return;
+    warming = true;
+    try {
+      while (warmQueue.length && canWarm()) {
+        const i = warmQueue.shift();
+        queued.delete(i);
+        try { await prepare(i, 'low').promise; } catch { /* Hover can retry a failed background load. */ }
+      }
+    } finally { warming = false; }
+  };
+  const warm = i => {
+    if (i < 0 || i >= rows.length || rows[i].hidden || prepared.has(i) || queued.has(i) || !canWarm()) return;
+    queued.add(i);
+    warmQueue.push(i);
+    drainWarmQueue();
+  };
+  const startWarming = () => {
+    if (!canWarm() || warmObserver || !('IntersectionObserver' in window)) return;
+    warmObserver = new IntersectionObserver(entries => {
+      if (!canWarm()) return;
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        warm(rows.indexOf(entry.target));
+        warmObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: '240px 0px' });
+    rows.forEach(row => warmObserver.observe(row));
   };
 
   const position = () => {
@@ -211,20 +288,12 @@
     rows.forEach((row, j) => row.classList.toggle('is-active', i === j));
     if (hadPreview) stage.classList.add('is-changing');
     else stage.classList.remove('is-visible', 'is-changing');
-    const assets = (records[i]?.images || []).filter(a => a.src && a.width > 0 && a.height > 0).slice(0, 12);
-    if (!assets.length) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); return; }
     const current = () => token === request && selected === i && desktop.matches;
     try {
-      const entries = assets.map(asset => {
-        const main = load(asset);
-        const layers = (asset.layers || []).map(load);
-        return { asset, image: main.image, promise: main.promise, layers };
-      });
-      await Promise.all(entries.flatMap(entry => [entry.promise, ...entry.layers.map(layer => layer.promise)]));
+      const composition = prepare(i);
+      const cards = composition.cards || await composition.promise;
       if (!current()) return;
-      const cards = entries.map(createCard);
-      await Promise.all(cards.flatMap(({ images }) => images.map(image => image.decode())));
-      if (!current()) return;
+      if (!cards.length) { wrap.dataset.previewCount = '0'; wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); return; }
       wrap.dataset.layout = arrangements[slug] || 'fan';
       wrap.dataset.project = slug || '';
       // A small, stable tilt change keeps related projects from sharing one stack.
@@ -235,6 +304,8 @@
       wrap.dataset.projectIndex = i;
       stage.classList.remove('is-changing');
       stage.classList.toggle('is-visible', position());
+      warm(i + 1);
+      warm(i - 1);
     } catch { if (current()) { wrap.replaceChildren(); stage.classList.remove('is-changing', 'is-visible'); } }
   };
 
@@ -280,6 +351,10 @@
   document.addEventListener('portfolio:reveal', () => { previewSuppressed = true; hide(); });
   desktop.addEventListener('change', () => {
     hide();
+    warmObserver?.disconnect();
+    warmObserver = undefined;
+    startWarming();
+    drainWarmQueue();
     if (desktop.matches && !previewSuppressed && focusedIndex() >= 0) show(focusedIndex());
   });
   const basePath = document.documentElement.dataset.basePath || '';
@@ -287,6 +362,7 @@
     .then(response => { if (!response.ok) throw new Error('Previews unavailable'); return response.json(); })
     .then(data => {
       records = rows.map(row => data.find(record => new URL(row.href, location.href).pathname.replace(/\/$/, '') === `${basePath}${record.route}`.replace(/\/$/, '')));
+      startWarming();
       if (selected >= 0) show(selected);
     }).catch(hide);
 })();
