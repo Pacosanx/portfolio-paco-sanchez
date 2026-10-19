@@ -545,33 +545,69 @@
   ],
   "/proyectos/filtros-instagram": [
     {
-      "src": "/assets/previews/filtros-instagram-v2-01.webp",
-      "width": 405,
-      "height": 608,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/filtros-instagram-v2-02.webp",
-      "width": 405,
-      "height": 720,
-      "role": "detail",
-      "crop": {
-        "x": 0,
-        "y": 0,
-        "width": 1,
-        "height": 0.8
+      "src": "/assets/previews/figma/filtros-instagram-24-90.png",
+      "width": 607,
+      "height": 1079,
+      "role": "whole",
+      "geometry": {
+        "x": 1473.26,
+        "y": 74.5085,
+        "width": 195.118,
+        "height": 346.841,
+        "rotation": -2.77,
+        "zIndex": 1
       }
     },
     {
-      "src": "/assets/previews/filtros-instagram-v2-03.webp",
-      "width": 405,
-      "height": 720,
+      "src": "/assets/previews/figma/filtros-instagram-24-91.png",
+      "width": 443,
+      "height": 800,
       "role": "detail",
+      "geometry": {
+        "x": 1504.925,
+        "y": 476.76599999999996,
+        "width": 194.472,
+        "height": 345.692,
+        "rotation": -7.93,
+        "zIndex": 2
+      },
       "crop": {
         "x": 0,
-        "y": 0,
+        "y": 0.007829031942901854,
         "width": 1,
-        "height": 0.7
+        "height": 0.9843419361141963
+      }
+    },
+    {
+      "src": "/assets/previews/figma/filtros-instagram-24-91.png",
+      "width": 443,
+      "height": 800,
+      "role": "detail",
+      "geometry": {
+        "x": 1647.5515,
+        "y": 230.2275,
+        "width": 195.118,
+        "height": 346.841,
+        "rotation": 5.99,
+        "zIndex": 3
+      },
+      "layers": [
+        {
+          "src": "/assets/previews/figma/filtros-instagram-24-91.png",
+          "width": 443,
+          "height": 800
+        },
+        {
+          "src": "/assets/previews/figma/filtros-instagram-24-86.png",
+          "width": 450,
+          "height": 803
+        }
+      ],
+      "crop": {
+        "x": 0,
+        "y": 0.007828073909121658,
+        "width": 1,
+        "height": 0.9843438521817567
       }
     }
   ],
@@ -648,22 +684,84 @@
   ],
   "/proyectos/historias-instagram": [
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8a87cf148175971.62d06f46a2048.jpg",
+      "src": "/assets/previews/figma/historias-minimas-24-45.png",
       "width": 1400,
       "height": 2490,
-      "role": "whole"
+      "role": "whole",
+      "geometry": {
+        "x": 1476.609,
+        "y": 76.69800000000001,
+        "width": 178,
+        "height": 318,
+        "rotation": -4.65,
+        "zIndex": 1
+      },
+      "crop": {
+        "x": 0.0022237196765498846,
+        "y": 0,
+        "width": 0.9955525606469002,
+        "height": 1
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/6b4fd2148175971.62d06f46a1a69.jpg",
+      "src": "/assets/previews/figma/historias-minimas-24-56.png",
       "width": 1400,
       "height": 2489,
-      "role": "detail"
+      "role": "detail",
+      "geometry": {
+        "x": 1662.6505,
+        "y": 173.039,
+        "width": 178,
+        "height": 318,
+        "rotation": 10.98,
+        "zIndex": 2
+      },
+      "crop": {
+        "x": 0.002423629829290286,
+        "y": 0,
+        "width": 0.9951527403414194,
+        "height": 1
+      }
     },
     {
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/604066148175971.62d06f46a146a.jpg",
+      "src": "/assets/previews/figma/historias-minimas-24-54.png",
       "width": 1400,
       "height": 2490,
-      "role": "detail"
+      "role": "detail",
+      "geometry": {
+        "x": 1656.4235,
+        "y": 510.5905,
+        "width": 178,
+        "height": 318,
+        "rotation": 3.83,
+        "zIndex": 3
+      },
+      "crop": {
+        "x": 0.0022237196765498846,
+        "y": 0,
+        "width": 0.9955525606469002,
+        "height": 1
+      }
+    },
+    {
+      "src": "/assets/previews/figma/historias-minimas-24-47.png",
+      "width": 1400,
+      "height": 2490,
+      "role": "detail",
+      "geometry": {
+        "x": 1476.8855,
+        "y": 415.9395,
+        "width": 178,
+        "height": 318,
+        "rotation": -11.9,
+        "zIndex": 4
+      },
+      "crop": {
+        "x": 0.0022237196765498846,
+        "y": 0,
+        "width": 0.9955525606469002,
+        "height": 1
+      }
     }
   ],
   "/proyectos/web-arquitectura": [
@@ -1186,65 +1284,103 @@
   ],
   "/proyectos/lenguajes-visuales-tp2-dg1-catedra-gabriele": [
     {
-      "src": "/assets/previews/lenguajes-visuales-tp2-dg1-catedra-gabriele-v2-01.webp",
-      "width": 520,
-      "height": 800,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/lenguajes-visuales-tp2-dg1-catedra-gabriele-v2-02.webp",
-      "width": 520,
-      "height": 800,
-      "role": "detail",
-      "crop": {
-        "x": 0.2,
-        "y": 0.25,
-        "width": 0.65,
-        "height": 0.53
+      "src": "/assets/previews/figma/lenguajes-visuales-24-111.png",
+      "width": 1920,
+      "height": 1920,
+      "role": "whole",
+      "geometry": {
+        "x": 1644.389,
+        "y": 392.389,
+        "width": 203.526,
+        "height": 203.526,
+        "rotation": 7.48,
+        "zIndex": 1
       }
     },
     {
-      "src": "/assets/previews/lenguajes-visuales-tp2-dg1-catedra-gabriele-v2-03.webp",
-      "width": 600,
-      "height": 739,
+      "src": "/assets/previews/figma/lenguajes-visuales-24-118.png",
+      "width": 1920,
+      "height": 1422,
       "role": "detail",
-      "crop": {
-        "x": 0.09,
-        "y": 0.15020297699594046,
-        "width": 0.82,
-        "height": 0.7496617050067659
+      "geometry": {
+        "x": 1539.5555,
+        "y": 594.9335,
+        "width": 246.083,
+        "height": 182.255,
+        "rotation": -5.78,
+        "zIndex": 2
+      }
+    },
+    {
+      "src": "/assets/previews/figma/lenguajes-visuales-24-112.png",
+      "width": 1535,
+      "height": 2362,
+      "role": "detail",
+      "geometry": {
+        "x": 1476.3085,
+        "y": 273.1105,
+        "width": 176.456,
+        "height": 271.524,
+        "rotation": -8.13,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/figma/lenguajes-visuales-24-113.png",
+      "width": 1535,
+      "height": 1891,
+      "role": "detail",
+      "geometry": {
+        "x": 1626.275,
+        "y": 119.242,
+        "width": 201.127,
+        "height": 247.773,
+        "rotation": 2.48,
+        "zIndex": 4
       }
     }
   ],
   "/proyectos/demo-youtube-darksidesports": [
     {
-      "src": "/assets/previews/demo-youtube-darksidesports-v2-01.webp",
-      "width": 720,
-      "height": 540,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/demo-youtube-darksidesports-v2-02.webp",
-      "width": 720,
-      "height": 540,
-      "role": "detail",
-      "crop": {
-        "x": 0.07991660875608061,
-        "y": 0.17962962962962964,
-        "width": 0.5503822098679638,
-        "height": 0.6407407407407407
+      "src": "/assets/previews/figma/darksidesports-24-61.png",
+      "width": 1737,
+      "height": 977,
+      "role": "whole",
+      "geometry": {
+        "x": 1448.766,
+        "y": 80.747,
+        "width": 350.562,
+        "height": 197.178,
+        "rotation": -2.9,
+        "zIndex": 1
       }
     },
     {
-      "src": "/assets/previews/demo-youtube-darksidesports-v2-03.webp",
-      "width": 720,
-      "height": 540,
+      "src": "/assets/previews/figma/darksidesports-24-64.png",
+      "width": 1740,
+      "height": 976,
       "role": "detail",
-      "crop": {
-        "x": 0.4197359277275886,
-        "y": 0.37962962962962965,
-        "width": 0.5503822098679638,
-        "height": 0.5805555555555556
+      "geometry": {
+        "x": 1459.486,
+        "y": 625.1514999999999,
+        "width": 351.167,
+        "height": 196.976,
+        "rotation": -3.37,
+        "zIndex": 2
+      }
+    },
+    {
+      "src": "/assets/previews/figma/darksidesports-24-67.png",
+      "width": 1736,
+      "height": 976,
+      "role": "detail",
+      "geometry": {
+        "x": 1488.7715,
+        "y": 352.8765,
+        "width": 350.36,
+        "height": 196.976,
+        "rotation": 2.27,
+        "zIndex": 3
       }
     }
   ],
@@ -1414,22 +1550,49 @@
   ],
   "/proyectos/nexo": [
     {
-      "src": "/assets/presentation/nexo/cover.png",
-      "width": 1672,
-      "height": 941,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/presentation/nexo/home.png",
+      "src": "/assets/previews/figma/nexo-24-135.png",
       "width": 360,
       "height": 800,
-      "role": "detail"
+      "role": "whole",
+      "geometry": {
+        "x": 1470.74,
+        "y": 46.19149999999999,
+        "width": 197,
+        "height": 418,
+        "rotation": -5.25,
+        "zIndex": 1
+      },
+      "mockup": "phone"
     },
     {
-      "src": "/assets/presentation/nexo/followup.png",
+      "src": "/assets/previews/figma/nexo-24-138.png",
       "width": 316,
       "height": 702,
-      "role": "detail"
+      "role": "detail",
+      "geometry": {
+        "x": 1494.7395,
+        "y": 430.187,
+        "width": 197,
+        "height": 418,
+        "rotation": -7.59,
+        "zIndex": 2
+      },
+      "mockup": "phone"
+    },
+    {
+      "src": "/assets/previews/figma/nexo-24-137.png",
+      "width": 316,
+      "height": 702,
+      "role": "detail",
+      "geometry": {
+        "x": 1650.267,
+        "y": 236.903,
+        "width": 197,
+        "height": 418,
+        "rotation": 5.63,
+        "zIndex": 3
+      },
+      "mockup": "phone"
     }
   ]
 }
