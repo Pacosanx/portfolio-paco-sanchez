@@ -469,22 +469,78 @@
   ],
   "/proyectos/motion-graphics": [
     {
-      "src": "/assets/previews/motion-graphics-v2-01.webp",
-      "width": 600,
-      "height": 450,
-      "role": "whole"
+      "src": "/assets/previews/figma/motion-graphics-24-12.png",
+      "width": 294,
+      "height": 236,
+      "role": "whole",
+      "geometry": {
+        "x": 1612.147,
+        "y": 609.6375,
+        "width": 249.81,
+        "height": 187.184,
+        "rotation": -3.88,
+        "zIndex": 1
+      },
+      "crop": {
+        "x": 0,
+        "y": 0.0332715915,
+        "width": 1,
+        "height": 0.933456817
+      }
     },
     {
-      "src": "/assets/previews/motion-graphics-v2-02.webp",
-      "width": 600,
-      "height": 450,
-      "role": "detail"
+      "src": "/assets/previews/figma/motion-graphics-24-13.png",
+      "width": 359,
+      "height": 269,
+      "role": "detail",
+      "geometry": {
+        "x": 1435.305,
+        "y": 119.1925,
+        "width": 249.81,
+        "height": 187.184,
+        "rotation": -9.96,
+        "zIndex": 2
+      }
     },
     {
-      "src": "/assets/previews/motion-graphics-v2-03.webp",
-      "width": 600,
-      "height": 450,
-      "role": "detail"
+      "src": "/assets/previews/figma/motion-graphics-24-14.png",
+      "width": 360,
+      "height": 270,
+      "role": "detail",
+      "geometry": {
+        "x": 1448.8385,
+        "y": 434.3955,
+        "width": 249.81,
+        "height": 187.184,
+        "rotation": 6.58,
+        "zIndex": 3
+      },
+      "crop": {
+        "x": 0,
+        "y": 0.0004630186,
+        "width": 1,
+        "height": 0.9990739629
+      }
+    },
+    {
+      "src": "/assets/previews/figma/motion-graphics-24-15.png",
+      "width": 363,
+      "height": 269,
+      "role": "detail",
+      "geometry": {
+        "x": 1610.2575,
+        "y": 285.5175,
+        "width": 249.81,
+        "height": 187.184,
+        "rotation": 4.97,
+        "zIndex": 4
+      },
+      "crop": {
+        "x": 0.0055108634,
+        "y": 0,
+        "width": 0.9889782732,
+        "height": 1
+      }
     }
   ],
   "/proyectos/filtros-instagram": [
@@ -1044,33 +1100,59 @@
   ],
   "/proyectos/video-cinetica-dg2-gabriele": [
     {
-      "src": "/assets/previews/video-cinetica-dg2-gabriele-v2-01.webp",
-      "width": 720,
-      "height": 540,
-      "role": "whole"
-    },
-    {
-      "src": "/assets/previews/video-cinetica-dg2-gabriele-v2-02.webp",
-      "width": 720,
-      "height": 540,
-      "role": "detail",
-      "crop": {
-        "x": 0.02,
-        "y": 0.08,
-        "width": 0.34,
-        "height": 0.84
+      "src": "/assets/previews/figma/cinetica-24-32.png",
+      "width": 1741,
+      "height": 975,
+      "role": "whole",
+      "geometry": {
+        "x": 1462.3035,
+        "y": 84.967,
+        "width": 255.888,
+        "height": 143.303,
+        "rotation": -2.71,
+        "zIndex": 1
       }
     },
     {
-      "src": "/assets/previews/video-cinetica-dg2-gabriele-v2-03.webp",
-      "width": 720,
-      "height": 540,
+      "src": "/assets/previews/figma/cinetica-24-33.png",
+      "width": 1739,
+      "height": 976,
       "role": "detail",
-      "crop": {
-        "x": 0.64,
-        "y": 0.08,
-        "width": 0.34,
-        "height": 0.84
+      "geometry": {
+        "x": 1568.2485,
+        "y": 286.4445,
+        "width": 255.594,
+        "height": 143.45,
+        "rotation": 6.23,
+        "zIndex": 2
+      }
+    },
+    {
+      "src": "/assets/previews/figma/cinetica-24-34.png",
+      "width": 1740,
+      "height": 980,
+      "role": "detail",
+      "geometry": {
+        "x": 1462.6665,
+        "y": 468.7315,
+        "width": 255.741,
+        "height": 144.038,
+        "rotation": 3.06,
+        "zIndex": 3
+      }
+    },
+    {
+      "src": "/assets/previews/figma/cinetica-24-35.png",
+      "width": 1738,
+      "height": 978,
+      "role": "detail",
+      "geometry": {
+        "x": 1569.7625,
+        "y": 671.827,
+        "width": 255.447,
+        "height": 143.744,
+        "rotation": -4.99,
+        "zIndex": 4
       }
     }
   ],
