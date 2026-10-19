@@ -9,7 +9,7 @@
 .parallel article>a.datita-preview{display:block;width:100%;border:1px solid var(--line);overflow:hidden}
 .parallel .datita-preview img{display:block;width:100%;height:auto}
 .resource-entry>.resource-link{display:inline-block;justify-self:start;font-size:.9375rem;line-height:1.7}
-.parallel .lab{display:grid;width:100vw;max-width:none;grid-column:1/-1}
+.parallel .lab{display:block;width:100vw;max-width:none;grid-column:1/-1}
 .parallel .lab-heading{max-width:300px}
 .parallel .lab-description{font-size:1rem;line-height:1.75;color:var(--secondary)}
 .parallel .lab-gallery{width:100vw;min-width:0;overflow-x:auto;overscroll-behavior-inline:contain;scrollbar-width:none;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
