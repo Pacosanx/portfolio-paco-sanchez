@@ -24,7 +24,7 @@
     'video-cinetica-dg2-gabriele': 'figma',
     'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'figma',
     'demo-youtube-darksidesports': 'figma', 'pirana-modelado-3d': 'fan',
-    'vr-medios-groisman-2': 'figma'
+    'vr-medios-groisman-2': 'figma', 'ilustracion-animada-2021': 'figma'
   };
 
   const load = (asset, priority = 'high') => {
