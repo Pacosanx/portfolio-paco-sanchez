@@ -13,7 +13,7 @@
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
     'editorial-registros': 'fan', 'editorial-tipografico-2023': 'figma',
     'motion-graphics': 'figma', 'filtros-instagram': 'figma',
-    'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
+    'sistema-grafico': 'figma', 'afiche-y-brochure': 'figma',
     'historias-instagram': 'figma', 'web-arquitectura': 'figma',
     'cuando-acecha-la-maldad-afiche-cine': 'figma', 'fanzine-dg2-gabriele': 'figma',
     'festival-sistema-grafico-v1': 'figma', 'festival-sistema-grafico': 'figma',

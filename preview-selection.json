@@ -613,73 +613,78 @@
   ],
   "/proyectos/sistema-grafico": [
     {
-      "src": "/assets/previews/sistema-grafico-v2-01.webp",
-      "width": 533,
-      "height": 800,
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-171.png",
+      "width": 1280,
+      "height": 1920,
       "role": "whole",
-      "clipPath": "polygon(15.7598% 24.8750%,69.9812% 19.3750%,84.2402% 76.2500%,23.4522% 81.0000%)",
-      "crop": {
-        "x": 0.1575984990619137,
-        "y": 0.19375,
-        "width": 0.6866791744840526,
-        "height": 0.6175
-      }
+      "geometry": { "x": 1483.02, "y": 106.145, "width": 283.932, "height": 366.205, "rotation": 2.55, "zIndex": 1 },
+      "crop": { "x": 0.15004, "y": 0.1948, "width": 0.7172, "height": 0.61668 }
     },
     {
-      "src": "/assets/previews/sistema-grafico-v2-02.webp",
-      "width": 533,
-      "height": 800,
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-172.png",
+      "width": 1400,
+      "height": 900,
       "role": "detail",
-      "crop": {
-        "x": 0.04,
-        "y": 0.22,
-        "width": 0.92,
-        "height": 0.58
-      }
+      "geometry": { "x": 1677.638, "y": 153.569, "width": 168, "height": 169.913, "rotation": 3.94, "zIndex": 2 },
+      "crop": { "x": 0.285, "y": 0.1711, "width": 0.43929, "height": 0.69113 }
     },
     {
-      "src": "/assets/previews/sistema-grafico-v2-03.webp",
-      "width": 533,
-      "height": 800,
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-173.png",
+      "width": 1400,
+      "height": 900,
       "role": "detail",
-      "crop": {
-        "x": 0.01,
-        "y": 0.18,
-        "width": 0.98,
-        "height": 0.58
-      }
+      "geometry": { "x": 1594.541, "y": 624.839, "width": 261.819, "height": 183.211, "rotation": 12.33, "zIndex": 3 },
+      "crop": { "x": 0.19784, "y": 0.18556, "width": 0.6043, "height": 0.65776 }
+    },
+    {
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-174.png",
+      "width": 1400,
+      "height": 900,
+      "role": "detail",
+      "geometry": { "x": 1585.472, "y": 439.472, "width": 261.499, "height": 182.678, "rotation": 20.16, "zIndex": 4 },
+      "crop": { "x": 0.19784, "y": 0.1911, "width": 0.6043, "height": 0.65668 }
+    },
+    {
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-175.png",
+      "width": 1400,
+      "height": 900,
+      "role": "detail",
+      "geometry": { "x": 1459.329, "y": 397.001, "width": 184.98, "height": 162.344, "rotation": 7.94, "zIndex": 5 },
+      "crop": { "x": 0.3179, "y": 0.25774, "width": 0.37357, "height": 0.51 }
+    },
+    {
+      "src": "/assets/previews/figma/sistema-grafico-dillom-24-176.png",
+      "width": 1400,
+      "height": 900,
+      "role": "detail",
+      "geometry": { "x": 1453.966, "y": 550.182, "width": 260.083, "height": 185.641, "rotation": 11.56, "zIndex": 6 },
+      "crop": { "x": 0.20287, "y": 0.18777, "width": 0.60143, "height": 0.66778 }
     }
   ],
   "/proyectos/afiche-y-brochure": [
     {
-      "src": "/assets/previews/afiche-y-brochure-v2-01.webp",
-      "width": 577,
-      "height": 800,
-      "role": "whole"
+      "src": "/assets/previews/figma/afiche-brochure-24-212.png",
+      "width": 1920,
+      "height": 1462,
+      "role": "whole",
+      "geometry": { "x": 1475.844, "y": 78.881, "width": 251.613, "height": 352.739, "rotation": 3.27, "zIndex": 1 },
+      "crop": { "x": 0.06248, "y": 0.09372, "width": 0.4354, "height": 0.80167 }
     },
     {
-      "src": "/assets/previews/afiche-y-brochure-v2-02.webp",
-      "width": 577,
-      "height": 800,
+      "src": "/assets/previews/figma/afiche-brochure-24-212.png",
+      "width": 1920,
+      "height": 1462,
       "role": "detail",
-      "crop": {
-        "x": 0.02079722703639515,
-        "y": 0.03,
-        "width": 0.9584055459272097,
-        "height": 0.5
-      }
+      "geometry": { "x": 1594.812, "y": 439.405, "width": 244.088, "height": 181.185, "rotation": -4.06, "zIndex": 2 },
+      "crop": { "x": 0.5082, "y": 0.08664, "width": 0.4224, "height": 0.41176 }
     },
     {
-      "src": "/assets/previews/afiche-y-brochure-v2-03.webp",
-      "width": 563,
-      "height": 800,
+      "src": "/assets/previews/figma/afiche-brochure-24-212.png",
+      "width": 1920,
+      "height": 1462,
       "role": "detail",
-      "crop": {
-        "x": 0.04085257548845471,
-        "y": 0.13,
-        "width": 0.9182948490230906,
-        "height": 0.66
-      }
+      "geometry": { "x": 1477.178, "y": 646.518, "width": 244.088, "height": 181.185, "rotation": 2.64, "zIndex": 3 },
+      "crop": { "x": 0.5082, "y": 0.50002, "width": 0.4224, "height": 0.41176 }
     }
   ],
   "/proyectos/historias-instagram": [
