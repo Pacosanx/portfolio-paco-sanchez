@@ -12,14 +12,14 @@
     metaphex: 'figma', 'maradona-alien': 'figma', 'instalacion-vr': 'figma',
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
     'editorial-registros': 'fan', 'editorial-tipografico-2023': 'figma',
-    'motion-graphics': 'figma', 'filtros-instagram': 'poster',
+    'motion-graphics': 'figma', 'filtros-instagram': 'figma',
     'sistema-grafico': 'poster', 'afiche-y-brochure': 'fan',
-    'historias-instagram': 'poster', 'web-arquitectura': 'figma',
+    'historias-instagram': 'figma', 'web-arquitectura': 'figma',
     'cuando-acecha-la-maldad-afiche-cine': 'figma', 'fanzine-dg2-gabriele': 'figma',
     'festival-sistema-grafico-v1': 'figma', 'festival-sistema-grafico': 'figma',
     'video-cinetica-dg2-gabriele': 'figma',
-    'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'fan',
-    'demo-youtube-darksidesports': 'right', 'pirana-modelado-3d': 'fan',
+    'lenguajes-visuales-tp2-dg1-catedra-gabriele': 'figma',
+    'demo-youtube-darksidesports': 'figma', 'pirana-modelado-3d': 'fan',
     'vr-medios-groisman-2': 'figma'
   };
 
@@ -44,7 +44,7 @@
   const createCard = entry => {
     const { asset } = entry;
     const card = document.createElement('div');
-    card.className = 'preview-card';
+    card.className = asset.mockup === 'phone' ? 'preview-card is-phone-mockup' : 'preview-card';
     card.dataset.role = asset.role || 'detail';
     card.style.transition = 'transform 220ms cubic-bezier(.2,.7,.2,1)';
     card.style.willChange = 'transform';
