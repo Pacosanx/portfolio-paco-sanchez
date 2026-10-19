@@ -15,7 +15,7 @@
   const arrangements = {
     metaphex: 'figma', 'maradona-alien': 'figma', nexo: 'figma', 'instalacion-vr': 'figma',
     'esquematica-microevento': 'figma', 'editorial-espacial': 'figma',
-    'editorial-registros': 'fan', 'editorial-tipografico-2023': 'figma',
+    'editorial-registros': 'figma', 'editorial-tipografico-2023': 'figma',
     'motion-graphics': 'figma', 'filtros-instagram': 'figma',
     'sistema-grafico': 'figma', 'afiche-y-brochure': 'figma',
     'historias-instagram': 'figma', 'web-arquitectura': 'figma',
