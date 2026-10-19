@@ -158,3 +158,6 @@
 .case-presentation--behance .behance-mosaic.behance-inset{width:85.8%;margin-inline:auto}
 .case-presentation--behance>.case-gallery[data-case="editorial-registros"]{display:flex;flex-direction:column;gap:4px;padding-bottom:30px}
 .case-gallery[data-case="editorial-registros"]>.behance-copy{width:85.8%;max-width:800px}
+
+.case-figure.is-trim-left .case-zoom{display:block;overflow:hidden}
+.case-figure.is-trim-left img{width:100.35%;max-width:none;margin-left:-.35%}

@@ -4608,7 +4608,8 @@
           "height": 1029,
           "alt": "Lemas de MUTAR V1: «La conexión entre lo vivo y lo virtual» y «Vanguardia tecnológica en el arte».",
           "size": "full",
-          "sourceModule": "Panel de presentación 02"
+          "sourceModule": "Panel de presentación 02",
+          "trimLeft": true
         },
         {
           "type": "image",
