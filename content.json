@@ -264,17 +264,6 @@
       "blocks": [
         {
           "type": "text",
-          "text": "El proyecto consistió en crear un video que acompañe algunos fragmentos de canciones de Aphex Twin. Luego creé una web para presentar el video y el proceso de este.",
-          "links": [
-            {
-              "href": "https://www.instagram.com/p/C4Qtm9SOdD5/?img_index=1",
-              "text": "Proyecto expuesto por la cátedra"
-            }
-          ],
-          "sourceModule": "Project Module 0"
-        },
-        {
-          "type": "text",
           "heading": "VIDEO",
           "spaceBefore": 3,
           "links": [
@@ -613,7 +602,11 @@
         "muted": "#A5B3C0",
         "line": "#344350"
       },
-      "presentationLayout": "behance-original"
+      "presentationLayout": "behance-original",
+      "descriptionLink": {
+        "href": "https://www.instagram.com/p/C4Qtm9SOdD5/?img_index=1",
+        "text": "Proyecto expuesto por la cátedra"
+      }
     },
     {
       "nombre": "MARADONA ALIEN",

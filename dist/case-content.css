@@ -8,6 +8,7 @@
 .case-title-block{min-width:0}
 .case-title-block :is(h1,h2){font-size:clamp(28px,2.7vw,40px);line-height:1.15;letter-spacing:-.035em;text-wrap:balance}
 .case-description{font-size:1rem;line-height:1.8;max-width:60ch;text-wrap:pretty}
+.case-description-link{margin-top:var(--s2);font-size:.75rem;line-height:1.7}
 .case-tools{min-width:0}
 .case-tools .eyebrow{font-size:.6875rem;color:var(--muted)}
 .case-tools ul{font-size:.75rem;line-height:1.9}
