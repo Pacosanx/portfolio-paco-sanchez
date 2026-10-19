@@ -6640,17 +6640,20 @@
       "context": "Diseño Gráfico 1 · Gabriele · FADU / UBA"
     },
     {
-      "nombre": "ILUSTRACIÓN ANIMADA",
+      "nombre": "ILUSTRACIÓN",
       "ruta": "/proyectos/ilustracion-animada-2021",
       "anio": "2021",
-      "title": "Ilustración animada",
+      "title": "Ilustración",
       "discipline": "Ilustración / Animación",
       "format": "Ilustración · GIF",
-      "descripcion": "Dos GIFs realizados en Ilustración I, cátedra Roldán: «Algo está mutando» y una secuencia de collage con un tiburón.",
-      "herramientas": "",
-      "tools": [],
+      "descripcion": "Ilustraciones y GIFs realizados en Ilustración Roldán en 2021, con técnicas mixtas analógicas y Photoshop.",
+      "herramientas": "Técnicas mixtas analógicas · Photoshop",
+      "tools": [
+        "Técnicas mixtas analógicas",
+        "Photoshop"
+      ],
       "fuente": "",
-      "context": "Ilustración I · Roldán · FADU / UBA",
+      "context": "Ilustración · Roldán · FADU / UBA",
       "imagenes": [
         {
           "type": "image",
@@ -6669,6 +6672,39 @@
           "alt": "Collage animado de un tiburón que emerge del agua junto a un barco",
           "caption": "Tiburón · 2021",
           "still": "/assets/presentation/ilustracion-2021/tiburon.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/secuencia-espacial.gif",
+          "width": 1080,
+          "height": 1080,
+          "alt": "Secuencia de collage de un cohete y un astronauta en el espacio",
+          "caption": "Secuencia espacial · 2021",
+          "still": "/assets/presentation/ilustracion-2021/secuencia-espacial.jpg"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/vuela-sin-alas.jpg",
+          "width": 1120,
+          "height": 1591,
+          "alt": "Ilustración de una bruja volando en escoba junto a una luna amarilla",
+          "caption": "Vuela sin alas · 2021"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/personaje-materiales.jpg",
+          "width": 827,
+          "height": 1170,
+          "alt": "Personaje construido con plástico de burbujas, recortes y objetos",
+          "caption": "Personaje · técnicas mixtas · 2021"
+        },
+        {
+          "type": "image",
+          "url": "/assets/presentation/ilustracion-2021/manchas-y-miradas.jpg",
+          "width": 1169,
+          "height": 827,
+          "alt": "Manchas verdes con ojos entre las texturas",
+          "caption": "Manchas y miradas · 2021"
         }
       ]
     }
