@@ -133,6 +133,7 @@
 
 /* METAPHEX follows the authored Behance modules, including its blank text modules. */
 .case-presentation--behance{width:calc(100% + 2 * var(--gutter));margin-inline:calc(-1 * var(--gutter));background:var(--bg)}
+.case-presentation--behance>.case-intro{margin-inline:var(--gutter)}
 .case-presentation--behance>.case-gallery{display:block;max-width:1400px;margin-inline:auto;padding-top:84px}
 .case-presentation--behance .behance-copy{display:block;width:86%;max-width:none;margin-inline:auto;padding-top:calc(var(--blank-lines,0) * 28px);font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:400;line-height:28px;letter-spacing:normal;color:#696969;text-align:left;text-wrap:wrap}
 .case-presentation--behance .behance-copy :is(p,h2,h3){margin:0;padding:0;font:inherit;letter-spacing:normal;text-wrap:wrap}
