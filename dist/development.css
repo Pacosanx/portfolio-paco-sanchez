@@ -11,3 +11,6 @@
 .development-project-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
 .development-project:hover .development-project-preview img{transform:scale(1.015)}
 @media(prefers-reduced-motion:reduce){.development-project-preview img{transition:none}.development-project:hover .development-project-preview img{transform:none}}
+
+.development-projects{align-items:stretch}
+.development-project.resource-entry{display:grid;grid-template-rows:auto 1fr auto auto}
