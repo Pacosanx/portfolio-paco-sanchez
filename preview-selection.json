@@ -1760,12 +1760,10 @@
   ],
   "/proyectos/nexo": [
     {
-      "src": "/assets/previews/figma/nexo-24-135.png",
-      "width": 360,
-      "height": 800,
+      "src": "/assets/previews/figma/nexo-figma-home.png",
+      "width": 197,
+      "height": 347,
       "role": "whole",
-      "mockup": "phone",
-      "screenInset": "1.256% 4.286%",
       "geometry": {
         "x": 1630,
         "y": 93,
@@ -1776,12 +1774,10 @@
       }
     },
     {
-      "src": "/assets/previews/figma/nexo-24-137.png",
-      "width": 316,
-      "height": 702,
+      "src": "/assets/previews/figma/nexo-figma-audio.png",
+      "width": 236,
+      "height": 364,
       "role": "detail",
-      "mockup": "phone",
-      "screenInset": "3.565% 11.745%",
       "geometry": {
         "x": 1444,
         "y": 273,
@@ -1792,12 +1788,10 @@
       }
     },
     {
-      "src": "/assets/previews/figma/nexo-24-138.png",
-      "width": 316,
-      "height": 702,
+      "src": "/assets/previews/figma/nexo-figma-illustration.png",
+      "width": 214,
+      "height": 354,
       "role": "detail",
-      "mockup": "phone",
-      "screenInset": "2.315% 7.745%",
       "geometry": {
         "x": 1645,
         "y": 459,
