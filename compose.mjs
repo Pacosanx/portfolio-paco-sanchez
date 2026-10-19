@@ -15,6 +15,7 @@ const period=[Math.min(...years),Math.max(...years)].join('–');
 const teaching=JSON.parse(fs.readFileSync(new URL('./teaching.json',import.meta.url),'utf8'));
 const developmentProjects=JSON.parse(fs.readFileSync(new URL('./development-projects.json',import.meta.url),'utf8'));
 const selections=JSON.parse(fs.readFileSync(new URL('./preview-selection.json',import.meta.url),'utf8'));
+const optimizedPreviews=JSON.parse(fs.readFileSync(new URL('./preview-optimized.json',import.meta.url),'utf8'));
 const basePath=(process.env.SITE_BASE_PATH||'').replace(/\/+$/,'');
 const sitePath=route=>`${basePath}${route}`;
 const versionedAsset=(route,source)=>sitePath(route)+'?v='+createHash('sha256').update(fs.readFileSync(source)).digest('hex').slice(0,10);
@@ -225,8 +226,19 @@ const developmentTemplates=developmentProjects.map((p,i)=>{
 }).join('');
 fs.writeFileSync('dist/index.html',document('Paco Sanchez — Diseño digital e interactividad','Portfolio de Francisco ‘Paco’ Sanchez. Experimentación con tecnología, diseño digital e interactividad.','/',home+developmentTemplates));
 
-const previewSource=src=>src.startsWith('/assets/previews/figma/')?versionedAsset(src,src.slice(1)):assetPath(src);
-const previewAsset=image=>({...image,src:previewSource(image.src),...(image.layers?{layers:image.layers.map(previewAsset)}:{})});
+const previewSource=src=>src.startsWith('/assets/previews/')?versionedAsset(src,src.slice(1)):assetPath(src);
+const previewVariants=new Map();
+const previewAsset=image=>{
+  if(!previewVariants.has(image.src)){
+    const candidate=optimizedPreviews[image.src];
+    const valid=candidate&&fs.existsSync(candidate.src.slice(1))
+      &&candidate.sourceHash===createHash('sha256').update(fs.readFileSync(image.src.slice(1))).digest('hex');
+    const {sourceHash,...variant}=valid?candidate:{};
+    previewVariants.set(image.src,variant);
+  }
+  const variant=previewVariants.get(image.src);
+  return {...image,...variant,src:previewSource(variant.src||image.src),...(image.layers?{layers:image.layers.map(previewAsset)}:{})};
+};
 const previewData=projects.map(p=>({route:p.ruta,images:(selections[p.ruta]||[]).map(previewAsset)}));
 fs.writeFileSync('dist/preview-data.json',JSON.stringify(previewData));
 fs.mkdirSync('dist/assets',{recursive:true});

@@ -1,18 +1,18 @@
 .preview-column{align-self:stretch;pointer-events:none}
-.preview-stage{position:fixed;z-index:3;top:0;left:0;opacity:0;transform:translateY(5px);transition:opacity 360ms cubic-bezier(.2,.7,.2,1),transform 420ms cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.preview-stage{position:fixed;z-index:3;top:0;left:0;opacity:0;transform:translateY(3px);transition:opacity 120ms cubic-bezier(.2,.7,.2,1),transform 160ms cubic-bezier(.2,.7,.2,1);pointer-events:none}
 .preview-stage.is-visible{opacity:1;transform:none}
-.preview-stage.is-changing{opacity:.58}
+.preview-stage.is-changing{opacity:.72}
 .preview-stage .preview-image-wrap{position:relative;display:block;width:100%;height:320px;max-height:calc(100dvh - 40px);background:none;isolation:isolate}
-.preview-card{position:absolute;filter:drop-shadow(0 5px 8px #0002);transform-origin:center;animation:preview-card-appear 420ms cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--preview-entry-delay,0ms),var(--preview-float-delay,0s)}
-.preview-card:nth-child(2){--preview-entry-delay:45ms;--preview-float-delay:-.8s}
-.preview-card:nth-child(3){--preview-entry-delay:90ms;--preview-float-delay:-1.7s}
-.preview-card:nth-child(4){--preview-entry-delay:135ms;--preview-float-delay:-2.6s}
-.preview-card:nth-child(5){--preview-entry-delay:180ms;--preview-float-delay:-3.5s}
-.preview-card:nth-child(6){--preview-entry-delay:225ms;--preview-float-delay:-4.4s}
-.preview-card:nth-child(7){--preview-entry-delay:270ms;--preview-float-delay:-5.3s}
-.preview-image-wrap[data-layout="figma"] .preview-card{animation-name:preview-card-appear,preview-float;animation-duration:420ms,6.2s;animation-timing-function:cubic-bezier(.2,.7,.2,1),ease-in-out;animation-fill-mode:both;animation-iteration-count:1,infinite}
+.preview-card{position:absolute;filter:drop-shadow(0 5px 8px #0002);transform-origin:center;animation:preview-card-appear 180ms cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--preview-entry-delay,0ms),var(--preview-float-delay,0s)}
+.preview-card:nth-child(2){--preview-entry-delay:12ms;--preview-float-delay:-.8s}
+.preview-card:nth-child(3){--preview-entry-delay:24ms;--preview-float-delay:-1.7s}
+.preview-card:nth-child(4){--preview-entry-delay:36ms;--preview-float-delay:-2.6s}
+.preview-card:nth-child(5){--preview-entry-delay:48ms;--preview-float-delay:-3.5s}
+.preview-card:nth-child(6){--preview-entry-delay:60ms;--preview-float-delay:-4.4s}
+.preview-card:nth-child(7){--preview-entry-delay:72ms;--preview-float-delay:-5.3s}
+.preview-image-wrap[data-layout="figma"] .preview-card{animation-name:preview-card-appear,preview-float;animation-duration:180ms,6.2s;animation-timing-function:cubic-bezier(.2,.7,.2,1),ease-in-out;animation-fill-mode:both;animation-iteration-count:1,infinite}
 
-@keyframes preview-card-appear{from{opacity:0;scale:.96}to{opacity:1;scale:1}}
+@keyframes preview-card-appear{from{opacity:0;scale:.985}to{opacity:1;scale:1}}
 @keyframes preview-float{0%,100%{translate:0 0}50%{translate:0 -4px}}
 .preview-card:nth-child(1){left:2%;top:4%;transform:rotate(calc(-3deg + var(--preview-tilt,0deg)));z-index:3}
 .preview-card:nth-child(2){right:0;top:32%;transform:rotate(calc(4deg + var(--preview-tilt,0deg)));z-index:1}
