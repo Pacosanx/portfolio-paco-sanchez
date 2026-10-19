@@ -57,9 +57,9 @@
 .preview-image-wrap:is([data-project="fanzine-dg2-gabriele"],[data-project="cuando-acecha-la-maldad-afiche-cine"]) .preview-card{animation-name:preview-card-appear;filter:none}
 
 /* Nexo hover phones reuse the device shell from the case presentation. */
-.preview-card.is-phone-mockup{box-sizing:border-box;border:1px solid #696969;border-radius:31px;background:linear-gradient(120deg,#6d6d6d,#151515 18%,#343434 75%,#7b7b7b);box-shadow:0 0 0 1px #858585,2px 1px 0 1px #4d4d4d,4px 2px 0 1px #292929,8px 7px 0 #171717,14px 22px 32px #0008}
-.preview-card.is-phone-mockup .preview-crop{position:absolute;inset:7px;width:auto;height:auto;border-radius:24px;background:#0c0c0c}
-.preview-card.is-phone-mockup .preview-image{border-radius:24px}
+.preview-card.is-phone-mockup{box-sizing:border-box;border:1px solid #696969;border-radius:16% / 8%;background:linear-gradient(120deg,#6d6d6d,#151515 18%,#343434 75%,#7b7b7b);box-shadow:0 0 0 1px #858585,2px 1px 0 1px #4d4d4d,4px 2px 0 1px #292929,8px 7px 0 #171717,14px 22px 32px #0008}
+.preview-card.is-phone-mockup .preview-crop{position:absolute;inset:7px;width:auto;height:auto;border-radius:13% / 6.1%;background:#0c0c0c}
+.preview-card.is-phone-mockup .preview-image{border-radius:13% / 6.1%}
 .preview-card.is-phone-mockup::before,.preview-card.is-phone-mockup::after{content:'';position:absolute;width:2px;background:#777;border-radius:2px;z-index:1}
 .preview-card.is-phone-mockup::before{left:-3px;top:18%;height:6.5%}
 .preview-card.is-phone-mockup::after{right:-3px;top:23.5%;height:9.5%}
