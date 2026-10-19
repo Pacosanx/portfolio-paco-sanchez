@@ -73,7 +73,8 @@ export function parallelSection(sitePath = route => route) {
     <a class="text-link datita-link resource-link" href="${datitaUrl}" target="_blank" rel="noopener noreferrer">Explorar Datita</a>
   </article>
   <article class="lab" aria-labelledby="lab-title">
-    <div class="lab-heading"><p class="resource-kicker mono">Pruebas gráficas y técnicas</p><h3 id="lab-title">Exploraciones.</h3><p class="lab-description">Forma, espacio e interacción en Spline, TouchDesigner y Blender.</p></div>
+    <p class="lab-label resource-kicker mono">Pruebas gráficas y técnicas</p>
+    <div class="lab-heading"><h3 id="lab-title">Exploraciones.</h3><p class="lab-description">Forma, espacio e interacción en Spline, TouchDesigner y Blender.</p></div>
     <div class="lab-gallery" role="region" tabindex="0" aria-label="Galería horizontal infinita de exploraciones en Spline, TouchDesigner y Blender">
       <div class="lab-track">
         <div class="lab-set">${explorations.map(item => renderExploration(item, sitePath)).join('')}</div>
