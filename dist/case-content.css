@@ -39,6 +39,7 @@
 .case-video-stage video{width:100%}
 .case-video-overlay{position:absolute;top:50%;left:50%;width:42%;max-height:56%;object-fit:contain;transform:translate(-50%,-50%);pointer-events:none}
 .case-video.is-trimmed video{clip-path:inset(.65%)}
+.case-figure.is-trimmed img{clip-path:inset(.65%)}
 .case-video.is-portrait{max-width:360px}
 .inmson-case-interaction{width:100%}
 .inmson-interaction-intro{max-width:64ch}

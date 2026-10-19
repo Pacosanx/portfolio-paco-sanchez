@@ -4585,26 +4585,21 @@
       "preview": "https://cdn.myportfolio.com/1f9a6229-5915-42a2-b3a2-c8a9263345e6/ceeaa2b0-5f99-48e5-a262-cbecbe4cd644_rwc_0x0x1081x810x1081.png?h=aed8d2b836c9a85dbbc32dc1caafe68e",
       "blocks": [
         {
-          "type": "video",
-          "url": "/assets/presentation/festival-v1/3d-tentaculos.mp4",
-          "title": "Visual 3D · Tentáculos",
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/3d-tentaculos.webp",
           "width": 1920,
           "height": 1080,
           "aspectRatio": 1.7777777777777777,
-          "caption": "Render 3D · Tentáculos.",
-          "loop": true
+          "alt": "Render 3D de tentáculos de MUTAR V1 en loop.",
+          "trimEdges": true
         },
         {
-          "type": "video",
-          "url": "/assets/presentation/festival-v1/video-3d-mutar.mp4",
-          "title": "Pieza audiovisual MUTAR V1",
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/video-3d-mutar.webp",
           "width": 2524,
           "height": 1080,
           "aspectRatio": 2.337037037037037,
-          "caption": "Pieza audiovisual 3D de MUTAR V1.",
-          "loop": true,
-          "overlayImage": "/assets/presentation/festival-v1/marca-v1.png",
-          "overlayAlt": "Marca MUTAR V1 fija sobre la pieza audiovisual."
+          "alt": "Pieza audiovisual 3D horizontal de MUTAR V1 con la marca estática."
         },
         {
           "type": "image",
@@ -4622,7 +4617,8 @@
           "height": 816,
           "alt": "Variantes originales de la marca MUTAR V1 sobre fondos verde ácido y negro.",
           "size": "full",
-          "sourceModule": "Panel de presentación 03"
+          "sourceModule": "Panel de presentación 03",
+          "trimEdges": true
         },
         {
           "type": "image",
@@ -4650,8 +4646,7 @@
           "width": 576,
           "height": 1024,
           "aspectRatio": 0.5625,
-          "layout": "portrait",
-          "caption": "Pieza audiovisual vertical · 25 segundos. Formas 3D, marca, concepto y actividades."
+          "layout": "portrait"
         },
         {
           "type": "gallery",
@@ -4698,15 +4693,13 @@
           ]
         },
         {
-          "type": "video",
-          "url": "/assets/presentation/festival-v1/3d-complejo.mp4",
-          "title": "Render 3D · Complejo",
-          "width": 1594,
-          "height": 1406,
-          "aspectRatio": 1.1337126600284495,
-          "caption": "Cierre 3D · Complejo.",
-          "loop": true,
-          "trimEdges": true
+          "type": "image",
+          "url": "/assets/presentation/festival-v1/3d-complejo.webp",
+          "width": 1570,
+          "height": 1382,
+          "aspectRatio": 1.1360347322720694,
+          "trimEdges": true,
+          "alt": "Render 3D de MUTAR V1: Complejo, loop de cierre."
         }
       ],
       "imagenes": [

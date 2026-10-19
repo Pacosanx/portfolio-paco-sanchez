@@ -21,6 +21,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y ffmpeg
       - name: Generate INMSON GIFs
         run: node tools/generate-inmson-gifs.mjs
+      - name: Generate Festival V1 loop previews
+        run: node tools/generate-festival-v1-webp.mjs
       - name: Generate site
         run: node compose.mjs
       - name: Verify generated site
