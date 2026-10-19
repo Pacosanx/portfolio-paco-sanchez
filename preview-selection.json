@@ -1822,44 +1822,44 @@
   ],
   "/proyectos/ilustracion-animada-2021": [
     {
-      "src": "/assets/previews/ilustracion-2021/algo-esta-mutando.webp",
+      "src": "/assets/previews/ilustracion-2021/bicho-azul.webp",
       "width": 480,
       "height": 480,
       "role": "whole",
       "geometry": {
-        "x": 1260,
-        "y": 120,
+        "x": 1310,
+        "y": 140,
         "width": 300,
         "height": 300,
-        "rotation": 0,
+        "rotation": -6,
         "zIndex": 1
       }
     },
     {
-      "src": "/assets/presentation/ilustracion-2021/tiburon.jpg",
-      "width": 1080,
-      "height": 1080,
+      "src": "/assets/previews/ilustracion-2021/tiburon.webp",
+      "width": 480,
+      "height": 480,
       "role": "detail",
       "geometry": {
-        "x": 1584,
-        "y": 120,
+        "x": 1580,
+        "y": 290,
         "width": 300,
         "height": 300,
-        "rotation": 0,
+        "rotation": 7,
         "zIndex": 2
       }
     },
     {
-      "src": "/assets/previews/ilustracion-2021/astronauta.jpg",
-      "width": 1080,
-      "height": 1080,
+      "src": "/assets/previews/ilustracion-2021/astronauta.webp",
+      "width": 480,
+      "height": 480,
       "role": "detail",
       "geometry": {
-        "x": 1422,
-        "y": 444,
+        "x": 1370,
+        "y": 510,
         "width": 300,
         "height": 300,
-        "rotation": 0,
+        "rotation": -4,
         "zIndex": 3
       }
     }
