@@ -1760,51 +1760,63 @@
   ],
   "/proyectos/nexo": [
     {
-      "src": "/assets/previews/figma/nexo-24-135.png",
-      "width": 360,
-      "height": 800,
+      "src": "/assets/previews/figma/nexo-figma-mockups.png",
+      "width": 834,
+      "height": 528,
       "role": "whole",
-      "mockup": "phone",
-      "screenInset": "1.256% 4.286%",
       "geometry": {
-        "x": 1630,
-        "y": 93,
-        "width": 196.92,
-        "height": 346.175,
+        "x": 1638.44,
+        "y": 97.3475,
+        "width": 180.04,
+        "height": 337.48,
         "rotation": 2.91,
         "zIndex": 1
+      },
+      "crop": {
+        "x": 0.01917180111763863,
+        "y": 0.06253181741048702,
+        "width": 0.2865740077374982,
+        "height": 0.8484642796538265
       }
     },
     {
-      "src": "/assets/previews/figma/nexo-24-137.png",
-      "width": 316,
-      "height": 702,
+      "src": "/assets/previews/figma/nexo-figma-mockups.png",
+      "width": 834,
+      "height": 528,
       "role": "detail",
-      "mockup": "phone",
-      "screenInset": "3.565% 11.745%",
       "geometry": {
-        "x": 1444,
-        "y": 273,
-        "width": 235.331,
-        "height": 363.389,
+        "x": 1471.6455,
+        "y": 285.9545,
+        "width": 180.04,
+        "height": 337.48,
         "rotation": -9.89,
         "zIndex": 2
+      },
+      "crop": {
+        "x": 0.3400773749820891,
+        "y": 0.033344646190395386,
+        "width": 0.2865740077374982,
+        "height": 0.8484642796538265
       }
     },
     {
-      "src": "/assets/previews/figma/nexo-24-138.png",
-      "width": 316,
-      "height": 702,
+      "src": "/assets/previews/figma/nexo-figma-mockups.png",
+      "width": 834,
+      "height": 528,
       "role": "detail",
-      "mockup": "phone",
-      "screenInset": "2.315% 7.745%",
       "geometry": {
-        "x": 1645,
-        "y": 459,
-        "width": 213.034,
-        "height": 353.86,
+        "x": 1661.497,
+        "y": 467.19,
+        "width": 180.04,
+        "height": 337.48,
         "rotation": 5.77,
         "zIndex": 3
+      },
+      "crop": {
+        "x": 0.6621292448774897,
+        "y": 0.07508908874936365,
+        "width": 0.2865740077374982,
+        "height": 0.8484642796538265
       }
     }
   ]
