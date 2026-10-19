@@ -1312,11 +1312,11 @@
       "height": 458,
       "role": "detail",
       "geometry": {
-        "x": 1449,
-        "y": 279,
-        "width": 310,
-        "height": 237,
-        "rotation": -4.5,
+        "x": 1610,
+        "y": 306,
+        "width": 330,
+        "height": 252,
+        "rotation": 3.5,
         "zIndex": 5
       }
     },
@@ -1326,11 +1326,11 @@
       "height": 458,
       "role": "detail",
       "geometry": {
-        "x": 1535,
-        "y": 340,
-        "width": 310,
-        "height": 237,
-        "rotation": 3.56,
+        "x": 1440,
+        "y": 355,
+        "width": 350,
+        "height": 267,
+        "rotation": -4,
         "zIndex": 6
       }
     },
