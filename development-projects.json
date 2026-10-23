@@ -98,6 +98,30 @@
       },
       {
         "type": "text",
+        "label": "PROTOTIPO INTERACTIVO · EN DESARROLLO",
+        "heading": "Explorar Espora",
+        "text": "La experiencia está en proceso y algunas funciones pueden fallar.",
+        "links": [
+          {
+            "text": "Probar prototipo interactivo",
+            "href": "https://espora-paco.fasanchez1998.chatgpt.site/espora/"
+          },
+          {
+            "text": "Abrir un cultivo de ejemplo",
+            "href": "https://espora-paco.fasanchez1998.chatgpt.site/espora/#map"
+          },
+          {
+            "text": "Explorar el visualizador de micelio",
+            "href": "https://espora-paco.fasanchez1998.chatgpt.site/espora/#micelio"
+          },
+          {
+            "text": "Explorar el visualizador de setas",
+            "href": "https://espora-paco.fasanchez1998.chatgpt.site/espora/#setas"
+          }
+        ]
+      },
+      {
+        "type": "text",
         "label": "01 / El entorno",
         "heading": "Un cultivo, distintas escalas",
         "text": "Del entorno de cultivo a cada muestra: una misma interfaz conecta el paisaje, las colecciones y la observación en detalle."
