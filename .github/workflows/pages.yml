@@ -27,11 +27,32 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+      - name: Cache INMSON GIFs
+        id: inmson-cache
+        uses: actions/cache@v5
+        with:
+          path: |
+            assets/inmson-recorrido-gesto.gif
+            assets/inmson-recorrido-espacio.gif
+          key: inmson-gifs-${{ runner.os }}-${{ hashFiles('tools/generate-inmson-gifs.mjs', 'assets/inmson-recorrido-vr.mp4') }}
+      - name: Cache Festival V1 previews
+        id: festival-cache
+        uses: actions/cache@v5
+        with:
+          path: |
+            assets/presentation/festival-v1/3d-tentaculos.webp
+            assets/presentation/festival-v1/video-3d-mutar.webp
+            assets/presentation/festival-v1/3d-complejo.webp
+            assets/presentation/festival-v1/video-poster.jpg
+          key: festival-v1-previews-${{ runner.os }}-${{ hashFiles('tools/generate-festival-v1-webp.mjs', 'assets/presentation/festival-v1/3d-tentaculos.mp4', 'assets/presentation/festival-v1/video-3d-mutar.mp4', 'assets/presentation/festival-v1/3d-complejo.mp4', 'assets/presentation/festival-v1/video-piezas.mp4', 'assets/presentation/festival-v1/marca-v1.png', 'assets/presentation/festival-v2/apertura.webp') }}
       - name: Install FFmpeg
+        if: steps.inmson-cache.outputs.cache-hit != 'true' || steps.festival-cache.outputs.cache-hit != 'true'
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y ffmpeg
       - name: Generate INMSON GIFs
+        if: steps.inmson-cache.outputs.cache-hit != 'true'
         run: node tools/generate-inmson-gifs.mjs
       - name: Generate Festival V1 loop previews
+        if: steps.festival-cache.outputs.cache-hit != 'true'
         run: node tools/generate-festival-v1-webp.mjs
       - name: Generate the site
         run: node compose.mjs
