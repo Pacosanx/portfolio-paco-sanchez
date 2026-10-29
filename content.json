@@ -1905,7 +1905,8 @@
           "width": 480,
           "height": 1859,
           "alt": "Esquemática completa sobre el microevento de encender una hornalla, sin fondo exterior.",
-          "size": "overview"
+          "size": "overview",
+          "zoomUrl": "/assets/presentation/esquematica-entera.webp"
         },
         {
           "type": "text",
