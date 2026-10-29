@@ -14,6 +14,31 @@
     document.addEventListener('click',event=>{if(!header.contains(event.target))setMenuOpen(false)});
     document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true')setMenuOpen(false,true)});
   }
+  const imageViewer=document.querySelector('#image-viewer');
+  if(imageViewer){
+    const image=imageViewer.querySelector('.image-viewer-image');
+    const caption=imageViewer.querySelector('.image-viewer-caption');
+    const closeButton=imageViewer.querySelector('.image-viewer-close');
+    let imageTrigger=null;
+    const closeImageViewer=()=>{if(imageViewer.open)imageViewer.close()};
+    document.addEventListener('click',event=>{
+      const trigger=event.target.closest('a[data-image-viewer-trigger], a.case-zoom, .development-image-gallery a');
+      if(!trigger||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+      const source=trigger.querySelector('img');
+      if(!source)return;
+      event.preventDefault();
+      imageTrigger=trigger;
+      image.src=source.currentSrc||source.src;
+      image.alt=source.alt||'';
+      caption.textContent=trigger.closest('figure')?.querySelector('figcaption')?.textContent||source.alt||'';
+      if(!imageViewer.open)imageViewer.showModal();
+      closeButton.focus({preventScroll:true});
+    });
+    closeButton.addEventListener('click',closeImageViewer);
+    imageViewer.addEventListener('click',event=>{if(event.target===imageViewer)closeImageViewer()});
+    imageViewer.addEventListener('close',()=>{image.removeAttribute('src');image.alt='';caption.textContent='';imageTrigger?.focus({preventScroll:true});imageTrigger=null});
+    imageViewer.addEventListener('cancel',event=>{event.preventDefault();closeImageViewer()});
+  }
   const viewer=document.querySelector('#project-viewer');
   if(!viewer||typeof viewer.showModal!=='function')return;
   const content=viewer.querySelector('[data-viewer-content]');
