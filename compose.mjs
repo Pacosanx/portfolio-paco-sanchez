@@ -170,7 +170,6 @@ const viewer=`<dialog id="project-viewer" class="project-viewer" aria-labelledby
 <div class="viewer-toolbar shell"><button class="text-link" type="button" data-close-project autofocus>Volver al índice</button><span class="mono muted" data-viewer-index></span></div>
 <div class="viewer-content case shell" data-viewer-content></div></dialog>
 <dialog id="image-viewer" class="image-viewer" aria-label="Imagen ampliada"><button type="button" class="image-viewer-close" aria-label="Cerrar imagen" autofocus>×</button><img class="image-viewer-image" alt=""><p class="image-viewer-caption"></p></dialog>
-<dialog id="image-viewer" class="image-viewer" aria-label="Imagen ampliada"><button type="button" class="image-viewer-close" aria-label="Cerrar imagen" autofocus>×</button><img class="image-viewer-image" alt=""><p class="image-viewer-caption"></p></dialog>
 ${projects.map((p,i)=>`<template data-project-template data-project-theme="${caseTheme(p)}" data-project-route="${sitePath(p.ruta)}/" data-project-slug="${p.ruta.split('/').filter(Boolean).at(-1)}" data-project-title="${esc(p.title)}" data-project-index="${i}">${caseContent(p,i,true)}</template>`).join('')}`;
 
 const home=`${header(true)}<main id="contenido" class="shell">
