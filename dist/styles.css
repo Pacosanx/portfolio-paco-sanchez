@@ -36,3 +36,15 @@ html{scrollbar-gutter:stable}.viewer-open{overflow:hidden}.project-viewer{positi
 
 .back-to-top{overflow:hidden;background:transparent;transition:opacity 180ms ease,visibility 180ms ease,transform 180ms ease,border-color 180ms ease,background-color 180ms ease}.back-to-top-shader{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity 180ms ease}.back-to-top.is-filled{background:linear-gradient(135deg,#005baf,#0a24dc 48%,#008e99)}.back-to-top.is-filled .back-to-top-shader{opacity:1}.back-to-top svg{position:relative;z-index:1;filter:drop-shadow(0 1px 3px #00102b)}
 @media(prefers-reduced-motion:reduce){.back-to-top-shader{transition:none}}
+
+
+/* Enlarged project artwork */
+.image-viewer{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:clamp(24px,5vw,72px);border:0;background:rgb(8 8 8 / .68);color:var(--text);overflow:hidden;overscroll-behavior:contain;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.image-viewer::backdrop{background:rgb(0 0 0 / .62);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.image-viewer[open]{display:grid;place-items:center;grid-template-rows:minmax(0,1fr) auto;gap:12px}
+.image-viewer-image{display:block;width:auto;height:auto;max-width:min(100%,1500px);max-height:calc(100dvh - 140px);object-fit:contain;box-shadow:0 18px 80px #0009}
+.image-viewer-caption{margin:0;min-height:1.5em;color:#d0d0d0;text-align:center;font-size:.8125rem;line-height:1.5}
+.image-viewer-close{position:fixed;z-index:1;top:24px;right:28px;width:44px;height:44px;border:1px solid #ffffff55;border-radius:50%;background:#111a;color:white;font:300 30px/1 var(--sans);cursor:pointer;backdrop-filter:blur(8px)}
+.image-viewer-close:focus-visible{outline:1px solid white;outline-offset:4px}
+@media(max-width:600px){.image-viewer{padding:64px 16px 24px}.image-viewer-image{max-height:calc(100dvh - 150px)}.image-viewer-close{top:12px;right:14px}}
+@media(prefers-reduced-motion:reduce){.image-viewer::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}}
