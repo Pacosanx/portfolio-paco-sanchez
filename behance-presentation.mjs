@@ -6,7 +6,7 @@ export function renderBehanceModules(project,{embedded=false}={}){
   let imageIndex=0;
   const image=block=>{
     const alt=block.alt||`${project.title}, estudio visual ${imageIndex+1}`;imageIndex++;
-    return `<figure class="case-figure"${source(block)}><a class="case-zoom" href="${esc(block.url)}" target="_blank" rel="noopener noreferrer" aria-label="Ampliar: ${esc(alt)}"><img src="${esc(block.url)}" width="${Number(block.width)}" height="${Number(block.height)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a></figure>`;
+    return `<figure class="case-figure"${source(block)}><a class="case-zoom" href="${esc(block.url)}" data-image-viewer-trigger aria-label="Ampliar: ${esc(alt)}"><img src="${esc(block.url)}" width="${Number(block.width)}" height="${Number(block.height)}" alt="${esc(alt)}" loading="lazy" decoding="async"></a></figure>`;
   };
   return project.blocks.map(block=>{
     if(block.type==='text'){
