@@ -28,7 +28,7 @@
       if(!source)return;
       event.preventDefault();
       imageTrigger=trigger;
-      image.src=source.currentSrc||source.src;
+      image.src=trigger.href||source.currentSrc||source.src;
       image.alt=source.alt||'';
       caption.textContent=trigger.closest('figure')?.querySelector('figcaption')?.textContent||source.alt||'';
       if(!imageViewer.open)imageViewer.showModal();
