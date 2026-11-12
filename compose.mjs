@@ -50,7 +50,7 @@ const caseTheme=p=>Object.entries(p.theme||{}).filter(([key,value])=>['bg','text
 const favicon=sitePath('/assets/favicon-paco.png');
 
 function document(title,description,route,body,theme){return `<!doctype html>
-<html lang="es" data-base-path="${basePath}"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-DHG6C3DRG4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DHG6C3DRG4');</script>
+<html lang="es" data-base-path="${basePath}"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-DHG6C3DRG4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());(function(){try{var q=location.search;if(q.indexOf('ga_interno=1')>-1)localStorage.setItem('ga_interno','1');if(q.indexOf('ga_interno=0')>-1)localStorage.removeItem('ga_interno');}catch(e){}})();gtag('config','G-DHG6C3DRG4',(function(){try{if(localStorage.getItem('ga_interno')==='1')return{traffic_type:'internal'};}catch(e){}return{};})());</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="${esc(theme?.bg||'#0a0a0a')}"><meta name="description" content="${esc(description)}">
 <title>${esc(title)}</title>${route.startsWith('/en-desarrollo/')?`<script>location.replace('${sitePath('/')}#proyecto/${route.split('/').filter(Boolean).at(-1)}')</script>`:''}<link rel="canonical" href="${origin}${sitePath(route)}">
